@@ -1,0 +1,26 @@
+.main-menu {
+  display: flex;
+  flex-flow: row wrap;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-right: .666666666em;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    &.current {
+      font-weight: 700;
+      border: inherit;
+      opacity: 1;
+    }
+  }
+}

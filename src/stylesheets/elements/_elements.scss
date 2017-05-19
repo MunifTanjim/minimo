@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+blockquote,
+q {
+  quotes: '' '';
+
+  &:after,
+  &:before {
+    content: '';
+  }
+
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+blockquote {
+  font-style: italic;
+
+  margin: 0 0 1.35em;
+  padding-left: 1.25em;
+
+  border-left: .2em solid $color--grey;
+  @include font-size(1.1111111111111112);
+}
+
+hr {
+  height: 1px;
+  margin-bottom: 1.5em;
+  border: 0;
+  background-color: $color--background-hr;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 1em 0;
+}
+
+/* Lists */
+@import "lists";
+
+/* Tables */
+@import "tables";

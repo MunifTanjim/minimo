@@ -1,0 +1,49 @@
+body,
+button,
+input,
+select,
+textarea {
+  font-family: $font-family;
+  font-size: $font-size--base;
+  line-height: $line-height--body;
+  color: $color--text-main;
+  word-wrap: break-word;
+}
+
+/* Headings */
+@import "headings";
+
+/* Copy */
+@import "copy";
+
+/* Extras */
+.list-title,
+.site-title {
+  text-transform: uppercase;
+}
+
+.site-description,
+.single-subtitle {
+  font-style: italic;
+  margin: .4444444444444444em 0 0;
+}
+
+.taxonomy-type {
+  @include font-size(0.8888888888888888);
+  font-style: italic;
+}
+
+.list-item-title {
+  @include font-size(1);
+  font-weight: 400;
+}
+
+.meta {
+  span {
+    @include font-size(0.8888888888888888);
+
+    .single & {
+      font-style: italic;
+    }
+  }
+}

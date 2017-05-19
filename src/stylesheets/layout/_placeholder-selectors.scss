@@ -1,0 +1,41 @@
+%pseudoSeperator {
+  content: '';
+  display: block;
+  border-bottom: .1111111111111111em solid $color--accent;
+  width: 4em;
+}
+
+%seperatorAfter {
+  &:after {
+    @extend %pseudoSeperator;
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+  }
+}
+
+%seperatorBefore {
+  &:before {
+    @extend %pseudoSeperator;
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+  }
+}
+
+%flexRowContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  width: 100%;
+  padding: 0 1.5em;
+}
+
+%flexChild {
+  width: 100%;
+  max-width: $max-width;
+}
+
+%flexColumnContainer {
+  display: flex;
+  flex-flow: column nowrap;
+}

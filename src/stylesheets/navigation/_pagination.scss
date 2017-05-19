@@ -1,0 +1,25 @@
+.pagination {
+  margin-top: 1.5em;
+}
+
+.page-links {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+}
+
+.page-link {
+  padding: .2777777777777778em .4444444444444444em;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  &.dots {
+    padding: 0;
+  }
+}

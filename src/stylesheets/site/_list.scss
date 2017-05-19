@@ -1,0 +1,29 @@
+.list {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.list-title {
+  margin-bottom: 1em;
+}
+
+.taxonomy-type {
+  margin-right: 0.2777777777777778em;
+}
+
+.list-item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+
+  margin-bottom: 0.8333333333333334em;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .meta {
+    flex-basis: 6em;
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,39 @@
+$max-width: 600px;
+
+// Colors
+$color--accent: #FFCD00;
+$color--black: #212121;
+$color--grey: #BDBDBD;
+$color--white: #FAFAFA;
+
+$color--background-hr: $color--grey;
+
+$color--text-main: #37474F;
+$color--text-heading: #263238;
+$color--link: $color--black;
+$color--link-visited: $color--black;
+$color--link-faded: #455A64;
+$color--link-hover:$color--text-main;
+
+$color--border-table: $color--grey;
+
+$dark: #1A1A1A;
+$text: #263238;
+$normal: #2A2A2A;
+$light: #FAFAFA;
+
+// Typography
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', 'Siyam Rupali', sans-serif;
+$font-family--code: 'Ubuntu Mono', Consolas, Monaco, 'Andale Mono', monospace;
+
+$font-size--base: 18px;
+
+$line-height--body: 1.5;
+$line-height--heading: 1.2;
+
+$font-size--h1: 1.6666666666666667;
+$font-size--h2: 1.5555555555555556;
+$font-size--h3: 1.4444444444444444;
+$font-size--h4: 1.3333333333333333;
+$font-size--h5: 1.2222222222222223;
+$font-size--h6: 1.1111111111111112;

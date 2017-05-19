@@ -1,0 +1,88 @@
+@import "placeholder-selectors";
+
+.site {
+  @extend %flexColumnContainer;
+  align-items: center;
+
+  width: 100%;
+}
+
+.header-container {
+  @extend %flexRowContainer;
+
+  margin-top: 2em;
+}
+
+.single-header,
+.site-header {
+  @extend %flexChild;
+  @extend %flexColumnContainer;
+  @extend %seperatorAfter;
+}
+
+.single-info,
+.site-info {
+  margin-top: 1.5em;
+}
+
+.page {
+  .site-header {
+    &:after {
+      display: none;
+    }
+  }
+
+  .site-info {
+    display: none;
+  }
+}
+
+.main {
+  @extend %flexRowContainer;
+}
+
+.single {
+  @extend %flexColumnContainer;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+
+  &-content,
+  &-footer {
+    @extend %flexChild;
+  }
+}
+
+.list-container {
+  @extend %flexChild;
+}
+
+.footer-container {
+  @extend %flexRowContainer;
+}
+
+.footer {
+  @extend %flexChild;
+  @extend %flexColumnContainer;
+  @extend %seperatorBefore;
+
+  & > div {
+    width: 100%;
+    margin-top: 1em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+  stroke: currentColor;
+  fill: none;
+  height: 1em;
+  width: 1em;
+
+  position: relative;
+  top: .1111111111111111em;
+}

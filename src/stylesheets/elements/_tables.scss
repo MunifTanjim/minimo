@@ -1,0 +1,35 @@
+table,
+td,
+th {
+  border: 1px solid $color--border-table;
+}
+
+table {
+  width: 100%;
+  margin: 0 0 1.5em;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 1px 0 0 1px;
+}
+
+caption,
+td,
+th {
+  font-weight: normal;
+  text-align: left;
+}
+
+th {
+  border-width: 0 1px 1px 0;
+  font-weight: 700;
+}
+
+td {
+  border-width: 0 1px 1px 0;
+}
+
+td,
+th {
+  padding: .3333333333333333em;
+}

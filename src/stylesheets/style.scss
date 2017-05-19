@@ -1,0 +1,36 @@
+@import "extras/extras";
+
+/*!
+ * Theme Name: Minimo
+ * Author: Munif Tanjim
+ */
+
+/*****************
+ 0. Normalize
+*****************/
+@import "normalize";
+
+/*****************
+ 1. Typography
+*****************/
+@import "typography/typography";
+
+/*****************
+ 2. Elements
+*****************/
+@import "elements/elements";
+
+/*****************
+ 3. Navigation
+*****************/
+@import "navigation/navigation";
+
+/*****************
+ 4. Layout
+*****************/
+@import "layout/layout";
+
+/*****************
+ 5. Site Blocks
+*****************/
+@import "site/site";

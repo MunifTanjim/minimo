@@ -1,0 +1,6 @@
+// Variables
+@import "variables";
+
+@mixin font-size($size) {
+  font-size: #{$size}em;
+}
