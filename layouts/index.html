@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+
+<main class='main'>
+  <section id='list' class='list-container'>
+    <h2 class='list-title title'>Recent Posts</h2>
+    <div class='list'>
+      {{ range (first 5 .Data.Pages.ByPublishDate) }}
+        {{ .Render "li" }}
+      {{ end }}
+    </div>
+  </section>
+</main>
+
+{{ partial "footer.html" . }}

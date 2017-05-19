@@ -1,0 +1,9 @@
+[title]
+  github = 'GitHub'
+  facebook = 'Facebook'
+  twitter = 'Twitter'
+
+[base]
+  github = 'https://github.com/'
+  facebook = 'https://facebook.com/'
+  twitter = 'https://twitter.com/'

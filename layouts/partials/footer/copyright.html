@@ -1,0 +1,3 @@
+<p>
+  &copy; {{ with .Site.Params.CopyrightStartYear }}{{ . }}-{{ end }}{{ now.Year }} {{ or .Site.Params.CopyrightOwner ( or .Site.Author.name .Site.Title ) }}
+</p>

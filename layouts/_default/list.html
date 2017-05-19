@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+<main class='main'>
+  <section class='list-container'>
+    <h1 class='list-title title'>
+      {{- if .Data.Singular -}}
+        <span class='taxonomy-type'>{{ title .Data.Singular }}: </span>
+      {{- end -}}
+      {{- .Title -}}
+    </h1>
+    <div class='list'>
+      {{ range .Paginator.Pages }}
+        {{ .Render "li" }}
+      {{ end }}
+    </div>
+
+    {{ partial "nav/pagination.html" . }}
+  </section>
+</main>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,14 @@
+{{ $title := .Title }}
+{{ $siteTitle := .Site.Title }}
+{{ $authorName := .Site.Author.name }}
+<title>
+{{- if .IsHome -}}
+  {{ $siteTitle }}
+{{- else if eq .Kind "taxonomy" -}}
+  {{ title .Data.Singular }}: {{ $title }} &bull; {{ $siteTitle }}
+{{- else if eq .Kind "section" -}}
+  {{ $title }} &bull; {{ $siteTitle }}
+{{- else if .IsPage -}}
+  {{ $title }} &bull; {{ $authorName }}
+{{- end -}}
+</title>

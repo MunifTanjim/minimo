@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+{{ partial "head/head.html" . }}
+
+<body class='{{ .Kind }}'>
+  <div class='site'>
+    <header id='header' class='header-container'>
+      <div class='site-header'>
+        {{ partial "nav/menus/main.html" . }}
+        <div class='site-info'>
+          {{ if eq .Kind "home" }}
+          <h1 class='site-title title'>{{ .Site.Title }}</h1>
+          {{ else }}
+          <p class='site-title title'>{{ .Site.Title }}</p>
+          {{ end }}
+          <p class='site-description'>{{ .Site.Params.description }}</p>
+        </div>
+      </div>
+    </header>

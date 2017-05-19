@@ -1,0 +1,12 @@
+name = "Minimio"
+license = "MIT"
+licenselink = "https://github.com/MunifTanjim/minimo/blob/master/LICENSE"
+description = "Minimalist theme for Hugo"
+homepage = "https://github.com/MunifTanjim/minimo"
+tags = ["blog"]
+features = ["pagination", "minimal", "single-column"]
+min_version = 0.20
+
+[author]
+  name = "Munif Tanjim"
+  homepage = "https://muniftanjim.com"

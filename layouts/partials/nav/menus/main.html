@@ -1,0 +1,15 @@
+<nav id='navmenu'>
+  <ul class='main-menu'>
+    {{ range .Site.Menus.main }}
+    <li>
+      <a href='{{ .URL | absURL }}' class='
+        {{- if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) -}}
+          current
+        {{- end -}}
+      '>
+        {{- .Name -}}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</nav>

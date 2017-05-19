@@ -1,0 +1,11 @@
+<footer class='single-footer'>
+  {{ if .Params.categories }}
+    {{ $.Scratch.Set "taxonomy" "category" }}
+    {{ partial "single/taxonomy-list.html" . }}
+  {{ end }}
+
+  {{ if .Params.tags }}
+    {{ $.Scratch.Set "taxonomy" "tag" }}
+    {{ partial "single/taxonomy-list.html" . }}
+  {{ end }}
+</footer>

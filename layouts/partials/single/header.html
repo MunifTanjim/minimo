@@ -1,0 +1,13 @@
+<header class='single-header'>
+  <div class='single-info'>
+    <h1 class='single-title title'>
+      {{- .Title -}}
+    </h1>
+    {{ with .Description }}
+    <p class='single-subtitle'>
+      {{ . }}
+    </p>
+    {{ end }}
+  </div>
+  {{ partial "single/meta.html" . }}
+</header>
