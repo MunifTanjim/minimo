@@ -1,3 +1,4 @@
+{{ if not ( eq .Section "page" ) }}
 <footer class='single-footer'>
   {{ if .Params.categories }}
     {{ $.Scratch.Set "taxonomy" "category" }}
@@ -9,3 +10,4 @@
     {{ partial "single/taxonomy-list.html" . }}
   {{ end }}
 </footer>
+{{ end }}
