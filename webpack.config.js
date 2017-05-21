@@ -38,15 +38,5 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.scss']
   },
-  plugins: [
-    extractCSS,
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      },
-      output: {
-        comments: false
-      }
-    })
-  ]
+  plugins: [extractCSS]
 }
