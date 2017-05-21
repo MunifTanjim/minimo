@@ -2,8 +2,8 @@
   <ul class='main-menu'>
     {{ range .Site.Menus.main }}
     <li>
-      <a href='{{ .URL | absURL }}' class='
-        {{- if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) -}}
+      <a href='{{ .URL }}' class='
+        {{- if or ( $.IsMenuCurrent "main" . ) ( $.HasMenuCurrent "main" . ) -}}
           current
         {{- end -}}
       '>
