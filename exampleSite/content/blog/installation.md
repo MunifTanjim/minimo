@@ -1,8 +1,22 @@
-# Minimo
++++
+date = "2017-05-17T12:00:00+06:00"
+title = "Installation"
+categories = ["Tutorial"]
+tags = ["install", "how to"]
++++
+## Create a Hugo site
 
-A minimalist theme for Hugo.
+If you haven't created a Hugo site yet, use the following command:
 
-## Installation
+    hugo new site <name>
+
+Replace the `<name>` with whatever you want to name your site's repository. Alright, now enter the site's root folder:
+
+    cd <name>
+
+Okay, now it's time for installing Minimo!
+
+## Installing Minimo
 
 There are two different ways you can install Minimo:
 
@@ -38,12 +52,6 @@ For getting started with Minimo, copy the `config.toml` file from the `exampleSi
 
 Now, you can start editing this file and add your own information!
 
-## Development
-Pull Requests, Bug Fixes and New Features are welcomed! If you find a bug or want to request any feature, feel free to open an issue.
+-------------
 
-## License
-Minimo is licensed under the MIT License. Check the [LICENSE](https://github.com/MunifTanjim/minimo/blob/master/LICENSE) file for details.
-
-The following resources are included in the theme:
-
-- [Feather](https://feather.netlify.com/) by Cole Bemis - Licensed under the [MIT License](https://github.com/colebemis/feather/blob/master/LICENSE).
+Voilà! Minimo is ready to run!

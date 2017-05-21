@@ -1,0 +1,34 @@
+baseURL = "http://www.example.com"
+title = "Minimo"
+
+theme = "minimo"
+
+googleAnalytics = ""
+Paginate = 3
+
+[params]
+  description = "Minimalist theme for Hugo"
+  dateFormat = "2006, Jan 2"
+  copyrightOwner = "MunifTanjim"
+  copyrightStartYear = "2017"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[author]
+  name = "Minimo"
+
+[author.social]
+  facebook = "MunifTanjim"
+  github = "MunifTanjim/minimo"
+  twitter = "MunifTanjim"
+
+[permalinks]
+  page = "/:slug/"
+
+[[menu.main]]
+  name = "Hugo Themes"
+  weight = -70
+  identifier = "gohugo"
+  url = "https://themes.gohugo.io"
