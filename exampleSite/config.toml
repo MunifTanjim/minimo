@@ -32,3 +32,13 @@ Paginate = 3
   weight = -70
   identifier = "gohugo"
   url = "https://themes.gohugo.io"
+
+# Language Configuration
+defaultContentLanguage = "en"
+
+[languages]
+  # edit this block for your own language
+  [languages.en]
+    lang = "en"
+    languageName = "English"
+    weight = 1
