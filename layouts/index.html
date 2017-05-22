@@ -2,7 +2,7 @@
 
 <main class='main'>
   <section id='list' class='list-container'>
-    <h2 class='list-title title'>Recent Posts</h2>
+    <h2 class='list-title title'>{{ .Site.Data.l10n.listtitle | default "Recent Posts" }}</h2>
     <div class='list'>
       {{ range ( first 5 ( where .Data.Pages "Section" "ne" "page" ) ) }}
         {{ .Render "li" }}
