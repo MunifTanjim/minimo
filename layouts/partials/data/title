@@ -1,7 +1,6 @@
-{{ $title := .Title }}
-{{ $siteTitle := .Site.Title }}
-{{ $authorName := .Site.Author.name }}
-<title>
+{{- $title := .Title -}}
+{{- $siteTitle := .Site.Title -}}
+{{- $authorName := .Site.Author.name -}}
 {{- if .IsHome -}}
   {{ $siteTitle }}
 {{- else if eq .Kind "taxonomy" -}}
@@ -11,4 +10,3 @@
 {{- else if .IsPage -}}
   {{ $title }} &bull; {{ $authorName }}
 {{- end -}}
-</title>

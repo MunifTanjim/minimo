@@ -12,9 +12,17 @@ Paginate = 3
   copyrightOwner = "MunifTanjim"
   copyrightStartYear = "2017"
 
+[params.opengraph]
+  [params.opengraph.facebook]
+    admins = ""
+    appid = ""
+
 [taxonomies]
   category = "categories"
   tag = "tags"
+
+[social]
+  facebook = ""
 
 [author]
   name = "Minimo"

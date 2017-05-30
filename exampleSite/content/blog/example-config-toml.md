@@ -1,5 +1,6 @@
 +++
 date = "2017-05-18T12:00:00+06:00"
+lastmod = "2017-05-30T22:00:00+06:00"
 title = "Example config.toml"
 categories = ["Others"]
 tags = ["config","example"]
@@ -21,9 +22,17 @@ Paginate = 5
   copyrightOwner = "MunifTanjim"
   copyrightStartYear = "2017"
 
+[params.opengraph]
+  [params.opengraph.facebook]
+    admins = ""
+    appid = ""
+
 [taxonomies]
   category = "categories"
   tag = "tags"
+
+[social]
+  facebook = ""
 
 [author]
   name = "Minimo"
@@ -35,5 +44,14 @@ Paginate = 5
 
 [permalinks]
   page = "/:slug/"
-```
 
+# Language Configuration
+defaultContentLanguage = "en"
+
+[languages]
+  # edit this block for your own language
+  [languages.en]
+    lang = "en"
+    languageName = "English"
+    weight = 1
+```
