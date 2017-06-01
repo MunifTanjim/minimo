@@ -76,13 +76,22 @@
   }
 }
 
-.icon {
+%svgIcon {
   display: inline-block;
-  stroke: currentColor;
-  fill: none;
   height: 1em;
   width: 1em;
+}
+
+.icon {
+  @extend %svgIcon;
+  stroke: currentColor;
+  fill: none;
 
   position: relative;
   top: .1111111111111111em;
+}
+
+.social-icon {
+  @extend %svgIcon;
+  fill: currentColor;
 }

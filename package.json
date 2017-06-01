@@ -10,6 +10,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack -p",
+    "start": "hugo server --source=exampleSite --themesDir=../..",
     "watch": "webpack --watch --progress --colors"
   },
   "devDependencies": {
