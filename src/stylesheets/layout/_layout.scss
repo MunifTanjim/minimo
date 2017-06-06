@@ -1,23 +1,23 @@
 @import "placeholder-selectors";
 
 .site {
-  @extend %flexColumnContainer;
-  align-items: center;
-
-  width: 100%;
+  @extend %flexContainer;
 }
 
 .header-container {
-  @extend %flexRowContainer;
+  @extend %flexContainer;
 
+  padding: 0 1.5em;
   margin-top: 2em;
 }
 
 .single-header,
 .site-header {
-  @extend %flexChild;
-  @extend %flexColumnContainer;
+  @extend %widthLimit;
   @extend %seperatorAfter;
+  @extend %flexContainer;
+
+  align-items: flex-start;
 }
 
 .single-info,
@@ -38,33 +38,40 @@
 }
 
 .main {
-  @extend %flexRowContainer;
+  @extend %flexContainer;
+
+  padding: 0 1.5em;
 }
 
 .single {
-  @extend %flexColumnContainer;
-  align-items: center;
-  max-width: 100%;
-  width: 100%;
+  @extend %flexContainer;
 
   &-content,
   &-footer {
-    @extend %flexChild;
+    @extend %widthLimit;
+  }
+
+  &-footer {
+    margin-top: 1.5em;
   }
 }
 
 .list-container {
-  @extend %flexChild;
+  @extend %widthLimit;
 }
 
 .footer-container {
-  @extend %flexRowContainer;
+  @extend %flexContainer;
+
+  padding: 0 1.5em;
 }
 
 .footer {
-  @extend %flexChild;
-  @extend %flexColumnContainer;
+  @extend %widthLimit;
   @extend %seperatorBefore;
+  @extend %flexContainer;
+
+  align-items: flex-start;
 
   & > div {
     width: 100%;
@@ -84,6 +91,7 @@
 
 .icon {
   @extend %svgIcon;
+
   stroke: currentColor;
   fill: none;
 
@@ -93,5 +101,6 @@
 
 .social-icon {
   @extend %svgIcon;
+
   fill: currentColor;
 }

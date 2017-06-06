@@ -21,21 +21,14 @@
   }
 }
 
-%flexRowContainer {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-
-  width: 100%;
-  padding: 0 1.5em;
-}
-
-%flexChild {
-  width: 100%;
-  max-width: $max-width;
-}
-
-%flexColumnContainer {
+%flexContainer {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+%widthLimit {
+  width: 100%;
+  max-width: $max-width;
 }
