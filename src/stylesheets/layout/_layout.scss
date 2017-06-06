@@ -54,6 +54,18 @@
   &-footer {
     margin-top: 1.5em;
   }
+
+  &-nav {
+    @extend %flexContainer;
+
+    &-links {
+      @extend %widthLimit;
+      @extend %seperatorBefore;
+      @extend %flexContainer;
+
+      align-items: flex-start;
+    }
+  }
 }
 
 .list-container {

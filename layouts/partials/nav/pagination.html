@@ -3,7 +3,7 @@
   <div class='page-links'>
 
     {{ with .Paginator.Prev }}
-    <a class='page-link prev' href='{{ .URL }}'>
+    <a class='page-link' href='{{ .URL }}'>
       {{ partial "svg/icons.html" "prev" }}
     </a>
     {{ end }}
@@ -32,11 +32,11 @@
     {{ end }}
 
     {{ with .Paginator.Next }}
-    <a class='page-link next' href='{{ .URL }}'>
+    <a class='page-link' href='{{ .URL }}'>
       {{ partial "svg/icons.html" "next" }}
     </a>
     {{ end }}
+
   </div>
 </nav>
-
 {{ end }}

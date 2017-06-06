@@ -8,6 +8,10 @@
     </div>
     {{ partial "single/footer.html" . }}
   </article>
+
+  {{ if not .Site.Params.HideSingleNavigation }}
+    {{ partial "nav/single_nav.html" . }}
+  {{ end }}
 </main>
 
 {{ partial "footer.html" . }}

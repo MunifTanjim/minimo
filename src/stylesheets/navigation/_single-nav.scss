@@ -1,0 +1,27 @@
+.single-nav-links {
+  &:before {
+    border-bottom-color: $color--grey;
+  }
+
+  & > div {
+    a {
+      font-style: italic;
+    }
+
+    span {
+      display: block;
+      font-style: normal;
+      @include font-size(0.8888888888888888);
+    }
+  }
+}
+
+.prev-single ~ .next-single {
+  @extend %seperatorBefore;
+
+  &:before {
+    border-bottom-color: $color--grey;
+    width: 2em;
+    margin: 1em 0;
+  }
+}
