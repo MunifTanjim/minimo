@@ -12,6 +12,10 @@
   {{ if not .Site.Params.HideSingleNavigation }}
     {{ partial "nav/single_nav.html" . }}
   {{ end }}
+
+  {{ if not ( eq .Params.comments false ) }}
+    {{ partial "disqus.html" . }}
+  {{ end }}
 </main>
 
 {{ partial "footer.html" . }}

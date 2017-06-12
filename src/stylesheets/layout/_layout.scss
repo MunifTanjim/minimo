@@ -68,6 +68,22 @@
   }
 }
 
+.comments-container {
+  @extend %flexContainer;
+
+  #disqus_thread {
+    @extend %widthLimit;
+    @extend %seperatorBefore;
+    @extend %flexContainer;
+
+    align-items: flex-start;
+
+    &:before {
+      border-bottom-color: $color--grey;
+    }
+  }
+}
+
 .list-container {
   @extend %widthLimit;
 }

@@ -1,3 +1,4 @@
 ---
+comments: false
 menu: main
 ---

@@ -3,6 +3,7 @@ title = "Minimo"
 
 theme = "minimo"
 
+disqusShortname = ""
 googleAnalytics = ""
 Paginate = 3
 
