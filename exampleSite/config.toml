@@ -30,8 +30,10 @@ Paginate = 3
   name = "Minimo"
 
 [author.social]
+  codepen = "MunifTanjim"
   facebook = "MunifTanjim"
   github = "MunifTanjim/minimo"
+  instagram = "instagram"
   twitter = "MunifTanjim"
 
 [permalinks]

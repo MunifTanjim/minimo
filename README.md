@@ -47,4 +47,3 @@ Minimo is licensed under the MIT License. Check the [LICENSE](https://github.com
 The following resources are included/used in the theme:
 
 - [Feather](https://feather.netlify.com/) by Cole Bemis - Licensed under the [MIT License](https://github.com/colebemis/feather/blob/master/LICENSE).
-- [Simple Icons](https://simpleicons.org/) by Dan Leech - Licensed under the [CC0 Universal](https://github.com/danleech/simple-icons/blob/master/LICENSE.md).

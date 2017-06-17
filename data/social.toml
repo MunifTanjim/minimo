@@ -1,4 +1,6 @@
 [base]
-  github = 'https://github.com/'
+  codepen = 'https://codepen.io/'
   facebook = 'https://facebook.com/'
+  github = 'https://github.com/'
+  instagram = 'https://instagram.com/'
   twitter = 'https://twitter.com/'

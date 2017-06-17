@@ -126,9 +126,3 @@
   position: relative;
   top: .1111111111111111em;
 }
-
-.social-icon {
-  @extend %svgIcon;
-
-  fill: currentColor;
-}
