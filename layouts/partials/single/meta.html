@@ -6,9 +6,11 @@
       {{- .Date.Format ( or .Site.Params.dateFormat "2006, Jan 02" ) -}}
     </time>
   </span>
+  {{ with .Site.Author.name }}
   <span class='byline'>
     {{ partial "svg/icons.html" "author" }}
-    <a href="#">{{ .Site.Author.name }}</a>
+    <a href="#">{{ . }}</a>
   </span>
+  {{ end }}
 </div>
 {{ end }}

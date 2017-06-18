@@ -5,8 +5,12 @@
   {{ $siteTitle }}
 {{- else if eq .Kind "taxonomy" -}}
   {{ title .Data.Singular }}: {{ $title }} &bull; {{ $siteTitle }}
-{{- else if eq .Kind "section" -}}
+{{- else if or ( eq .Kind "section" ) ( eq .Type "page" ) -}}
   {{ $title }} &bull; {{ $siteTitle }}
 {{- else if .IsPage -}}
-  {{ $title }} &bull; {{ $authorName }}
+  {{- with $authorName -}}
+    {{ $title }} &bull; {{ . }}
+  {{- else -}}
+    {{ $title }} &bull; {{ $siteTitle }}
+  {{- end -}}
 {{- end -}}
