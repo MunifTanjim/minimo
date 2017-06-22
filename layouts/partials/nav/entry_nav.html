@@ -1,9 +1,9 @@
 {{ if gt ( len ( where .Site.RegularPages "Section" .Section ) ) 1 }}
-<nav class='single-nav'>
-  <div class='single-nav-links'>
+<nav class='entry-nav'>
+  <div class='entry-nav-links'>
 
     {{- if .PrevInSection -}}
-    <div class='prev-single'>
+    <div class='prev-entry'>
       <a href='{{ .PrevInSection.Permalink }}'>
         <span>
           {{- partial "svg/icons.html" "prev" -}}
@@ -15,8 +15,8 @@
     {{- end -}}
 
     {{- if .NextInSection -}}
-    <div class='next-single'>
-      <a href='{{.NextInSection.Permalink}}'>
+    <div class='next-entry'>
+      <a href='{{ .NextInSection.Permalink }}'>
         {{- .NextInSection.Title -}}
         <span>
           Next

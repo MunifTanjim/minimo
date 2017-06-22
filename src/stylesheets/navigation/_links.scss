@@ -22,7 +22,7 @@ a {
   &:hover {
     color: $color--link-hover;
 
-    .single-content & {
+    .entry-content & {
       border-bottom-color: $color--accent;
     }
   }
@@ -36,7 +36,7 @@ a {
     }
   }
 
-  .single-content & {
+  .entry-content & {
     border-bottom: .1111111111111111em dashed $color--grey;
   }
 

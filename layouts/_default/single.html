@@ -1,16 +1,14 @@
 {{ partial "header.html" . }}
 
 <main class='main'>
-  <article class='single'>
-    {{ partial "single/header.html" . }}
-    <div class='single-content'>
-      {{ .Content }}
-    </div>
-    {{ partial "single/footer.html" . }}
+  <article class='entry'>
+    {{ partial "entry/header.html" . }}
+    {{ partial "entry/content.html" . }}
+    {{ partial "entry/footer.html" . }}
   </article>
 
-  {{ if not .Site.Params.HideSingleNavigation }}
-    {{ partial "nav/single_nav.html" . }}
+  {{ if not .Site.Params.HideEntryNavigation }}
+    {{ partial "nav/entry_nav.html" . }}
   {{ end }}
 
   {{ if not ( eq .Params.comments false ) }}

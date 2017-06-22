@@ -12,7 +12,7 @@ Paginate = 3
   dateFormat = "2006, Jan 2"
   copyrightOwner = "MunifTanjim"
   copyrightStartYear = "2017"
-  hideSingleNavigation = false
+  hideEntryNavigation = false
 
 [params.opengraph]
   [params.opengraph.facebook]

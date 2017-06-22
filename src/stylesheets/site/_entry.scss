@@ -1,4 +1,4 @@
-.single {
+.entry {
   .meta {
     margin-top: .6em;
 
@@ -12,13 +12,13 @@
   }
 }
 
-.single-content {
+.entry-content {
   & > :last-child {
     margin-bottom: 0;
   }
 }
 
-.single-footer {
+.entry-footer {
   div {
     margin-top: .3333333333333333em;
 

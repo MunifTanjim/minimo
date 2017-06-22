@@ -1,4 +1,4 @@
-.single-nav-links {
+.entry-nav-links {
   &:before {
     border-bottom-color: $color--grey;
   }
@@ -16,7 +16,7 @@
   }
 }
 
-.prev-single ~ .next-single {
+.prev-entry ~ .next-entry {
   @extend %seperatorBefore;
 
   &:before {

@@ -11,7 +11,7 @@
   margin-top: 2em;
 }
 
-.single-header,
+.entry-header,
 .site-header {
   @extend %widthLimit;
   @extend %seperatorAfter;
@@ -20,7 +20,7 @@
   align-items: flex-start;
 }
 
-.single-info,
+.entry-info,
 .site-info {
   margin-top: 1.5em;
 }
@@ -43,7 +43,7 @@
   padding: 0 1.5em;
 }
 
-.single {
+.entry {
   @extend %flexContainer;
 
   &-content,

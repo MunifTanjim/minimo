@@ -23,7 +23,7 @@ textarea {
 }
 
 .site-description,
-.single-subtitle {
+.entry-subtitle {
   font-style: italic;
   margin: .4444444444444444em 0 0;
 }
@@ -42,7 +42,7 @@ textarea {
   span {
     @include font-size(0.8888888888888888);
 
-    .single & {
+    .entry & {
       font-style: italic;
     }
   }
