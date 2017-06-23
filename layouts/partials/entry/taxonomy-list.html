@@ -4,6 +4,7 @@
   <span class='{{ $tx }}-icon'>
     {{ partial "svg/icons.html" $tx }}
   </span>
+  <span class='screen-reader'>{{ $txs | title }}: </span>
   {{- range $i, $term := ( index $.Params $txs ) -}}
   {{- if gt $i 0 }}, {{ end -}}
   <a class='{{ $tx }}' href='{{ (print $txs "/") |  relURL }}{{ $term | urlize }}'>
