@@ -40,10 +40,10 @@ Paginate = 3
   page = "/:slug/"
 
 [[menu.main]]
-  name = "Hugo Themes"
+  name = "Repo"
   weight = -70
-  identifier = "gohugo"
-  url = "https://themes.gohugo.io"
+  identifier = "repository"
+  url = "https://github.com/MunifTanjim/minimo"
 
 # Language Configuration
 defaultContentLanguage = "en"

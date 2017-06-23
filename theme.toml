@@ -2,9 +2,19 @@ name = "Minimo"
 license = "MIT"
 licenselink = "https://github.com/MunifTanjim/minimo/blob/master/LICENSE"
 description = "Minimalist theme for Hugo"
-homepage = "https://github.com/MunifTanjim/minimo"
-tags = ["blog"]
-features = ["pagination", "minimal", "single-column"]
+homepage = "https://minimo.netlify.com"
+tags = [
+  "blog",
+  "minimal",
+  "responsive"
+]
+features = [
+  "disqus",
+  "google-analytics",
+  "minimalist",
+  "pagination",
+  "single-column"
+]
 min_version = 0.20
 
 [author]
