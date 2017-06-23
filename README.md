@@ -15,7 +15,7 @@ The second method is suggested.
 
 With this method, you will simply clone it. And a copy of Minimo's repository will be stored with the rest of you site. Enter the following command for cloning Minimo:
 
-    git clone https://github.com/MunifTanjim/minimo theme/minimo
+    git clone https://github.com/MunifTanjim/minimo themes/minimo
 
 #### Install Minimo as submodule
 
