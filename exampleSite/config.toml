@@ -12,6 +12,7 @@ Paginate = 3
   dateFormat = "2006, Jan 2"
   copyrightOwner = "MunifTanjim"
   copyrightStartYear = "2017"
+  favicon = "favicon.ico"
   hideEntryNavigation = false
 
 [params.opengraph]
