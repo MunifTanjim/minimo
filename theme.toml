@@ -9,11 +9,14 @@ tags = [
   "responsive"
 ]
 features = [
+  "accessibility",
   "disqus",
+  "favicon",
   "google-analytics",
   "minimalist",
   "pagination",
-  "single-column"
+  "single-column",
+  "social-menu"
 ]
 min_version = 0.20
 

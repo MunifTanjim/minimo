@@ -5,7 +5,7 @@ theme = "minimo"
 
 disqusShortname = ""
 googleAnalytics = ""
-Paginate = 3
+Paginate = 5
 
 [params]
   description = "Minimalist theme for Hugo"
