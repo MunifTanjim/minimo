@@ -14,6 +14,7 @@ Paginate = 5
   copyrightStartYear = "2017"
   favicon = "favicon.ico"
   hideEntryNavigation = false
+  customCSS = ["css/custom.css"]
 
 [params.opengraph]
   [params.opengraph.facebook]
