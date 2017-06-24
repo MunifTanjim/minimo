@@ -34,7 +34,7 @@ The second method is suggested.
 
 With this method, you will simply clone it. And a copy of Minimo's repository will be stored with the rest of you site. Enter the following command for cloning Minimo:
 
-    git clone https://github.com/MunifTanjim/minimo theme/minimo
+    git clone https://github.com/MunifTanjim/minimo themes/minimo
 
 #### Install Minimo as submodule
 
@@ -53,7 +53,7 @@ That's all, Minimo is ready to be used.
 
 For getting started with Minimo, copy the `config.toml` file from the `exampleSite` directory inside Minimo's repository to your site repository:
 
-    cp theme/minimo/exampleSite/config.toml .
+    cp themes/minimo/exampleSite/config.toml .
 
 Now, you can start editing this file and add your own information!
 
