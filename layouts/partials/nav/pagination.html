@@ -18,16 +18,16 @@
         <span class='screen-reader'>Current page: </span>
         {{- .PageNumber -}}
       </span>
-      {{ else if or (or (eq . $.Paginator.First) (eq . $.Paginator.Prev)) (or  (eq . $.Paginator.Next) (eq . $.Paginator.Last )) }}
+      {{ else if or ( or ( eq . $.Paginator.First ) ( eq . $.Paginator.Prev ) ) ( or ( eq . $.Paginator.Next ) ( eq . $.Paginator.Last ) ) }}
       <a class='page-link' href='{{ .URL }}'>
         <span class='screen-reader'>Page: </span>
         {{- .PageNumber -}}
       </a>
       {{ else }}
-        {{ if and (not ($.Scratch.Get "hasPrevDots")) (lt .PageNumber $.Paginator.PageNumber)  }}
+        {{ if and ( not ( $.Scratch.Get "hasPrevDots" ) ) ( lt .PageNumber $.Paginator.PageNumber )  }}
           {{ $.Scratch.Set "hasPrevDots" true }}
         <span class='page-link dots'>&hellip;</span>
-        {{ else if and (not ($.Scratch.Get "hasNextDots")) (gt .PageNumber $.Paginator.PageNumber) }}
+        {{ else if and ( not ( $.Scratch.Get "hasNextDots" ) ) ( gt .PageNumber $.Paginator.PageNumber ) }}
           {{ $.Scratch.Set "hasNextDots" true }}
         <span class='page-link dots'>&hellip;</span>
         {{ end }}

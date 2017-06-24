@@ -3,7 +3,7 @@
   {{ range $platform, $username := .Site.Author.social }}
     {{ if $username }}
     <li>
-      <a href='{{ print (index $.Site.Data.social.base $platform) $username }}' target='_blank' rel='noopener'>
+      <a href='{{ print ( index $.Site.Data.social.base $platform ) $username }}' target='_blank' rel='noopener'>
         <span class='screen-reader'>
           Open {{ $platform | title }} account in new tab
         </span>

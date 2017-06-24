@@ -4,7 +4,7 @@
   <section class='list-container'>
     <h1 class='list-title title'>
       {{- if .Data.Singular -}}
-        <span class='taxonomy-type'>{{ title .Data.Singular }}: </span>
+        <span class='taxonomy-type'>{{ .Data.Singular | title }}: </span>
       {{- end -}}
       {{- .Title -}}
     </h1>
