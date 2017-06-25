@@ -15,6 +15,7 @@ Paginate = 5
   favicon = "favicon.ico"
   hideEntryNavigation = false
   customCSS = ["css/custom.css"]
+  customJS = ["js/custom.js"]
 
 [params.opengraph]
   [params.opengraph.facebook]
