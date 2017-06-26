@@ -5,7 +5,7 @@
     {{ with .Paginator.Prev }}
     <a class='page-link' href='{{ .URL }}'>
       {{ partial "svg/icons.html" "prev" }}
-      <span class='screen-reader'>Previous page</span>
+      <span class='screen-reader'>{{ i18n "previousPage" }}</span>
     </a>
     {{ end }}
 
@@ -15,12 +15,12 @@
     {{ range .Paginator.Pagers }}
       {{ if eq . $.Paginator }}
       <span class='page-link current'>
-        <span class='screen-reader'>Current page: </span>
+        <span class='screen-reader'>{{ i18n "currentPage" }}: </span>
         {{- .PageNumber -}}
       </span>
       {{ else if or ( or ( eq . $.Paginator.First ) ( eq . $.Paginator.Prev ) ) ( or ( eq . $.Paginator.Next ) ( eq . $.Paginator.Last ) ) }}
       <a class='page-link' href='{{ .URL }}'>
-        <span class='screen-reader'>Page: </span>
+        <span class='screen-reader'>{{ i18n "page" }}: </span>
         {{- .PageNumber -}}
       </a>
       {{ else }}
@@ -36,7 +36,7 @@
 
     {{ with .Paginator.Next }}
     <a class='page-link' href='{{ .URL }}'>
-      <span class='screen-reader'>Next page</span>
+      <span class='screen-reader'>{{ i18n "nextPage" }}</span>
       {{ partial "svg/icons.html" "next" }}
     </a>
     {{ end }}

@@ -7,9 +7,9 @@
       <a href='{{ .PrevInSection.Permalink }}'>
         <span aria-hidden='true'>
           {{- partial "svg/icons.html" "prev" -}}
-          Previous
+          {{ i18n "previous" }}
         </span>
-        <span class='screen-reader'>Previous post: </span>
+        <span class='screen-reader'>{{ i18n "previousPost" }}: </span>
         {{- .PrevInSection.Title -}}
       </a>
     </div>
@@ -18,10 +18,10 @@
     {{- if .NextInSection -}}
     <div class='next-entry'>
       <a href='{{ .NextInSection.Permalink }}'>
-        <span class='screen-reader'>Next post: </span>
+        <span class='screen-reader'>{{ i18n "nextPost" }}: </span>
         {{- .NextInSection.Title -}}
         <span aria-hidden='true'>
-          Next
+          {{ i18n "next" }}
           {{- partial "svg/icons.html" "next" -}}
         </span>
       </a>

@@ -1,7 +1,7 @@
 <article class='list-item'>
   <div class='meta'>
     <span>
-      <span class='screen-reader'>Posted on </span>
+      <span class='screen-reader'>{{ i18n "postedOn" }} </span>
       <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
         {{- .Date.Format "2006, Jan 02" -}}
       </time>
