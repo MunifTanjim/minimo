@@ -17,6 +17,10 @@ Paginate = 5
   customCSS = ["css/custom.css"]
   customJS = ["js/custom.js"]
 
+[params.seo]
+  # Title Separator: - – — · • * ⋆ | ~ « » < >
+  titleSeparator = "•"
+
 [params.opengraph]
   [params.opengraph.facebook]
     admins = ""
