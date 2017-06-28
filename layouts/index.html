@@ -1,6 +1,11 @@
 {{ partial "header.html" . }}
 
 <main class='main'>
+  {{ if .Content }}
+  <article class='entry'>
+    {{ partial "entry/content" . }}
+  </article>
+  {{ end }}
   <section id='list' class='list-container'>
     <h2 class='list-title title'>{{ i18n "recentPosts" }}</h2>
     <div class='list'>

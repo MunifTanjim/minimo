@@ -86,6 +86,14 @@
 
 .list-container {
   @extend %widthLimit;
+
+  .entry + & {
+    @extend %seperatorBefore;
+
+    &:before {
+      border-bottom-color: $color--grey;
+    }
+  }
 }
 
 .footer-container {
