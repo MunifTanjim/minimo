@@ -12,9 +12,11 @@ Here is a paragraph. **Lorem ipsum _dolor_ sit amet**, consectetur adipiscing el
 
 Another one. Ut enim ad minim veniam, _quis nostrud exercitation **ullamco** laboris nisi ut aliquip ex ea commodo consequat_. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
+{{% center %}}
 ### Heading 3
 
-Yet another! Excepteur sint occaecat ~~cupidatat non proident, sunt in culpa qui officia~~ deserunt mollit anim id est laborum.
+Yet another, but centered! Excepteur sint occaecat ~~cupidatat non proident, sunt in culpa qui officia~~ deserunt mollit anim id est laborum.
+{{% /center %}}
 
 #### Heading 4
 
@@ -61,4 +63,3 @@ Who wants some table?
 
 
 Ah, enough for today, eh?
-

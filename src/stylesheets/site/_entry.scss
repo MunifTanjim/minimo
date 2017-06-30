@@ -14,7 +14,10 @@
 
 .entry-content {
   & > :last-child {
-    margin-bottom: 0;
+    &,
+    & > :last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -30,5 +33,24 @@
   .category-icon,
   .tag-icon {
     margin-right: .4444444444444444em;
+  }
+}
+
+/* Shortcodes */
+.center-align {
+  text-align: center;
+
+  & > blockquote {
+    display: inline-block;
+  }
+
+  & > ol,
+  & > ul {
+    display: inline-block;
+    text-align: initial;
+  }
+
+  li {
+    word-wrap: normal;
   }
 }
