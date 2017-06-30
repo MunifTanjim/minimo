@@ -1,19 +1,19 @@
-{{ partial "header.html" . }}
+{{ partial "header" . }}
 
 <main class='main'>
   <article class='entry'>
-    {{ partial "entry/header.html" . }}
-    {{ partial "entry/content.html" . }}
-    {{ partial "entry/footer.html" . }}
+    {{ partial "entry/header" . }}
+    {{ partial "entry/content" . }}
+    {{ partial "entry/footer" . }}
   </article>
 
   {{ if not .Site.Params.HideEntryNavigation }}
-    {{ partial "nav/entry_nav.html" . }}
+    {{ partial "nav/entry_nav" . }}
   {{ end }}
 
   {{ if not ( eq .Params.comments false ) }}
-    {{ partial "disqus.html" . }}
+    {{ partial "disqus" . }}
   {{ end }}
 </main>
 
-{{ partial "footer.html" . }}
+{{ partial "footer" . }}

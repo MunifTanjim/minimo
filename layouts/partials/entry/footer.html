@@ -3,8 +3,8 @@
   {{ range $taxonomy, $pages := .Site.Taxonomies }}
     {{ if ( index $.Params $taxonomy ) }}
       {{ $.Scratch.Set "taxonomy" $taxonomy }}
-      {{ partial "entry/taxonomy-list.html" $ }}
+      {{ partial "entry/taxonomy-list" $ }}
     {{ end }}
-  {{end}}
+  {{ end }}
 </footer>
 {{ end }}

@@ -7,7 +7,7 @@
         <span class='screen-reader'>
           {{- i18n "openSomethingInNewTab" ( dict "Something" ( print ( $platform | title ) " account" ) ) -}}
         </span>
-        {{ partial "svg/icons.html" $platform }}
+        {{ partial "svg/icons" $platform }}
       </a>
     </li>
     {{ end }}

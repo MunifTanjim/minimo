@@ -6,7 +6,7 @@
     <div class='prev-entry'>
       <a href='{{ .PrevInSection.Permalink }}'>
         <span aria-hidden='true'>
-          {{- partial "svg/icons.html" "prev" -}}
+          {{- partial "svg/icons" "prev" -}}
           {{ i18n "previous" }}
         </span>
         <span class='screen-reader'>{{ i18n "previousPost" }}: </span>
@@ -22,7 +22,7 @@
         {{- .NextInSection.Title -}}
         <span aria-hidden='true'>
           {{ i18n "next" }}
-          {{- partial "svg/icons.html" "next" -}}
+          {{- partial "svg/icons" "next" -}}
         </span>
       </a>
     </div>

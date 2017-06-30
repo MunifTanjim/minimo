@@ -2,7 +2,7 @@
 {{ $tx := ( $txs | singularize ) }}
 <div class='{{ $txs }}'>
   <span class='{{ $tx }}-icon'>
-    {{ partial "svg/icons.html" $tx }}
+    {{ partial "svg/icons" $tx }}
   </span>
   <span class='screen-reader'>{{ $txs | title }}: </span>
   {{- range $i, $term := ( index $.Params $txs ) -}}

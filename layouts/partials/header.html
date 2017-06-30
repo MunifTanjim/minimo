@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 
-{{ partial "head/head.html" . }}
+{{ partial "head/head" . }}
 
 <body class='{{ .Kind }}'>
   <div class='site'>
     <header id='header' class='header-container'>
       <div class='site-header'>
-        {{ partial "nav/menus/main.html" . }}
+        {{ partial "nav/menus/main" . }}
         <div class='site-info'>
           {{ if eq .Kind "home" }}
           <h1 class='site-title title'>{{ .Site.Title }}</h1>
