@@ -3,7 +3,7 @@
 {{- $sizeSpread := sub $maxSize $minSize -}}
 {{- $maxCount := len ( index .Data.Terms.ByCount 0 ).Pages -}}
 {{- $minCount := len ( index .Data.Terms.ByCount.Reverse 0 ).Pages -}}
-{{- $countSpread := sub $maxCount $minCount -}}
+{{- $countSpread := ( sub $maxCount $minCount | default 1 ) -}}
 {{- $sizeStep := div $sizeSpread $countSpread -}}
 
 <ul class='term-cloud'>
