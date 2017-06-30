@@ -27,3 +27,16 @@
     flex-shrink: 0;
   }
 }
+
+/* Term Cloud */
+.term-cloud {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  li {
+    padding: 0 1.5em 0.5em 0;
+  }
+}

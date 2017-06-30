@@ -1,14 +1,14 @@
 {{- $title := .Title -}}
 {{- $siteTitle := .Site.Title -}}
 {{- $authorName := .Site.Author.name -}}
-{{- $sep := ( or .Site.Params.SEO.titleSeparator "•" ) -}}
+{{- $sep := ( .Site.Params.SEO.titleSeparator | default "•" ) -}}
 {{- if .IsHome -}}
   {{ $siteTitle }}
 {{- else if eq .Kind "taxonomy" -}}
   {{ title .Data.Singular }}: {{ $title }} {{ $sep }} {{ $siteTitle }}
-{{- else if or ( eq .Kind "section" ) ( eq .Type "page" ) -}}
+{{- else if ( or .IsNode ( eq .Section "page" ) ) -}}
   {{ $title }} {{ $sep }} {{ $siteTitle }}
-{{- else if .IsPage -}}
+{{- else -}}
   {{- with $authorName -}}
     {{ $title }} {{ $sep }} {{ . }}
   {{- else -}}

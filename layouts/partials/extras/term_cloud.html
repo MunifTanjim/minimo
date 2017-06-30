@@ -1,0 +1,19 @@
+{{- $maxSize := 2.0 -}}
+{{- $minSize := 1.0 -}}
+{{- $sizeSpread := sub $maxSize $minSize -}}
+{{- $maxCount := len ( index .Data.Terms.ByCount 0 ).Pages -}}
+{{- $minCount := len ( index .Data.Terms.ByCount.Reverse 0 ).Pages -}}
+{{- $countSpread := sub $maxCount $minCount -}}
+{{- $sizeStep := div $sizeSpread $countSpread -}}
+
+<ul class='term-cloud'>
+{{- range .Data.Terms.Alphabetical -}}
+  {{- $count := len .Pages -}}
+  {{- $size := ( add $minSize ( mul $sizeStep ( sub $count $minCount ) ) ) -}}
+  <li>
+    <a href='{{ print $.Data.Plural "/" | relURL }}{{ .Name | urlize }}' style='font-size:{{ $size }}em'>
+      {{- .Name -}}
+    </a>
+  </li>
+{{- end -}}
+</ul>

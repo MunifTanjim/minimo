@@ -8,6 +8,8 @@ disqusShortname = ""
 googleAnalytics = ""
 Paginate = 5
 
+preserveTaxonomyNames = true
+
 [params]
   description = "Minimalist theme for Hugo"
   dateFormat = "2006, Jan 2"
