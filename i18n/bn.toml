@@ -1,0 +1,41 @@
+[by]
+  other = "লিখেছে"
+
+[currentPage]
+  other = "এই পৃষ্ঠা"
+
+[mainMenu]
+  other = "মেইন মেনু"
+
+[next]
+  other = "পরেরটা"
+
+[nextPage]
+  other = "পরের পৃষ্ঠা"
+
+[nextPost]
+  other = "পরের পোস্ট"
+
+[openSomethingInNewTab]
+  other = "{{ .Something }} নতুন ট্যাবে খোল"
+
+[page]
+  other = "পৃষ্ঠা"
+
+[previous]
+  other = "আগেরটা"
+
+[previousPage]
+  other = "আগের পৃষ্ঠা"
+
+[previousPost]
+  other = "আগের পোস্ট"
+
+[postedOn]
+  other = "তারিখ"
+
+[recentPosts]
+  other = "সাম্প্রতিক পোষ্টগুলো"
+
+[socialMenu]
+  other = "সোশ্যাল মেনু"
