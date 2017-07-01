@@ -1,7 +1,7 @@
 {{ partial "header" . }}
 
 <main class='main'>
-  <article class='entry'>
+  <article lang='{{ .Params.Lang | default .Lang }}' class='entry'>
     {{ partial "entry/header" . }}
     {{ partial "entry/content" . }}
     {{ partial "entry/footer" . }}
