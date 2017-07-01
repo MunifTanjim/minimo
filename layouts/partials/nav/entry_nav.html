@@ -7,7 +7,7 @@
       <a href='{{ .PrevInSection.Permalink }}'>
         <span aria-hidden='true'>
           {{- partial "svg/icons" "prev" -}}
-          {{ i18n "previous" }}
+          {{- print " " ( i18n "previous" ) -}}
         </span>
         <span class='screen-reader'>{{ i18n "previousPost" }}: </span>
         {{- .PrevInSection.Title -}}
@@ -21,7 +21,7 @@
         <span class='screen-reader'>{{ i18n "nextPost" }}: </span>
         {{- .NextInSection.Title -}}
         <span aria-hidden='true'>
-          {{ i18n "next" }}
+          {{- print ( i18n "next" ) " " -}}
           {{- partial "svg/icons" "next" -}}
         </span>
       </a>
