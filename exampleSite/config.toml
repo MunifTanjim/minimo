@@ -19,6 +19,7 @@ preserveTaxonomyNames = true
   hideEntryNavigation = false
   customCSS = ["css/custom.css"]
   customJS = ["js/custom.js"]
+  hideSocialMenu = false
 
 [params.seo]
   # Title Separator: - – — · • * ⋆ | ~ « » < >
