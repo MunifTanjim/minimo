@@ -1,3 +1,4 @@
+<ul class='term-cloud'>
 {{- if gt (len .Data.Terms) 0 -}}
   {{- $maxSize := 2.0 -}}
   {{- $minSize := 1.0 -}}
@@ -12,7 +13,6 @@
     {{- $.Scratch.Set "sizeStep" ( div $sizeSpread $countSpread ) -}}
   {{- end -}}
 
-  <ul class='term-cloud'>
   {{- range .Data.Terms.Alphabetical -}}
     {{- $count := .Count -}}
     {{- $sizeStep := ( $.Scratch.Get "sizeStep" ) -}}
@@ -23,5 +23,9 @@
       </a>
     </li>
   {{- end -}}
-  </ul>
+{{- else -}}
+  <span>
+    {{- i18n "noTerm" ( dict "Term" .Data.Singular ) -}}
+  </span>
 {{- end -}}
+</ul>

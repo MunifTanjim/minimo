@@ -16,6 +16,9 @@
 [nextPost]
   other = "পরের পোস্ট"
 
+[noTerm]
+  other = "কোন {{ .Term }} নেই!"
+
 [openSomethingInNewTab]
   other = "{{ .Something }} নতুন ট্যাবে খোল"
 

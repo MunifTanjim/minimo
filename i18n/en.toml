@@ -16,6 +16,9 @@
 [nextPost]
   other = "Next post"
 
+[noTerm]
+  other = "Not a single {{ .Term }}!"
+
 [openSomethingInNewTab]
   other = "Open {{ .Something }} in new tab"
 
