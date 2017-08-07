@@ -42,3 +42,6 @@
 
 [socialMenu]
   other = "Social Menu"
+
+[readTime]
+  other = "min read"
