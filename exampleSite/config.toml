@@ -20,6 +20,7 @@ preserveTaxonomyNames = true
   customCSS = ["css/custom.css"]
   customJS = ["js/custom.js"]
   hideSocialMenu = false
+  showReadTime = false
 
 [params.seo]
   # Title Separator: - – — · • * ⋆ | ~ « » < >
