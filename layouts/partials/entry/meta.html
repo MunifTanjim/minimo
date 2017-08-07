@@ -7,17 +7,17 @@
       {{- .Date.Format ( or .Site.Params.dateFormat "2006, Jan 02" ) -}}
     </time>
   </span>
-  <span class='read-time'>
-    {{- if .Site.Params.showReadTime -}}
-    {{ partial "svg/icons" "clock" }}
-    {{ .ReadingTime}} {{ i18n "readTime"}}
-    {{ end }}
-  </span>
   {{ with .Site.Author.name }}
   <span class='byline'>
     {{ partial "svg/icons" "author" }}
     <span class='screen-reader'> {{ i18n "by" }} </span>
     {{ . }}
+  </span>
+  {{ end }}
+  {{ if .Site.Params.showReadTime }}
+  <span class='reading-time'>
+    {{ partial "svg/icons" "clock" }}
+    {{ i18n "readingTime" .ReadingTime }}
   </span>
   {{ end }}
 </div>

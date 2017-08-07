@@ -43,5 +43,6 @@
 [socialMenu]
   other = "Social Menu"
 
-[readTime]
-  other = "min read"
+[readingTime]
+  one = "One min read"
+  other = "{{ .Count }} mins read"
