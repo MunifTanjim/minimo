@@ -3,9 +3,9 @@
     {{ range .Site.Menus.main }}
     <li>
       <a href='{{ .URL }}' 
-        {{- if or ( $.IsMenuCurrent "main" . ) ( $.HasMenuCurrent "main" . ) -}}
-          class='current' aria-current='page'
-        {{- end -}}
+        {{ if or ( $.IsMenuCurrent "main" . ) ( $.HasMenuCurrent "main" . ) }}
+           class='current' aria-current='page'
+        {{ end }}
       >
         {{- .Name -}}
       </a>
