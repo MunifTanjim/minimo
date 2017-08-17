@@ -43,6 +43,7 @@ preserveTaxonomyNames = true
 
 [author.social]
   codepen = "MunifTanjim"
+  email = "contact@example.com"
   facebook = "MunifTanjim"
   github = "MunifTanjim/minimo"
   instagram = "instagram"
