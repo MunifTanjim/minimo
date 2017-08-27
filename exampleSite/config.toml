@@ -50,7 +50,6 @@ preserveTaxonomyNames = true
   twitter = "MunifTanjim"
   linkedin = "muniftanjim"
 
-
 [permalinks]
   page = "/:slug/"
 
