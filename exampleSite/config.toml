@@ -48,6 +48,8 @@ preserveTaxonomyNames = true
   github = "MunifTanjim/minimo"
   instagram = "instagram"
   twitter = "MunifTanjim"
+  linkedin = "muniftanjim"
+
 
 [permalinks]
   page = "/:slug/"
