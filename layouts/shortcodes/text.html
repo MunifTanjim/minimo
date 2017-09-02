@@ -1,14 +1,16 @@
-<div style='
+<div class='shortcode-text' style='
 {{- if .IsNamedParams -}}
   {{- with or ( .Get "s" ) ( .Get "size" ) -}}
-    font-size: {{- . -}}rem;
+    font-size: {{- . -}}em;
   {{- end -}}
   {{- with or ( .Get "c" ) ( .Get "color" ) -}}
     color: {{- . -}};
   {{- end -}}
 {{- else -}}
-  {{- with .Get 0 -}} font-size: {{- . -}}rem; {{- end -}}
-  {{- with .Get 1 -}} color: {{- . -}}; {{- end -}}
+  {{- with .Get 0 -}} font-size: {{- . -}}em; {{- end -}}
+  {{- if gt ( len .Params ) 1 -}}
+    {{- with .Get 1 -}} color: {{- . -}}; {{- end -}}
+  {{- end -}}
 {{- end -}}
 '>
   {{- .Inner -}}
