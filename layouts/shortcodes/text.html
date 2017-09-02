@@ -1,0 +1,15 @@
+<div style='
+{{- if .IsNamedParams -}}
+  {{- with or ( .Get "s" ) ( .Get "size" ) -}}
+    font-size: {{- . -}}rem;
+  {{- end -}}
+  {{- with or ( .Get "c" ) ( .Get "color" ) -}}
+    color: {{- . -}};
+  {{- end -}}
+{{- else -}}
+  {{- with .Get 0 -}} font-size: {{- . -}}rem; {{- end -}}
+  {{- with .Get 1 -}} color: {{- . -}}; {{- end -}}
+{{- end -}}
+'>
+  {{- .Inner -}}
+</div>
