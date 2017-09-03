@@ -7,7 +7,7 @@
   <span class='screen-reader'>{{ $txs | title }}: </span>
   {{- range $i, $term := ( index $.Params $txs ) -}}
   {{- if gt $i 0 }}, {{ end -}}
-  <a class='{{ $tx }}' href='{{ (print $txs "/") |  relURL }}{{ $term | urlize }}'>
+  <a class='{{ $tx }}' href='{{ $.LanguagePrefix }}/{{ $txs }}/{{ $term | urlize }}'>
     {{- $term -}}
   </a>
   {{- end -}}
