@@ -1,6 +1,10 @@
 [by]
   other = "by"
 
+[category]
+  one = "Category"
+  other = "Categories"
+
 [currentPage]
   other = "Current page"
 
@@ -46,3 +50,7 @@
 [readingTime]
   one = "One min read"
   other = "{{ .Count }} mins read"
+
+[tag]
+  one = "Tag"
+  other = "Tags"

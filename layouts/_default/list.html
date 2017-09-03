@@ -3,8 +3,11 @@
 <main class='main'>
   <section class='list-container'>
     <h1 class='list-title title'>
-      {{- if .Data.Singular -}}
-        <span class='taxonomy-type'>{{ .Data.Singular | title }}: </span>
+      {{- if eq .Kind "taxonomy" -}}
+        <span class='taxonomy-type'>
+          {{- ( ( i18n .Data.Singular 1 ) | default .Data.Singular ) | title -}}
+          {{- print ": " -}}
+        </span>
       {{- end -}}
       {{- .Title -}}
     </h1>

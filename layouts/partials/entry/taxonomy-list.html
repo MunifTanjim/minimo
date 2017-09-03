@@ -1,5 +1,5 @@
-{{ $txs := ( $.Scratch.Get "taxonomy" ) }}
-{{ $tx := ( $txs | singularize ) }}
+{{- $txs := ( $.Scratch.Get "taxonomy" ) -}}
+{{- $tx := ( $txs | singularize ) -}}
 <div class='{{ $txs }}'>
   <span class='{{ $tx }}-icon'>
     {{ partial "svg/icons" $tx }}
@@ -8,7 +8,11 @@
   {{- range $i, $term := ( index $.Params $txs ) -}}
   {{- if gt $i 0 }}, {{ end -}}
   <a class='{{ $tx }}' href='{{ $.LanguagePrefix }}/{{ $txs }}/{{ $term | urlize }}'>
-    {{- $term -}}
+    {{- with $.Site.GetPage "taxonomyTerm" $txs ( $term | urlize ) -}}
+      {{- .Title -}}
+    {{- else -}}
+      {{- $term -}}
+    {{- end -}}
   </a>
   {{- end -}}
 </div>

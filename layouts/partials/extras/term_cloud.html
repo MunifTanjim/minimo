@@ -18,8 +18,12 @@
     {{- $sizeStep := ( $.Scratch.Get "sizeStep" ) -}}
     {{- $size := ( add $minSize ( mul $sizeStep ( sub $count $minCount ) ) ) -}}
     <li>
-      <a href='{{ $.Data.Plural | relURL }}/{{ .Term | urlize }}' style='font-size:{{ $size }}em'>
-        {{- .Term -}}
+      <a href='{{ $.LanguagePrefix }}/{{ $.Data.Plural }}/{{ .Term | urlize }}' style='font-size:{{ $size }}em'>
+        {{- with $.Site.GetPage "taxonomyTerm" $.Data.Plural .Term -}}
+          {{- .Title -}}
+        {{- else -}}
+          {{- .Term -}}
+        {{- end -}}
       </a>
     </li>
   {{- end -}}

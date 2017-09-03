@@ -1,6 +1,10 @@
 [by]
   other = "লিখেছে"
 
+[category]
+  one = "ক্যাটেগরি"
+  other = "ক্যাটেগরিসমূহ"
+
 [currentPage]
   other = "এই পৃষ্ঠা"
 
@@ -46,3 +50,7 @@
 [readingTime]
   one = "এক মিনিট লম্বা"
   other = "{{ .Count }} মিনিট লম্বা"
+
+[tag]
+  one = "ট্যাগ"
+  other = "ট্যাগসমূহ"
