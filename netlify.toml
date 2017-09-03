@@ -1,0 +1,6 @@
+[build]
+publish = "exampleSite/public"
+command = "hugo --source=exampleSite --theme=../.. --baseURL=https://minimo.netlify.com"
+
+[context.dev]
+command = "hugo --source=exampleSite --theme=../.. --baseURL=https://dev--minimo.netlify.com"
