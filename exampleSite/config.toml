@@ -13,14 +13,18 @@ preserveTaxonomyNames = true
 [params]
   description = "Minimalist theme for Hugo"
   dateFormat = "2006, Jan 2"
-  copyrightOwner = "MunifTanjim"
-  copyrightStartYear = "2017"
   favicon = "favicon.ico"
   hideEntryNavigation = false
   customCSS = ["css/custom.css"]
   customJS = ["js/custom.js"]
   hideSocialMenu = false
   showReadTime = true
+
+[params.copyright]
+  prefix = ""
+  holder = "MunifTanjim"
+  startYear = "2017"
+  suffix = ""
 
 [params.seo]
   # Title Separator: - – — · • * ⋆ | ~ « » < >
