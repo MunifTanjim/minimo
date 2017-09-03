@@ -1,0 +1,10 @@
+{{- define "hreflang_link" -}}
+  <link rel='alternate' hreflang='{{ .Lang }}' href='{{ .Permalink }}'>
+{{- end -}}
+
+{{- with .Site.GetPage "home" -}}
+  {{- template "hreflang_link" . -}}
+  {{- range .Translations -}}
+    {{- template "hreflang_link" . -}}
+  {{- end -}}
+{{- end -}}
