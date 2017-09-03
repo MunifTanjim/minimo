@@ -1,74 +1,76 @@
 baseURL = "http://www.example.com"
 title = "Minimo"
+# for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
 theme = "minimo"
 
 disqusShortname = ""
 googleAnalytics = ""
-Paginate = 5
 
+Paginate = 5
 preserveTaxonomyNames = true
 
 [params]
-  description = "Minimalist theme for Hugo"
-  dateFormat = "2006, Jan 2"
-  favicon = "favicon.ico"
-  hideEntryNavigation = false
-  customCSS = ["css/custom.css"]
-  customJS = ["js/custom.js"]
-  hideSocialMenu = false
-  showReadTime = true
+description = "Minimalist theme for Hugo"
+# date & time format: https://golang.org/pkg/time/
+dateFormat = "2006, Jan 2"
+favicon = "favicon.ico"
+hideEntryNavigation = false
+customCSS = ["css/custom.css"]
+customJS = ["js/custom.js"]
+hideSocialMenu = false
+showReadTime = true
 
 [params.copyright]
-  prefix = ""
-  holder = "MunifTanjim"
-  startYear = "2017"
-  suffix = ""
+prefix = ""
+holder = "MunifTanjim"
+startYear = "2017"
+suffix = ""
 
 [params.seo]
-  # Title Separator: - – — · • * ⋆ | ~ « » < >
-  titleSeparator = "•"
+# Title Separator: - – — · • * ⋆ | ~ « » < >
+titleSeparator = "•"
 
 [params.opengraph]
-  [params.opengraph.facebook]
-    admins = ""
-    appid = ""
+[params.opengraph.facebook]
+admins = ""
+appid = ""
 
 [taxonomies]
-  category = "categories"
-  tag = "tags"
+category = "categories"
+tag = "tags"
 
 [social]
-  facebook = ""
+facebook = ""
 
 [author]
-  name = "Minimo"
+name = "Minimo"
 
 [author.social]
-  codepen = "MunifTanjim"
-  email = "contact@example.com"
-  facebook = "MunifTanjim"
-  github = "MunifTanjim/minimo"
-  instagram = "instagram"
-  twitter = "MunifTanjim"
-  linkedin = "muniftanjim"
+codepen = "MunifTanjim"
+email = "contact@example.com"
+facebook = "MunifTanjim"
+github = "MunifTanjim/minimo"
+instagram = "instagram"
+twitter = "MunifTanjim"
+linkedin = "muniftanjim"
 
 [permalinks]
-  page = "/:slug/"
+page = "/:slug/"
 
 [[menu.main]]
-  name = "Repo"
-  weight = -70
-  identifier = "repository"
-  url = "https://github.com/MunifTanjim/minimo"
+name = "Repo"
+weight = -70
+identifier = "repository"
+url = "https://github.com/MunifTanjim/minimo"
 
 # Language Configuration
 defaultContentLanguage = "en"
 
 [languages]
-  # edit this block for your own language
-  [languages.en]
-    lang = "en"
-    languageName = "English"
-    weight = 1
+# edit this block for your own language
+[languages.en]
+lang = "en"
+languageName = "English"
+weight = 1
