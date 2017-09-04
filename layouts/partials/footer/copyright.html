@@ -5,7 +5,7 @@
   {{- else -}}
     {{- with .Site.Params.Copyright -}}
 
-      {{ with .startYear }}
+      {{ with .startyear }}
         {{ if lt ( int . ) now.Year }}
           {{ $.Scratch.Set "copyrightStartYear" . }}
         {{ end }}
