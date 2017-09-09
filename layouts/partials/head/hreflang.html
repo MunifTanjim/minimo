@@ -3,7 +3,7 @@
 {{- end -}}
 
 {{- define "hreflang_x_default" -}}
-  {{- if eq .Lang "en" -}}
+  {{- if eq .Lang ( index .Site.Languages 0 ).Lang -}}
     <link rel='alternate' hreflang='x-default' href='{{ .Permalink }}'>
   {{- end -}}
 {{- end -}}
@@ -11,10 +11,10 @@
 {{- if .IsTranslated -}}
 
 {{- template "hreflang_x" . -}}
-{{/* - template "hreflang_x_default" . - */}}
+{{- template "hreflang_x_default" . -}}
 {{- range .Translations -}}
   {{- template "hreflang_x" . -}}
-  {{/* - template "hreflang_x_default" . - */}}
+  {{- template "hreflang_x_default" . -}}
 {{- end -}}
 
 {{- end -}}
