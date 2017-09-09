@@ -8,9 +8,13 @@
   {{- end -}}
 {{- end -}}
 
+{{- if .IsTranslated -}}
+
 {{- template "hreflang_x" . -}}
 {{/* - template "hreflang_x_default" . - */}}
 {{- range .Translations -}}
   {{- template "hreflang_x" . -}}
   {{/* - template "hreflang_x_default" . - */}}
+{{- end -}}
+
 {{- end -}}
