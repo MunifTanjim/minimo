@@ -28,14 +28,23 @@ holder = "MunifTanjim"
 startYear = "2017"
 suffix = ""
 
-[params.seo]
-# Title Separator: - – — · • * ⋆ | ~ « » < >
-titleSeparator = "•"
-
 [params.opengraph]
 [params.opengraph.facebook]
 admins = ""
 appid = ""
+
+[params.seo]
+# Title Separator: - – — · • * ⋆ | ~ « » < >
+titleSeparator = "•"
+
+[params.social]
+codepen = "MunifTanjim"
+email = "contact@example.com"
+facebook = "MunifTanjim"
+github = "MunifTanjim/minimo"
+instagram = "instagram"
+twitter = "MunifTanjim"
+linkedin = "muniftanjim"
 
 [taxonomies]
 category = "categories"
@@ -46,15 +55,6 @@ facebook = ""
 
 [author]
 name = "Minimo"
-
-[author.social]
-codepen = "MunifTanjim"
-email = "contact@example.com"
-facebook = "MunifTanjim"
-github = "MunifTanjim/minimo"
-instagram = "instagram"
-twitter = "MunifTanjim"
-linkedin = "muniftanjim"
 
 [permalinks]
 page = "/:slug/"
@@ -70,6 +70,7 @@ defaultContentLanguage = "en"
 
 [languages]
 # edit this block for your own language
+
 [languages.en]
 lang = "en"
 languageName = "English"
