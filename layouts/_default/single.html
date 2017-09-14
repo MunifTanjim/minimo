@@ -7,7 +7,7 @@
     {{ partial "entry/footer" . }}
   </article>
 
-  {{ if not .Site.Params.HideEntryNavigation }}
+  {{ if not .Site.Params.Settings.HideEntryNavigation }}
     {{ partial "nav/entry_nav" . }}
   {{ end }}
 
