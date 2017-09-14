@@ -4,7 +4,7 @@
     {{ partial "svg/icons" "calendar" }}
     <span class='screen-reader'>{{ i18n "postedOn" }} </span>
     <time class='date' datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
-      {{- .Date.Format ( or .Site.Params.dateFormat "2006, Jan 02" ) -}}
+      {{- .Date.Format ( or .Site.Params.Settings.dateFormat "2006, Jan 02" ) -}}
     </time>
   </span>
   {{ with .Site.Author.name }}
@@ -14,7 +14,7 @@
     {{ . }}
   </span>
   {{ end }}
-  {{ if .Site.Params.showReadTime }}
+  {{ if .Site.Params.Settings.showReadTime }}
   <span class='reading-time'>
     {{ partial "svg/icons" "clock" }}
     {{ i18n "readingTime" .ReadingTime }}

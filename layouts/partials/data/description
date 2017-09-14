@@ -4,7 +4,7 @@
   {{- if .IsPage -}}
     {{- .Summary -}}
   {{- else -}}
-    {{- with .Site.Params.description -}}
+    {{- with .Site.Params.Info.description -}}
       {{- . -}}
     {{- end -}}
   {{- end -}}

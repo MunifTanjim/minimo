@@ -11,22 +11,26 @@ googleAnalytics = ""
 Paginate = 5
 preserveTaxonomyNames = true
 
-[params]
+[params.info]
 description = "Minimalist theme for Hugo"
-# date & time format: https://golang.org/pkg/time/
-dateFormat = "2006, Jan 2"
+
+[params.assets]
 favicon = "favicon.ico"
-hideEntryNavigation = false
 customCSS = ["css/custom.css"]
 customJS = ["js/custom.js"]
-hideSocialMenu = false
-showReadTime = true
 
 [params.copyright]
 prefix = ""
 holder = "MunifTanjim"
 startYear = "2017"
 suffix = ""
+
+[params.settings]
+# date & time format: https://golang.org/pkg/time/
+dateFormat = "2006, Jan 2"
+hideEntryNavigation = false
+hideSocialMenu = false
+showReadTime = true
 
 [params.opengraph]
 [params.opengraph.facebook]
@@ -49,9 +53,6 @@ linkedin = "muniftanjim"
 [taxonomies]
 category = "categories"
 tag = "tags"
-
-[social]
-facebook = ""
 
 [author]
 name = "Minimo"

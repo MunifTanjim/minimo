@@ -9,7 +9,7 @@
   </div>
 
   <script src='{{ print "js/" .Site.Data.assets.main.js | relURL }}'></script>
-  {{ range .Site.Params.customJS }}
+  {{ range .Site.Params.Assets.customJS }}
     <script src='{{ . | relURL }}'></script>
   {{ end }}
 
