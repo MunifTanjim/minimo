@@ -1,0 +1,15 @@
+{{- $.Scratch.Set "authorID" "" -}}
+
+{{- if eq .Kind "taxonomy" -}}
+  {{- $.Scratch.Set "authorID" .Data.Term -}}
+{{- else if eq .Kind "taxonomyTerm" -}}
+  {{- $.Scratch.Set "authorID" .Name -}}
+{{- else if eq .Kind "page" -}}
+  {{- $.Scratch.Set "authorID" ( index .Params.Authors 0 ) -}}
+{{- end -}}
+
+{{- $lang := ( .Params.Lang | default .Lang ) -}}
+{{- $author := ( index $.Site.Data.authors ( $.Scratch.Get "authorID" ) ) -}}
+{{- $data := ( or ( index $author $lang ) $author ) -}}
+{{- $name := $data.name -}}
+{{- $name.display -}}

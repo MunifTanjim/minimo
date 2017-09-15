@@ -8,11 +8,7 @@
   {{- ( ( i18n .Data.Singular 1 ) | default .Data.Singular ) | title -}}
   {{- print ": " -}}
   {{- if eq .Data.Singular "author" -}}
-    {{- $lang := ( .Params.Lang | default .Lang ) -}}
-    {{- $author := ( index $.Site.Data.authors .Data.Term ) -}}
-    {{- $data := ( or ( index $author $lang ) $author ) -}}
-    {{- $name := $data.name -}}
-    {{- $name.display -}}
+    {{- partial "data/author/displayName" . -}}
   {{- else -}}
     {{- $title -}}
   {{- end -}}
@@ -20,12 +16,8 @@
 {{- else if ( or .IsNode ( eq .Section "page" ) ) -}}
   {{ $title }} {{ $sep }} {{ $siteTitle }}
 {{- else -}}
-  {{- with .Params.Authors -}}
-    {{- $lang := ( $.Params.Lang | default $.Lang ) -}}
-    {{- $author := ( index $.Site.Data.authors ( index . 0 ) ) -}}
-    {{- $data := ( or ( index $author $lang ) $author ) -}}
-    {{- $name := $data.name -}}
-    {{ $title }} {{ $sep }} {{ $name.display }}
+  {{- if .Params.Authors -}}
+    {{ $title }} {{ $sep }} {{ partial "data/author/displayName" . }}
   {{- else -}}
     {{ $title }} {{ $sep }} {{ $siteTitle }}
   {{- end -}}

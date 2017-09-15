@@ -10,12 +10,7 @@
         </span>
       {{- end -}}
       {{- if eq .Data.Singular "author" -}}
-        {{- $lang := ( .Params.Lang | default .Lang ) -}}
-        {{- $author := ( index $.Site.Data.authors .Data.Term ) -}}
-        {{- $data := ( or ( index $author $lang ) $author ) -}}
-        {{- $name := $data.name -}}
-            
-        {{- $name.display -}}
+        {{- partial "data/author/displayName" . -}}
       {{- else -}}
         {{- .Title -}}
       {{- end -}}
