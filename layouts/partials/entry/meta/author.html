@@ -1,0 +1,8 @@
+{{- $authorID := ( .Params.Author | default .Site.Author.default ) -}}
+<span class='byline'>
+  {{ partial "svg/icons" "author" }}
+  <span class='screen-reader'> {{ i18n "by" }} </span>
+  {{- with ( $.Site.GetPage "section" "authors" $authorID ) -}}
+    {{- .Params.displayName -}}
+  {{- end -}}
+</span>

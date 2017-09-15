@@ -55,7 +55,7 @@ category = "categories"
 tag = "tags"
 
 [author]
-name = "Minimo"
+default = "muniftanjim"
 
 [permalinks]
 page = "/:slug/"
