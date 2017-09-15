@@ -1,16 +1,31 @@
 {{- $title := .Title -}}
 {{- $siteTitle := .Site.Title -}}
-{{- $authorName := .Site.Author.name -}}
 {{- $sep := ( .Site.Params.SEO.titleSeparator | default "•" ) -}}
+
 {{- if .IsHome -}}
   {{ $siteTitle }}
 {{- else if eq .Kind "taxonomy" -}}
-  {{ title .Data.Singular }}: {{ $title }} {{ $sep }} {{ $siteTitle }}
+  {{- ( ( i18n .Data.Singular 1 ) | default .Data.Singular ) | title -}}
+  {{- print ": " -}}
+  {{- if eq .Data.Singular "author" -}}
+    {{- $lang := ( .Params.Lang | default .Lang ) -}}
+    {{- $author := ( index $.Site.Data.authors .Data.Term ) -}}
+    {{- $data := ( or ( index $author $lang ) $author ) -}}
+    {{- $name := $data.name -}}
+    {{- $name.display -}}
+  {{- else -}}
+    {{- $title -}}
+  {{- end -}}
+  {{- print " " $sep " " $siteTitle -}}
 {{- else if ( or .IsNode ( eq .Section "page" ) ) -}}
   {{ $title }} {{ $sep }} {{ $siteTitle }}
 {{- else -}}
-  {{- with $authorName -}}
-    {{ $title }} {{ $sep }} {{ . }}
+  {{- with .Params.Authors -}}
+    {{- $lang := ( $.Params.Lang | default $.Lang ) -}}
+    {{- $author := ( index $.Site.Data.authors ( index . 0 ) ) -}}
+    {{- $data := ( or ( index $author $lang ) $author ) -}}
+    {{- $name := $data.name -}}
+    {{ $title }} {{ $sep }} {{ $name.display }}
   {{- else -}}
     {{ $title }} {{ $sep }} {{ $siteTitle }}
   {{- end -}}
