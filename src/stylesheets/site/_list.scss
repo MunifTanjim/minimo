@@ -1,6 +1,9 @@
 .list {
   display: flex;
   flex-flow: column nowrap;
+
+  margin: 0;
+  list-style: none;
 }
 
 .list-title {
@@ -12,14 +15,20 @@
 }
 
 .list-item {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: baseline;
-
   margin-bottom: 0.8333333333333334em;
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+
+  .icon {
+    margin-right: .2222222222222222em;
+  }
+
+  article {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
   }
 
   .meta {

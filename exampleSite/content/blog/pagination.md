@@ -1,9 +1,12 @@
-+++
-date = "2017-05-20T12:00:00+06:00"
-title = "Pagination"
-categories = ["Features"]
-tags = ["feature"]
-+++
+---
+date: "2017-05-20T12:00:00+06:00"
+title: "Pagination"
+authors: ["muniftanjim"]
+categories:
+  - Features
+tags:
+  - feature
+---
 Minimo supports pagination on [List](https://gohugo.io/templates/list/) pages.
 
 For configuring it, there are two options:

@@ -1,56 +1,60 @@
+[author]
+one = "লেখক"
+other = "লেখকেরা"
+
 [by]
-  other = "লিখেছে"
+other = "লিখেছে"
 
 [category]
-  one = "ক্যাটেগরি"
-  other = "ক্যাটেগরিসমূহ"
+one = "ক্যাটেগরি"
+other = "ক্যাটেগরিসমূহ"
 
 [currentPage]
-  other = "এই পৃষ্ঠা"
+other = "এই পৃষ্ঠা"
 
 [mainMenu]
-  other = "মেইন মেনু"
+other = "মেইন মেনু"
 
 [next]
-  other = "পরেরটা"
+other = "পরেরটা"
 
 [nextPage]
-  other = "পরের পৃষ্ঠা"
+other = "পরের পৃষ্ঠা"
 
 [nextPost]
-  other = "পরের পোস্ট"
+other = "পরের পোস্ট"
 
 [noTerm]
-  other = "কোন {{ .Term }} নেই!"
+other = "কোন {{ .Term }} নেই!"
 
 [openSomethingInNewTab]
-  other = "{{ .Something }} নতুন ট্যাবে খোল"
+other = "{{ .Something }} নতুন ট্যাবে খোল"
 
 [page]
-  other = "পৃষ্ঠা"
+other = "পৃষ্ঠা"
 
 [previous]
-  other = "আগেরটা"
+other = "আগেরটা"
 
 [previousPage]
-  other = "আগের পৃষ্ঠা"
+other = "আগের পৃষ্ঠা"
 
 [previousPost]
-  other = "আগের পোস্ট"
+other = "আগের পোস্ট"
 
 [postedOn]
-  other = "তারিখ"
+other = "তারিখ"
 
 [recentPosts]
-  other = "সাম্প্রতিক পোষ্টগুলো"
+other = "সাম্প্রতিক পোষ্টগুলো"
 
 [socialMenu]
-  other = "সোশ্যাল মেনু"
+other = "সোশ্যাল মেনু"
 
 [readingTime]
-  one = "এক মিনিট লম্বা"
-  other = "{{ .Count }} মিনিট লম্বা"
+one = "এক মিনিট লম্বা"
+other = "{{ .Count }} মিনিট লম্বা"
 
 [tag]
-  one = "ট্যাগ"
-  other = "ট্যাগসমূহ"
+one = "ট্যাগ"
+other = "ট্যাগসমূহ"

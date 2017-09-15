@@ -1,9 +1,13 @@
-+++
-date = "2017-05-30T12:00:00+06:00"
-title = "Translation Support"
-categories = ["Features"]
-tags = ["feature", "translation"]
-+++
+---
+date: 2017-05-30T12:00:00+06:00
+title: Translation Support
+authors: ["muniftanjim"]
+categories:
+  - Features
+tags:
+  - feature
+  - translation
+---
 You can translate Minimo in your own language!
 
 For example, if you want to translate Minimo in Spanish, you will have to add this to your site's config file:

@@ -1,0 +1,29 @@
+{{- $lang := ( $.Params.Lang | default $.Lang ) -}}
+
+{{ partial "header" . }}
+
+<main class='main'>
+  <section class='list-container'>
+    <h1 class='list-title title'>
+      {{- .Title -}}
+    </h1>
+    <ul class='list'>
+    {{ range .Data.Terms.Alphabetical }}
+      {{- $author := ( index $.Site.Data.authors .Name ) -}}
+      {{- $data := ( or ( index $author $lang ) $author ) -}}
+      {{- $name := $data.name -}}
+  
+      <li class='list-item'>
+        <h2 class='list-item-title'>
+          {{ partial "svg/icons" "author" }}
+          <a href='{{ $.LanguagePrefix }}/authors/{{ .Name | urlize }}'>
+            {{- $name.display -}}
+          </a>
+        </h2>
+      </li>
+    {{ end }}
+    </ul>
+  </section>
+</main>
+
+{{ partial "footer" . }}

@@ -51,11 +51,9 @@ twitter = "MunifTanjim"
 linkedin = "muniftanjim"
 
 [taxonomies]
+author = "authors"
 category = "categories"
 tag = "tags"
-
-[author]
-default = "muniftanjim"
 
 [permalinks]
 page = "/:slug/"

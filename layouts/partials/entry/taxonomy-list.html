@@ -1,5 +1,6 @@
 {{- $txs := ( $.Scratch.Get "taxonomy" ) -}}
 {{- $tx := ( $txs | singularize ) -}}
+
 <div class='{{ $txs }}'>
   <span class='{{ $tx }}-icon'>
     {{ partial "svg/icons" $tx }}

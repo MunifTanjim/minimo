@@ -1,9 +1,13 @@
-+++
-date = "2017-05-30T22:00:00+06:00"
-title = "Open Graph Support"
-categories = ["Features"]
-tags = ["feature", "open graph"]
-+++
+---
+date: "2017-05-30T22:00:00+06:00"
+title: "Open Graph Support"
+authors: ["muniftanjim"]
+categories:
+  - Features
+tags:
+  - feature
+  - open graph
+---
 Minimo has built-in support for Open Graph tags.
 
 The extra configuration options used by Open Graph tags are noted below.
