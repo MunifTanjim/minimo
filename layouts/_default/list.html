@@ -9,13 +9,22 @@
           {{- print ": " -}}
         </span>
       {{- end -}}
-      {{- .Title -}}
+      {{- if eq .Data.Singular "author" -}}
+        {{- $lang := ( .Params.Lang | default .Lang ) -}}
+        {{- $author := ( index $.Site.Data.authors .Data.Term ) -}}
+        {{- $data := ( or ( index $author $lang ) $author ) -}}
+        {{- $name := $data.name -}}
+            
+        {{- $name.display -}}
+      {{- else -}}
+        {{- .Title -}}
+      {{- end -}}
     </h1>
-    <div class='list'>
+    <ul class='list'>
       {{ range .Paginator.Pages }}
         {{ .Render "li" }}
       {{ end }}
-    </div>
+    </ul>
 
     {{ partial "nav/pagination" . }}
   </section>

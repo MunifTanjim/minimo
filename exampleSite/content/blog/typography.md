@@ -1,9 +1,13 @@
-+++
-date = "2017-05-19T12:00:00+06:00"
-title = "Typography"
-categories = ["Typography"]
-tags = ["example", "Lorem Ipsum"]
-+++
+---
+date: 2017-05-19T12:00:00+06:00
+title: Typography
+authors: ["muniftanjim"]
+categories:
+  - Typography
+tags:
+  - example
+  - Lorem Ipsum
+---
 # Heading 1
 
 Here is a paragraph. **Lorem ipsum _dolor_ sit amet**, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

@@ -1,10 +1,14 @@
-+++
-date = "2017-05-18T12:00:00+06:00"
-lastmod = "2017-05-30T22:00:00+06:00"
-title = "Example config.toml"
-categories = ["Others"]
-tags = ["config","example"]
-+++
+---
+date: 2017-05-18T12:00:00+06:00
+lastmod: 2017-05-30T22:00:00+06:00
+title: Example config.toml
+authors: ["muniftanjim"]
+categories:
+  - Others
+tags:
+  - config
+  - example
+---
 Here's an example for `config.toml` file.
 
 ```toml

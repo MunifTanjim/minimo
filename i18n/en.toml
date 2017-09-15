@@ -1,56 +1,60 @@
+[author]
+one = "Author"
+other = "Authors"
+
 [by]
-  other = "by"
+other = "by"
 
 [category]
-  one = "Category"
-  other = "Categories"
+one = "Category"
+other = "Categories"
 
 [currentPage]
-  other = "Current page"
+other = "Current page"
 
 [mainMenu]
-  other = "Main Menu"
+other = "Main Menu"
 
 [next]
-  other = "Next"
+other = "Next"
 
 [nextPage]
-  other = "Next page"
+other = "Next page"
 
 [nextPost]
-  other = "Next post"
+other = "Next post"
 
 [noTerm]
-  other = "Not a single {{ .Term }}!"
+other = "Not a single {{ .Term }}!"
 
 [openSomethingInNewTab]
-  other = "Open {{ .Something }} in new tab"
+other = "Open {{ .Something }} in new tab"
 
 [page]
-  other = "Page"
+other = "Page"
 
 [previous]
-  other = "Previous"
+other = "Previous"
 
 [previousPage]
-  other = "Previous page"
+other = "Previous page"
 
 [previousPost]
-  other = "Previous post"
+other = "Previous post"
 
 [postedOn]
-  other = "Posted on"
+other = "Posted on"
 
 [recentPosts]
-  other = "Recent Posts"
+other = "Recent Posts"
 
 [socialMenu]
-  other = "Social Menu"
+other = "Social Menu"
 
 [readingTime]
-  one = "One min read"
-  other = "{{ .Count }} mins read"
+one = "One min read"
+other = "{{ .Count }} mins read"
 
 [tag]
-  one = "Tag"
-  other = "Tags"
+one = "Tag"
+other = "Tags"

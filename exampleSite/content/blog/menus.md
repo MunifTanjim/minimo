@@ -1,9 +1,13 @@
-+++
-date = "2017-05-20T12:00:00+06:00"
-title = "Menus"
-categories = ["Features"]
-tags = ["feature", "menu"]
-+++
+---
+date: 2017-05-20T12:00:00+06:00
+title: Menus
+authors: ["muniftanjim"]
+categories:
+  - Features
+tags:
+  - feature
+  - menu
+---
 Minimo has two menus.
 
 1. Main Menu
