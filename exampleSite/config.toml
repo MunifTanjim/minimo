@@ -32,10 +32,10 @@ hideEntryNavigation = false
 hideSocialMenu = false
 showReadTime = true
 
-[params.opengraph]
 [params.opengraph.facebook]
-admins = ""
-appid = ""
+admins = [] # array of Facebook IDs
+appID = ""
+pageID = ""
 
 [params.seo]
 # Title Separator: - – — · • * ⋆ | ~ « » < >
