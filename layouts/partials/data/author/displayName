@@ -10,6 +10,6 @@
 
 {{- $lang := ( .Params.Lang | default .Lang ) -}}
 {{- $author := ( index $.Site.Data.authors ( $.Scratch.Get "authorID" ) ) -}}
-{{- $data := ( or ( index $author $lang ) $author ) -}}
-{{- $name := $data.name -}}
+{{- $i18nAuthor := ( index $author $lang ) -}}
+{{- $name := ( or $i18nAuthor.name $author.name ) -}}
 {{- $name.display -}}
