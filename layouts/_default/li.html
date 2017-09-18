@@ -10,7 +10,7 @@
     </div>
     <header class='list-item-header'>
       <h3 class='list-item-title'>
-        <a href='{{ .Permalink }}'>
+        <a href='{{ .Permalink | relURL }}'>
           {{- .Title -}}
         </a>
       </h3>
