@@ -4,4 +4,4 @@
 {{ range .Site.Params.Assets.customCSS }}
   <link rel='stylesheet' href='{{ . | relURL }}'>
 {{ end }}
-{{ template "_internal/google_analytics_async.html" . }}
+{{ partial "head/google_analytics_async" . }}
