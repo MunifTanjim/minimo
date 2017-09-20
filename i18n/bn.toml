@@ -9,6 +9,9 @@ other = "লিখেছে"
 one = "ক্যাটেগরি"
 other = "ক্যাটেগরিসমূহ"
 
+[contactViaEmail]
+other = "ইমেইলে যোগাযোগ করো"
+
 [currentPage]
 other = "এই পৃষ্ঠা"
 
@@ -27,8 +30,8 @@ other = "পরের পোস্ট"
 [noTerm]
 other = "কোন {{ .Term }} নেই!"
 
-[openSomethingInNewTab]
-other = "{{ .Something }} নতুন ট্যাবে খোল"
+[openAccountInNewTab]
+other = "{{ .Platform }} একাউন্ট নতুন ট্যাবে খোল"
 
 [page]
 other = "পৃষ্ঠা"

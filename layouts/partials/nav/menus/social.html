@@ -7,7 +7,11 @@
       <li>
         <a href='{{ print ( index $.Site.Data.theme.social.base $platform ) $username }}' target='_blank' rel='noopener'>
           <span class='screen-reader'>
-            {{- i18n "openSomethingInNewTab" ( dict "Something" ( print ( $platform | title ) " account" ) ) -}}
+            {{- if eq $platform "email" -}}
+              {{- i18n "contactViaEmail" -}}
+            {{- else -}}
+              {{- i18n "openAccountInNewTab" ( dict "Platform" ( $platform | title ) ) -}}
+            {{- end -}}
           </span>
           {{ partial "svg/icons" $platform }}
         </a>

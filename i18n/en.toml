@@ -9,6 +9,9 @@ other = "by"
 one = "Category"
 other = "Categories"
 
+[contactViaEmail]
+other = "Contact via Email"
+
 [currentPage]
 other = "Current page"
 
@@ -27,8 +30,8 @@ other = "Next post"
 [noTerm]
 other = "Not a single {{ .Term }}!"
 
-[openSomethingInNewTab]
-other = "Open {{ .Something }} in new tab"
+[openAccountInNewTab]
+other = "Open {{ .Platform }} account in new tab"
 
 [page]
 other = "Page"
