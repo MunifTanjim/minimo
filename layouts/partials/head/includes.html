@@ -1,7 +1,9 @@
 <link rel='icon' href='{{ ( or .Site.Params.Assets.favicon "favicon.ico" ) | relURL }}'>
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700&subset=latin'>
-<link rel='stylesheet' href='{{ print "css/" .Site.Data.assets.main.css | relURL }}'>
-{{ range .Site.Params.Assets.customCSS }}
+<link rel='stylesheet' href='{{ print "/assets/css/" .Site.Data.assets.main.css }}'>
+
+{{- range .Site.Params.Assets.customCSS -}}
   <link rel='stylesheet' href='{{ . | relURL }}'>
-{{ end }}
-{{ partial "head/google_analytics_async" . }}
+{{- end -}}
+
+{{- partial "head/analytics" . -}}
