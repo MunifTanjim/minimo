@@ -1,1 +1,22 @@
-404 :)
+{{ partial "header" . }}
+
+<main class='main'>
+  <div class='entry'>
+    <div class='entry-content'>
+      <figure class='gopher'>
+        <img src='{{ ( .Site.Params.Assets.gopher | default "assets/gopher.png" ) | relURL }}' alt='{{ i18n "gopher" }}'>
+        <figcaption>
+          <h1 class='title'>
+            {{- .Site.Params.Info.title404 | default .Title -}}
+          </h1>
+          <a href='{{ "/" | relLangURL }}'>
+            {{- i18n "goHome" -}}
+          </a>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+</main>
+
+{{ partial "footer" . }}
