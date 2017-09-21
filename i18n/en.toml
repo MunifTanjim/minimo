@@ -15,6 +15,12 @@ other = "Contact via Email"
 [currentPage]
 other = "Current page"
 
+[gopher]
+other = "Gopher"
+
+[goHome]
+other = "Go Home..."
+
 [mainMenu]
 other = "Main Menu"
 

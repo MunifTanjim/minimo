@@ -3,7 +3,7 @@
 
 {{ partial "head/head" . }}
 
-<body class='{{ .Kind }}'>
+<body class='{{- if eq .Kind "404" -}}_{{- end -}}{{- .Kind -}}'>
   <div class='site'>
     <header id='header' class='header-container'>
       <div class='site-header'>

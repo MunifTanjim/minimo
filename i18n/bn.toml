@@ -15,6 +15,12 @@ other = "ইমেইলে যোগাযোগ করো"
 [currentPage]
 other = "এই পৃষ্ঠা"
 
+[gopher]
+other = "গোফার"
+
+[goHome]
+other = "গোড়ায় ফিরে চলো..."
+
 [mainMenu]
 other = "মেইন মেনু"
 

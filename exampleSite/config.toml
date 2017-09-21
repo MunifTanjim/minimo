@@ -13,11 +13,13 @@ preserveTaxonomyNames = true
 
 [params.info]
 description = "Minimalist theme for Hugo"
+title404 = "Nothing's here!"
 
 [params.assets]
 favicon = "favicon.ico"
 customCSS = ["css/custom.css"]
 customJS = ["js/custom.js"]
+gopher = "" # used in 404 template [ https://gopherize.me ]
 
 [params.copyright]
 prefix = ""

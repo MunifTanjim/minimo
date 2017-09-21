@@ -1,9 +1,12 @@
-{{- $title := .Title -}}
-{{- $siteTitle := .Site.Title -}}
+{{- $title := ( .Title ) -}}
+{{- $siteTitle := ( .Site.Title ) -}}
 {{- $sep := ( .Site.Params.SEO.titleSeparator | default "•" ) -}}
+{{- $title404 := ( .Site.Params.Info.title404 | default $title ) -}}
 
 {{- if .IsHome -}}
   {{ $siteTitle }}
+{{- else if eq .Kind "404" -}}
+  {{ $title404 }} {{ $sep }} {{ $siteTitle }}
 {{- else if eq .Kind "taxonomy" -}}
   {{- ( ( i18n .Data.Singular 1 ) | default .Data.Singular ) | title -}}
   {{- print ": " -}}
