@@ -32,9 +32,12 @@ const assetsManifest = new AssetsPlugin({
   }
 })
 
-const cleanBuild = new CleanWebpackPlugin(['static/css/*', 'static/js/*'], {
-  watch: true
-})
+const cleanBuild = new CleanWebpackPlugin(
+  ['static/assets/css/*', 'static/assets/js/*'],
+  {
+    watch: true
+  }
+)
 
 module.exports = {
   entry: {
@@ -42,7 +45,7 @@ module.exports = {
   },
   output: {
     filename: '[name].[chunkhash:8].js',
-    path: path.join(__dirname, 'static', 'js')
+    path: path.join(__dirname, 'static', 'assets', 'js')
   },
   module: {
     rules: [
