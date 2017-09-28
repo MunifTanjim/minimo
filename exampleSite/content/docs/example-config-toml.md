@@ -1,3 +1,16 @@
+---
+date: 2017-09-25T08:00:00+06:00
+title: Example config.toml
+authors: ["muniftanjim"]
+categories:
+  - others
+tags:
+  - config
+slug: example-config-toml
+---
+Example `config.toml` configuration for Minimo:
+
+```toml
 baseURL = "http://www.example.com"
 title = "Minimo"
 # for smart copyright line, leave this blank and check [params.copyright]
@@ -11,18 +24,13 @@ googleAnalytics = ""
 Paginate = 5
 preserveTaxonomyNames = true
 
-# Syntax Highlighting: https://gohugo.io/content-management/syntax-highlighting/
-pygmentsCodefences = true
-
 [params.info]
 description = "Minimalist theme for Hugo"
-title404 = "Nothing's here!"
 
 [params.assets]
 favicon = "favicon.ico"
 customCSS = ["css/custom.css"]
 customJS = ["js/custom.js"]
-gopher = "" # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]
 prefix = ""
@@ -79,3 +87,4 @@ defaultContentLanguage = "en"
 lang = "en"
 languageName = "English"
 weight = 1
+```

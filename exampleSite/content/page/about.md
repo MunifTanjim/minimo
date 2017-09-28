@@ -1,7 +1,6 @@
 ---
 title: About
 description: What does Minimo even means?!
-comments: false
 menu: main
 weight: -170
 ---
