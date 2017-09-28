@@ -1,12 +1,8 @@
 ---
-date: 2017-05-19T12:00:00+06:00
+date: 2017-09-28T08:00:00+06:00
 title: Typography
 authors: ["muniftanjim"]
-categories:
-  - Typography
-tags:
-  - example
-  - Lorem Ipsum
+slug: typography
 ---
 # Heading 1
 
