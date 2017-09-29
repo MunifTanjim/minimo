@@ -1,0 +1,56 @@
+[by]
+  other = "por"
+
+[category]
+  one = "Categoria"
+  other = "Categorias"
+
+[currentPage]
+  other = "Pagina atual"
+
+[mainMenu]
+  other = "Menu principal"
+
+[next]
+  other = "Próximo"
+
+[nextPage]
+  other = "Próxima página"
+
+[nextPost]
+  other = "Próximo post"
+
+[noTerm]
+  other = "Nenhum termo encontrado: {{ .Term }}!"
+
+[openSomethingInNewTab]
+  other = "Abrir {{ .Something }} em uma nova aba"
+
+[page]
+  other = "Página"
+
+[previous]
+  other = "Anterior"
+
+[previousPage]
+  other = "Página anterior"
+
+[previousPost]
+  other = "Post anterior"
+
+[postedOn]
+  other = "Postado em"
+
+[recentPosts]
+  other = "Posts recentes"
+
+[socialMenu]
+  other = "Social"
+
+[readingTime]
+  one = "Um minuto de leitura"
+  other = "{{ .Count }} minutos de leitura"
+
+[tag]
+  one = "Tag"
+  other = "Tags"
