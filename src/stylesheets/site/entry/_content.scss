@@ -1,0 +1,24 @@
+.entry-content {
+  @extend %widthLimit;
+
+  & > :last-child {
+    &,
+    & > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    border-bottom: .125em dashed $color__grey;
+
+    &:active,
+    &:focus,
+    &:hover {
+      border-bottom-color: $color__accent;
+    }
+
+    &.footnote-return {
+      border-bottom: none;
+    }
+  }
+}

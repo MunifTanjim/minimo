@@ -1,12 +1,20 @@
 {{ partial "header" . }}
 
-<main class='main'>
-  <section class='list-container'>
-    <h1 class='list-title title'>
-      {{- .Title -}}
-    </h1>
-    {{ partial "extras/term_cloud" . }}
-  </section>
+<main id='main' class='main'>
+  <header class='header-container'>
+    <div class='header'>
+      <div class='header-info'>
+        <h1 class='title'>
+          {{- ( ( i18n .Data.Singular 2 ) | default .Title ) | title -}}
+        </h1>
+        {{ partial "header/subtitle" . }}
+      </div>
+    </div>
+  </header>
+
+  <div class='term-cloud-container'>
+    {{ partial "extras/term_cloud" . }}      
+  </div>
 </main>
 
 {{ partial "footer" . }}

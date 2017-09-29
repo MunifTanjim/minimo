@@ -2,28 +2,35 @@
 
 {{ partial "header" . }}
 
-<main class='main'>
-  <section class='list-container'>
-    <h1 class='list-title title'>
-      {{- .Title -}}
-    </h1>
+<main id='main' class='main'>
+  <header class='header-container'>
+    <div class='header'>
+      <div class='header-info'>
+        <h1 class='title'>
+          {{- .Title -}}
+        </h1>
+        {{ partial "header/subtitle" . }}
+      </div>
+    </div>
+  </header>
+
+  <div class='list-container'>
     <ul class='list'>
     {{ range .Data.Terms.Alphabetical }}
       {{- $author := ( index $.Site.Data.authors .Name ) -}}
       {{- $data := ( or ( index $author $lang ) $author ) -}}
       {{- $name := $data.name -}}
-  
       <li class='list-item'>
         <h2 class='list-item-title'>
-          {{ partial "svg/icons" "author" }}
+          {{- partial "svg/icons" "author" -}}
           <a href='{{ $.LanguagePrefix }}/authors/{{ .Name | urlize }}'>
             {{- $name.display -}}
           </a>
         </h2>
       </li>
-    {{ end }}
+      {{ end }}
     </ul>
-  </section>
+  </div>
 </main>
 
 {{ partial "footer" . }}

@@ -1,5 +1,5 @@
 ---
-date: 2017-09-28T18:00:00+06:00
+date: 2017-09-30T18:00:00+06:00
 title: Minimo v1.0.0 Released
 authors: ["muniftanjim"]
 categories:

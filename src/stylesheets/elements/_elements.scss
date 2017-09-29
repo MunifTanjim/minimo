@@ -17,28 +17,25 @@ q {
     content: '';
   }
 
-  p {
-    &:last-child {
-      margin-bottom: 0;
-    }
+  :last-child {
+    margin-bottom: 0;
   }
 }
 
 blockquote {
+  @include font-size($font-size__blockquote);
   font-style: italic;
 
-  margin: 0 0 1.35em;
-  padding-left: 1.25em;
-
-  border-left: .2em solid $color--grey;
-  @include font-size(1.1111111111111112);
+  margin: 0 0 1.5em;
+  padding-left: 1em;
+  border-left: 0.2em solid $color__grey;
 }
 
 hr {
-  height: 1px;
-  margin-bottom: 1.5em;
   border: 0;
-  background-color: $color--background-hr;
+  height: 1px;
+  margin: 2em 0;
+  background-color: $color__background-hr;
 }
 
 img {
@@ -50,8 +47,14 @@ figure {
   margin: 1em 0;
 }
 
-/* Lists */
-@import "lists";
+// Links
+@import 'links';
 
-/* Tables */
-@import "tables";
+// Lists
+@import 'lists';
+
+// Tables
+@import 'tables';
+
+// Forms
+@import 'forms/forms';

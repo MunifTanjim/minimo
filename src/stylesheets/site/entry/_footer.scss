@@ -1,0 +1,19 @@
+.entry-footer-container {
+  @extend %flexContainer;
+}
+
+.entry-footer {
+  @extend %widthLimit;
+
+  & > div {
+    margin-top: 0.5em;
+
+    &:first-child {
+      margin-top: 2.5em;
+    }
+  }
+
+  .taxonomyTerm-icon {
+    margin-right: 0.375em;
+  }
+}

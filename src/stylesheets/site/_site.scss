@@ -1,8 +1,32 @@
-/* List Block */
-@import 'list';
+.site {
+  @extend %flexContainer;
+}
 
-/* Post Entry */
-@import 'entry';
+.main {
+  @extend %flexContainer;
+}
 
-/* 404 */
-@import '404';
+// Header
+@import 'header';
+
+// List Blocks
+@import 'lists';
+
+// Post Entry
+@import 'entry/entry';
+
+// Layouts
+@import 'layouts/layouts';
+
+// Footer
+@import "footer";
+
+.icon {
+  @extend %svgIcon;
+
+  stroke: currentColor;
+  fill: none;
+
+  position: relative;
+  top: 2px;
+}

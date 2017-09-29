@@ -1,13 +1,11 @@
-<header class='entry-header'>
-  <div class='entry-info'>
-    <h1 class='entry-title title'>
-      {{- .Title -}}
-    </h1>
-    {{ with .Description }}
-    <p class='entry-subtitle'>
-      {{ . }}
-    </p>
-    {{ end }}
+<header class='header-container'>
+  <div class='header entry-header'>
+    <div class='header-info'>
+      <h1 class='title'>
+        {{- .Title -}}
+      </h1>
+      {{ partial "header/subtitle" . }}
+    </div>
+    {{ partial "entry/meta" . }}
   </div>
-  {{ partial "entry/meta" . }}
 </header>

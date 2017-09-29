@@ -2,8 +2,8 @@
 {{- $tx := ( $txs | singularize ) -}}
 
 <div class='{{ $txs }}'>
-  <span class='{{ $tx }}-icon'>
-    {{ partial "svg/icons" $tx }}
+  <span class='taxonomyTerm-icon'>
+    {{- partial "svg/icons" $tx -}}
   </span>
   <span class='screen-reader'>{{ ( ( i18n $tx 2 ) | default $txs ) | title }}: </span>
   {{- range $i, $term := ( index $.Params $txs ) -}}

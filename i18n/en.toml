@@ -54,15 +54,21 @@ other = "Previous post"
 [postedOn]
 other = "Posted on"
 
+[readingTime]
+one = "One min read"
+other = "{{ .Count }} mins read"
+
 [recentPosts]
 other = "Recent Posts"
+
+[skipToContent]
+other = "Skip to Content"
 
 [socialMenu]
 other = "Social Menu"
 
-[readingTime]
-one = "One min read"
-other = "{{ .Count }} mins read"
+[tableOfContents]
+other = "Table of Contents"
 
 [tag]
 one = "Tag"

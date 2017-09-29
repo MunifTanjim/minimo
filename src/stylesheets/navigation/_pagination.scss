@@ -1,15 +1,14 @@
 .pagination {
-  margin-top: 1.5em;
+  @extend %widthLimit;
 }
 
 .page-links {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: baseline;
+  margin-top: 2em;
 }
 
 .page-link {
-  padding: .2777777777777778em .4444444444444444em;
+  display: inline-block;
+  padding: 0.25em 0.625em;
 
   &:first-child {
     padding-left: 0;
@@ -17,6 +16,10 @@
 
   &:last-child {
     padding-right: 0;
+  }
+
+  &.current {
+    font-weight: 700;
   }
 
   &.dots {

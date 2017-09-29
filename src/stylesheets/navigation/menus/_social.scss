@@ -1,0 +1,18 @@
+.social-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 0.625em;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      @include font-size(1.125);
+    }
+  }
+}

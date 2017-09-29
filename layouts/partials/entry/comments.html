@@ -1,0 +1,9 @@
+{{- if not ( eq .Params.comments false ) -}}
+
+{{ if .Site.DisqusShortname }}
+<div class='comments-container'>
+  {{ template "_internal/disqus.html" . }}
+</div>
+{{ end }}
+
+{{- end -}}

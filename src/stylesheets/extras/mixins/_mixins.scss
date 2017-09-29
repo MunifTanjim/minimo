@@ -1,0 +1,9 @@
+@mixin font-size($size) {
+  font-size: #{$size}em;
+}
+
+@mixin screen($screenSize) {
+  @media screen and (min-width: #{$screenSize}) {
+    @content;
+  }
+}

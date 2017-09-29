@@ -1,6 +1,8 @@
 // Variables
-@import "variables";
+@import "variables/variables";
 
-@mixin font-size($size) {
-  font-size: #{$size}em;
-}
+// Mixins
+@import "mixins/mixins";
+
+// Placeholder Classes
+@import "placeholders/placeholders";

@@ -1,6 +1,6 @@
-{{ if .Site.Params.Settings.showReadTime }}
+{{ if .Site.Params.Settings.showReadingTime }}
 <span class='reading-time'>
-  {{ partial "svg/icons" "clock" }}
+  {{- partial "svg/icons" "clock" -}}
   {{ i18n "readingTime" .ReadingTime }}
 </span>
 {{ end }}

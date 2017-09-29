@@ -5,6 +5,7 @@ authors: ["muniftanjim"]
 categories:
   - Tutorial
 slug: installation
+toc: true
 ---
 First of all you will need to setup a Hugo site. You can follow the [Hugo's Quick Start Guide](https://gohugo.io/getting-started/quick-start/) for that.
 

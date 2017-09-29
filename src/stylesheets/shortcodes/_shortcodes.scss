@@ -1,25 +1,2 @@
-/* center */
-.center-align {
-  text-align: center;
-
-  & > blockquote {
-    display: inline-block;
-  }
-
-  & > ol,
-  & > ul {
-    display: inline-block;
-    text-align: initial;
-  }
-
-  li {
-    word-wrap: normal;
-  }
-}
-
-/* text */
-.shortcode-text {
-  & > * {
-    font-size: 1em;
-  }
-}
+@import "center";
+@import "text";

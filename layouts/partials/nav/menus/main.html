@@ -1,15 +1,12 @@
-<nav id='navmenu' aria-label='{{ i18n "mainMenu" }}'>
+<nav id='main-menu' class='main-menu-container' aria-label='{{ i18n "mainMenu" }}'>
   <ul class='main-menu'>
-    {{ range .Site.Menus.main }}
+  {{ range .Site.Menus.main }}
+    {{- $isCurrent := ( or ( $.IsMenuCurrent "main" . ) ( $.HasMenuCurrent "main" . ) ) -}}
     <li>
-      <a href='{{ .URL }}' 
-        {{ if or ( $.IsMenuCurrent "main" . ) ( $.HasMenuCurrent "main" . ) }}
-           class='current' aria-current='page'
-        {{ end }}
-      >
+      <a {{ if $isCurrent -}} class='current' aria-current='page' {{ end -}} href='{{ .URL }}'>
         {{- .Name -}}
       </a>
     </li>
-    {{ end }}
+  {{ end }}
   </ul>
 </nav>

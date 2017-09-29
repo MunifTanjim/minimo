@@ -1,5 +1,5 @@
 {{- if not .Site.Params.Settings.hideSocialMenu -}}
-<div class='social'>
+<div class='social-menu-container'>
   <nav aria-label='{{ i18n "socialMenu" }}'>
     <ul class='social-menu'>
     {{- range $platform, $username := .Site.Params.social -}}
@@ -13,7 +13,7 @@
               {{- i18n "openAccountInNewTab" ( dict "Platform" ( $platform | title ) ) -}}
             {{- end -}}
           </span>
-          {{ partial "svg/icons" $platform }}
+          {{- partial "svg/icons" $platform -}}
         </a>
       </li>
       {{- end -}}
