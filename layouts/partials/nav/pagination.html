@@ -4,16 +4,16 @@
 
     {{ with .Paginator.Prev }}
     <a class='page-link' href='{{ .URL }}'>
-      {{ partial "svg/icons" "prev" }}
+      {{- partial "svg/icons" "prev" -}}
       <span class='screen-reader'>{{ i18n "previousPage" }}</span>
     </a>
     {{ end }}
 
-    {{ $.Scratch.Set "hasPrevDots" false }}
-    {{ $.Scratch.Set "hasNextDots" false }}
+    {{- $.Scratch.Set "hasPrevDots" false -}}
+    {{- $.Scratch.Set "hasNextDots" false -}}
 
     {{ range .Paginator.Pagers }}
-      {{ if eq . $.Paginator }}
+      {{ if ( eq . $.Paginator ) }}
       <span class='page-link current'>
         <span class='screen-reader'>{{ i18n "currentPage" }}: </span>
         {{- .PageNumber -}}
@@ -25,11 +25,11 @@
       </a>
       {{ else }}
         {{ if and ( not ( $.Scratch.Get "hasPrevDots" ) ) ( lt .PageNumber $.Paginator.PageNumber )  }}
-          {{ $.Scratch.Set "hasPrevDots" true }}
-        <span class='page-link dots'>&hellip;</span>
+          {{- $.Scratch.Set "hasPrevDots" true -}}
+          <span class='page-link dots'>&hellip;</span>
         {{ else if and ( not ( $.Scratch.Get "hasNextDots" ) ) ( gt .PageNumber $.Paginator.PageNumber ) }}
-          {{ $.Scratch.Set "hasNextDots" true }}
-        <span class='page-link dots'>&hellip;</span>
+          {{- $.Scratch.Set "hasNextDots" true -}}
+          <span class='page-link dots'>&hellip;</span>
         {{ end }}
       {{ end }}
     {{ end }}
@@ -37,7 +37,7 @@
     {{ with .Paginator.Next }}
     <a class='page-link' href='{{ .URL }}'>
       <span class='screen-reader'>{{ i18n "nextPage" }}</span>
-      {{ partial "svg/icons" "next" }}
+      {{- partial "svg/icons" "next" -}}
     </a>
     {{ end }}
 

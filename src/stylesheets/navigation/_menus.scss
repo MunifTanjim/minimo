@@ -3,3 +3,12 @@
 
 // Social Menu
 @import "menus/social";
+
+.main-menu a,
+.social-menu a {
+  color: $color__link-faded;
+
+  &:hover {
+    color: $color__text-heading;
+  }
+}

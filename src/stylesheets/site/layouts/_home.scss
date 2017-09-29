@@ -1,0 +1,25 @@
+.home-sections-container {
+  @extend %flexContainer;
+}
+
+.home-sections {
+  @extend %widthLimit;
+
+  @at-root .entry + .home-sections-container & {
+    @extend %seperatorBefore;
+
+    &:before {
+      border-bottom-color: $color__grey;
+    }
+  }
+}
+
+.home-section {
+  .list {
+    padding: 0;
+  }
+}
+
+.home-section-title {
+  margin-bottom: 1em;
+}

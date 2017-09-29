@@ -3,18 +3,21 @@
 
 {{ partial "head/head" . }}
 
-<body class='{{- if eq .Kind "404" -}}_{{- end -}}{{- .Kind -}}'>
+<body class='{{ partial "header/bodyClasses" . }}'>
   <div class='site'>
+
+    <a class='screen-reader' href='#main'>{{ i18n "skipToContent" }}</a>
+
     <header id='header' class='header-container'>
-      <div class='site-header'>
+      <div class='header site-header'>
         {{ partial "nav/menus/main" . }}
-        <div class='site-info'>
+        <div class='header-info'>
           {{ if eq .Kind "home" }}
           <h1 class='site-title title'>{{ .Site.Title }}</h1>
           {{ else }}
           <p class='site-title title'>{{ .Site.Title }}</p>
           {{ end }}
-          <p class='site-description'>{{ .Site.Params.Info.description }}</p>
+          <p class='site-description subtitle'>{{ .Site.Params.Info.description }}</p>
         </div>
       </div>
     </header>

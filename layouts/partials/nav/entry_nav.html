@@ -1,6 +1,8 @@
+{{- if not .Site.Params.Settings.HideEntryNavigation -}}
+
 {{ if gt ( len ( where .Site.RegularPages "Section" .Section ) ) 1 }}
-<nav class='entry-nav'>
-  <div class='entry-nav-links'>
+<nav class='entry-nav-container'>
+  <div class='entry-nav'>
 
     {{- if .PrevInSection -}}
     <div class='prev-entry'>
@@ -31,3 +33,5 @@
   </div>
 </nav>
 {{ end }}
+
+{{- end -}}

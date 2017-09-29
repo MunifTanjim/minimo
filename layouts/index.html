@@ -1,19 +1,17 @@
 {{ partial "header" . }}
 
-<main class='main'>
+<main id='main' class='main'>
   {{ if .Content }}
   <article class='entry'>
     {{ partial "entry/content" . }}
   </article>
   {{ end }}
-  <section id='list' class='list-container'>
-    <h2 class='list-title title'>{{ i18n "recentPosts" }}</h2>
-    <ul class='list'>
-      {{ range ( first 5 ( where .Data.Pages "Section" "ne" "page" ) ) }}
-        {{ .Render "li" }}
-      {{ end }}
-    </ul>
-  </section>
+
+  <div class='home-sections-container'>
+    <div class='home-sections'>
+      {{ partial "home/recent_posts" . }}
+    </div>
+  </div>
 </main>
 
 {{ partial "footer" . }}

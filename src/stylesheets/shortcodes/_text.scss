@@ -1,0 +1,6 @@
+.text-shortcode {
+  * {
+    color: inherit;
+    @include font-size(1);
+  }
+}

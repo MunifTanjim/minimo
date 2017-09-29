@@ -1,0 +1,17 @@
+.align-center {
+  text-align: center;
+
+  & > blockquote {
+    display: inline-block;
+  }
+
+  & > ol,
+  & > ul {
+    display: inline-block;
+    text-align: initial;
+  }
+
+  li {
+    word-wrap: normal;
+  }
+}

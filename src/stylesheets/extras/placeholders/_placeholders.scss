@@ -1,7 +1,7 @@
 %pseudoSeperator {
   content: '';
   display: block;
-  border-bottom: .1111111111111111em solid $color--accent;
+  border-bottom: .125em solid $color__accent;
   width: 4em;
 }
 
@@ -30,5 +30,13 @@
 
 %widthLimit {
   width: 100%;
-  max-width: $max-width;
+  max-width: $container__max-width;
+  padding-left: $container__padding-side;
+  padding-right: $container__padding-side;
+}
+
+%svgIcon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
 }

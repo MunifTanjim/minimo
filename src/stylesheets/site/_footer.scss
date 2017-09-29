@@ -1,0 +1,25 @@
+.footer-container {
+  @extend %flexContainer;
+}
+
+.footer {
+  @extend %widthLimit;
+  @extend %seperatorBefore;
+
+  a {
+    font-style: italic;
+  }
+
+  & > div {
+    width: 100%;
+    margin-top: 1em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 2em;
+    }
+  }
+}

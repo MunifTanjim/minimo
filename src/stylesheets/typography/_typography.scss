@@ -3,47 +3,25 @@ button,
 input,
 select,
 textarea {
-  font-family: $font-family;
-  font-size: $font-size--base;
-  line-height: $line-height--body;
-  color: $color--text-main;
+  font-family: $font-family__main;
+  @include font-size($font-size__main);
+  line-height: $line-height__body;
+  color: $color__text-main;
   word-wrap: break-word;
 }
 
-/* Headings */
-@import "headings";
-
-/* Copy */
-@import "copy";
-
-/* Extras */
-.list-title,
-.site-title {
-  text-transform: uppercase;
-}
-
-.site-description,
-.entry-subtitle {
-  font-style: italic;
-  margin: .4444444444444444em 0 0;
-}
-
-.taxonomy-type {
-  @include font-size(0.8888888888888888);
-  font-style: italic;
-}
-
-.list-item-title {
-  @include font-size(1);
-  font-weight: 400;
-}
-
-.meta {
-  span {
-    @include font-size(0.8888888888888888);
-
-    .entry & {
-      font-style: italic;
-    }
+@include screen($breakpoint-small) {
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    @include font-size($font-size__main*1.125);
   }
 }
+
+// Headings
+@import 'headings';
+
+// Copy
+@import 'copy';

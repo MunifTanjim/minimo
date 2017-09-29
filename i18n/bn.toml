@@ -54,15 +54,21 @@ other = "আগের পোস্ট"
 [postedOn]
 other = "তারিখ"
 
+[readingTime]
+one = "এক মিনিট লম্বা"
+other = "{{ .Count }} মিনিট লম্বা"
+
 [recentPosts]
 other = "সাম্প্রতিক পোষ্টগুলো"
+
+[skipToContent]
+other = "কন্টেন্টে যাও"
 
 [socialMenu]
 other = "সোশ্যাল মেনু"
 
-[readingTime]
-one = "এক মিনিট লম্বা"
-other = "{{ .Count }} মিনিট লম্বা"
+[tableOfContents]
+other = "এক নজরে"
 
 [tag]
 one = "ট্যাগ"

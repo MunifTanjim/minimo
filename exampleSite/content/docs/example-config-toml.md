@@ -24,13 +24,18 @@ googleAnalytics = ""
 Paginate = 5
 preserveTaxonomyNames = true
 
+# Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
+pygmentsCodefences = true
+
 [params.info]
 description = "Minimalist theme for Hugo"
+title404 = "Nothing's here!"
 
 [params.assets]
 favicon = "favicon.ico"
 customCSS = ["css/custom.css"]
 customJS = ["js/custom.js"]
+gopher = "" # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]
 prefix = ""
@@ -43,7 +48,7 @@ suffix = ""
 dateFormat = "2006, Jan 2"
 hideEntryNavigation = false
 hideSocialMenu = false
-showReadTime = true
+showReadingTime = true
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
@@ -73,16 +78,18 @@ page = "/:slug/"
 
 [[menu.main]]
 name = "Repo"
-weight = -70
+weight = -10
 identifier = "repository"
 url = "https://github.com/MunifTanjim/minimo"
+
+[blackfriday]
+hrefTargetBlank = true
 
 # Language Configuration
 defaultContentLanguage = "en"
 
 [languages]
 # edit this block for your own language
-
 [languages.en]
 lang = "en"
 languageName = "English"

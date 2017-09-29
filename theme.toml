@@ -6,19 +6,22 @@ homepage = "https://minimo.netlify.com"
 tags = [
   "blog",
   "minimal",
+  "minimalist",
   "responsive"
 ]
 features = [
   "accessibility",
-  "disqus",
+  "analytics",
+  "comments",
   "favicon",
-  "google-analytics",
-  "minimalist",
+  "multilingual",
+  "multi-author",
+  "opengraph",
   "pagination",
   "single-column",
   "social-menu"
 ]
-min_version = 0.20
+min_version = 0.28
 
 [author]
   name = "Munif Tanjim"

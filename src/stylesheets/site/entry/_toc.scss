@@ -1,0 +1,46 @@
+details,
+summary {
+  display: block;
+}
+
+.no-details {
+  details {
+    summary {
+      cursor: pointer;
+    }
+
+    &:not([open]) > :not(summary) {
+      display: none;
+    }
+
+    & > summary:before {
+      content: '\25BC';
+      display: inline-block;
+      margin-right: 0.25em;
+      transition: 0.1s;
+      transform: rotate(-90deg);
+    }
+
+    &[open] > summary:before {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.entry-toc {
+  @extend %widthLimit;
+  margin-bottom: 2em;
+
+  .toc-title {
+    font-weight: 700;
+  }
+
+  nav {
+    margin-top: 0.25em;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+}

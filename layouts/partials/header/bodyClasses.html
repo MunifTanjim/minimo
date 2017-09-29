@@ -1,0 +1,4 @@
+{{- if eq .Kind "404" -}}_{{- end -}}{{- .Kind -}}
+{{- with .Type }} type-{{ . }}{{ end -}}
+{{- with .Layout }} layout-{{ . }}{{ end -}}
+{{- with .Data.Singular }} taxonomyTerm-{{ . }}{{ end -}}

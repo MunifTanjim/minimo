@@ -1,17 +1,25 @@
-.entry-nav-links {
+.entry-nav-container {
+  @extend %flexContainer;
+}
+
+.entry-nav {
+  @extend %widthLimit;
+  @extend %seperatorBefore;
+
   &:before {
-    border-bottom-color: $color--grey;
+    border-bottom-color: $color__grey;
   }
 
   & > div {
     a {
+      display: block;
       font-style: italic;
     }
 
     span {
       display: block;
       font-style: normal;
-      @include font-size(0.8888888888888888);
+      @include font-size(0.875);
     }
   }
 }
@@ -20,7 +28,7 @@
   @extend %seperatorBefore;
 
   &:before {
-    border-bottom-color: $color--grey;
+    border-bottom-color: $color__grey;
     width: 2em;
     margin: 1em 0;
   }

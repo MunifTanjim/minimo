@@ -1,7 +1,7 @@
 table,
 td,
 th {
-  border: 1px solid $color--border-table;
+  border: 1px solid $color__border-table;
 }
 
 table {
@@ -16,7 +16,7 @@ table {
 caption,
 td,
 th {
-  font-weight: normal;
+  font-weight: 400;
   text-align: left;
 }
 
@@ -31,5 +31,5 @@ td {
 
 td,
 th {
-  padding: .3333333333333333em;
+  padding: 0.375em;
 }

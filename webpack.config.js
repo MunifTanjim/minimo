@@ -7,8 +7,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const define = new webpack.DefinePlugin({
   'process.env': {
-    NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-    BROWSERSLIST: ['> 1%', 'last 2 versions']
+    NODE_ENV: JSON.stringify(process.env.NODE_ENV)
   }
 })
 
@@ -32,14 +31,12 @@ const assetsManifest = new AssetsPlugin({
   }
 })
 
-const cleanBuild = new CleanWebpackPlugin(
-  ['static/assets/css/*', 'static/assets/js/*'],
-  {
-    watch: true
-  }
-)
+const cleanBuild = new CleanWebpackPlugin([
+  'static/assets/css/*',
+  'static/assets/js/*'
+])
 
-module.exports = {
+const config = {
   entry: {
     main: path.join(__dirname, 'src/scripts', 'main.js')
   },
@@ -73,7 +70,11 @@ module.exports = {
             {
               loader: 'postcss-loader',
               options: {
-                plugins: [autoprefixer()]
+                plugins: [
+                  autoprefixer({
+                    browsers: ['> 1%', 'last 2 versions']
+                  })
+                ]
               }
             },
             'sass-loader'
@@ -85,5 +86,9 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.scss']
   },
-  plugins: [cleanBuild, define, extractCSS, assetsManifest]
+  plugins: [define, extractCSS, assetsManifest]
 }
+
+if (process.env.NODE_ENV === 'production') config.plugins.push(cleanBuild)
+
+module.exports = config

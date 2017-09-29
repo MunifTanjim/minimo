@@ -1,15 +1,16 @@
-.main-menu {
-  display: flex;
-  flex-flow: row wrap;
+.main-menu-container {
+  margin-top: 2em;
+}
 
+.main-menu {
   list-style: none;
   padding: 0;
   margin: 0;
 
   li {
-    font-size: 1em;
+    display: inline-block;
     text-transform: uppercase;
-    margin-right: .666666666em;
+    margin-right: 0.625em;
 
     &:last-of-type {
       margin-right: 0;
@@ -19,8 +20,7 @@
   a {
     &.current {
       font-weight: 700;
-      border: inherit;
-      opacity: 1;
+      pointer-events: none;
     }
   }
 }

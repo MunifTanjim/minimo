@@ -3,7 +3,7 @@
 {{- $lang := ( $.Params.Lang | default $.Lang ) -}}
 
 <span class='byline'>
-  {{ partial "svg/icons" "author" }}
+  {{- partial "svg/icons" "author" -}}
   <span class='screen-reader'> {{ i18n "by" }} </span>
 
   {{- range $i, $authorID := . -}}

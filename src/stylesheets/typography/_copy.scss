@@ -18,15 +18,15 @@ address {
 }
 
 pre {
-  font-family: $font-family--code;
-  @include font-size(0.8888888888888888);
-  background: $color--black;
-  color: $color--white;
+  font-family: $font-family__code;
+  @include font-size($font-size__pre);
+  background: $color__black;
+  color: $color__white;
 
   text-align: initial;
   max-width: 100%;
-  padding: 1.5em;
-  margin-bottom: 1.5em;
+  padding: 1em 1.5em;
+  margin-bottom: 1.725em;
   overflow: auto;
   word-wrap: normal;
 }
@@ -35,18 +35,18 @@ code,
 kbd,
 tt,
 var {
-  font-family: $font-family--code;
+  font-family: $font-family__code;
 }
 
 abbr,
 acronym {
-  border-bottom: 1px dotted $color--black;
+  border-bottom: 1px dotted $color__black;
   cursor: help;
 }
 
 ins,
 mark {
-  background: $color--black;
+  background: $color__black;
   text-decoration: none;
 }
 

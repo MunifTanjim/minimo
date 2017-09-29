@@ -1,7 +1,7 @@
 {
-  "name": "Minimo",
+  "name": "minimo",
   "description": "Minimalist theme for Hugo",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": {
     "name": "Munif Tanjim",
     "url": "https://muniftanjim.com"
@@ -9,7 +9,7 @@
   "repository": "MunifTanjim/minimo",
   "license": "MIT",
   "scripts": {
-    "build": "webpack -p",
+    "build": "NODE_ENV=production webpack -p",
     "start": "hugo server --source=exampleSite --themesDir=../..",
     "watch": "webpack --watch --progress --colors"
   },

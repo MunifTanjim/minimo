@@ -5,12 +5,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font-family;
+  font-family: $font-family__main;
   font-weight: 700;
-  line-height: $line-height--heading;
-  color: $color--text-heading;
+  line-height: $line-height__heading;
+  color: $color__text-heading;
 
-  margin: 0 0 .625em;
+  margin: 0 0 0.625em;
 }
 
 .entry-content {
@@ -29,32 +29,26 @@ h6 {
 
 .site-title,
 h1 {
-  @include font-size($font-size--h1);
+  @include font-size($font-size__h1);
 }
 
 h2 {
-  @include font-size($font-size--h2);
+  @include font-size($font-size__h2);
 }
 
 h3 {
-  @include font-size($font-size--h3);
+  @include font-size($font-size__h3);
 }
 
-.list-title,
+.home-section-title,
 h4 {
-  @include font-size($font-size--h4);
+  @include font-size($font-size__h4);
 }
 
 h5 {
-  @include font-size($font-size--h5);
+  @include font-size($font-size__h5);
 }
 
 h6 {
-  @include font-size($font-size--h6);
-}
-
-.list-item-title,
-.entry-title,
-.site-title {
-  margin-bottom: 0;
+  @include font-size($font-size__h6);
 }

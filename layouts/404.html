@@ -1,17 +1,24 @@
 {{ partial "header" . }}
 
-<main class='main'>
+<main id='main' class='main'>
   <div class='entry'>
     <div class='entry-content'>
+      <span class='screen-reader'>
+        {{- .Site.Params.Info.title404 | default .Title -}}
+      </span>
       <figure class='gopher'>
-        <img src='{{ ( .Site.Params.Assets.gopher | default "assets/gopher.png" ) | relURL }}' alt='{{ i18n "gopher" }}'>
+        <a href='{{ "/" | relLangURL }}'>
+          <img src='{{ ( .Site.Params.Assets.gopher | default "assets/gopher.png" ) | relURL }}' alt='{{ i18n "gopher" }}'/>
+          <span class='screen-reader'>
+            {{- i18n "goHome" -}}
+          </span>
+        </a>
         <figcaption>
           <h1 class='title'>
-            {{- .Site.Params.Info.title404 | default .Title -}}
+            <a href='{{ "/" | relLangURL }}'>
+              {{- .Site.Params.Info.title404 | default .Title -}}
+            </a>
           </h1>
-          <a href='{{ "/" | relLangURL }}'>
-            {{- i18n "goHome" -}}
-          </a>
         </figcaption>
       </figure>
     </div>
