@@ -30,9 +30,9 @@
 
 %widthLimit {
   width: 100%;
-  max-width: $container__max-width;
-  padding-left: $container__padding-side;
-  padding-right: $container__padding-side;
+  max-width: $max-width__container;
+  padding-left: $padding__container-side;
+  padding-right: $padding__container-side;
 }
 
 %svgIcon {

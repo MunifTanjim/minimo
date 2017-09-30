@@ -13,11 +13,14 @@ features = [
   "accessibility",
   "analytics",
   "comments",
+  "cover-image",
   "favicon",
   "multilingual",
   "multi-author",
   "opengraph",
   "pagination",
+  "entry-navigation",
+  "shortcodes",
   "single-column",
   "social-menu"
 ]

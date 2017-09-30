@@ -2,3 +2,4 @@
 {{- with .Type }} type-{{ . }}{{ end -}}
 {{- with .Layout }} layout-{{ . }}{{ end -}}
 {{- with .Data.Singular }} taxonomyTerm-{{ . }}{{ end -}}
+{{- if .Params.Cover }} hasCover{{ end -}}

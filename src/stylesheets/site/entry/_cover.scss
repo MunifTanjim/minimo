@@ -1,0 +1,37 @@
+.entry-cover-container {
+  @extend %flexContainer;
+}
+
+.entry-cover {
+  @extend %widthLimit;
+  margin-top: 1.5em;
+  margin-bottom: 2.5em;
+
+  &.cover-wide {
+    padding: 0;
+    max-width: $max-width__cover-wide;
+  }
+
+  &.cover-full {
+    padding: 0;
+    max-width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  img {
+    display: block;
+  }
+
+  figcaption {
+    @extend %widthLimit;
+    margin: 0.25em auto 0;
+    text-align: center;
+
+    span {
+      @include font-size(.875);
+    }
+  }
+}

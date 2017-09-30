@@ -1,0 +1,27 @@
+{{- with .Params.cover -}}
+
+{{- $type := ( printf "%T" . ) -}}
+{{- $isMap := ( not ( eq $type "string" ) ) -}}
+
+<div class='entry-cover-container'>
+  <figure class='entry-cover cover-{{- if $isMap -}}
+    {{- with .style -}} {{ . }} {{- else -}} normal {{- end -}}
+    {{- else -}} normal {{- end -}}
+  '>
+    <img src='{{ if $isMap }}{{ .image }}{{ else }}{{ . }}{{ end }}'
+      {{- if $isMap }}
+        {{- with .caption }} alt='{{ . | markdownify }}'{{ end -}}
+      {{ end -}} />
+    {{ if $isMap }}
+      {{ with .caption }}
+      <figcaption>
+        <span>
+          {{- . | markdownify -}}
+        </span>
+      </figcaption>
+      {{ end }}
+    {{ end }}
+  </figure>
+</div>
+
+{{- end -}}

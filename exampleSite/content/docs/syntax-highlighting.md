@@ -3,7 +3,7 @@ date: 2017-09-27T12:00:00+06:00
 title: Syntax Highlighting
 authors: ["muniftanjim"]
 categories:
-  - feature
+  - features
 tags:
   - pygments
   - chroma

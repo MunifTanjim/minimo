@@ -3,7 +3,7 @@ date: 2017-09-26T08:00:00+06:00
 title: Opengraph Support
 authors: ["muniftanjim"]
 categories:
-  - feature
+  - features
 tags:
   - og
 slug: opengraph

@@ -5,6 +5,12 @@
 .header {
   @extend %widthLimit;
   @extend %seperatorAfter;
+
+  .hasCover & {
+    &:after {
+      display: none;
+    }
+  }
 }
 
 .header-info {

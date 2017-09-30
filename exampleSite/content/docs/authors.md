@@ -3,7 +3,7 @@ date: 2017-09-26T06:00:00+06:00
 title: Authors Setup Guide
 authors: ["muniftanjim"]
 categories:
-  - feature
+  - features
 tags:
   - authors
 slug: authors

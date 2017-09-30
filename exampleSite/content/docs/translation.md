@@ -3,7 +3,7 @@ date: 2017-09-27T14:00:00+06:00
 title: Translation Support
 authors: ["muniftanjim"]
 categories:
-  - feature
+  - features
 tags:
   - translation
   - i18n
