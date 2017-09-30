@@ -10,8 +10,19 @@
   {{- end -}}
 '>
 
+{{- with .Params.Cover -}}
+  {{- $type := ( printf "%T" . ) -}}
+  {{- $isMap := ( not ( eq $type "string" ) ) -}}
+  <meta property='og:image' content='
+    {{- if $isMap -}}
+      {{- .image | absURL -}}
+    {{- else -}}
+      {{- . | absURL -}}
+    {{- end -}}'>
+{{- end -}}
+
 {{- with .Params.images -}}
-  {{- range first 6 . -}}
+  {{- range first 5 . -}}
     <meta property='og:image' content='{{ . | absURL }}'>
   {{- end -}}
 {{- else -}}
