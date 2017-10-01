@@ -34,7 +34,7 @@ other = "Następna strona"
 other = "Następny post"
 
 [noTerm]
-other = "Ani jeden {{ .Term }}!"
+other = "Brakuje: {{ .Term }}!"
 
 [openAccountInNewTab]
 other = "Otwórz {{ .Platform }} w nowej karcie"
