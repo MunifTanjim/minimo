@@ -2,6 +2,8 @@
 
 A minimalist theme for Hugo.
 
+![Minimo – A minimalist theme for Hugo](https://raw.githubusercontent.com/MunifTanjim/minimo/master/images/tn.png)
+
 ## Documentation
 
 Check the [Minimo Documentation](https://minimo.netlify.com/docs/) for detailed documentation of Minimo.
@@ -19,7 +21,7 @@ If you find a bug or want to request a new feature, feel free to open an issue.
 
 ## Changelog
 
-[Changelog for Minimo](/CHANGELOG.md)
+[Changelog for Minimo](https://github.com/MunifTanjim/minimo/blob/master/CHANGELOG.md)
 
 ## License
 Minimo is licensed under the MIT License. Check the [LICENSE](https://github.com/MunifTanjim/minimo/blob/master/LICENSE) file for details.

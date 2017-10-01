@@ -22,7 +22,9 @@ features = [
   "entry-navigation",
   "shortcodes",
   "single-column",
-  "social-menu"
+  "social-menu",
+  "syntax-highlighting",
+  "table-of-contents"
 ]
 min_version = 0.28
 
