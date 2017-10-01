@@ -37,7 +37,7 @@ other = "Następny post"
 other = "Ani jeden {{ .Term }}!"
 
 [openAccountInNewTab]
-other = "Otwórz konto {{ .Platform }} w nowej karcie"
+other = "Otwórz {{ .Platform }} w nowej karcie"
 
 [page]
 other = "Strona"
@@ -62,10 +62,10 @@ other = "{{ .Count }} minut czytania"
 other = "Ostatnie Posty"
 
 [skipToContent]
-other = "Skip to Content"
+other = "Przejdź do Treści"
 
 [socialMenu]
-other = "Menu Społeczne"
+other = "Menu Społecznościowe"
 
 [tableOfContents]
 other = "Spis Treści"
