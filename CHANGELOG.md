@@ -5,6 +5,7 @@
 ### Added
 
 - Cover Image support
+- Polish translation
 
 ## [1.0.0] - 2017-09-30
 
