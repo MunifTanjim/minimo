@@ -1,0 +1,75 @@
+[author]
+one = "Autor"
+other = "Autores"
+
+[by]
+other = "por"
+
+[category]
+one = "Categoria"
+other = "Categorias"
+
+[contactViaEmail]
+other = "Entre em contato por e-mail"
+
+[currentPage]
+other = "Pagina atual"
+
+[gopher]
+other = "Gopher"
+
+[goHome]
+other = "Pagina principal..."
+
+[mainMenu]
+other = "Pagina principal"
+
+[next]
+other = "Proximo"
+
+[nextPage]
+other = "Proximo pagina"
+
+[nextPost]
+other = "Proximo post"
+
+[noTerm]
+other = "Nao foi encontrado {{ .Term }}!"
+
+[openAccountInNewTab]
+other = "Abra a {{ .Platform }} em uma nova aba"
+
+[page]
+other = "Pagina"
+
+[previous]
+other = "Anterior"
+
+[previousPage]
+other = "Pagina anterior"
+
+[previousPost]
+other = "Post anterior"
+
+[postedOn]
+other = "Postado em"
+
+[readingTime]
+one = "Um minuto de leitura"
+other = "{{ .Count }} minutos de leitura"
+
+[recentPosts]
+other = "Posts recente"
+
+[skipToContent]
+other = "Pular para o conteudo"
+
+[socialMenu]
+other = "Menu Social"
+
+[tableOfContents]
+other = "Indice"
+
+[tag]
+one = "Tag"
+other = "Tags"
