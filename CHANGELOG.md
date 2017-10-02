@@ -6,6 +6,7 @@
 
 - Cover Image support
 - Polish translation
+- Brazilian Portuguese translation
 
 ## [1.0.0] - 2017-09-30
 
