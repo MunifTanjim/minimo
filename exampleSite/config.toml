@@ -35,7 +35,7 @@ suffix = ""
 
 [params.settings]
 # date & time format: https://golang.org/pkg/time/
-dateFormat = "2006, Jan 2"
+dateFormat = "2006, Jan 02"
 hideEntryNavigation = false
 hideSocialMenu = false
 showReadingTime = true
