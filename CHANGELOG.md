@@ -2,7 +2,13 @@
 
 ## [Unreleased]
 
-- ...
+### Added
+
+- Configurable list date format: `listDateFormat`
+
+### Changed
+
+- Refactor: `layouts/_default/li.html`
 
 ## [1.1.0] - 2017-10-05
 
@@ -18,7 +24,7 @@
 
 - `defaultContentLanguage` order in `config.toml`
 
-## [1.0.0] - 2017-09-30
+## 1.0.0 - 2017-09-30
 
 - Initial stable release
 

@@ -1,12 +1,7 @@
 <li class='list-item'>
   <article>
     <div class='meta'>
-      <span>
-        <span class='screen-reader'>{{ i18n "postedOn" }} </span>
-        <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
-          {{- .Date.Format "2006, Jan 02" -}}
-        </time>
-      </span>
+      {{ partial "list/date" . }}
     </div>
 
     <header class='list-item-header'>
