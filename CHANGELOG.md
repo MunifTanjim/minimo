@@ -7,6 +7,12 @@
 - Cover Image support
 - Polish translation
 - Brazilian Portuguese translation
+- Shortcode: `file`
+- Social Menu icons order sorting support
+
+### Fixed
+
+- `defaultContentLanguage` order in `config.toml`
 
 ## [1.0.0] - 2017-09-30
 
