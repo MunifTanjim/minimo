@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+- ...
+
+## [1.1.0] - 2017-10-05
+
 ### Added
 
 - Cover Image support
@@ -18,4 +22,5 @@
 
 - Initial stable release
 
-[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/MunifTanjim/minimo/compare/v1.0.0...v1.1.0
