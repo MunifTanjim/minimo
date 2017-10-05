@@ -14,6 +14,9 @@ preserveTaxonomyNames = true
 # Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
 pygmentsCodefences = true
 
+# Language Configuration
+defaultContentLanguage = "en"
+
 [params.info]
 description = "Minimalist theme for Hugo"
 title404 = "Nothing's here!"
@@ -71,9 +74,6 @@ url = "https://github.com/MunifTanjim/minimo"
 
 [blackfriday]
 hrefTargetBlank = true
-
-# Language Configuration
-defaultContentLanguage = "en"
 
 [languages]
 # edit this block for your own language
