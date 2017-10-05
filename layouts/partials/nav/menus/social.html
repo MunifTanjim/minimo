@@ -2,8 +2,9 @@
 <div class='social-menu-container'>
   <nav aria-label='{{ i18n "socialMenu" }}'>
     <ul class='social-menu'>
-    {{- range $platform, $username := .Site.Params.social -}}
-      {{- if $username -}}
+    {{- $social := ( .Site.Params.social ) -}}
+    {{- range $platform := $social.config.platforms -}}
+      {{- with $username := ( index $social $platform ) -}}
       <li>
         <a href='{{ print ( index $.Site.Data.theme.social.base $platform ) $username }}' target='_blank' rel='noopener'>
           <span class='screen-reader'>

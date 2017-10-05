@@ -55,8 +55,11 @@ email = "contact@example.com"
 facebook = "MunifTanjim"
 github = "MunifTanjim"
 instagram = "MunifTanjim"
-twitter = "MunifTanjim"
 linkedin = "muniftanjim"
+twitter = "MunifTanjim"
+
+[params.social.config]
+platforms = ["github","facebook","twitter","instagram","email","codepen","linkedin"]
 
 [taxonomies]
 author = "authors"
