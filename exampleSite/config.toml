@@ -35,7 +35,8 @@ suffix = ""
 
 [params.settings]
 # date & time format: https://golang.org/pkg/time/
-dateFormat = "2006, Jan 2"
+dateFormat = "2006, Jan 02"
+listDateFormat = "2006, Jan 02"
 hideEntryNavigation = false
 hideSocialMenu = false
 showReadingTime = true
@@ -55,8 +56,11 @@ email = "contact@example.com"
 facebook = "MunifTanjim"
 github = "MunifTanjim"
 instagram = "MunifTanjim"
-twitter = "MunifTanjim"
 linkedin = "muniftanjim"
+twitter = "MunifTanjim"
+
+[params.social.config]
+platforms = ["github","facebook","twitter","instagram","email","codepen","linkedin"]
 
 [taxonomies]
 author = "authors"

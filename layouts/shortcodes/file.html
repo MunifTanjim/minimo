@@ -1,0 +1,13 @@
+{{- if gt ( len .Params ) 1 -}}
+  {{- $.Scratch.Set "format" ( .Get 1 ) -}}
+{{- else -}}
+  {{- $splits := ( split ( .Get 0 ) "." ) -}}
+  {{- $splitsLength := ( len $splits ) -}}
+  {{- $format := ( index $splits ( sub $splitsLength 1 ) ) -}}
+  {{- $.Scratch.Set "format" $format -}}
+{{- end -}}
+
+{{- $file := ( .Get 0 ) -}}
+{{- $format := ( $.Scratch.Get "format" ) -}}
+
+{{- ( print "```" $format "\n" ( readFile $file ) "\n" "```" ) | markdownify -}}
