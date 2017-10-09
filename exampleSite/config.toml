@@ -40,6 +40,7 @@ listDateFormat = "2006, Jan 02"
 hideEntryNavigation = false
 hideSocialMenu = false
 showReadingTime = true
+pageTwitter = "minimo"
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs

@@ -1,0 +1,15 @@
+{{ if .Site.Params.Settings.pageTwitter}}
+<meta name="twitter:site" content="{{ .Site.Params.Settings.pageTwitter}}">
+{{ else }}
+<meta name="twitter:site" content="{{ .Site.Params.social.twitter}}">
+{{ end }}
+<meta name="twitter:creator" content="{{ .Site.Params.social.twitter}}">
+{{ if .IsPage }}
+<meta name="twitter:description" content="{{ .Summary }}" />
+<meta name="twitter:title" content="{{ .Title }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="{{ .Params.image }}" />
+{{ else }}
+<meta name="twitter:title" content="{{ .Site.Title }}" />
+<meta name="twitter:description" content="{{ .Site.Params.info.description }}" />
+{{ end }}
