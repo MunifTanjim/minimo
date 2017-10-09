@@ -103,3 +103,11 @@
     <meta property='fb:admins' content='{{ . }}'>
   {{- end -}}
 {{- end -}}
+{{ if .Site.Params.opengraph.twitter.page }}
+<meta name="twitter:site" content="{{ .Site.Params.opengraph.twitter.page}}">
+{{- with $author.social.twitter -}}
+<meta name='twitter:creator' content='@{{ . }}'>
+{{- end -}}
+{{ if .IsPage }}
+<meta name='twitter:card' content='summary{{- if .Params.cover -}}_large_image{{- end -}}'>
+{{ end }}
