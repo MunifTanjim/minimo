@@ -5,10 +5,7 @@ few = "Avtorji"
 other = "Avtorji"
 
 [by]
-one = "napisal"
-two = "napisala"
-few = "napisali"
-other = "napisali"
+other = "napisal"
 
 [category]
 one = "Kategorija"
@@ -81,4 +78,6 @@ other = "Kazalo"
 
 [tag]
 one = "Značka"
+two = "Znački"
+few = "Značke"
 other = "Značke"
