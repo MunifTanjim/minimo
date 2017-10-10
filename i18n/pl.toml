@@ -1,13 +1,17 @@
 [author]
 one = "Autor"
-other = "Autorzy"
+few = "Autorów"
+many = "Autorów"
+other = "Autora"
 
 [by]
 other = "przez"
 
 [category]
 one = "Kategoria"
-other = "Kategorie"
+few = "Kategorie"
+many = "Kategorii"
+other = "Kategorii"
 
 [contactViaEmail]
 other = "Kontakt przez e-mail"
@@ -56,6 +60,8 @@ other = "Wysłane dnia"
 
 [readingTime]
 one = "Jedna minuta czytania"
+few = "{{ .Count }} minuty czytania"
+many = "{{ .Count }} minut czytania"
 other = "{{ .Count }} minut czytania"
 
 [recentPosts]
@@ -72,4 +78,6 @@ other = "Spis Treści"
 
 [tag]
 one = "Tag"
-other = "Tagi"
+few = "Tagi"
+many = "Tagów"
+other = "Taga"
