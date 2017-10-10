@@ -104,10 +104,15 @@
   {{- end -}}
 {{- end -}}
 {{ if .Site.Params.opengraph.twitter.page }}
-<meta name="twitter:site" content="{{ .Site.Params.opengraph.twitter.page}}">
-{{- with $author.social.twitter -}}
-<meta name='twitter:creator' content='@{{ . }}'>
+  <meta name="twitter:site" content="{{ .Site.Params.opengraph.twitter.page}}">
+  {{- range $authorID := .Params.Authors -}}
+    {{- $author := ( index $.Site.Data.authors $authorID ) -}}
+    {{- with $author.social.twitter -}}
+      <meta name='twitter:creator' content='@{{ . }}'>
+    {{- end -}}
+  {{- end -}}
+  {{ if .IsPage }}
+    <meta name='twitter:card' content='summary{{- if .Params.cover -}}_large_image{{- end -}}'>
+  {{ end }}
 {{- end -}}
-{{ if .IsPage }}
-<meta name='twitter:card' content='summary{{- if .Params.cover -}}_large_image{{- end -}}'>
-{{ end }}
+
