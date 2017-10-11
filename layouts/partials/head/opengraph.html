@@ -28,7 +28,7 @@
 {{- end -}}
 
 {{- if not ( or .Params.images .Params.cover ) -}}
-  {{- range $authorID := .Params.Authors -}}
+  {{- range $authorID := .Params.authors -}}
     {{- $author := ( index $.Site.Data.authors $authorID ) -}}
     {{- with $author -}}
       {{- if or .social.email ( and .email.username .email.host ) -}}
@@ -59,7 +59,7 @@
 {{- end -}}
 
 {{- if .IsPage -}}
-  {{- range $authorID := .Params.Authors -}}
+  {{- range $authorID := .Params.authors -}}
     {{- $author := ( index $.Site.Data.authors $authorID ) -}}
     {{- with $author.social.facebook -}}
       <meta property='article:author' content='https://facebook.com/{{ . }}'>

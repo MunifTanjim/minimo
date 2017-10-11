@@ -1,4 +1,4 @@
-{{- if not .Site.Params.Settings.HideEntryNavigation -}}
+{{- if not .Site.Params.settings.HideEntryNavigation -}}
 
 {{ if gt ( len ( where .Site.RegularPages "Section" .Section ) ) 1 }}
 <nav class='entry-nav-container'>

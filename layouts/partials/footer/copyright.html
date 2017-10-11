@@ -3,7 +3,7 @@
   {{- with .Site.Copyright -}}
     {{ . }}
   {{- else -}}
-    {{- with .Site.Params.Copyright -}}
+    {{- with .Site.Params.copyright -}}
 
       {{ with .startyear }}
         {{ if lt ( int . ) now.Year }}

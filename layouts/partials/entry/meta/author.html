@@ -1,6 +1,6 @@
-{{- with .Params.Authors -}}
+{{- with .Params.authors -}}
 
-{{- $lang := ( $.Params.Lang | default $.Lang ) -}}
+{{- $lang := ( $.Params.lang | default $.Lang ) -}}
 
 <span class='byline'>
   {{- partial "svg/icons" "author" -}}

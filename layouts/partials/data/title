@@ -1,7 +1,7 @@
 {{- $title := ( .Title ) -}}
 {{- $siteTitle := ( .Site.Title ) -}}
-{{- $sep := ( .Site.Params.SEO.titleSeparator | default "•" ) -}}
-{{- $title404 := ( .Site.Params.Info.title404 | default $title ) -}}
+{{- $sep := ( .Site.Params.seo.titleSeparator | default "•" ) -}}
+{{- $title404 := ( .Site.Params.info.title404 | default $title ) -}}
 
 {{- if .IsHome -}}
   {{ $siteTitle }}
@@ -19,7 +19,7 @@
 {{- else if ( or .IsNode ( eq .Section "page" ) ) -}}
   {{ $title }} {{ $sep }} {{ $siteTitle }}
 {{- else -}}
-  {{- if .Params.Authors -}}
+  {{- if .Params.authors -}}
     {{ $title }} {{ $sep }} {{ partial "data/author/displayName" . }}
   {{- else -}}
     {{ $title }} {{ $sep }} {{ $siteTitle }}
