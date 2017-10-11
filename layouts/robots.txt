@@ -1,0 +1,5 @@
+User-agent: *
+
+{{range .Data.Pages}}
+{{end}}
+Sitemap: {{ .Site.BaseURL }}/sitemap.xml

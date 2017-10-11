@@ -17,6 +17,10 @@ pygmentsCodefences = true
 # Language Configuration
 defaultContentLanguage = "en"
 
+# RobotsTXT settings
+enableRobotsTXT = false
+
+
 [params.info]
 description = "Minimalist theme for Hugo"
 title404 = "Nothing's here!"
