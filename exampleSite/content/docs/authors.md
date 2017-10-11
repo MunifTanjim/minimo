@@ -1,5 +1,6 @@
 ---
 date: 2017-09-26T06:00:00+06:00
+lastmod: 2017-10-11T17:30:00+06:00
 title: Authors Setup Guide
 authors: ["muniftanjim"]
 categories:
@@ -26,22 +27,9 @@ For adding an author to your site:
 
 Now, add information about the author using the structure below:
 
-**/data/authors/johndoe.toml**
+**/data/authors/muniftanjim.toml**
 
-```toml
-id = "johndoe"
-
-[email]
-username = "johndoe"
-host = "example.com"
-
-[name]
-display = "John Doe"
-
-[social]
-email = "johndoe@example.com"
-facebook  = "JohnDoe"
-```
+{{< file "data/authors/muniftanjim.toml" >}}
 
 _You can use either the `[email]` fields or the `[social.email]` field. You don't need to fill them both. However, it is encouraged to use `[email]` instead of `[social.email]`._
 
@@ -51,7 +39,7 @@ For adding authors to your content include the following option in your content'
 
 ```yaml
 ---
-authors: ["johndoe"]
+authors: ["muniftanjim"]
 ---
 ```
 

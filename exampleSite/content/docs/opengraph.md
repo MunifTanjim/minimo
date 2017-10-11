@@ -1,5 +1,6 @@
 ---
 date: 2017-09-26T08:00:00+06:00
+lastmod: 2017-10-11T18:00:00+06:00
 title: Opengraph Support
 authors: ["muniftanjim"]
 categories:
@@ -8,7 +9,7 @@ tags:
   - og
 slug: opengraph
 ---
-Minimo has built-in support for Facebook Opengraph tags.
+Minimo has built-in support for Opengraph tags. It will pick up most of the things from your contents' front-matters & Hugo configuration.
 
 You can use these options in you content's front-matter:
 
@@ -26,13 +27,11 @@ videos: []  # for og:video tags
 
 _N.B.: the front-matter syntax shown here is `yaml`. If you use a different format (e.g. `toml`), the syntax will change accordingly._
 
-Also, the `[social.facebook]` field from the [Author's Profile]( /docs/authors/#author-s-profile) data is used for `article:author` tag generation.
+If you add [**Cover Image**]({{< relref "cover-image.md" >}}) to you content, it will also be picked up.
 
-Minimo will pick up the rest of the things standard Hugo front-matter & configs.
+## Facebook Opengraph
 
--------
-
-Also, you can set these options in your `config.toml` files for better integration with Facebook:
+You can set these options in your `config.toml` files for better integration with Facebook:
 
 ```toml
 [params.opengraph.facebook]
@@ -45,3 +44,19 @@ pageID = ""  # for article:publisher tag
 - `appID` [`String`]: Facebook Application ID
 - `pageid` [`String`]: Facebook Page ID
 
+Also, the `[social.facebook]` field from the [Author's Profile]( /docs/authors/#author-s-profile) data is used for `article:author` tag.
+
+## Twitter Cards
+
+Minimo has built-in support for [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards).
+
+You can set these options in your `config.toml` files to provide additional information for Twitter Cards:
+
+```toml
+[params.opengraph.twitter]
+page = "" # for twitter:site tag
+```
+
+- `page` [`String`]: Twitter Page's Username
+
+Also, the `[social.twitter]` field from the [Author's Profile]( /docs/authors/#author-s-profile) data is used for `twitter:creator` tag.
