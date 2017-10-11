@@ -10,3 +10,17 @@
     <meta name='twitter:creator' content='@{{- . -}}'>
   {{- end -}}
 {{- end -}}
+
+{{- with .Params.cover -}}
+  {{- $type := ( printf "%T" . ) -}}
+  {{- $isMap := ( not ( eq $type "string" ) ) -}}
+  <meta property='twitter:image' content='
+  {{- if $isMap -}}
+    {{- .image | absURL -}}
+  {{- else -}}
+    {{- . | absURL -}}
+  {{- end -}}'>
+  {{- if $isMap -}}
+    <meta property='twitter:image:alt' content='{{ .caption | markdownify }}'>
+  {{- end -}}
+{{- end -}}
