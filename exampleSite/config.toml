@@ -11,6 +11,8 @@ googleAnalytics = ""
 Paginate = 5
 preserveTaxonomyNames = true
 
+enableRobotsTXT = true # generate robots.txt
+
 # Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
 pygmentsCodefences = true
 
