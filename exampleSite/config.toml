@@ -46,6 +46,9 @@ admins = [] # array of Facebook IDs
 appID = ""
 pageID = ""
 
+[params.opengraph.twitter]
+page = "" # Twitter page username
+
 [params.seo]
 # Title Separator: - – — · • * ⋆ | ~ « » < >
 titleSeparator = "•"
