@@ -39,7 +39,7 @@ suffix = ""
 # date & time format: https://golang.org/pkg/time/
 dateFormat = "2006, Jan 02"
 listDateFormat = "2006, Jan 02"
-hideEntryNavigation = false
+hideEntryNavigation = ["page"] # boolean / array of sections
 hideSocialMenu = false
 showReadingTime = true
 
