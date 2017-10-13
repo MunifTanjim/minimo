@@ -57,7 +57,7 @@ console.log('The meaning of life is: ', meaningOfLife);
 
 Who wants some table?
 
-  Minimo  |  Caption  | More Caption 
+  Minimo  |  Caption  | More Caption
  -------- | --------- | ------------
    Cool   |   What?   |  Now, wut?!
 

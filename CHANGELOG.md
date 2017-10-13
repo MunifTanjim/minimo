@@ -4,6 +4,7 @@
 
 ### Added
 
+- robots.txt template
 - `hideEntryNavigation` for specific Sections
 
 ## [1.2.1] - 2017-10-12

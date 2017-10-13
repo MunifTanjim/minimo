@@ -11,7 +11,7 @@ input[type="submit"] {
   color: $color__text-button;
   background: $color__background-button;
   transition: 0.1s ease-in-out;
-  
+
   &:focus {
     outline-color: $color__accent;
   }

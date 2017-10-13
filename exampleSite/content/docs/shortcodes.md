@@ -79,7 +79,7 @@ You can use either Named or Unnamed Parameters
 
 ```golang
 {{%/* text s="1.4" color="purple" */%}}
-font-size: 1.4em;  
+font-size: 1.4em;
 color: purple;
 {{%/* /text */%}}
 ```
