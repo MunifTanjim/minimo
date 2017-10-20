@@ -10,43 +10,43 @@ one = "Categoria"
 other = "Categorias"
 
 [contactViaEmail]
-other = "Entre em contato por e-mail"
+other = "Entre em contato por email"
 
 [currentPage]
-other = "Pagina atual"
+other = "Página atual"
 
 [gopher]
 other = "Gopher"
 
 [goHome]
-other = "Pagina principal..."
+other = "Página principal..."
 
 [mainMenu]
-other = "Pagina principal"
+other = "Página principal"
 
 [next]
-other = "Proximo"
+other = "Próximo"
 
 [nextPage]
-other = "Proximo pagina"
+other = "Próxima página"
 
 [nextPost]
-other = "Proximo post"
+other = "Próximo post"
 
 [noTerm]
-other = "Nao foi encontrado {{ .Term }}!"
+other = "{{ .Term }} não foi encontrado!"
 
 [openAccountInNewTab]
 other = "Abra a {{ .Platform }} em uma nova aba"
 
 [page]
-other = "Pagina"
+other = "Página"
 
 [previous]
 other = "Anterior"
 
 [previousPage]
-other = "Pagina anterior"
+other = "Página anterior"
 
 [previousPost]
 other = "Post anterior"
@@ -59,16 +59,16 @@ one = "Um minuto de leitura"
 other = "{{ .Count }} minutos de leitura"
 
 [recentPosts]
-other = "Posts recente"
+other = "Posts recentes"
 
 [skipToContent]
-other = "Pular para o conteudo"
+other = "Pular para o conteúdo"
 
 [socialMenu]
 other = "Menu Social"
 
 [tableOfContents]
-other = "Indice"
+other = "Índice"
 
 [tag]
 one = "Tag"
