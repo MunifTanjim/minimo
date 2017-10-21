@@ -1,4 +1,4 @@
-<script src='{{ print "/assets/js/" .Site.Data.assets.main.js }}'></script>
+<script src='{{ print "/assets/js/" .Site.Data.assets.main.js | relURL }}'></script>
 
 {{- range .Site.Params.assets.customJS -}}
   <script src='{{ . | relURL }}'></script>
