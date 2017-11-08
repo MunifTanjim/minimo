@@ -5,7 +5,7 @@ import docReady from 'es6-docready'
 import { detailsTagSupported, shuffle } from './helpers'
 
 docReady(() => {
-  let termCloud = document.querySelector('.term-cloud')
+  let termCloud = document.querySelector('.term-cloud:not(.no-shuffle)')
   if (termCloud) {
     let terms = termCloud.querySelectorAll('.term-cloud li')
     shuffle(terms).forEach(term => term.parentElement.appendChild(term))

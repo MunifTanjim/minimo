@@ -1,4 +1,4 @@
-<ul class='term-cloud'>
+<ul class='term-cloud {{- if .Site.Params.settings.noTermCloudShuffle }} no-shuffle{{- end -}}'>
 {{- if gt ( len .Data.Terms ) 0 -}}
   {{- $maxSize := 2.0 -}}
   {{- $minSize := 1.0 -}}

@@ -42,6 +42,7 @@ listDateFormat = "2006, Jan 02"
 hideEntryNavigation = ["page"] # boolean / array of sections
 hideSocialMenu = false
 showReadingTime = true
+noTermCloudShuffle = false
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
