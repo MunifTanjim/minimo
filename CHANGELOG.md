@@ -2,10 +2,24 @@
 
 ## [Unreleased]
 
+- ...
+
+## [1.3.0] - 2017-11-09
 ### Added
 
 - robots.txt template
 - `hideEntryNavigation` for specific Sections
+- `noTermCloudShuffle` setting
+- Brazilian Portuguese translation improvements
+- French translation
+
+### Changed
+
+- Minor Documentation change
+
+### Fixed
+
+- Issue with theme assets' urls when `baseURL` containes sub-directory
 
 ## [1.2.1] - 2017-10-12
 
@@ -52,7 +66,8 @@
 
 - Initial stable release
 
-[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v1.2.1...HEAD
+[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/MunifTanjim/minimo/compare/v1.2.1...v1.3.0
 [1.2.1]: https://github.com/MunifTanjim/minimo/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/MunifTanjim/minimo/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/MunifTanjim/minimo/compare/v1.0.0...v1.1.0
