@@ -21,6 +21,8 @@
     {{- . | absURL -}}
   {{- end -}}'>
   {{- if $isMap -}}
-    <meta property='twitter:image:alt' content='{{ .caption | markdownify }}'>
+    {{- with .caption -}}
+    <meta property='twitter:image:alt' content='{{ . | markdownify }}'>
+    {{- end -}}
   {{- end -}}
 {{- end -}}

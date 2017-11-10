@@ -2,7 +2,9 @@
 
 ## [Unreleased]
 
-- ...
+### Fixed
+
+- Twitter card `twitter:image:alt` tag rendering error
 
 ## [1.3.0] - 2017-11-09
 ### Added
