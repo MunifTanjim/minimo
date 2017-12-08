@@ -2,11 +2,26 @@
 
 ## [Unreleased]
 
+- ...
+
+## [1.4.0] - 2017-12-08
+
+### Added
+
+- German translation
+- Telegram icon in Social Menu
+- Option to change recent posts quantity: `recentPostsLength`
+
 ### Fixed
 
 - Twitter card `twitter:image:alt` tag rendering error
 
+### Removed
+
+- Release blog posts from _exampleSite_
+
 ## [1.3.0] - 2017-11-09
+
 ### Added
 
 - robots.txt template
@@ -68,7 +83,8 @@
 
 - Initial stable release
 
-[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v1.3.0...HEAD
+[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/MunifTanjim/minimo/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/MunifTanjim/minimo/compare/v1.2.1...v1.3.0
 [1.2.1]: https://github.com/MunifTanjim/minimo/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/MunifTanjim/minimo/compare/v1.1.0...v1.2.0
