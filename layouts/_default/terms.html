@@ -12,6 +12,12 @@
     </div>
   </header>
 
+  {{ if .Content }}
+  <div class='entry'>
+    {{ partial "entry/content" . }}
+  </div>
+  {{ end }}
+
   <div class='term-cloud-container'>
     {{ partial "extras/term_cloud" . }}
   </div>

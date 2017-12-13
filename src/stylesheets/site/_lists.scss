@@ -67,4 +67,8 @@
   li {
     padding: 0 1.5em 0.5em 0;
   }
+
+  @at-root .entry + .term-cloud-container & {
+    margin-top: 2.5em;
+  }
 }

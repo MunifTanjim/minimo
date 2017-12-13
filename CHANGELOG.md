@@ -2,7 +2,9 @@
 
 ## [Unreleased]
 
-- ...
+### Added
+
+- Support adding content in taxonomyTerm page 
 
 ## [1.4.0] - 2017-12-08
 
