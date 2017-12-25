@@ -1,0 +1,24 @@
+.convo {
+  ol {
+    display: table;
+    list-style: none;
+    margin: 0;
+  }
+  li {
+    display: table-row;
+
+    & > div {
+      display: table-cell;
+      padding-bottom: 1.5em;
+    }
+  }
+  .person {
+    @include font-size(0.9);
+    font-style: italic;
+    text-align: right;
+  }
+  .sep {
+    padding-left: 0.75em;
+    padding-right: 0.5em;
+  }
+}

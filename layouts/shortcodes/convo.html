@@ -1,0 +1,26 @@
+<div class='convo'>
+  <ol>
+    {{ range ( split .Inner "\n" ) }}
+      {{ with . }}
+      <li>
+        {{ range $i, $chunk := ( split . "::" ) }}
+          {{ if or $chunk "s" }}
+            {{ if eq $i 0 }}
+              <div class='person'>
+                {{- $chunk | markdownify -}}
+              </div>
+            {{ else }}
+              <div class='sep'>
+                {{- print " " ( $.Get "sep" | default ":" ) " " -}}
+              </div>
+              <div class='text'>
+                {{- $chunk | markdownify -}}
+              </div>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </li>
+      {{ end }}
+    {{ end }}
+  </ol>
+</div>

@@ -36,6 +36,46 @@ _Center Aligned Text_
 
 -------
 
+## Shortcode: convo
+
+Renders conversation blocks.
+
+### convo: Parameters
+
+- `sep`  [`String`] \(optional\): seperator between person and text (default: "`:`")
+
+### convo: Inner Syntax
+
+```golang
+person :: text
+```
+
+_You can remove the **`person`** part, if you want._
+
+### convo: Usage Example
+
+```golang
+{{</* convo sep=":" */>}}
+
+Jerry :: You don't look so tough.
+
+Finch :: It's because I have only two modes, Jerry. Calm, and furious. It's a rare person that sees the latter and lives to talk about it.
+
+{{</* /convo */>}}
+```
+
+**Output**
+
+{{< convo sep=":" >}}
+
+Jerry :: You don't look so tough.
+
+Finch :: It's because I have only two modes, Jerry. Calm, and furious. It's a rare person that sees the latter and lives to talk about it.
+
+{{< /convo >}}
+
+-------
+
 ## Shortcode: file
 
 Include content from seperate file with syntax highlighting.
