@@ -1,0 +1,75 @@
+[author]
+one = "نویسنده"
+other = "نویسندگان"
+
+[by]
+other = "از"
+
+[category]
+one = "دسته"
+other = "دسته‌ها"
+
+[contactViaEmail]
+other = "تماس با ایمیل"
+
+[currentPage]
+other = "صفحه کنونی"
+
+[gopher]
+other = "گوفر"
+
+[goHome]
+other = "برگشت به خانه"
+
+[mainMenu]
+other = "منو اصلی"
+
+[next]
+other = "بعدی"
+
+[nextPage]
+other = "صفحه بعدی"
+
+[nextPost]
+other = "نوشته بعدی"
+
+[noTerm]
+other = "بدون یک {{ .Term }}!"
+
+[openAccountInNewTab]
+other = "بازکردن حساب {{ .Platform }} در تب جدید"
+
+[page]
+other = "صفحه"
+
+[previous]
+other = "قبلی"
+
+[previousPage]
+other = "صفحه قبلی"
+
+[previousPost]
+other = "نوشته قبلی"
+
+[postedOn]
+other = "ارسال شده در"
+
+[readingTime]
+one = "یک دقیقه مطالعه"
+other = "{{ .Count }} دقیقه مطالعه"
+
+[recentPosts]
+other = "آخرین نوشته ها"
+
+[skipToContent]
+other = "رفتن به محتوا"
+
+[socialMenu]
+other = "منوی شبکه‌های اجتماعی"
+
+[tableOfContents]
+other = "فهرست مطالب"
+
+[tag]
+one = "تگ"
+other = "تگ‌ها"
