@@ -9,7 +9,13 @@
 
   <div class='home-sections-container'>
     <div class='home-sections'>
-      {{ partial "home/recent_posts" . }}
+      {{- with .Site.Params.settings.homepageSections -}}
+        {{- range . -}}
+          {{- partial ( print "home/" . ) $ -}}
+        {{- end -}}
+      {{- else -}}
+        {{- partial "home/recent_posts" . -}}
+      {{- end -}}
     </div>
   </div>
 </main>

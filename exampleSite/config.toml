@@ -44,6 +44,7 @@ recentPostsLength = 4
 hideSocialMenu = false
 showReadingTime = true
 noTermCloudShuffle = false
+homepageSections = ["recent_posts"]
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs

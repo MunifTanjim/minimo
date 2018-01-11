@@ -15,6 +15,14 @@
 }
 
 .home-section {
+  & + & {
+    @extend %seperatorBefore;
+
+    &:before {
+      border-bottom-color: $color__grey;
+    }
+  }
+
   .list {
     padding: 0;
   }
