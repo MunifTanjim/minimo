@@ -34,7 +34,7 @@ Where are the quotes!!!
 > Simplify, then add lightness.  
 — Colin Chapman
 
-Now, [time for some links](/blog/typography#heading-5)!
+Now, [time for some links](/typography#heading-5)!
 
 - [GoHugo]
  - [Hugo Themes][1]
