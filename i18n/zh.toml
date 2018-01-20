@@ -1,0 +1,75 @@
+[author]
+one = "作者"
+other = "作者们"
+
+[by]
+other = "by"
+
+[category]
+one = "分类"
+other = "分类"
+
+[contactViaEmail]
+other = "通过邮件联系"
+
+[currentPage]
+other = "当前页"
+
+[gopher]
+other = "Gopher"
+
+[goHome]
+other = "去主页..."
+
+[mainMenu]
+other = "主菜单"
+
+[next]
+other = "下一个"
+
+[nextPage]
+other = "下一页"
+
+[nextPost]
+other = "下一篇"
+
+[noTerm]
+other = "一个 {{ .Term }} 也没有!"
+
+[openAccountInNewTab]
+other = "在新标签打开 {{ .Platform }} "
+
+[page]
+other = "页"
+
+[previous]
+other = "上一个"
+
+[previousPage]
+other = "上一页"
+
+[previousPost]
+other = "上一篇文章"
+
+[postedOn]
+other = "Posted on"
+
+[readingTime]
+one = "阅读时间一分钟"
+other = "阅读时间 {{ .Count }} 分钟"
+
+[recentPosts]
+other = "最近的文章"
+
+[skipToContent]
+other = "跳转"
+
+[socialMenu]
+other = "社交菜单"
+
+[tableOfContents]
+other = "目录"
+
+[tag]
+one = "标签"
+other = "标签"
