@@ -2,9 +2,29 @@
 
 ## [Unreleased]
 
+- ...
+
+## [1.5.0] - 2018-01-25
+
 ### Added
 
-- Support adding content in taxonomyTerm page 
+- Support adding content in taxonomyTerm page
+- Shortcode: `convo`
+- Persian translation
+- Additional Homepage Sections support
+- Allow Markdown in `[params.copyright]` config
+- Google Scholar icon in Social Menu
+- Chinese translation
+- Croatian translation
+
+### Changed
+
+- Codes stylesheet enhancement
+- Switch to System Fonts Stack
+
+### Fixed
+
+- Hyperlink example on Typography Documentation
 
 ## [1.4.0] - 2017-12-08
 
@@ -85,7 +105,8 @@
 
 - Initial stable release
 
-[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v1.4.0...HEAD
+[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v1.5.0...HEAD
+[1.5.0]: https://github.com/MunifTanjim/minimo/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/MunifTanjim/minimo/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/MunifTanjim/minimo/compare/v1.2.1...v1.3.0
 [1.2.1]: https://github.com/MunifTanjim/minimo/compare/v1.2.0...v1.2.1

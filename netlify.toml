@@ -3,7 +3,7 @@ publish = "exampleSite/public"
 command = "hugo --source=exampleSite --theme=../.. --baseURL=https://minimo.netlify.com"
 
 [build.environment]
-HUGO_VERSION = "0.28"
+HUGO_VERSION = "0.32"
 
 [context.dev]
 command = "hugo --source=exampleSite --theme=../.. --baseURL=https://dev--minimo.netlify.com"
