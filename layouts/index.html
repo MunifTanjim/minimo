@@ -3,6 +3,7 @@
 <main id='main' class='main'>
   {{ if .Content }}
   <article class='entry'>
+    {{ partial "entry/cover" . }}
     {{ partial "entry/content" . }}
   </article>
   {{ end }}
