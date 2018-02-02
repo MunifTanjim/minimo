@@ -77,7 +77,12 @@ const config = {
                 ]
               }
             },
-            'sass-loader'
+            {
+              loader: 'sass-loader',
+              options: {
+                includePaths: [path.resolve('node_modules/normalize.css')]
+              }
+            }
           ]
         })
       }

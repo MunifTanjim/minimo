@@ -1,16 +1,15 @@
-.footer-container {
-  @extend %flexContainer;
-}
-
 .footer {
-  @extend %widthLimit;
-  @extend %seperatorBefore;
+  .sep-before {
+    &:before {
+      border-bottom-color: $color__accent;
+    }
+  }
 
   a {
     font-style: italic;
   }
 
-  & > div {
+  .wrapper > div {
     width: 100%;
     margin-top: 1em;
 

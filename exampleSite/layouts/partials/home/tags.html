@@ -1,12 +1,12 @@
-<section class='home-section'>
+<section class='home-section sep-after'>
   <header>
-    <h2 class='home-section-title title'>
+    <h2 class='title'>
       {{- ( ( i18n "tag" 2 ) | default .Title ) | title -}}
     </h2>
   </header>
 
-  <div class='list-container'>
-    <ul class='term-cloud {{- if .Site.Params.settings.noTermCloudShuffle }} no-shuffle{{- end -}}'>
+  <div class='term-cloud'>
+    <ul class='wrapper {{- if .Site.Params.settings.noTermCloudShuffle }} no-shuffle{{- end -}}'>
     {{ range $term, $_ := .Site.Taxonomies.tags }}
       <li>
         <a href='{{ ( print ( trim $.Site.BaseURL "/" ) $.LanguagePrefix "/tags/" ( $term | urlize ) ) | relURL }}'>

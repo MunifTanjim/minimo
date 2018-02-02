@@ -1,7 +1,7 @@
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   border: none;
   padding: 0.625em 0.875em;
   line-height: 1;
@@ -27,9 +27,4 @@ input[type="submit"] {
     background: $color__text-button;
     color: $color__background-button;
   }
-}
-
-label {
-  font-weight: 700;
-  letter-spacing: 1px;
 }

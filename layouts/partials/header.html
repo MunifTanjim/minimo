@@ -4,20 +4,23 @@
 {{ partial "head/head" . }}
 
 <body class='{{ partial "header/bodyClasses" . }}'>
-  <div class='site'>
+  <div class='site container'>
 
-    <a class='screen-reader' href='#main'>{{ i18n "skipToContent" }}</a>
+    <a class='screen-reader-text' href='#main'>{{ i18n "skipToContent" }}</a>
 
-    <header id='header' class='header-container'>
-      <div class='header site-header'>
-        {{ partial "nav/menus/main" . }}
+    {{ partial "nav/menus/main" . }}
+
+    <header id='header' class='header site-header container'>
+      <div class='wrapper sep-after'>
         <div class='header-info'>
-          {{ if eq .Kind "home" }}
-          <h1 class='site-title title'>{{ .Site.Title }}</h1>
-          {{ else }}
-          <p class='site-title title'>{{ .Site.Title }}</p>
-          {{ end }}
+          {{- if eq .Kind "home" -}}
+            <h1 class='site-title title'>{{ .Site.Title }}</h1>
+          {{- else -}}
+            <p class='site-title title'>{{ .Site.Title }}</p>
+          {{- end -}}
           <p class='site-description subtitle'>{{ .Site.Params.info.description }}</p>
         </div>
       </div>
     </header>
+
+    <main id='main' class='main container'>

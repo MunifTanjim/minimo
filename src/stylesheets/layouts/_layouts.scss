@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: $max-width__container;
+  padding-left: $padding__container-side;
+  padding-right: $padding__container-side;
+}
+
+.sep {
+  &-after:after,
+  &-before:before {
+    display: block;
+    content: '';
+    border-bottom: 0.125em solid $color__grey;
+    width: 4em;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+  }
+}
+
+@import 'header';
+
+@import 'entry/entry';
+
+@import 'lists';
+
+@import 'footer';
+
+@import 'others/others';

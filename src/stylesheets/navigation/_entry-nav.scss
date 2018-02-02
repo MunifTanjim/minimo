@@ -1,16 +1,14 @@
-.entry-nav-container {
-  @extend %flexContainer;
-}
-
 .entry-nav {
-  @extend %widthLimit;
-  @extend %seperatorBefore;
-
-  &:before {
-    border-bottom-color: $color__grey;
+  .sep-before {
+    &:nth-child(2) {
+      &:before {
+        width: 2em;
+        margin: 1em 0;
+      }
+    }
   }
 
-  & > div {
+  div {
     a {
       display: block;
       font-style: italic;
@@ -21,15 +19,5 @@
       font-style: normal;
       @include font-size(0.875);
     }
-  }
-}
-
-.prev-entry ~ .next-entry {
-  @extend %seperatorBefore;
-
-  &:before {
-    border-bottom-color: $color__grey;
-    width: 2em;
-    margin: 1em 0;
   }
 }

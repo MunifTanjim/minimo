@@ -1,0 +1,25 @@
+.home-sections {
+  .sep-before {
+    &:before {
+      display: none;
+
+      .entry + & {
+        display: block;
+      }
+    }
+  }
+
+  .sep-after {
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.home-section {
+  .title {
+    margin-bottom: 1em;
+  }
+}

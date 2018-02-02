@@ -2,6 +2,7 @@ body,
 button,
 input,
 select,
+optgroup,
 textarea {
   font-family: $font-family__main;
   @include font-size($font-size__main);
@@ -15,13 +16,12 @@ textarea {
   button,
   input,
   select,
+  optgroup,
   textarea {
     @include font-size($font-size__main*1.125);
   }
 }
 
-// Headings
 @import 'headings';
 
-// Copy
 @import 'copy';

@@ -4,7 +4,7 @@
 
 <span class='byline'>
   {{- partial "svg/icons" "author" -}}
-  <span class='screen-reader'> {{ i18n "by" }} </span>
+  <span class='screen-reader-text'> {{ i18n "by" }} </span>
 
   {{- range $i, $authorID := . -}}
     {{- $author := ( index $.Site.Data.authors $authorID ) -}}

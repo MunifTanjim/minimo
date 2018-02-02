@@ -1,6 +1,4 @@
 .entry-content {
-  @extend %widthLimit;
-
   & > :last-child {
     &,
     & > :last-child {
@@ -9,7 +7,7 @@
   }
 
   a {
-    border-bottom: .125em dashed $color__grey;
+    border-bottom: 0.125em dashed $color__grey;
 
     &:active,
     &:focus,

@@ -1,13 +1,13 @@
 {{- if not .Site.Params.settings.hideSocialMenu -}}
-<div class='social-menu-container'>
+<div class='social-menu'>
   <nav aria-label='{{ i18n "socialMenu" }}'>
-    <ul class='social-menu'>
+    <ul>
     {{- $social := ( .Site.Params.social ) -}}
     {{- range $platform := $social.config.platforms -}}
       {{- with $username := ( index $social $platform ) -}}
       <li>
         <a href='{{ print ( index $.Site.Data.theme.social.base $platform ) $username }}' target='_blank' rel='noopener'>
-          <span class='screen-reader'>
+          <span class='screen-reader-text'>
             {{- if eq $platform "email" -}}
               {{- i18n "contactViaEmail" -}}
             {{- else -}}

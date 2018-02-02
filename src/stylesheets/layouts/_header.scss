@@ -1,15 +1,19 @@
-.header-container {
-  @extend %flexContainer;
+.header {
+  .sep-after {
+    &:after {
+      border-bottom-color: $color__accent;
+      .hasCover & {
+        display: none;
+      }
+    }
+  }
 }
 
-.header {
-  @extend %widthLimit;
-  @extend %seperatorAfter;
+.site-header {
+  display: none;
 
-  .hasCover & {
-    &:after {
-      display: none;
-    }
+  @at-root .home &, .error404 & {
+    display: flex;
   }
 }
 
@@ -30,17 +34,5 @@
     @include font-size(0.875);
     margin-right: 0.25em;
     font-style: italic;
-  }
-}
-
-.page,
-.section,
-.taxonomy,
-.taxonomyTerm {
-  .site-header {
-    .header-info,
-    &:after {
-      display: none;
-    }
   }
 }

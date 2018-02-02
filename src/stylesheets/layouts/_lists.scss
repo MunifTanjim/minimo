@@ -1,18 +1,18 @@
-.list-container {
-  @extend %flexContainer;
-}
-
 .list {
-  @extend %widthLimit;
+  ul {
+    display: flex;
+    flex-flow: column nowrap;
 
-  display: flex;
-  flex-flow: column nowrap;
+    margin: 0;
+    list-style: none;
 
-  margin: 0;
-  list-style: none;
+    @at-root .entry + & {
+      margin-top: 2.5em;
+    }
 
-  @at-root .entry + .list-container & {
-    margin-top: 2.5em;
+    .home-section & {
+      padding: 0;
+    }
   }
 }
 
@@ -50,25 +50,21 @@
 }
 
 /* Term Cloud */
-.term-cloud-container {
-  @extend %flexContainer;
-}
-
 .term-cloud {
-  @extend %widthLimit;
+  ul {
+    list-style: none;
+    margin: 0;
 
-  list-style: none;
-  margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+    .entry + & {
+      margin-top: 2.5em;
+    }
+  }
 
   li {
     padding: 0 1.5em 0.5em 0;
-  }
-
-  @at-root .entry + .term-cloud-container & {
-    margin-top: 2.5em;
   }
 }

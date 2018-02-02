@@ -1,26 +1,31 @@
-.screen-reader {
+.screen-reader-text {
+  position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
-  width: 1px;
+  clip-path: inset(50%);
   height: 1px;
-  overflow: hidden !important;
-  position: fixed !important;
-  white-space: nowrap !important;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
   word-wrap: normal !important;
 
   &:focus {
-    clip: auto !important;
-    width: auto;
-    height: auto;
-    display: block !important;
-    top: 0.5em;
+    display: block;
     left: 0.5em;
-    font-weight: 700 !important;
-    line-height: normal !important;
-    text-decoration: none !important;
-    border-radius: 0.25em !important;
-    padding: 1em !important;
-    color: $color__text-screen !important;
-    background-color: $color__background-screen !important;
-    z-index: 99999;
+    top: 0.5em;
+    clip: auto;
+    clip-path: none;
+    height: auto;
+    width: auto;
+    padding: 1em;
+    border-radius: 0.25em;
+    @include font-size(0.875);
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    background: $color__background-screen;
+    color: $color__text-screen;
+    z-index: 100000;
   }
 }
