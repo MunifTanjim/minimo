@@ -44,7 +44,12 @@ recentPostsLength = 4
 hideSocialMenu = false
 showReadingTime = true
 noTermCloudShuffle = false
-homepageSections = ["recent_posts"]
+sidebar = true
+sidebarSticky = false
+
+[params.widgets]
+homepage = ["recent_posts","tags"]
+sidebar = []
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
@@ -63,6 +68,7 @@ codepen = "MunifTanjim"
 email = "contact@example.com"
 facebook = "MunifTanjim"
 github = "MunifTanjim"
+gitlab = "MunifTanjim"
 instagram = "MunifTanjim"
 linkedin = "muniftanjim"
 twitter = "MunifTanjim"
@@ -70,7 +76,7 @@ telegram = "MunifTanjim"
 google_scholar = "qc6CJjYAAAAJ"
 
 [params.social.config]
-platforms = ["github","facebook","twitter","instagram","email","codepen","linkedin","telegram","google_scholar"]
+platforms = ["github","facebook","twitter","instagram","email","codepen","gitlab","linkedin","telegram","google_scholar"]
 
 [taxonomies]
 author = "authors"

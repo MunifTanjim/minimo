@@ -1,4 +1,4 @@
-.home-sections {
+.home-widgets {
   .sep-before {
     &:before {
       display: none;
@@ -7,19 +7,5 @@
         display: block;
       }
     }
-  }
-
-  .sep-after {
-    &:last-child {
-      &:after {
-        display: none;
-      }
-    }
-  }
-}
-
-.home-section {
-  .title {
-    margin-bottom: 1em;
   }
 }

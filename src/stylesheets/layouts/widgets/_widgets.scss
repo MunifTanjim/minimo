@@ -1,0 +1,32 @@
+.widget {
+  .title {
+    margin-bottom: 1em;
+  }
+
+  &.sep-after {
+    &:after {
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+    }
+
+    &:last-of-type {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .sidebar & {
+    .title {
+      margin-bottom: 0.5em;
+      @include font-size($font-size__h5);
+    }
+
+    &:first-of-type {
+      margin-top: 2em;
+    }
+  }
+}
+
+@import 'recent-posts';
+@import 'tags';

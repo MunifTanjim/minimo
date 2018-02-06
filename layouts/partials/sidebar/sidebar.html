@@ -1,0 +1,7 @@
+<div class='col-1 sidebar'>
+  {{- with .Site.Params.widgets.sidebar -}}
+    {{- range . -}}
+      {{- partial ( print "widgets/" . ) $ -}}
+    {{- end -}}
+  {{- end -}}
+</div>

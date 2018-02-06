@@ -21,12 +21,13 @@ features = [
   "pagination",
   "entry-navigation",
   "shortcodes",
+  "sidebar",
   "single-column",
   "social-menu",
   "syntax-highlighting",
   "table-of-contents"
 ]
-min_version = 0.28
+min_version = 0.31
 
 [author]
   name = "Munif Tanjim"

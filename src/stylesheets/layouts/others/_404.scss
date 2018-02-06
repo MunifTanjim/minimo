@@ -4,11 +4,15 @@
 
     img {
       width: 17.5em;
-      margin-bottom: 1.5em;
     }
 
     a {
+      display: block;
       border: 0;
+    }
+
+    figcaption {
+      margin-top: 1em;
     }
 
     .title {

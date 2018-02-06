@@ -1,0 +1,13 @@
+<section class='widget widget-recent-posts sep-after'>
+  <header>
+    <h4 class='title'>
+      {{- i18n "recentPosts" -}}
+    </h4>
+  </header>
+
+  <ul class='list'>
+  {{ range ( first .Site.Params.settings.recentPostsLength ( where .Data.Pages "Type" "ne" "page" ) ) }}
+    {{ .Render "li" }}
+  {{ end }}
+  </ul>
+</section>

@@ -4,14 +4,14 @@
 
 {{ partial "header/header" . }}
 
-<div class='list container'>
-  <ul class='wrapper'>
+<div class='container'>
+  <ul class='list'>
   {{ range .Data.Terms.Alphabetical }}
     {{- $author := ( index $.Site.Data.authors .Name ) -}}
     {{- $data := ( or ( index $author $lang ) $author ) -}}
     {{- $name := $data.name -}}
-    <li class='list-item'>
-      <h2 class='list-item-title'>
+    <li class='item'>
+      <h2 class='item-title'>
         {{- partial "svg/icons" "author" -}}
         <a href='{{ ( print ( trim $.Site.BaseURL "/" ) $.LanguagePrefix "/authors/" ( .Name | urlize ) ) | relURL }}'>
           {{- $name.display -}}

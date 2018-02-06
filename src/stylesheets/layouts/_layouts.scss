@@ -1,15 +1,40 @@
-.container {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  width: 100%;
+@import 'grid';
+
+html,
+body,
+.site,
+.main,
+.sidebar {
+  height: 100%;
 }
 
-.wrapper {
+.main,
+.sidebar {
+  .sidebar-sticky & {
+    overflow: auto;
+  }
+}
+
+.main {
+  .has-sidebar & {
+    padding: 0 $container__gutter*2;
+  }
+}
+
+.sidebar {
+  padding: 0 $container__gutter;
+}
+
+.container {
   width: 100%;
-  max-width: $max-width__container;
-  padding-left: $padding__container-side;
-  padding-right: $padding__container-side;
+  max-width: $container__max-width;
+  padding: 0 $container__gutter;
+  margin: 0 auto;
+
+  .has-sidebar & {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .sep {
@@ -33,3 +58,5 @@
 @import 'footer';
 
 @import 'others/others';
+
+@import 'widgets/widgets';

@@ -1,5 +1,5 @@
-<nav id='main-menu' class='main-menu container' aria-label='{{ i18n "mainMenu" }}'>
-  <ul class='wrapper'>
+<nav id='main-menu' class='main-menu' aria-label='{{ i18n "mainMenu" }}'>
+  <ul class='container'>
   {{ range .Site.Menus.main }}
     {{- $isCurrent := ( or ( $.IsMenuCurrent "main" . ) ( $.HasMenuCurrent "main" . ) ) -}}
     <li>

@@ -1,8 +1,8 @@
 {{- if not ( eq .Params.comments false ) -}}
 
 {{ if .Site.DisqusShortname }}
-<section class='comments container'>
-  <div class='wrapper sep-before'>
+<section class='comments'>
+  <div class='container sep-before'>
     {{ template "_internal/disqus.html" . }}
   </div>
 </section>

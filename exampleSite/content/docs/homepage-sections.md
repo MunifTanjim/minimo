@@ -7,6 +7,7 @@ categories:
 tags:
   - config
 slug: homepage-sections
+draft: true
 ---
 The following configuration option allows you to add additional sections to Minimo's homepage:
 

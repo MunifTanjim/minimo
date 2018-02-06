@@ -10,8 +10,8 @@
 {{- if ( $.Scratch.Get "showEntryNav" ) -}}
 
 {{ if gt ( len ( where .Site.RegularPages "Section" .Section ) ) 1 }}
-<nav class='entry-nav container'>
-  <div class='wrapper'>
+<nav class='entry-nav'>
+  <div class='container'>
 
     {{- if .PrevInSection -}}
     <div class='prev-entry sep-before'>
