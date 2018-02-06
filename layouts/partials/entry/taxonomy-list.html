@@ -8,7 +8,7 @@
   <span class='screen-reader'>{{ ( ( i18n $tx 2 ) | default $txs ) | title }}: </span>
   {{- range $i, $term := ( index $.Params $txs ) -}}
   {{- if gt $i 0 }}, {{ end -}}
-  <a class='{{ $tx }}' href='{{ $.LanguagePrefix }}/{{ $txs }}/{{ $term | urlize }}'>
+  <a class='{{ $tx }}' href='{{ ( print ( trim $.Site.BaseURL "/" ) $.LanguagePrefix "/" $txs "/" ( $term | urlize ) ) | relURL }}'>
     {{- with $.Site.GetPage "taxonomyTerm" $txs ( $term | urlize ) -}}
       {{- .Title -}}
     {{- else -}}
