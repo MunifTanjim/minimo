@@ -1,6 +1,10 @@
 .widget-taxonomy_cloud {
   .sidebar & {
     .taxonomy-cloud {
+      .list {
+        justify-content: flex-end;
+      }
+
       @include font-size(0.875);
     }
 

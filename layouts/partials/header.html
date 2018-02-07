@@ -7,13 +7,11 @@
 
 <body class='{{ partial "header/bodyClasses" . }}'>
 
-  <div class='row site'>
+  <div class='site'>
 
-    {{- if .Site.Params.sidebar.enable -}}
-      {{ partial "sidebar/sidebar" . }}
-    {{- end -}}
+    {{ partial "sidebar/sidebar" . }}
 
-    <div class='col-3 main'>
+    <div class='main'>
 
       <a class='screen-reader-text' href='#content'>{{ i18n "skipToContent" }}</a>
 

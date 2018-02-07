@@ -1,53 +1,52 @@
-@import 'grid';
-
-html,
-body,
-.site,
-.main,
-.sidebar {
-  height: 100%;
-}
-
-.main,
-.sidebar {
-  .sidebar-sticky & {
-    overflow: auto;
-  }
+.site {
+  position: relative;
+  overflow-x: hidden;
 }
 
 .main {
-  .has-sidebar & {
-    padding: 0 $container__gutter*2;
-  }
-}
+  width: 100%;
 
-.sidebar {
-  padding: 0 $container__gutter;
+  transition: margin-left $transition-duration;
+
+  .sidebar-toggled & {
+    margin-left: $sidebar__width;
+  }
+
+  @include screen($breakpoint-medium) {
+    width: auto;
+
+    .has-sidebar & {
+      margin-left: $sidebar__width;
+    }
+  }
 }
 
 .container {
   width: 100%;
   max-width: $container__max-width;
+
   padding: 0 $container__gutter;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 
   .has-sidebar & {
     margin-left: 0;
-    margin-right: 0;
   }
 }
 
 .sep {
   &-after:after,
   &-before:before {
-    display: block;
     content: '';
-    border-bottom: 0.125em solid $color__grey;
+    display: block;
     width: 4em;
     margin-top: 2.5em;
     margin-bottom: 2.5em;
+    border-bottom: 0.125em solid $color__grey;
   }
 }
+
+@import 'sidebar/sidebar';
 
 @import 'header';
 

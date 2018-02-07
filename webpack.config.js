@@ -80,7 +80,10 @@ const config = {
             {
               loader: 'sass-loader',
               options: {
-                includePaths: [path.resolve('node_modules/normalize.css')]
+                includePaths: [
+                  path.resolve('node_modules/normalize.css'),
+                  path.resolve('node_modules/hamburgers/_sass/hamburgers')
+                ]
               }
             }
           ]

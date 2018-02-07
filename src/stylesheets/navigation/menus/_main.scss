@@ -4,12 +4,12 @@
     margin-top: 2em;
   }
 
-  li {
+  .item {
     display: inline-block;
     text-transform: uppercase;
     margin-right: 0.625em;
 
-    &:last-of-type {
+    &:last-child {
       margin-right: 0;
     }
   }

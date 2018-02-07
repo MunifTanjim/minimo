@@ -1,8 +1,9 @@
 <nav id='main-menu' class='main-menu' aria-label='{{ i18n "mainMenu" }}'>
   <ul class='container'>
+  {{ partial "sidebar/toggler" . }}
   {{ range .Site.Menus.main }}
     {{- $isCurrent := ( or ( $.IsMenuCurrent "main" . ) ( $.HasMenuCurrent "main" . ) ) -}}
-    <li>
+    <li class='item'>
       <a {{ if $isCurrent -}} class='current' aria-current='page' {{ end -}} href='{{ .URL }}'>
         {{- .Name -}}
       </a>

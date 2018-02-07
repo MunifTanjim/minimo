@@ -6,7 +6,9 @@
     margin-top: 2.5em;
   }
 
-  & .item {
+  .item {
+    display: flex;
+    width: 100%;
     margin-top: 1em;
 
     &:first-of-type {
@@ -19,6 +21,10 @@
       span {
         @include font-size(0.875);
       }
+    }
+
+    &-header {
+      flex: 1;
     }
 
     &-title {
@@ -37,13 +43,21 @@
 /* Taxonomy Cloud */
 .taxonomy-cloud {
   .list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
     .entry + & {
       margin-top: 2.5em;
     }
   }
 
   li {
-    display: inline-block;
+    max-width: 100%;
     padding: 0 1.5em 0.5em 0;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
