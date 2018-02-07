@@ -13,7 +13,7 @@
     <li class='item'>
       <h2 class='item-title'>
         {{- partial "svg/icons" "author" -}}
-        <a href='{{ ( print ( trim $.Site.BaseURL "/" ) $.LanguagePrefix "/authors/" ( .Name | urlize ) ) | relURL }}'>
+        <a href='{{ ( print "authors" "/" ( .Name | urlize ) ) | relLangURL }}'>
           {{- $name.display -}}
         </a>
       </h2>

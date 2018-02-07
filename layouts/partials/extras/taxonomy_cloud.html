@@ -27,7 +27,7 @@
     {{- $sizeStep := ( $Scratch.Get "sizeStep" ) -}}
     {{- $size := ( add $minSize ( mul $sizeStep ( sub $count $minCount ) ) ) -}}
     <li>
-      <a href='{{ ( print ( trim $Site.BaseURL "/" ) $Site.LanguagePrefix "/" $Data.Plural "/" ( .Term | urlize ) ) | relURL }}' style='font-size:{{ $size }}em'>
+      <a href='{{ ( print $Data.Plural "/" ( .Term | urlize ) ) | relLangURL }}' style='font-size:{{ $size }}em'>
         {{- with $Site.GetPage "taxonomyTerm" $Data.Plural .Term -}}
           {{- .Title -}}
         {{- end -}}

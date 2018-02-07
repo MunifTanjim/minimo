@@ -98,7 +98,3 @@ hrefTargetBlank = true
 lang = "en"
 languageName = "English"
 weight = 1
-[languages.de]
-lang = "de"
-languageName = "German"
-weight = 2
