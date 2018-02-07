@@ -26,8 +26,7 @@
   max-width: $container__max-width;
 
   padding: 0 $container__gutter;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 
   .has-sidebar & {
     margin-left: 0;
