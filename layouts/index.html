@@ -7,16 +7,17 @@
 </div>
 {{ end }}
 
+{{- $widgetsConfig := ( $.Scratch.Get "widgetsConfig" ) -}}
+{{ if $widgetsConfig.homepage }}
 <div class='home-widgets'>
   <div class='container sep-before'>
-    {{- with .Site.Params.widgets.homepage -}}
+    {{- with $widgetsConfig.homepage -}}
       {{- range . -}}
         {{- partial ( print "widgets/" . ) $ -}}
       {{- end -}}
-    {{- else -}}
-      {{- partial "widgets/home/recent_posts" . -}}
     {{- end -}}
   </div>
 </div>
+{{ end }}
 
 {{ partial "footer" . }}

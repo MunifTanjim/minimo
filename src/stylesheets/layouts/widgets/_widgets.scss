@@ -1,5 +1,5 @@
 .widget {
-  .title {
+  &-title {
     margin-bottom: 1em;
   }
 
@@ -17,7 +17,7 @@
   }
 
   .sidebar & {
-    .title {
+    &-title {
       margin-bottom: 0.5em;
       @include font-size($font-size__h5);
     }
@@ -28,5 +28,6 @@
   }
 }
 
+@import 'about';
 @import 'recent-posts';
-@import 'tags';
+@import 'taxonomy-terms';

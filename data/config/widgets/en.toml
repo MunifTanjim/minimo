@@ -1,0 +1,17 @@
+homepage = ["recent_posts"]
+sidebar = ["about","taxonomy_terms"]
+
+[about]
+title = ""
+description = ""
+logo = "/logo.png"
+
+[recentPosts]
+title = ""
+length = 4
+excludeTypes = ["page"]
+
+[taxonomyTerms]
+title = ""
+taxonomy = "tags"
+shuffle = true

@@ -2,7 +2,7 @@
   .sep-after {
     &:after {
       border-bottom-color: $color__accent;
-      .hasCover & {
+      .has-cover & {
         display: none;
       }
     }
@@ -22,12 +22,10 @@
 
   .title {
     margin-bottom: 0;
-    text-transform: uppercase;
   }
 
-  .subtitle {
+  .desc {
     margin: 0.5em 0 0;
-    font-style: italic;
   }
 
   .taxonomy-type {

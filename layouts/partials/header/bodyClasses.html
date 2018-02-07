@@ -2,6 +2,6 @@
 {{- with .Type }} type-{{ . }}{{ end -}}
 {{- with .Layout }} layout-{{ . }}{{ end -}}
 {{- with .Data.Singular }} taxonomyTerm-{{ . }}{{ end -}}
-{{- if .Params.cover }} hasCover{{ end -}}
+{{- if .Params.cover }} has-cover{{ end -}}
 {{- if .Site.Params.settings.sidebar }} has-sidebar{{ end -}}
 {{- if .Site.Params.settings.sidebarSticky }} sidebar-sticky{{ end -}}

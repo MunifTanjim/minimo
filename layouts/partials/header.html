@@ -1,3 +1,5 @@
+{{- $.Scratch.Set "widgetsConfig" ( index .Site.Data.config.widgets .Site.Language.Lang ) -}}
+
 <!DOCTYPE html>
 <html lang='{{ .Site.Language.Lang }}'>
 
@@ -25,7 +27,7 @@
             {{- else -}}
               <p class='site-title title'>{{ .Site.Title }}</p>
             {{- end -}}
-            <p class='site-description subtitle'>{{ .Site.Params.info.description }}</p>
+            <p class='desc site-desc'>{{ .Site.Params.info.description }}</p>
           </div>
         </div>
       </header>

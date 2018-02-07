@@ -40,16 +40,11 @@ suffix = ""
 dateFormat = "2006, Jan 02"
 listDateFormat = "2006, Jan 02"
 hideEntryNavigation = ["page"] # boolean / array of sections
-recentPostsLength = 4
 hideSocialMenu = false
 showReadingTime = true
 noTermCloudShuffle = false
 sidebar = true
 sidebarSticky = false
-
-[params.widgets]
-homepage = ["recent_posts","tags"]
-sidebar = []
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
@@ -101,3 +96,7 @@ hrefTargetBlank = true
 lang = "en"
 languageName = "English"
 weight = 1
+[languages.de]
+lang = "de"
+languageName = "German"
+weight = 2

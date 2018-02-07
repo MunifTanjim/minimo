@@ -1,0 +1,11 @@
+.widget-taxonomy_terms {
+  .sidebar & {
+    .terms-cloud {
+      @include font-size(0.875);
+    }
+
+    li {
+      padding: 0 0 0.4em 0.8em;
+    }
+  }
+}

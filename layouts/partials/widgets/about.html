@@ -1,0 +1,29 @@
+{{- $widgetsConfig := ( $.Scratch.Get "widgetsConfig" ) -}}
+{{- $config := $widgetsConfig.about -}}
+
+<section class='widget widget-about sep-after'>
+  <header>
+    {{ with $config.logo }}
+    <div class='logo'>
+      <a href='{{ $.Site.BaseURL | relURL }}'>
+        <img src='{{ . }}'>
+      </a>
+    </div>
+    {{ end }}
+    <h2 class='title site-title '>
+    {{ with $config.title }}
+      {{- . -}}
+    {{ else }}
+      {{- .Site.Title -}}
+    {{ end }}
+    </h2>
+    <div class='desc'>
+    {{ with $config.description }}
+      {{- . | markdownify -}}
+    {{ else }}
+      {{- .Site.Params.info.description -}}
+    {{ end }}
+    </div>
+  </header>
+
+</section>

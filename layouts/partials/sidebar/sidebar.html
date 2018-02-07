@@ -1,5 +1,7 @@
+{{- $widgetsConfig := ( $.Scratch.Get "widgetsConfig" ) -}}
+
 <div class='col-1 sidebar'>
-  {{- with .Site.Params.widgets.sidebar -}}
+  {{- with $widgetsConfig.sidebar -}}
     {{- range . -}}
       {{- partial ( print "widgets/" . ) $ -}}
     {{- end -}}
