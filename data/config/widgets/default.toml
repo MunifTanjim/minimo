@@ -1,17 +1,17 @@
 homepage = ["recent_posts"]
-sidebar = ["about","taxonomy_terms"]
+sidebar = ["about"]
 
 [about]
 title = ""
 description = ""
-logo = "/logo.png"
+logo = "/images/logo.png"
 
 [recentPosts]
 title = ""
-length = 4
+length = 5
 excludeTypes = ["page"]
 
-[taxonomyTerms]
+[taxonomyCloud]
 title = ""
 taxonomy = "tags"
 shuffle = true

@@ -3,5 +3,5 @@
 {{- with .Layout }} layout-{{ . }}{{ end -}}
 {{- with .Data.Singular }} taxonomyTerm-{{ . }}{{ end -}}
 {{- if .Params.cover }} has-cover{{ end -}}
-{{- if .Site.Params.settings.sidebar }} has-sidebar{{ end -}}
-{{- if .Site.Params.settings.sidebarSticky }} sidebar-sticky{{ end -}}
+{{- if .Site.Params.sidebar.enable }} has-sidebar{{ end -}}
+{{- if .Site.Params.sidebar.sticky }} sidebar-sticky{{ end -}}

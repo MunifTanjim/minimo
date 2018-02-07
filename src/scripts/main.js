@@ -3,12 +3,18 @@ import '../stylesheets/style'
 import docReady from 'es6-docready'
 
 import { detailsTagSupported, shuffle } from './helpers'
+import { log } from 'util'
 
 docReady(() => {
-  let termCloud = document.querySelector('.terms-cloud ul:not(.no-shuffle)')
-  if (termCloud) {
-    let terms = termCloud.querySelectorAll('li')
-    shuffle(terms).forEach(term => term.parentElement.appendChild(term))
+  let taxonomyClouds = document.querySelectorAll(
+    '.taxonomy-cloud ul:not(.no-shuffle)'
+  )
+  if (taxonomyClouds.length) {
+    console.log('asd')
+    taxonomyClouds.forEach(taxonomyCloud => {
+      let terms = taxonomyCloud.querySelectorAll('li')
+      shuffle(terms).forEach(term => term.parentElement.appendChild(term))
+    })
   }
 
   let toc = document.querySelector('.entry-toc')

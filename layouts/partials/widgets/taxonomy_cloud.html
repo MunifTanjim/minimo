@@ -1,0 +1,18 @@
+{{- $widgetsConfig := ( $.Scratch.Get "widgetsConfig" ) -}}
+{{- $config := $widgetsConfig.taxonomyCloud -}}
+{{- $shuffle := ( $config.shuffle | default true ) -}}
+{{- $taxonomy := ( $config.taxonomy | default "tags" ) -}}
+{{- $taxonomyData := ( .Site.GetPage "taxonomy" $taxonomy ).Data -}}
+{{- $taxonomySingular := $taxonomyData.Singular -}}
+
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>
+      {{- ( $config.title | default ( i18n $taxonomySingular 2 ) ) -}}
+    </h4>
+  </header>
+
+  <div class='taxonomy-cloud'>
+    {{ partial "extras/taxonomy_cloud" ( dict "Taxonomy" $taxonomy "Shuffle" $shuffle "Scope" . ) }}
+  </div>
+</section>

@@ -1,4 +1,4 @@
-{{- $.Scratch.Set "widgetsConfig" ( index .Site.Data.config.widgets .Site.Language.Lang ) -}}
+{{- partial "configs" . -}}
 
 <!DOCTYPE html>
 <html lang='{{ .Site.Language.Lang }}'>
@@ -9,7 +9,7 @@
 
   <div class='row site'>
 
-    {{- if .Site.Params.settings.sidebar -}}
+    {{- if .Site.Params.sidebar.enable -}}
       {{ partial "sidebar/sidebar" . }}
     {{- end -}}
 

@@ -1,5 +1,6 @@
 {{- $widgetsConfig := ( $.Scratch.Get "widgetsConfig" ) -}}
 {{- $config := $widgetsConfig.recentPosts -}}
+{{- $length := ( $config.length | default 5 ) -}}
 
 <section class='widget widget-recent-posts sep-after'>
   <header>
@@ -9,7 +10,7 @@
   </header>
 
   <ul class='list'>
-  {{ range ( first $config.length ( where .Site.RegularPages "Type" "not in" $config.excludeTypes ) ) }}
+  {{ range ( first $length ( where .Site.RegularPages "Type" "not in" $config.excludeTypes ) ) }}
     {{ .Render "li" }}
   {{ end }}
   </ul>

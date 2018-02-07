@@ -42,9 +42,11 @@ listDateFormat = "2006, Jan 02"
 hideEntryNavigation = ["page"] # boolean / array of sections
 hideSocialMenu = false
 showReadingTime = true
-noTermCloudShuffle = false
-sidebar = true
-sidebarSticky = false
+taxonomyCloudShuffle = true
+
+[params.sidebar]
+enable = true
+sticky = true
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
