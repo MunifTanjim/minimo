@@ -64,6 +64,9 @@ other = "সাম্প্রতিক পোষ্টগুলো"
 [skipToContent]
 other = "কন্টেন্টে যাও"
 
+[skipToMainMenu]
+other = "মেইন মেনুতে যাও"
+
 [socialMenu]
 other = "সোশ্যাল মেনু"
 
@@ -73,3 +76,6 @@ other = "এক নজরে"
 [tag]
 one = "ট্যাগ"
 other = "ট্যাগসমূহ"
+
+[toggleSidebar]
+other = "সাইডবার ট্যুগল কর"

@@ -64,6 +64,9 @@ other = "Recent Posts"
 [skipToContent]
 other = "Skip to Content"
 
+[skipToMainMenu]
+other = "Skip to Main Menu"
+
 [socialMenu]
 other = "Social Menu"
 
@@ -73,3 +76,6 @@ other = "Table of Contents"
 [tag]
 one = "Tag"
 other = "Tags"
+
+[toggleSidebar]
+other = "Toggle Sidebar"

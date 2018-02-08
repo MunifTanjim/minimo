@@ -2,6 +2,8 @@
 
 {{- $widgetsConfig := ( $.Scratch.Get "widgetsConfig" ) -}}
 
+<a class='screen-reader-text' href='#main-menu'>{{ i18n "skipToMainMenu" }}</a>
+
 <div id='sidebar' class='sidebar'>
   <div class='container'>
   {{- with $widgetsConfig.sidebar -}}
@@ -11,5 +13,9 @@
   {{- end -}}
   </div>
 </div>
+
+{{- else -}}
+
+<a class='screen-reader-text' href='#content'>{{ i18n "skipToContent" }}</a>
 
 {{- end -}}
