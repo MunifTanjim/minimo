@@ -14,20 +14,22 @@ features = [
   "analytics",
   "comments",
   "cover-image",
+  "double-column",
+  "entry-navigation",
   "favicon",
   "multilingual",
   "multi-author",
   "opengraph",
   "pagination",
-  "entry-navigation",
   "shortcodes",
   "sidebar",
   "single-column",
   "social-menu",
   "syntax-highlighting",
-  "table-of-contents"
+  "table-of-contents",
+  "widgets"
 ]
-min_version = 0.31
+min_version = 0.32
 
 [author]
   name = "Munif Tanjim"

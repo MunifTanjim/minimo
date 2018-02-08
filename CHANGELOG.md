@@ -4,6 +4,23 @@
 
 - ...
 
+## [2.0.0] - 2018-02-08
+
+### Added
+
+- Sidebar support
+- Widgets support ( About, Recent Posts, Taxonomy Cloud )
+
+### Changed
+
+- Major Refactor in Layouts & Templates
+- Major Refactor in Stylesheets
+- Rename `noTermCloudShuffle` config option to `taxonomyCloudShuffle`
+
+### Removed
+
+- `homepageSections` ( Functionality moved to Widgets )
+
 ## [1.6.0] - 2018-02-08
 
 ### Added
@@ -117,7 +134,8 @@
 
 - Initial stable release
 
-[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v1.6.0...HEAD
+[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/MunifTanjim/minimo/compare/v1.6.0...v2.0.0
 [1.6.0]: https://github.com/MunifTanjim/minimo/compare/v1.5.0...v1.6.0
 [1.5.0]: https://github.com/MunifTanjim/minimo/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/MunifTanjim/minimo/compare/v1.3.0...v1.4.0
