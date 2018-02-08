@@ -32,7 +32,6 @@
 
 .sidebar-toggler {
   background: transparent;
-  z-index: 99999;
 
   &:focus,
   &:hover,
@@ -49,6 +48,8 @@
     position: absolute;
     top: 0.5em;
     left: 0.5em;
+
+    z-index: 99999;
   }
 
   @include screen($breakpoint-medium) {

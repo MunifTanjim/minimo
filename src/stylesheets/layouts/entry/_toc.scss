@@ -3,12 +3,12 @@ summary {
   display: block;
 }
 
+summary {
+  cursor: pointer;
+}
+
 .no-details {
   details {
-    summary {
-      cursor: pointer;
-    }
-
     &:not([open]) > :not(summary) {
       display: none;
     }
