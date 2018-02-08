@@ -130,5 +130,3 @@ color: purple;
 font-size: 1.5em;  
 color: purple;
 {{% /text %}}
-
--------
