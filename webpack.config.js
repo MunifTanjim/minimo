@@ -5,9 +5,11 @@ const AssetsPlugin = require('assets-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
+const node_env = process.env.NODE_ENV
+
 const define = new webpack.DefinePlugin({
   'process.env': {
-    NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+    NODE_ENV: JSON.stringify(node_env)
   }
 })
 
@@ -64,7 +66,15 @@ const config = {
             {
               loader: 'css-loader',
               options: {
-                importLoaders: 1
+                importLoaders: 1,
+                minimize:
+                  'production' === node_env
+                    ? {
+                        discardComments: {
+                          removeAllButFirst: true
+                        }
+                      }
+                    : false
               }
             },
             {
@@ -97,6 +107,6 @@ const config = {
   plugins: [define, extractCSS, assetsManifest]
 }
 
-if (process.env.NODE_ENV === 'production') config.plugins.push(cleanBuild)
+if (node_env === 'production') config.plugins.push(cleanBuild)
 
 module.exports = config

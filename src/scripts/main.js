@@ -3,12 +3,11 @@ import '../stylesheets/style'
 import docReady from 'es6-docready'
 
 import { detailsTagSupported, shuffle } from './helpers'
-import { log } from 'util'
 
 docReady(() => {
   const body = document.body
 
-  let taxonomyClouds = document.querySelectorAll(
+  const taxonomyClouds = document.querySelectorAll(
     '.taxonomy-cloud ul:not(.no-shuffle)'
   )
   if (taxonomyClouds.length) {
@@ -18,7 +17,7 @@ docReady(() => {
     })
   }
 
-  let toc = document.querySelector('.entry-toc')
+  const toc = document.querySelector('.entry-toc')
   if (toc) {
     if (!detailsTagSupported()) {
       document.body.classList.add('no-details')
@@ -62,7 +61,7 @@ docReady(() => {
       sidebar.setAttribute('aria-expanded', 'true')
     }
 
-    const toggleSidebar = () =>
+    let toggleSidebar = () =>
       body.classList.contains('sidebar-toggled') ? hideSidebar() : showSidebar()
 
     sidebar.setAttribute('aria-expanded', 'false')
