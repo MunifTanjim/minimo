@@ -4,6 +4,18 @@
 
 - ...
 
+## [1.6.0] - 2018-02-08
+
+### Added
+
+- GitLab icon in Social Menu
+- Cover Image support on Homepage
+
+### Fixed
+
+- Rule for filtering `page` from `recent_posts`
+- Incorrect url for `taxonomyTerms` when `.Site.BaseURL` contained subdirectory
+
 ## [1.5.0] - 2018-01-25
 
 ### Added
@@ -105,7 +117,8 @@
 
 - Initial stable release
 
-[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v1.5.0...HEAD
+[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v1.6.0...HEAD
+[1.6.0]: https://github.com/MunifTanjim/minimo/compare/v1.5.0...v1.6.0
 [1.5.0]: https://github.com/MunifTanjim/minimo/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/MunifTanjim/minimo/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/MunifTanjim/minimo/compare/v1.2.1...v1.3.0
