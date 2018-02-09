@@ -1,5 +1,6 @@
 ---
 date: 2018-02-07T19:15:00+06:00
+lastmod: 2018-02-09T16:15:00+06:00
 title: Sidebar
 authors: ["muniftanjim"]
 categories:
@@ -25,4 +26,4 @@ sticky = true
 
 ## Adding Widgets to Sidebar
 
-For adding Widgets to the Sidebar, setup your [Widgets Configuration File]({{< relref "docs/widgets.md#widgets-configuration-file" >}}) according to the [Widgets documentation]({{< relref "docs/widgets.md" >}}).
+For adding Widgets to the Sidebar, check the [Widgets documentation]({{< relref "docs/widgets.md#available-widget-areas" >}}).

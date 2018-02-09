@@ -1,15 +1,11 @@
 {{- if .Site.Params.sidebar.enable -}}
 
-{{- $widgetsConfig := ( $.Scratch.Get "widgetsConfig" ) -}}
-
 <a class='screen-reader-text' href='#main-menu'>{{ i18n "skipToMainMenu" }}</a>
 
 <div id='sidebar' class='sidebar'>
   <div class='container'>
-  {{- with $widgetsConfig.sidebar -}}
-    {{- range . -}}
-      {{- partial ( print "widgets/" . ) $ -}}
-    {{- end -}}
+  {{- range .Site.Params.widgets.sidebar -}}
+    {{- partial ( print "widgets/" . ) $ -}}
   {{- end -}}
   </div>
 </div>

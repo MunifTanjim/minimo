@@ -1,5 +1,6 @@
 ---
 date: 2018-02-07T18:30:00+06:00
+lastmod: 2018-02-09T16:00:00+06:00
 title: Widgets
 authors: ["muniftanjim"]
 categories:
@@ -62,6 +63,14 @@ Here are the configuration options available for the Widgets:
  -------- | ----------
  Homepage | `homepage`
  Sidebar  | `sidebar`
+
+You can add Widgets to Widget Areas from your **`config.toml`** file:
+
+```toml
+[params.widgets]
+homepage = ["recent_posts"]
+sidebar = ["about","taxonomy_cloud"]
+```
 
 The syntax for adding Widgets to Widget Areas is:
 

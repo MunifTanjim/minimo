@@ -1,6 +1,3 @@
-homepage = ["recent_posts"]
-sidebar = ["about"]
-
 [about]
 title = ""
 description = ""

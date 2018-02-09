@@ -7,14 +7,11 @@
 </div>
 {{ end }}
 
-{{- $widgetsConfig := ( $.Scratch.Get "widgetsConfig" ) -}}
-{{ if $widgetsConfig.homepage }}
+{{ if gt ( len .Site.Params.widgets.homepage ) 0 }}
 <div class='home-widgets'>
   <div class='container sep-before'>
-    {{- with $widgetsConfig.homepage -}}
-      {{- range . -}}
-        {{- partial ( print "widgets/" . ) $ -}}
-      {{- end -}}
+    {{- range .Site.Params.widgets.homepage -}}
+      {{- partial ( print "widgets/" . ) $ -}}
     {{- end -}}
   </div>
 </div>

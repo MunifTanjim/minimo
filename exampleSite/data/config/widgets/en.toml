@@ -1,7 +1,3 @@
-# Widget Areas
-homepage = ["recent_posts"]           # default: ["recent_posts"]
-sidebar = ["about","taxonomy_cloud"]  # default: ["about"]
-
 # About Widget config
 [about]
 title = ""                            # default: .Site.Title

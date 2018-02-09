@@ -48,6 +48,10 @@ taxonomyCloudShuffle = true
 enable = true
 sticky = true
 
+[params.widgets]
+homepage = ["recent_posts"]
+sidebar = ["about","taxonomy_cloud"]
+
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
 appID = ""
