@@ -3,12 +3,12 @@ title = ""
 description = ""
 logo = "/images/logo.png"
 
-[recentPosts]
+[recent_posts]
 title = ""
 length = 5
 excludeTypes = ["page"]
 
-[taxonomyCloud]
+[taxonomy_cloud]
 title = ""
 taxonomy = "tags"
 shuffle = true

@@ -1,5 +1,7 @@
-{{- $widgetsConfig := ( $.Scratch.Get "widgetsConfig" ) -}}
-{{- $config := $widgetsConfig.about -}}
+{{- $defaultConfig := .Site.Data.config.default.widgets.about -}}
+{{- $configData := ( or .Site.Data.config.widgets.about $defaultConfig ) -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $config := ( ( index $configData $lang ) | default $configData ) -}}
 
 <section class='widget widget-about sep-after'>
   <header>

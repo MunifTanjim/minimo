@@ -1,5 +1,8 @@
-{{- $widgetsConfig := ( $.Scratch.Get "widgetsConfig" ) -}}
-{{- $config := $widgetsConfig.recentPosts -}}
+{{- $defaultConfig := .Site.Data.config.default.widgets.recent_posts -}}
+{{- $configData := ( or .Site.Data.config.widgets.recent_posts $defaultConfig ) -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $config := ( ( index $configData $lang ) | default $configData ) -}}
+
 {{- $length := ( $config.length | default 5 ) -}}
 
 <section class='widget widget-recent-posts sep-after'>

@@ -1,5 +1,8 @@
-{{- $widgetsConfig := ( $.Scratch.Get "widgetsConfig" ) -}}
-{{- $config := $widgetsConfig.taxonomyCloud -}}
+{{- $defaultConfig := .Site.Data.config.default.widgets.taxonomy_cloud -}}
+{{- $configData := ( or .Site.Data.config.widgets.taxonomy_cloud $defaultConfig ) -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $config := ( ( index $configData $lang ) | default $configData ) -}}
+
 {{- $shuffle := ( $config.shuffle | default true ) -}}
 {{- $taxonomy := ( $config.taxonomy | default "tags" ) -}}
 {{- $taxonomyData := ( .Site.GetPage "taxonomy" $taxonomy ).Data -}}

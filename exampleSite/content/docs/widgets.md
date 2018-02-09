@@ -1,6 +1,6 @@
 ---
 date: 2018-02-07T18:30:00+06:00
-lastmod: 2018-02-09T16:00:00+06:00
+lastmod: 2018-02-09T17:00:00+06:00
 title: Widgets
 authors: ["muniftanjim"]
 categories:
@@ -80,16 +80,14 @@ widget_area_slug = [ widget_slug_1, widget_slug_2, ...]
 
 ## Widgets Configuration File
 
-Minimo picks up Widgets Configuration from the **`/data/config/widgets/`** directory.
-
-You need to have a _Widgets Config file_ for each language your site uses. The filename should be in **`<LanguageCode>.toml`** format. e.g.: `en.toml`, `bn.toml` etc.
+Minimo picks up Widgets' configuration from the **`/data/config/widgets.toml`** file.
 
 Here's the _Widgets Config file_ for this site:
 
-**`/data/config/widgets/en.toml`**
+**`/data/config/widgets.toml`**
 
-{{< file "data/config/widgets/en.toml" >}}
+{{< file "data/config/widgets.toml" >}}
 
-If this file is not present for any languages that your site uses, Minimo will use the default config options for Widgets.
+If configuration for any Widgets are missing in this file, Minimo will fallback to the default configuration for those Widgets.
 
 Go wild!

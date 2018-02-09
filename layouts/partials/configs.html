@@ -1,4 +1,0 @@
-{{- $widgetsConfigDir := .Site.Data.config.widgets -}}
-{{- $lang := .Site.Language.Lang -}}
-{{- $widgetsConfig := ( or ( index $widgetsConfigDir $lang ) $widgetsConfigDir.default ) -}}
-{{- $.Scratch.Set "widgetsConfig" $widgetsConfig -}}
