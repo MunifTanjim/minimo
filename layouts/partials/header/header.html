@@ -3,7 +3,7 @@
     <div class='header-info'>
       <h1 class='title'>
         {{- if eq .Kind "taxonomy" -}}
-        <span class='taxonomy-type'>
+        <span class='taxonomy-name'>
           {{- ( ( i18n .Data.Singular 1 ) | default .Data.Singular ) | title -}}
           {{- print ": " -}}
         </span>

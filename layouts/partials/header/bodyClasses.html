@@ -1,7 +1,8 @@
 {{- if eq .Kind "404" -}} error{{- end -}}{{- .Kind -}}
 {{- with .Type }} type-{{ . }}{{ end -}}
 {{- with .Layout }} layout-{{ . }}{{ end -}}
-{{- with .Data.Singular }} taxonomyTerm-{{ . }}{{ end -}}
+{{- with .Data.Singular }} taxonomy-{{ . }}{{ end -}}
 {{- if .Params.cover }} has-cover{{ end -}}
-{{- if .Site.Params.sidebar.enable }} has-sidebar{{ end -}}
-{{- if .Site.Params.sidebar.sticky }} sidebar-sticky{{ end -}}
+{{- if .Site.Params.sidebar.enable }} has-sidebar
+  {{- if .Site.Params.sidebar.sticky }} sidebar-sticky{{ end -}}
+{{- end -}}

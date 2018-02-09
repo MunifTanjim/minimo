@@ -2,7 +2,7 @@
 {{- $tx := ( $txs | singularize ) -}}
 
 <div class='{{ $txs }}'>
-  <span class='taxonomyTerm-icon'>
+  <span class='taxonomy-icon'>
     {{- partial "svg/icons" $tx -}}
   </span>
   <span class='screen-reader-text'>{{ ( ( i18n $tx 2 ) | default $txs ) | title }}: </span>

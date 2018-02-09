@@ -13,6 +13,7 @@
 
   .sidebar-sticky & {
     position: fixed;
+    overflow-y: auto;
   }
 
   .sidebar-toggled & {
