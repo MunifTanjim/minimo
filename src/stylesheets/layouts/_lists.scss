@@ -2,8 +2,10 @@
   margin: 0 auto;
   list-style: none;
 
-  @at-root .entry + & {
-    margin-top: 2.5em;
+  &-container {
+    .entry + & {
+      margin-top: 2.5em;
+    }
   }
 
   .item {
@@ -42,15 +44,9 @@
 
 /* Taxonomy Cloud */
 .taxonomy-cloud {
-  .list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-
-    .entry + & {
-      margin-top: 2.5em;
-    }
-  }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 
   li {
     max-width: 100%;

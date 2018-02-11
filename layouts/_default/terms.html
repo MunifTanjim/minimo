@@ -8,11 +8,8 @@
 </div>
 {{ end }}
 
-<div class='taxonomy-cloud container'>
-  {{- $shuffle := .Site.Params.settings.taxonomyCloudShuffle -}}
-  {{- $taxonomy := .Data.Plural -}}
-
-  {{ partial "extras/taxonomy_cloud" ( dict "Taxonomy" $taxonomy "Shuffle" $shuffle "Scope" . ) }}
-</div>
+{{- $shuffle := .Site.Params.settings.taxonomyCloudShuffle -}}
+{{- $taxonomy := .Data.Plural -}}
+{{ partial "extras/taxonomy_cloud" ( dict "Taxonomy" $taxonomy "Shuffle" $shuffle "Scope" . ) }}
 
 {{ partial "footer" . }}
