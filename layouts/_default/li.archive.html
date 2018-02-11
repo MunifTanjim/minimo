@@ -1,0 +1,12 @@
+<li class='item'>
+  <div class='meta'>
+    {{ partial "list/date.archive" . }}
+  </div>
+  <header class='item-header'>
+    <h4 class='item-title'>
+      <a href='{{ .Permalink | relURL }}'>
+        {{- .Title -}}
+      </a>
+    </h4>
+  </header>
+</li>
