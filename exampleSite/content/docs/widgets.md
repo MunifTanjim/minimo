@@ -1,6 +1,6 @@
 ---
 date: 2018-02-07T18:30:00+06:00
-lastmod: 2018-02-12T23:30:00+06:00
+lastmod: 2018-02-12T23:40:00+06:00
 title: Widgets
 authors: ["muniftanjim"]
 categories:
@@ -40,7 +40,7 @@ Here are the configuration options available for the Widgets:
 
 #### Widget: Recent Posts
 
-- `recentPosts` [`Map`]:
+- `recent_posts` [`Map`]:
   - `title` [`String`]: Title  
     _default: `"Recent Posts"`_
   - `length` [`Integer`]: Number of posts to show  
@@ -57,7 +57,7 @@ Here are the configuration options available for the Widgets:
 
 #### Widget: Taxonomy Cloud
 
-- `taxonomyCloud` [`Map`]:
+- `taxonomy_cloud` [`Map`]:
   - `title` [`String`]: Title  
     _default: Plural Name for `taxonomyCloud.taxonomy`_
   - `taxonomy` [`String`]: Taxonomy to show  

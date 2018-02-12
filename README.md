@@ -20,6 +20,14 @@ Follow these guides for getting your site up & running with Minimo:
 - **Setup Authors**: [Authors Setup Guide](https://minimo.netlify.com/docs/authors)
 - **Configure Widgets**: [Widgets Documentation](https://minimo.netlify.com/docs/widgets)
 
+#### Updating Minimo
+
+Follow the [**Updating Guide**](https://minimo.netlify.com/docs/updating) to update Minimo to its latest version.
+
+After updating Minimo, always check that your site's **`config.toml`** file matches the latest [**`config.toml`** file](https://minimo.netlify.com/docs/config-file) format.
+
+A good idea is to double check all the [Configuration settings](https://minimo.netlify.com/docs/installation#configuration-for-minimo) of Minimo.
+
 ## Development
 
 If you find a bug or want to request a new feature, feel free to open an issue.
