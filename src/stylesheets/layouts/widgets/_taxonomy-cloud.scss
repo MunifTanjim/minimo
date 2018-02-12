@@ -1,5 +1,9 @@
 .widget-taxonomy_cloud {
   .sidebar & {
+    .list-container {
+      padding: 0;
+    }
+
     .taxonomy-cloud {
       justify-content: flex-end;
 
