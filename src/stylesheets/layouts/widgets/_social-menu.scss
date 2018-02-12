@@ -1,4 +1,4 @@
-.social-menu {
+.widget-social_menu {
   ul {
     list-style: none;
     padding: 0;
@@ -15,6 +15,13 @@
 
     a {
       @include font-size(1.125);
+    }
+  }
+
+  .sidebar & {
+    li {
+      margin-right: 0;
+      margin-left: 0.625em;
     }
   }
 }

@@ -1,9 +1,7 @@
 @import 'main';
 
-@import 'social';
-
 .main-menu a,
-.social-menu a {
+.widget-social_menu a {
   color: $color__link-faded;
 
   &:hover {

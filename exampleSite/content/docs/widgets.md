@@ -1,6 +1,6 @@
 ---
 date: 2018-02-07T18:30:00+06:00
-lastmod: 2018-02-09T17:00:00+06:00
+lastmod: 2018-02-12T23:30:00+06:00
 title: Widgets
 authors: ["muniftanjim"]
 categories:
@@ -21,7 +21,8 @@ Minimo has the following built-in Widgets:
  ----------------- | -----------------
  1. About          | `about`
  2. Recent Posts   | `recent_posts`
- 3. Taxonomy Cloud | `taxonomy_cloud`
+ 3. Social Menu    | `social_menu`
+ 4. Taxonomy Cloud | `taxonomy_cloud`
 
 ### Widget Configuration Options
 
@@ -46,6 +47,13 @@ Here are the configuration options available for the Widgets:
     _default: `5`_
   - `excludeTypes` [`Array` of `String`s]:  Types of posts to exclude  
     _default: `["page"]`_
+
+#### Widget: Social Menu
+
+- `social_menu` [`Map`]:
+  - `title` [`String`]: Title  
+    _default: `""`_
+  - `platforms` [`Array` of `String`s]: Social platform to show
 
 #### Widget: Taxonomy Cloud
 
