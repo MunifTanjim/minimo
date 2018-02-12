@@ -8,7 +8,7 @@
     {{ with $config.logo }}
     <div class='logo'>
       <a href='{{ $.Site.BaseURL | relURL }}'>
-        <img src='{{ . }}'>
+        <img src='{{ . | relURL }}'>
       </a>
     </div>
     {{ end }}
