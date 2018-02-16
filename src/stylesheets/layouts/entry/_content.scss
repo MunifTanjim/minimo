@@ -9,7 +9,6 @@
   a {
     border-bottom: 0.125em dashed $color__grey;
 
-    &:active,
     &:focus,
     &:hover {
       border-bottom-color: $color__accent;

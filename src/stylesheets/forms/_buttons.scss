@@ -9,7 +9,7 @@ input[type='submit'] {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: $color__text-button;
-  background: $color__background-button;
+  background: $color__accent;
   transition: 0.1s ease-in-out;
 
   &:focus {
@@ -25,6 +25,6 @@ input[type='submit'] {
   &:focus,
   &:hover {
     background: $color__text-button;
-    color: $color__background-button;
+    color: $color__accent;
   }
 }

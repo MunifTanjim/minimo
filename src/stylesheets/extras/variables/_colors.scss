@@ -1,24 +1,39 @@
 $color__accent: #ffcd00;
-$color__black: #212121;
-$color__grey: #bdbdbd;
-$color__white: #fafafa;
+
+$color__bluegrey-900: #263238;
+$color__bluegrey-800: #37474f;
+$color__bluegrey-700: #455a64;
+
+$color__grey-900: #212121;
+$color__grey-400: #bdbdbd;
+$color__grey-200: #eeeeee;
+$color__grey-50: #fafafa;
+
+$color__pure-black: #000000;
+$color__black: $color__grey-900;
+$color__grey: $color__grey-400;
+$color__light-grey: $color__grey-200;
+$color__white: $color__grey-50;
+$color__pure-white: #ffffff;
 
 $color__background-hr: $color__grey;
-$color__background-button: $color__accent;
 $color__background-screen: $color__black;
-$color__background-code: #eee;
+$color__background-code: $color__light-grey;
 
-$color__text-heading: #263238;
-$color__text-main: #37474f;
+$color__text-heading: $color__bluegrey-900;
+$color__text-main: $color__bluegrey-800;
+
 $color__text-button: $color__black;
 $color__text-screen: $color__white;
 $color__text-input: $color__text-main;
 $color__text-code: $color__black;
 
+$color__blockquote-border: $color__grey;
+
 $color__link: $color__black;
 $color__link-hover: $color__text-main;
-$color__link-faded: #455a64;
 
 $color__border-input: $color__grey;
 $color__border-input-focus: $color__black;
 $color__border-table: $color__grey;
+$color__border-code: darken($color__background-code, 7);

@@ -8,7 +8,7 @@ samp {
   background: $color__background-code;
   color: $color__text-code;
 
-  border: 1px solid #ddd;
+  border: 1px solid $color__border-code;
   border-radius: 0.25em;
   padding: 0.1em 0.25em;
 }
