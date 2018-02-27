@@ -4,6 +4,31 @@
 
 - ...
 
+## [2.1.0] - 2018-02-27
+
+### Added
+
+- `archive` layout for `page` type
+- Social Menu widget ( `social_menu` )
+- Colorful emoji support
+- MathJax support
+
+### Changed
+
+- Change, Fix & Refactor stylesheets
+- Codes stylesheet enhancement
+- Move Widget areas' configuration to `config.toml` ( `.Site.Params.widgets` )
+- Refactor Widgets' configuration structure
+- Update linkedin, google_scholar, gitlab SVG icons
+- Social Menu converted to widget
+- Update project dependencies ( `package.json` )
+- Split scripts into multiple chunks
+
+### Fixed
+
+- relURL for logo in `about` widget
+- Shuffle option for `taxonomy_cloud` widget
+
 ## [2.0.0] - 2018-02-08
 
 ### Added
@@ -134,7 +159,8 @@
 
 - Initial stable release
 
-[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/MunifTanjim/minimo/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/MunifTanjim/minimo/compare/v1.6.0...v2.0.0
 [1.6.0]: https://github.com/MunifTanjim/minimo/compare/v1.5.0...v1.6.0
 [1.5.0]: https://github.com/MunifTanjim/minimo/compare/v1.4.0...v1.5.0

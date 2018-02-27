@@ -13,7 +13,9 @@ mathjax: true
 For enabling MathJax, add this to your content's frontmatter:
 
 ```yaml
+---
 mathjax: true
+---
 ```
 
 ## MathJax Syntax for Markdown
