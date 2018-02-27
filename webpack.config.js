@@ -1,4 +1,3 @@
-const webpack = require('webpack')
 const path = require('path')
 const autoprefixer = require('autoprefixer')
 const AssetsPlugin = require('assets-webpack-plugin')
@@ -39,7 +38,9 @@ const config = {
   },
   output: {
     filename: '[name].[chunkhash:8].js',
-    path: path.join(__dirname, 'static', 'assets', 'js')
+    chunkFilename: '[name].[chunkhash:8].js',
+    path: path.join(__dirname, 'static', 'assets', 'js'),
+    publicPath: '/assets/js/'
   },
   module: {
     rules: [
@@ -49,7 +50,8 @@ const config = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env']
+            presets: ['env'],
+            plugins: ['syntax-dynamic-import']
           }
         }
       },

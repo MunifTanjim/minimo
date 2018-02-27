@@ -70,4 +70,12 @@ docReady(() => {
     innerToggler.addEventListener('click', toggleSidebar)
     overlay.addEventListener('click', hideSidebar)
   }
+
+  let hasEmoji = body.classList.contains('has-emoji')
+  if (hasEmoji) {
+    import(/* webpackChunkName: "emoji" */ 'twemoji').then(twemoji => {
+      let entry = document.querySelector('.entry')
+      twemoji.parse(entry)
+    })
+  }
 })

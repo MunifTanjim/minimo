@@ -1,6 +1,9 @@
 {
+  "emoji": {
+    "js": "emoji.23d0866f.js"
+  },
   "main": {
-    "js": "main.f66c75b1.js",
-    "css": "main.95f934f5.css"
+    "js": "main.65e061c4.js",
+    "css": "main.98e51475.css"
   }
 }
