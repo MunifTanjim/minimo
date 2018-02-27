@@ -7,12 +7,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const node_env = process.env.NODE_ENV
 
-const define = new webpack.DefinePlugin({
-  'process.env': {
-    NODE_ENV: JSON.stringify(node_env)
-  }
-})
-
 const extractCSS = new ExtractTextPlugin({
   filename: getPath =>
     getPath('css/[name].[contenthash:8].css').replace('css', '../css')
@@ -39,6 +33,7 @@ const cleanBuild = new CleanWebpackPlugin([
 ])
 
 const config = {
+  mode: node_env === 'production' ? 'production' : 'development',
   entry: {
     main: path.join(__dirname, 'src/scripts', 'main.js')
   },
@@ -54,14 +49,14 @@ const config = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['es2015']
+            presets: ['env']
           }
         }
       },
       {
         test: /\.scss$/,
         include: path.resolve(__dirname, 'src/stylesheets'),
-        loader: extractCSS.extract({
+        use: extractCSS.extract({
           use: [
             {
               loader: 'css-loader',
@@ -104,7 +99,7 @@ const config = {
   resolve: {
     extensions: ['*', '.js', '.scss']
   },
-  plugins: [define, extractCSS, assetsManifest]
+  plugins: [extractCSS, assetsManifest]
 }
 
 if (node_env === 'production') config.plugins.push(cleanBuild)
