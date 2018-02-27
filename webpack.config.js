@@ -39,8 +39,7 @@ const config = {
   output: {
     filename: '[name].[chunkhash:8].js',
     chunkFilename: '[name].[chunkhash:8].js',
-    path: path.join(__dirname, 'static', 'assets/js'),
-    publicPath: '/assets/js/'
+    path: path.join(__dirname, 'static', 'assets/js')
   },
   module: {
     rules: [
