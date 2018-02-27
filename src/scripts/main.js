@@ -8,7 +8,7 @@ docReady(() => {
   const body = document.body
 
   const taxonomyClouds = document.querySelectorAll(
-    '.taxonomy-cloud ul:not(.no-shuffle)'
+    '.taxonomy-cloud:not(.no-shuffle)'
   )
   if (taxonomyClouds.length) {
     taxonomyClouds.forEach(taxonomyCloud => {
