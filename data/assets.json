@@ -1,9 +1,15 @@
 {
-  "emoji": {
-    "js": "emoji.23d0866f.js"
+  "sidebar": {
+    "js": "sidebar.8d743470.js"
+  },
+  "twemoji": {
+    "js": "twemoji.0901026d.js"
+  },
+  "details-polyfill": {
+    "js": "details-polyfill.24f0627c.js"
   },
   "main": {
-    "js": "main.90d32aa3.js",
+    "js": "main.6408c3fa.js",
     "css": "main.98e51475.css"
   }
 }

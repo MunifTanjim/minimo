@@ -1,17 +1,10 @@
 const path = require('path')
 const autoprefixer = require('autoprefixer')
-const AssetsPlugin = require('assets-webpack-plugin')
+const AssetsWebpackPlugin = require('assets-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin')
 
-const node_env = process.env.NODE_ENV
-
-const extractCSS = new ExtractTextPlugin({
-  filename: getPath =>
-    getPath('css/[name].[contenthash:8].css').replace('css', '../css')
-})
-
-const assetsManifest = new AssetsPlugin({
+const assetsManifest = new AssetsWebpackPlugin({
   filename: 'assets.json',
   path: path.join(__dirname, 'data'),
   fullPath: false,
@@ -26,10 +19,17 @@ const assetsManifest = new AssetsPlugin({
   }
 })
 
+const extractCSS = new ExtractTextWebpackPlugin({
+  filename: getPath =>
+    getPath('css/[name].[contenthash:8].css').replace('css', '../css')
+})
+
 const cleanBuild = new CleanWebpackPlugin([
   'static/assets/css/*',
   'static/assets/js/*'
 ])
+
+const node_env = process.env.NODE_ENV
 
 const config = {
   mode: node_env === 'production' ? 'production' : 'development',
@@ -39,7 +39,7 @@ const config = {
   output: {
     filename: '[name].[chunkhash:8].js',
     chunkFilename: '[name].[chunkhash:8].js',
-    path: path.join(__dirname, 'static', 'assets', 'js'),
+    path: path.join(__dirname, 'static', 'assets/js'),
     publicPath: '/assets/js/'
   },
   module: {

@@ -15,18 +15,3 @@ export const shuffle = array => {
 
   return shuffled
 }
-
-export const detailsTagSupported = () => {
-  let el = document.createElement('details')
-  if (!('open' in el)) return false
-
-  el.innerHTML = '<summary>a</summary>b'
-  document.body.appendChild(el)
-
-  let diff = el.offsetHeight
-  el.open = true
-  let result = diff != el.offsetHeight
-
-  document.body.removeChild(el)
-  return result
-}
