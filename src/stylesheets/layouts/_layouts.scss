@@ -1,10 +1,10 @@
 .site {
-  position: relative;
   overflow-x: hidden;
 }
 
 .main {
   width: 100%;
+  padding-top: 2em;
 
   transition: margin-left $transition-duration;
 

@@ -2,9 +2,9 @@
   position: absolute;
   left: -$sidebar__width;
 
-  height: 100%;
   width: $sidebar__width;
   max-width: 100%;
+  padding-top: 2em;
 
   z-index: 99999;
   transition: left $transition-duration;
@@ -14,6 +14,8 @@
   .sidebar-sticky & {
     position: fixed;
     overflow-y: auto;
+    top: 0;
+    bottom: 0;
   }
 
   .sidebar-toggled & {

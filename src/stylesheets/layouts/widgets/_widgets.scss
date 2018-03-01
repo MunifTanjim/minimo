@@ -21,10 +21,6 @@
       margin-bottom: 0.5em;
       @include font-size($font-size__h5);
     }
-
-    &:first-of-type {
-      margin-top: 2em;
-    }
   }
 }
 
