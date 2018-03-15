@@ -2,14 +2,24 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  border: none;
-  padding: 0.625em 0.875em;
-  line-height: 1;
+  width: auto;
+  padding: 0.5em 0.75em;
+  border: 1px solid $color__border-input;
+  border-radius: 0.2em;
+
+  background: $color__button-background;
+  color: $color__button-text;
+
+  @include font-size(1);
   font-weight: 700;
+  text-align: center;
   letter-spacing: 1px;
+  white-space: nowrap;
   text-transform: uppercase;
-  color: $color__text-button;
-  background: $color__accent;
+
+  user-select: none;
+  cursor: pointer;
+
   transition: 0.1s ease-in-out;
 
   &:focus {
@@ -24,7 +34,7 @@ input[type='submit'] {
   &:active,
   &:focus,
   &:hover {
-    background: $color__text-button;
-    color: $color__accent;
+    background: $color__button-text;
+    color: $color__button-background;
   }
 }
