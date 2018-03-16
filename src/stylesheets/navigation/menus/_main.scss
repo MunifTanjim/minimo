@@ -1,5 +1,5 @@
 .main-menu {
-  .container {
+  & > div {
     display: flex;
   }
 
@@ -8,7 +8,7 @@
     margin: 0;
   }
 
-  .item {
+  li {
     display: inline-block;
     text-transform: uppercase;
     margin-right: 0.625em;
@@ -16,12 +16,12 @@
     &:last-child {
       margin-right: 0;
     }
-  }
 
-  a {
     &.current {
-      font-weight: 700;
-      pointer-events: none;
+      a {
+        font-weight: 700;
+        pointer-events: none;
+      }
     }
   }
 }
