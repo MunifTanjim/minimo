@@ -1,15 +1,41 @@
-<nav id='main-menu' class='main-menu' aria-label='{{ i18n "mainMenu" }}'>
+<nav id='main-nav' class='main-nav' aria-label='{{ i18n "mainMenu" }}'>
   <div class='container'>
     {{ partial "sidebar/toggler" . }}
-    <ul>
-    {{- range .Site.Menus.main -}}
-      {{- $isCurrent := ( or ( $.IsMenuCurrent "main" . ) ( $.HasMenuCurrent "main" . ) ) -}}
-      <li class='item {{- if $isCurrent }} current {{- end -}}'>
-        <a {{ if $isCurrent -}} aria-current='page' {{ end -}} href='{{ .URL }}'>
-          {{- .Name -}}
-        </a>
-      </li>
+    <button id='main-menu-toggler' class='main-menu-toggler' aria-controls='main-menu' aria-expanded='false'>
+      <span>{{ i18n "menu" }}</span>
+    </button>
+    <ul id='main-menu' class='main-menu'>
+    {{- range $i, $item := .Site.Menus.main -}}
+      {{- $invDrop := ( gt $i ( div ( int ( len $.Site.Menus.main ) ) 2 ) ) -}}
+      {{- template "main_menu_item" ( dict "Item" $item "Page" $ "invDrop" $invDrop ) -}}
     {{- end -}}
     </ul>
   </div>
 </nav>
+
+{{- define "main_menu_item" -}}
+
+{{- $isCurrent := ( .Page.IsMenuCurrent "main" .Item ) -}}
+{{- $hasCurrent := ( .Page.HasMenuCurrent "main" .Item ) -}}
+{{- $hasChildren := ( .Item.HasChildren ) -}}
+
+<li class='item
+  {{- if $hasChildren }} has-children {{- end -}}
+  {{- if $hasCurrent }} has-current {{- end -}}
+  {{- if $isCurrent }} current {{- end -}}
+  {{- with .invDrop }} inv-drop {{- end -}}
+'>
+  <a href='{{ .Item.URL }}' {{- if $isCurrent }} aria-current='page' {{- end -}}>
+    {{- .Item.Name -}}
+  </a>
+
+  {{- if $hasChildren -}}
+  <ul class='sub-menu'>
+  {{- range .Item.Children -}}
+    {{- template "main_menu_item" ( dict "Item" . "Page" $.Page ) -}}
+  {{- end -}}
+  </ul>
+  {{- end -}}
+</li>
+
+{{- end -}}

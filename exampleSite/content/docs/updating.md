@@ -7,6 +7,9 @@ categories:
   - Tutorial
 slug: updating
 toc: true
+menu:
+  main:
+    parent: docs
 ---
 
 ## Updating Minimo

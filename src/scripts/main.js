@@ -40,4 +40,11 @@ docReady(() => {
       ({ initSidebar }) => initSidebar()
     )
   }
+
+  let mainNav = body.querySelector('#main-nav')
+  if (mainNav) {
+    import(/* webpackChunkName: "navigation" */ './navigation').then(
+      ({ initNavigation }) => initNavigation(mainNav)
+    )
+  }
 })

@@ -24,6 +24,9 @@ other = "Go Home..."
 [mainMenu]
 other = "Main Menu"
 
+[menu]
+other = "Menu"
+
 [next]
 other = "Next"
 

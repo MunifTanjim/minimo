@@ -8,6 +8,10 @@ categories:
 tags:
   - config
 slug: config-file
+linkTitle: Config
+menu:
+  main:
+    parent: installation
 ---
 
 This is the Minimo's configuraion file ( `config.toml` ) file of this site:

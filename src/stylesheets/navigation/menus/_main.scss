@@ -1,27 +1,157 @@
-.main-menu {
+.main-nav {
   & > div {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    position: relative;
   }
 
   ul {
+    position: absolute;
+    padding: 0.125em 0;
+
     list-style: none;
     margin: 0;
   }
 
   li {
-    display: inline-block;
-    text-transform: uppercase;
-    margin-right: 0.625em;
+    padding: 0.125em 0.5em;
+  }
 
-    &:last-child {
-      margin-right: 0;
+  &.toggled {
+    ul {
+      display: block;
+    }
+  }
+}
+
+.main-menu {
+  display: none;
+
+  right: 20px;
+  top: 100%;
+
+  text-align: right;
+  background: $color__pure-white;
+  box-shadow: 0 0 1px 0px $color__bluegrey-800;
+
+  li {
+    position: relative;
+    text-transform: uppercase;
+
+    &:hover,
+    &.focus {
+      & > ul {
+        top: 0;
+        right: 100%;
+      }
+    }
+
+    &.has-current {
+      & > a {
+        font-weight: 700;
+      }
     }
 
     &.current {
-      a {
+      & > a {
         font-weight: 700;
         pointer-events: none;
       }
+    }
+  }
+
+  &-toggler {
+    align-self: center;
+  }
+
+  ul {
+    right: -99999px;
+    z-index: 9;
+
+    white-space: nowrap;
+    background: $color__pure-white;
+    box-shadow: 0 0 1px 0px $color__bluegrey-800;
+  }
+}
+
+@include screen($breakpoint-medium) {
+  .main-nav {
+    ul {
+      position: static;
+      padding: 0;
+    }
+
+    li {
+      padding: 0;
+    }
+  }
+
+  .main-menu {
+    display: block;
+    box-shadow: none;
+    text-align: initial;
+
+    li {
+      display: inline-block;
+      margin-right: 0.625em;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover,
+      &.focus {
+        & > ul {
+          top: 100%;
+          right: auto;
+          left: 0;
+        }
+      }
+
+      &.inv-drop {
+        &:hover,
+        &.focus {
+          & > ul {
+            right: 0;
+            left: auto;
+          }
+        }
+
+        li {
+          &:hover,
+          &.focus {
+            & > ul {
+              right: 100%;
+              left: auto;
+            }
+          }
+        }
+      }
+    }
+
+    ul {
+      position: absolute;
+
+      padding: 0.2em 0 0;
+
+      li {
+        display: block;
+        padding: 0 0.4em 0.2em;
+
+        &:hover,
+        &.focus {
+          & > ul {
+            top: 0;
+            left: 100%;
+          }
+        }
+      }
+    }
+
+    &-toggler {
+      display: none;
     }
   }
 }

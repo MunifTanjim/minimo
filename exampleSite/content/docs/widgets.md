@@ -10,6 +10,9 @@ tags:
   - widgets
 slug: widgets
 toc: true
+menu:
+  main:
+    parent: installation
 ---
 Minimo supports _**Widgets**_ that you can place on specific _**Widget Areas**_.
 

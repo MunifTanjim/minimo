@@ -7,6 +7,11 @@ categories:
   - Tutorial
 slug: installation
 toc: true
+linkTitle: Installtion  
+menu:
+  main:
+    identifier: installation
+    parent: docs
 ---
 First of all you will need to setup a Hugo site. You can follow the [Hugo's Quick Start Guide](https://gohugo.io/getting-started/quick-start/) for that.
 

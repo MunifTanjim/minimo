@@ -8,6 +8,10 @@ categories:
 tags:
   - authors
 slug: authors
+linkTitle: Authors
+menu:
+  main:
+    parent: installation
 ---
 Minimo supports multiple authors for your site. Just make sure you have the following configuration in your site's **`config.toml`**:
 
