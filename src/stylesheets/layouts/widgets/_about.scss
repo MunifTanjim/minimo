@@ -20,6 +20,7 @@
   .sidebar &.sep-after {
     &:after {
       border-bottom-color: $color__accent;
+      border-bottom-color: var(--color-accent);
     }
   }
 }
