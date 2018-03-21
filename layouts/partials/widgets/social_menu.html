@@ -1,9 +1,11 @@
+{{- $social := .Site.Params.social -}}
+
+{{- if $social -}}
+
 {{- $defaultConfig := .Site.Data.config.default.widgets.social_menu -}}
 {{- $configData := ( or .Site.Data.config.widgets.social_menu $defaultConfig ) -}}
 {{- $lang := .Site.Language.Lang -}}
 {{- $config := ( ( index $configData $lang ) | default $configData ) -}}
-
-{{- $length := ( $config.length | default 5 ) -}}
 
 <section class='widget widget-social_menu sep-after'>
   {{- with $config.title -}}
@@ -14,12 +16,9 @@
   </header>
   {{- end -}}
 
-  {{- $social := .Site.Params.social -}}
-  {{- $platforms := ( $config.platforms | default .Site.Params.social.config.platforms ) -}}
-
   <nav aria-label='{{ i18n "socialMenu" }}'>
     <ul>
-    {{- range $platform := $platforms -}}
+    {{- range $platform := $config.platforms -}}
       {{- with $username := ( index $social $platform ) -}}
       <li>
         <a href='{{ print ( index $.Site.Data.theme.social.base $platform ) $username }}' target='_blank' rel='noopener'>
@@ -38,3 +37,5 @@
     </ul>
   </nav>
 </section>
+
+{{- end -}}
