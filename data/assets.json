@@ -1,6 +1,6 @@
 {
   "sidebar": {
-    "js": "sidebar.8d743470.js"
+    "js": "sidebar.c4ad4c61.js"
   },
   "twemoji": {
     "js": "twemoji.0901026d.js"
@@ -9,7 +9,7 @@
     "js": "details-polyfill.24f0627c.js"
   },
   "main": {
-    "js": "main.80cd10bb.js",
-    "css": "main.045169bd.css"
+    "js": "main.db90df09.js",
+    "css": "main.450e596b.css"
   }
 }

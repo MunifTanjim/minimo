@@ -5,10 +5,13 @@
 
 <a class='screen-reader-text' href='#content'>{{ i18n "skipToContent" }}</a>
 
-<button id='sidebar-toggler' class='hamburger hamburger--arrow sidebar-toggler' type='button' aria-controls='sidebar' aria-expanded='false'>
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
   <span class='screen-reader-text'>{{ i18n "toggleSidebar" }}</span>
-  <span class="hamburger-box">
-    <span class="hamburger-inner"></span>
+  <span class='open'>
+    {{- partial "svg/icons" "menu" -}}
+  </span>
+  <span class='close'>
+    {{- partial "svg/icons" "x" -}}
   </span>
 </button>
 

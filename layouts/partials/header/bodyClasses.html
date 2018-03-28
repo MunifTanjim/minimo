@@ -6,7 +6,5 @@
 {{- with .Layout }} layout-{{ . }}{{ end -}}
 {{- with .Data.Singular }} taxonomy-{{ . }}{{ end -}}
 {{- if .Params.cover }} has-cover{{ end -}}
-{{- if ( and $sidebarEnabled $sidebarWidgets ) }} has-sidebar
-  {{- if .Site.Params.sidebar.sticky }} sidebar-sticky{{ end -}}
-{{- end -}}
+{{- if ( and $sidebarEnabled $sidebarWidgets ) }} has-sidebar{{ end -}}
 {{- if eq .Params.emoji true }} has-emoji{{ end -}}

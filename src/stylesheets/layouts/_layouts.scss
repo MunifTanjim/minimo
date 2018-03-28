@@ -8,7 +8,7 @@
 
   transition: margin-left $transition-duration;
 
-  .sidebar-toggled & {
+  .sidebar.toggled ~ & {
     margin-left: $sidebar__width;
   }
 
@@ -16,6 +16,7 @@
     width: auto;
 
     .has-sidebar & {
+      float: left;
       margin-left: $sidebar__width;
       padding-left: 2em;
     }

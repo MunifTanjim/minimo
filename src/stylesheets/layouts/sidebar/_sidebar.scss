@@ -1,24 +1,25 @@
 .sidebar {
-  position: absolute;
+  visibility: hidden;
+
+  float: left;
   left: -$sidebar__width;
+  position: absolute;
 
   width: $sidebar__width;
   max-width: 100%;
+  min-height: 100%;
   padding: 2em 0;
+  margin-right: -100%;
 
+  outline: 0;
   z-index: 99999;
   transition: left $transition-duration;
 
   text-align: right;
+  background: $color__pure-white;
 
-  .sidebar-sticky & {
-    position: fixed;
-    overflow-y: auto;
-    top: 0;
-    bottom: 0;
-  }
-
-  .sidebar-toggled & {
+  &.toggled {
+    visibility: visible;
     left: 0;
   }
 
@@ -29,22 +30,32 @@
   }
 
   @include screen($breakpoint-medium) {
+    visibility: visible;
     left: 0;
   }
 }
 
 .sidebar-toggler {
-  background: transparent;
+  background: none;
+  border: 0;
+
+  .icon {
+    @include font-size(1.25);
+  }
 
   &:focus,
   &:hover,
   &:active {
-    background: transparent;
+    background: none;
   }
 
   .main-menu & {
     margin-right: 0.75em;
     padding: 0;
+
+    .close {
+      display: none;
+    }
   }
 
   .sidebar & {
@@ -52,7 +63,11 @@
     top: 0.5em;
     left: 0.5em;
 
-    z-index: 99999;
+    z-index: 2027;
+
+    .open {
+      display: none;
+    }
   }
 
   @include screen($breakpoint-medium) {
@@ -63,7 +78,7 @@
 .sidebar-overlay {
   display: none;
 
-  .sidebar-toggled & {
+  .sidebar.toggled & {
     display: block;
 
     &:after {
@@ -74,7 +89,7 @@
       right: 0;
       bottom: 0;
       left: 0;
-      z-index: 2027;
+      z-index: -2027;
 
       background: $color__pure-white;
       opacity: 0.75;

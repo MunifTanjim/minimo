@@ -2,7 +2,9 @@
 
 ## [Unreleased]
 
-- ...
+### Changed
+
+- Improved & Simplified Sidebar
 
 ## [2.2.0]
 

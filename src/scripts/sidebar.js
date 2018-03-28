@@ -1,38 +1,115 @@
 const body = document.body
 
 const sidebar = body.querySelector('#sidebar')
-const toggler = body.querySelector('#sidebar-toggler')
+const expandButton = body.querySelector('#sidebar-toggler')
 const overlay = body.querySelector('.sidebar-overlay')
 
-const innerToggler = toggler.cloneNode(true)
-innerToggler.setAttribute('id', '#sidebar-inner-toggler')
+const collapseButton = expandButton.cloneNode(true)
+collapseButton.setAttribute('id', '#sidebar-collapse')
 
 const hideSidebar = () => {
-  body.classList.remove('sidebar-toggled')
-  toggler.classList.remove('is-active')
-  innerToggler.classList.remove('is-active')
-  toggler.setAttribute('aria-expanded', 'false')
-  innerToggler.setAttribute('aria-expanded', 'false')
+  sidebar.classList.remove('toggled')
+  expandButton.classList.remove('is-active')
+  collapseButton.classList.remove('is-active')
+
   sidebar.setAttribute('aria-expanded', 'false')
+  expandButton.setAttribute('aria-expanded', 'false')
+  collapseButton.setAttribute('aria-expanded', 'false')
 }
 
 const showSidebar = () => {
-  body.classList.add('sidebar-toggled')
-  toggler.classList.add('is-active')
-  innerToggler.classList.add('is-active')
-  toggler.setAttribute('aria-expanded', 'true')
-  innerToggler.setAttribute('aria-expanded', 'true')
+  sidebar.classList.add('toggled')
+  expandButton.classList.add('is-active')
+  collapseButton.classList.add('is-active')
+
   sidebar.setAttribute('aria-expanded', 'true')
+  expandButton.setAttribute('aria-expanded', 'true')
+  collapseButton.setAttribute('aria-expanded', 'true')
+
+  sidebar.focus()
 }
 
-const toggleSidebar = () =>
-  body.classList.contains('sidebar-toggled') ? hideSidebar() : showSidebar()
+let windowWidth,
+  windowHeight,
+  bodyHeight,
+  sidebarHeight,
+  windowPos,
+  lastWindowPos = 0,
+  top = false,
+  bottom = false,
+  topOffset = 0,
+  sidebarOffsetTop,
+  resizeTimer
+
+const resizeHandler = () => {
+  windowWidth = window.innerWidth
+  windowHeight = window.innerHeight
+}
+
+const scrollHandler = () => {
+  windowPos = window.scrollY
+  bodyHeight = body.offsetHeight
+  sidebarHeight = sidebar.offsetHeight
+  sidebarOffsetTop = Math.round(windowPos + sidebar.getBoundingClientRect().top)
+
+  if (sidebarHeight > windowHeight) {
+    if (windowPos > lastWindowPos) {
+      if (top) {
+        top = false
+        topOffset = sidebarOffsetTop > 0 ? sidebarOffsetTop : 0
+        sidebar.setAttribute('style', `top: ${topOffset}px;`)
+      } else if (
+        !bottom &&
+        windowPos + windowHeight > sidebarHeight + sidebarOffsetTop &&
+        sidebarHeight < bodyHeight
+      ) {
+        bottom = true
+        sidebar.setAttribute('style', 'position: fixed; bottom: 0;')
+      }
+    } else if (windowPos < lastWindowPos) {
+      if (bottom) {
+        bottom = false
+        topOffset = sidebarOffsetTop > 0 ? sidebarOffsetTop : 0
+        sidebar.setAttribute('style', `top: ${topOffset}px;`)
+      } else if (!top && windowPos < sidebarOffsetTop) {
+        top = true
+        sidebar.setAttribute('style', 'position: fixed;')
+      }
+    } else {
+      top = bottom = false
+      topOffset = sidebarOffsetTop ? sidebarOffsetTop : 0
+      sidebar.setAttribute('style', `top: ${topOffset}px;`)
+    }
+  } else if (!top) {
+    top = true
+    sidebar.setAttribute('style', 'position: fixed;')
+  }
+
+  lastWindowPos = windowPos
+}
+
+const resizeAndScrollHandler = () => {
+  resizeHandler()
+  scrollHandler()
+}
 
 export const initSidebar = () => {
-  sidebar.appendChild(innerToggler)
-  sidebar.setAttribute('aria-expanded', 'false')
+  sidebar.setAttribute('tabindex', '-1')
+  sidebar.insertBefore(collapseButton, sidebar.children[1])
 
-  toggler.addEventListener('click', toggleSidebar)
-  innerToggler.addEventListener('click', toggleSidebar)
+  sidebar.setAttribute('aria-expanded', 'false')
+  expandButton.setAttribute('aria-expanded', 'false')
+  collapseButton.setAttribute('aria-expanded', 'false')
+
+  expandButton.addEventListener('click', showSidebar)
+  collapseButton.addEventListener('click', hideSidebar)
   overlay.addEventListener('click', hideSidebar)
+
+  window.addEventListener('scroll', scrollHandler)
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer)
+    resizeTimer = setTimeout(resizeAndScrollHandler, 500)
+  })
+
+  resizeAndScrollHandler()
 }

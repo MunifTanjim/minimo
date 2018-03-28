@@ -50,7 +50,6 @@ accentColor = "#ffcd00"
 
 [params.sidebar]
 enable = true
-sticky = true
 
 [params.widgets]
 homepage = ["recent_posts"]

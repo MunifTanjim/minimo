@@ -25,6 +25,13 @@
   {{ else if eq "next" . }}
   <line x1="4" y1="12" x2="20" y2="12"/>
   <polyline points="14 6 20 12 14 18"/>
+  {{ else if eq "x" . }}
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  {{ else if eq "menu" . }}
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
   {{ else if eq "codepen" . }}
   <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/>
   <line x1="12" y1="22" x2="12" y2="15.5"/>
