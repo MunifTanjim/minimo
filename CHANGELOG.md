@@ -4,6 +4,26 @@
 
 - ...
 
+## [2.2.0]
+
+### Added
+
+- Spanish translation
+- Customizable `accentColor`
+- Series taxonomy support
+
+### Changed
+
+- Forms & Buttons stylesheets
+- Minor changes to Main Menu 
+- Refactor Social Menu template
+- Refactor Homepage & Sidebar templates
+
+### Fixed
+
+- Public path for script chunks
+- Sidebar stylesheets bug
+
 ## [2.1.0] - 2018-02-27
 
 ### Added
@@ -159,7 +179,8 @@
 
 - Initial stable release
 
-[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v2.1.0...HEAD
+[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v2.2.0...HEAD
+[2.2.0]: https://github.com/MunifTanjim/minimo/compare/v2.1.0...v2.2.0
 [2.1.0]: https://github.com/MunifTanjim/minimo/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/MunifTanjim/minimo/compare/v1.6.0...v2.0.0
 [1.6.0]: https://github.com/MunifTanjim/minimo/compare/v1.5.0...v1.6.0
