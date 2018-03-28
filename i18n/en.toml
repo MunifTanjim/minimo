@@ -61,6 +61,10 @@ other = "{{ .Count }} mins read"
 [recentPosts]
 other = "Recent Posts"
 
+[series]
+one = "Series"
+other = "Series"
+
 [skipToContent]
 other = "Skip to Content"
 

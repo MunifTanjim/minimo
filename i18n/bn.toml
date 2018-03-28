@@ -61,6 +61,10 @@ other = "{{ .Count }} মিনিট লম্বা"
 [recentPosts]
 other = "সাম্প্রতিক পোষ্টগুলো"
 
+[series]
+one = "সিরিজ"
+other = "সিরিজসমূহ"
+
 [skipToContent]
 other = "কন্টেন্টে যাও"
 
