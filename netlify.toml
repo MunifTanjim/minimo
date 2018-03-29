@@ -1,9 +1,6 @@
 [build]
 publish = "exampleSite/public"
-command = "hugo --source=exampleSite --theme=../.. --baseURL=https://minimo.netlify.com"
+command = "hugo --source=exampleSite --theme=../.. --baseURL=${DEPLOY_PRIME_URL}"
 
 [build.environment]
-HUGO_VERSION = "0.32"
-
-[context.dev]
-command = "hugo --source=exampleSite --theme=../.. --baseURL=https://dev--minimo.netlify.com"
+HUGO_VERSION = "0.37.1"
