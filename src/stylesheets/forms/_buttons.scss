@@ -12,6 +12,7 @@ input[type='submit'] {
 
   @include font-size(1);
   font-weight: 700;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 1px;
   white-space: nowrap;
