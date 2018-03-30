@@ -71,7 +71,7 @@ other = "Pagina successiva"
 other = "Post successivo"
 
 [noTerm]
-other = "Not a single {{ .Term }}!"
+other = "Nessun {{ .Term }}!"
 
 [ok]
 other = "OK"
