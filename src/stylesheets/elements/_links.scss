@@ -18,4 +18,8 @@ a {
   &:hover {
     color: $color__link-hover;
   }
+
+  &.button {
+    display: inline-block;
+  }
 }
