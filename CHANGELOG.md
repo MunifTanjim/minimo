@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+- Staticman comment system support
+
 ### Changed
 
 - Improved & Simplified Sidebar

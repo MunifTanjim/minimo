@@ -1,15 +1,18 @@
 {
+  "comments": {
+    "js": "comments.b03c921f.js"
+  },
   "sidebar": {
-    "js": "sidebar.c4ad4c61.js"
+    "js": "sidebar.561d97e5.js"
   },
   "twemoji": {
-    "js": "twemoji.0901026d.js"
+    "js": "twemoji.98d07d9e.js"
   },
   "details-polyfill": {
-    "js": "details-polyfill.24f0627c.js"
+    "js": "details-polyfill.c35a625c.js"
   },
   "main": {
-    "js": "main.db90df09.js",
-    "css": "main.12abcf36.css"
+    "js": "main.4d3afaaf.js",
+    "css": "main.8a6e7745.css"
   }
 }

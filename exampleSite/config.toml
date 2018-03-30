@@ -79,6 +79,19 @@ twitter = "MunifTanjim"
 telegram = "MunifTanjim"
 google_scholar = "qc6CJjYAAAAJ"
 
+[params.comments]
+enable = false
+
+[params.comments.staticman]
+enable = true
+apiEndpoint = "https://api.staticman.net/v2/entry"
+maxDepth = 2
+
+[params.comments.staticman.github]
+username = "MunifTanjim"
+repository = "minimo"
+branch = "master"
+
 [taxonomies]
 author = "authors"
 category = "categories"

@@ -1,0 +1,43 @@
+{{- $comment := .Comment -}}
+{{- $maxDepth := .Page.Site.Params.comments.staticman.maxDepth -}}
+
+<li id='comment-{{ $comment._id }}' class='comment'>
+  <article class='comment-body'>
+    <header class='comment-header'>
+      <div class='comment-author'>
+        <img alt='{{ i18n "authorsAvatar" ( dict "Author" $comment.author ) }}' src='https://www.gravatar.com/avatar/{{ $comment.email }}?s=64' class='avatar'/>
+        <b class='fn'>
+          {{- if $comment.site -}}
+            <a href='{{ $comment.site }}' rel='external nofollow' class='url'>
+              {{- $comment.author -}}
+            </a>
+          {{- else -}}
+            {{- $comment.author -}}
+          {{- end -}}
+        </b>
+        <span class='says'>{{ i18n "says" }}: </span>
+      </div>
+      <div class='comment-meta'>
+        <a href='#comment-{{ $comment._id }}'>
+          {{- $date := ( time ( div ( int $comment.date ) 1000 ) ) -}}
+          <time datetime='{{ dateFormat "2006-01-02T15:04:05Z07:00" $date }}'>
+            {{- dateFormat "15:04, Jan 2, 2006" $date -}}
+          </time>
+        </a>
+      </div>
+    </header>
+    <div class='comment-content'>
+      {{ $comment.content | markdownify }}
+    </div>
+    <footer class='reply'>
+      {{- if lt ( .Page.Scratch.Get "comments_depth" ) $maxDepth -}}
+      <a rel='nofollow' class='button comment-reply-link' href='#respond' onclick='return moveRespondBlock({{ $comment._id }})' aria-label='{{ i18n "replyToAuthor" ( dict "Author" $comment.author ) }}'>
+        {{ i18n "reply" }}
+      </a>
+      {{- end -}}
+    </footer>
+  </article>
+	{{- if lt ( .Page.Scratch.Get "comments_depth" ) $maxDepth -}}
+		{{ partial "comments/staticman/replies-list" ( dict "ParentId" $comment._id "Page" .Page ) }}
+	{{- end -}}
+</li>

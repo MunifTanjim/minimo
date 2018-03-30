@@ -40,4 +40,11 @@ docReady(() => {
       ({ initSidebar }) => initSidebar()
     )
   }
+
+  let hasComments = body.querySelector('#comment-form')
+  if (hasComments) {
+    import(/* webpackChunkName: "comments" */ './comments').then(
+      ({ initComments }) => initComments()
+    )
+  }
 })
