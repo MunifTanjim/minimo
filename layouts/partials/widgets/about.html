@@ -7,7 +7,7 @@
   <header>
     {{ with $config.logo }}
     <div class='logo'>
-      <a href='{{ $.Site.BaseURL | relURL }}'>
+      <a href='{{ $.Site.Home.RelPermalink }}'>
         <img src='{{ . | relURL }}'>
       </a>
     </div>
