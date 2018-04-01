@@ -1,0 +1,81 @@
+[author]
+one = "Autor"
+other = "Autors"
+
+[by]
+other = "per"
+
+[category]
+one = "Categoria"
+other = "Categories"
+
+[contactViaEmail]
+other = "Contacte per correu"
+
+[currentPage]
+other = "Pàgina actual"
+
+[gopher]
+other = "Gopher"
+
+[goHome]
+other = "Anar a l'inici..."
+
+[mainMenu]
+other = "Menú principal"
+
+[next]
+other = "Següent"
+
+[nextPage]
+other = "Següent pàgina"
+
+[nextPost]
+other = "Següent entrada"
+
+[noTerm]
+other = "Ni un sol {{ .Term }}!"
+
+[openAccountInNewTab]
+other = "Obrir compte de {{ .Platform }} en una nova pestanya"
+
+[page]
+other = "Pàgina"
+
+[previous]
+other = "Anterior"
+
+[previousPage]
+other = "Anterior pàgina"
+
+[previousPost]
+other = "Anterior article"
+
+[postedOn]
+other = "Publicat a"
+
+[readingTime]
+one = "Lectura d'un minut"
+other = "{{ .Count }} minuts de lectura"
+
+[recentPosts]
+other = "Entrades recents"
+
+[skipToContent]
+other = "Anar al contingut"
+
+[skipToMainMenu]
+other = "Anar al menú principal"
+
+[socialMenu]
+other = "Menú social"
+
+[tableOfContents]
+other = "Sumari"
+
+[tag]
+one = "Etiqueta"
+other = "Etiquetes"
+
+[toggleSidebar]
+other = "Alternar barra lateral"
