@@ -10,7 +10,7 @@ one = "Categoría"
 other = "Categorías"
 
 [contactViaEmail]
-other = "Contacto vía Email"
+other = "Contacto vía correo"
 
 [currentPage]
 other = "Página actual"
@@ -19,7 +19,7 @@ other = "Página actual"
 other = "Gopher"
 
 [goHome]
-other = "Ir al Home..."
+other = "Ir al inicio..."
 
 [mainMenu]
 other = "Menú principal"
@@ -31,10 +31,10 @@ other = "Siguiente"
 other = "Siguiente página"
 
 [nextPost]
-other = "Siguiente post"
+other = "Siguiente entrada"
 
 [noTerm]
-other = "Ni un solo {{ .Term }}!"
+other = "¡Ni un sólo {{ .Term }}!"
 
 [openAccountInNewTab]
 other = "Abrir cuenta de {{ .Platform }} en una nueva pestaña"
@@ -49,33 +49,33 @@ other = "Anterior"
 other = "Anterior página"
 
 [previousPost]
-other = "Anterior post"
+other = "Anterior entrada"
 
 [postedOn]
 other = "Posteado en"
 
 [readingTime]
 one = "Lectura de un minuto"
-other = "{{ .Count }} minutos leídos"
+other = "{{ .Count }} minutos de lectura"
 
 [recentPosts]
-other = "Posts recientes"
+other = "Entradas recientes"
 
 [skipToContent]
-other = "Saltar al Contenido"
+other = "Saltar al contenido"
 
 [skipToMainMenu]
-other = "Saltar al Menú principal"
+other = "Saltar al menú principal"
 
 [socialMenu]
-other = "Menú Social"
+other = "Menú social"
 
 [tableOfContents]
-other = "Tabla de Contenidos"
+other = "Índice"
 
 [tag]
-one = "Tag"
-other = "Tags"
+one = "Etiqueta"
+other = "Etiquetas"
 
 [toggleSidebar]
 other = "Alternar barra lateral"
