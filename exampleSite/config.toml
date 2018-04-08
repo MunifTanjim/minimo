@@ -43,7 +43,6 @@ dateFormat = "2006, Jan 02"
 listDateFormat = "2006, Jan 02"
 archiveDateFormat = "Jan 02"
 hideEntryNavigation = ["page"] # boolean / array of sections
-hideSocialMenu = false
 showReadingTime = true
 taxonomyCloudShuffle = true
 accentColor = "#ffcd00"
@@ -54,6 +53,7 @@ enable = true
 [params.widgets]
 homepage = ["recent_posts"]
 sidebar = ["about","taxonomy_cloud"]
+footer = ["social_menu"]
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
