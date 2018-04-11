@@ -46,6 +46,7 @@ hideEntryNavigation = ["page"] # boolean / array of sections
 showReadingTime = true
 taxonomyCloudShuffle = true
 accentColor = "#ffcd00"
+hideMainMenu = false
 
 [params.sidebar]
 enable = true

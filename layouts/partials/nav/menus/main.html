@@ -1,3 +1,5 @@
+{{- if not .Site.Params.settings.hideMainMenu -}}
+
 <nav id='main-menu' class='menu main-menu' aria-label='{{ i18n "mainMenu" }}'>
   <div class='container'>
     {{ partial "sidebar/toggler" . }}
@@ -13,3 +15,9 @@
     </ul>
   </div>
 </nav>
+
+{{- else -}}
+
+{{ partial "sidebar/toggler" . }}
+
+{{- end -}}
