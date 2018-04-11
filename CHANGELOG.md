@@ -5,10 +5,24 @@
 ### Added
 
 - Staticman comment system support
+- Catalan translation
+- Spanish translation improvements
+- Sidebar Menu within `sidebar_menu` widget
+- Option to hide Main Menu: `hideMainMenu`
+- Footer widget area (supports only `social_menu` widget)
 
 ### Changed
 
 - Improved & Simplified Sidebar
+- Stylesheet tweaks
+
+### Fixed
+
+- homeURL for multilingual site in About widget
+
+### Removed
+
+- `hideSocialMenu` config option
 
 ## [2.2.0]
 

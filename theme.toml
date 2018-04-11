@@ -14,7 +14,7 @@ features = [
   "analytics",
   "comments",
   "cover-image",
-  "double-column",
+  "disqus",
   "entry-navigation",
   "favicon",
   "multilingual",
@@ -25,6 +25,7 @@ features = [
   "sidebar",
   "single-column",
   "social-menu",
+  "staticman",
   "syntax-highlighting",
   "table-of-contents",
   "widgets"
