@@ -1,6 +1,6 @@
 ---
 date: 2018-02-07T18:30:00+06:00
-lastmod: 2018-02-12T23:40:00+06:00
+lastmod: 2018-04-12T02:30:00+06:00
 title: Widgets
 authors: ["muniftanjim"]
 categories:
@@ -21,8 +21,9 @@ Minimo has the following built-in Widgets:
  ----------------- | -----------------
  1. About          | `about`
  2. Recent Posts   | `recent_posts`
- 3. Social Menu    | `social_menu`
- 4. Taxonomy Cloud | `taxonomy_cloud`
+ 3. Sidebar Menu   | `sidebar_menu`
+ 4. Social Menu    | `social_menu`
+ 5. Taxonomy Cloud | `taxonomy_cloud`
 
 ### Widget Configuration Options
 
@@ -48,6 +49,14 @@ Here are the configuration options available for the Widgets:
   - `excludeTypes` [`Array` of `String`s]:  Types of posts to exclude  
     _default: `["page"]`_
 
+#### Widget: Sidebar Menu
+
+- `sidebar_menu` [`Map`]:
+  - `title` [`String`]: Title  
+    _default: `""`_
+  - `mirror` [`String`]: Name of menu to mirror (e.g. `"main"`)  
+    _default: `""`_
+
 #### Widget: Social Menu
 
 - `social_menu` [`Map`]:
@@ -71,6 +80,7 @@ Here are the configuration options available for the Widgets:
  -------- | ----------
  Homepage | `homepage`
  Sidebar  | `sidebar`
+ Footer   | `footer`
 
 You can add Widgets to Widget Areas from your **`config.toml`** file:
 
@@ -78,6 +88,7 @@ You can add Widgets to Widget Areas from your **`config.toml`** file:
 [params.widgets]
 homepage = ["recent_posts"]
 sidebar = ["about","taxonomy_cloud"]
+footer = ["social_menu"]
 ```
 
 The syntax for adding Widgets to Widget Areas is:

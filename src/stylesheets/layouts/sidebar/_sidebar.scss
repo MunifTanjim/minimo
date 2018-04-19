@@ -49,13 +49,19 @@
     background: none;
   }
 
-  .main-menu & {
-    margin-right: 0.75em;
+  .main & {
     padding: 0;
+    position: absolute;
+    right: $container__gutter;
 
     .close {
       display: none;
     }
+  }
+
+  .main-menu & {
+    position: static;
+    margin-right: 0.75em;
   }
 
   .sidebar & {

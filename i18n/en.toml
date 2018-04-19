@@ -114,6 +114,9 @@ other = "says"
 one = "Series"
 other = "Series"
 
+[sidebarMenu]
+other = "Sidebar Menu"
+
 [skipToContent]
 other = "Skip to Content"
 

@@ -1,0 +1,31 @@
+{{- $defaultConfig := .Site.Data.config.default.widgets.sidebar_menu -}}
+{{- $configData := ( or .Site.Data.config.widgets.sidebar_menu $defaultConfig ) -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $config := ( ( index $configData $lang ) | default $configData ) -}}
+
+{{- $menu := ( default "sidebar" $config.mirror ) -}}
+
+<section class='widget widget-sidebar_menu sep-after'>
+  {{- with $config.title -}}
+  <header>
+    <h4 class='title widget-title'>
+      {{- . -}}
+    </h4>
+  </header>
+  {{- end -}}
+
+  <nav id='sidebar-menu' class='menu sidebar-menu' aria-label='{{ i18n "sidebarMenu" }}'>
+    <div class='container'>
+      <ul>
+      {{- range ( index .Site.Menus $menu ) -}}
+        {{- $isCurrent := ( or ( $.IsMenuCurrent $menu . ) ( $.HasMenuCurrent $menu . ) ) -}}
+        <li class='item {{- if $isCurrent }} current {{- end -}}'>
+          <a {{ if $isCurrent -}} aria-current='page' {{ end -}} href='{{ .URL }}'>
+            {{- .Name -}}
+          </a>
+        </li>
+      {{- end -}}
+      </ul>
+    </div>
+  </nav>
+</section>
