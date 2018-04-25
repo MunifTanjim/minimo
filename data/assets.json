@@ -1,6 +1,6 @@
 {
   "comments": {
-    "js": "comments.b03c921f.js"
+    "js": "comments.aea737ce.js"
   },
   "sidebar": {
     "js": "sidebar.561d97e5.js"
@@ -12,7 +12,7 @@
     "js": "details-polyfill.c35a625c.js"
   },
   "main": {
-    "js": "main.4d3afaaf.js",
+    "js": "main.53e19345.js",
     "css": "main.b0a0b202.css"
   }
 }

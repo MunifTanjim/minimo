@@ -10,7 +10,7 @@
 
 <ol class='comment-list'>
   {{- range $index, $comment := $comments -}}
-    {{- if not $comment._parent -}}
+    {{- if not $comment.parent_id -}}
       {{ partial "comments/staticman/comment" ( dict "Comment" $comment "Page" $ ) }}
     {{- end -}}
   {{- end -}}
