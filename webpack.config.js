@@ -2,7 +2,7 @@ const path = require('path')
 const autoprefixer = require('autoprefixer')
 const AssetsWebpackPlugin = require('assets-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
-const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin')
+const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 
 const assetsManifest = new AssetsWebpackPlugin({
   filename: 'assets.json',
@@ -19,9 +19,8 @@ const assetsManifest = new AssetsWebpackPlugin({
   }
 })
 
-const extractCSS = new ExtractTextWebpackPlugin({
-  filename: getPath =>
-    getPath('css/[name].[contenthash:8].css').replace('css', '../css')
+const extractCSS = new MiniCSSExtractPlugin({
+  filename: '../css/[name].[contenthash:8].css'
 })
 
 const cleanBuild = new CleanWebpackPlugin([
@@ -57,43 +56,30 @@ const config = {
       {
         test: /\.scss$/,
         include: path.resolve(__dirname, 'src/stylesheets'),
-        use: extractCSS.extract({
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                importLoaders: 1,
-                minimize:
-                  'production' === node_env
-                    ? {
-                        discardComments: {
-                          removeAllButFirst: true
-                        }
+        use: [
+          MiniCSSExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              minimize:
+                'production' === node_env
+                  ? {
+                      discardComments: {
+                        removeAllButFirst: true
                       }
-                    : false
-              }
-            },
-            {
-              loader: 'postcss-loader',
-              options: {
-                plugins: [
-                  autoprefixer({
-                    browsers: ['> 1%', 'last 2 versions']
-                  })
-                ]
-              }
-            },
-            {
-              loader: 'sass-loader',
-              options: {
-                includePaths: [
-                  path.resolve('node_modules/normalize.css'),
-                  path.resolve('node_modules/hamburgers/_sass/hamburgers')
-                ]
-              }
+                    }
+                  : false
             }
-          ]
-        })
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [autoprefixer()]
+            }
+          },
+          'sass-loader'
+        ]
       }
     ]
   },
