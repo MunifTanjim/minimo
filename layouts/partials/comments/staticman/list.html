@@ -1,4 +1,3 @@
-{{- $.Scratch.Set "comments_depth" 1 -}}
 {{- $entryId := .UniqueID -}}
 
 {{- if isset .Site.Data.comments $entryId -}}
@@ -10,6 +9,7 @@
 
 <ol class='comment-list'>
   {{- range $index, $comment := $comments -}}
+    {{- $.Scratch.Set "comments_depth" 1 -}}
     {{- if not $comment.parent_id -}}
       {{ partial "comments/staticman/comment" ( dict "Comment" $comment "Page" $ ) }}
     {{- end -}}
