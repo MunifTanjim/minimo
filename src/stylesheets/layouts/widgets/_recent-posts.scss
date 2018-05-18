@@ -1,0 +1,11 @@
+.widget-recent_posts {
+  .sidebar & {
+    .meta {
+      display: none;
+    }
+
+    .item {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,10 +1,13 @@
-    <footer id='footer' class='footer-container'>
-      <div class='footer'>
-        {{ partial "nav/menus/social" . }}
-        {{ partial "footer/copyright" . }}
-      </div>
-    </footer>
+      </main>
 
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'>
+          {{ partial "nav/menus/social" . }}
+          {{ partial "footer/copyright" . }}
+        </div>
+      </footer>
+
+    </div>
   </div>
 
   {{- partial "footer/scripts" . -}}

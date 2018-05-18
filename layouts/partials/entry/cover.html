@@ -3,8 +3,8 @@
 {{- $type := ( printf "%T" . ) -}}
 {{- $isMap := ( not ( eq $type "string" ) ) -}}
 
-<div class='entry-cover-container'>
-  <figure class='entry-cover cover-{{- if $isMap -}}
+<div class='entry-cover'>
+  <figure class='container cover-{{- if $isMap -}}
     {{- with .style -}} {{ . }} {{- else -}} normal {{- end -}}
     {{- else -}} normal {{- end -}}
   '>
@@ -14,7 +14,7 @@
       {{ end -}} />
     {{ if $isMap }}
       {{ with .caption }}
-      <figcaption>
+      <figcaption class='container'>
         <span>
           {{- . | markdownify -}}
         </span>

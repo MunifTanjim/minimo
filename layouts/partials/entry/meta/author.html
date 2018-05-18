@@ -4,14 +4,14 @@
 
 <span class='byline'>
   {{- partial "svg/icons" "author" -}}
-  <span class='screen-reader'> {{ i18n "by" }} </span>
+  <span class='screen-reader-text'> {{ i18n "by" }} </span>
 
   {{- range $i, $authorID := . -}}
     {{- $author := ( index $.Site.Data.authors $authorID ) -}}
     {{- $i18nAuthor := ( index $author $lang ) -}}
     {{- $name := ( or $i18nAuthor.name $author.name ) -}}
     {{- if gt $i 0 }}, {{ end -}}
-    <a href='{{ $.LanguagePrefix }}/authors/{{ $author.id }}'>
+    <a href='{{ ( print "authors" "/" $author.id ) | relLangURL }}'>
       {{- $name.display -}}
     </a>
   {{- end -}}

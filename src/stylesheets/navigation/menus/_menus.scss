@@ -1,0 +1,30 @@
+.menu {
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  li {
+    text-transform: uppercase;
+
+    &.current {
+      a {
+        font-weight: 700;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+@import 'main';
+
+.menu a,
+.sidebar-toggler span,
+.widget-social_menu a {
+  color: $color__bluegrey-700;
+
+  &:focus,
+  &:hover {
+    color: $color__bluegrey-900;
+  }
+}

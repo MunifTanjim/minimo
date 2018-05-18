@@ -1,0 +1,26 @@
+.widget-about {
+  .logo {
+    max-width: 5em;
+
+    a {
+      display: block;
+      line-height: 0;
+    }
+
+    .sidebar & {
+      margin-left: auto;
+    }
+  }
+
+  .site-title {
+    margin-bottom: 0;
+    @include font-size(1.75);
+  }
+
+  .sidebar &.sep-after {
+    &:after {
+      border-bottom-color: $color__accent;
+      border-bottom-color: var(--color-accent);
+    }
+  }
+}

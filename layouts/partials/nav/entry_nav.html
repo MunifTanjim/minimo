@@ -10,26 +10,26 @@
 {{- if ( $.Scratch.Get "showEntryNav" ) -}}
 
 {{ if gt ( len ( where .Site.RegularPages "Section" .Section ) ) 1 }}
-<nav class='entry-nav-container'>
-  <div class='entry-nav'>
+<nav class='entry-nav'>
+  <div class='container'>
 
     {{- if .PrevInSection -}}
-    <div class='prev-entry'>
+    <div class='prev-entry sep-before'>
       <a href='{{ .PrevInSection.Permalink | relURL }}'>
         <span aria-hidden='true'>
           {{- partial "svg/icons" "prev" -}}
           {{- print " " ( i18n "previous" ) -}}
         </span>
-        <span class='screen-reader'>{{ i18n "previousPost" }}: </span>
+        <span class='screen-reader-text'>{{ i18n "previousPost" }}: </span>
         {{- .PrevInSection.Title -}}
       </a>
     </div>
     {{- end -}}
 
     {{- if .NextInSection -}}
-    <div class='next-entry'>
+    <div class='next-entry sep-before'>
       <a href='{{ .NextInSection.Permalink | relURL }}'>
-        <span class='screen-reader'>{{ i18n "nextPost" }}: </span>
+        <span class='screen-reader-text'>{{ i18n "nextPost" }}: </span>
         {{- .NextInSection.Title -}}
         <span aria-hidden='true'>
           {{- print ( i18n "next" ) " " -}}

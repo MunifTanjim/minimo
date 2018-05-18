@@ -1,0 +1,45 @@
+{{- $apiEndpoint := .Site.Params.comments.staticman.apiEndpoint -}}
+{{- $username := .Site.Params.comments.staticman.github.username -}}
+{{- $repo := .Site.Params.comments.staticman.github.repository -}}
+{{- $branch := .Site.Params.comments.staticman.github.branch -}}
+{{- $api := ( print $apiEndpoint "/" $username "/" $repo "/" $branch ) -}}
+
+<div id='respond' class='comment-respond'>
+  <h4 class='comment-reply-title'>
+    {{- i18n "leaveAComment" -}}
+    <small>
+      <a rel='nofollow' id='cancel-comment-reply-link' href='#respond' class='button' style='display:none' aria-label='{{ i18n "cancelComment" }}'>
+        {{- i18n "cancel" -}}
+      </a>
+    </small>
+  </h4>
+  <form action='{{ $api }}/comments' method='post' id='comment-form' class='comment-form'>
+    <input type='hidden' name='options[postId]' value='{{ .UniqueID }}'>
+    <input type='hidden' name='options[redirect]' value='{{ .Permalink }}#submission-success'>
+    <input type='hidden' name='options[redirectError]' value='{{ .Permalink }}#submission-failure'>
+
+    <input type='address' name='fields[honeypot]' style='display:none'>
+    <input type='hidden' name='fields[permalink]' value='{{ .URL }}'>
+    <input type='hidden' name='fields[parent_id]' value=''>
+
+    <div>
+      <label for='comment'>{{ i18n "comment" }}*</label>
+      <textarea id='comment' name='fields[content]' required rows='3'></textarea>
+    </div>
+    <div>
+      <label for='name'>{{ i18n "name" }}*</label>
+      <input id='name' name='fields[author]' type='text' required>
+    </div>
+    <div>
+      <label for='email'>{{ i18n "email" }}*</label>
+      <input id='email' name='fields[email]' type='email' required>
+    </div>
+    <div>
+      <label for='url'>{{ i18n "website" }}</label>
+      <input id='url' name='fields[site]' type='url'>
+    </div>
+    <div>
+      <button type='submit'>{{ i18n "submitComment" }}</button>
+    </div>
+  </form>
+</div>

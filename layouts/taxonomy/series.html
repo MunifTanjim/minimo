@@ -1,0 +1,19 @@
+{{ partial "header" . }}
+
+{{ partial "header/header" . }}
+
+{{ if .Content }}
+<div class='entry'>
+  {{ partial "entry/content" . }}
+</div>
+{{ end }}
+
+<div class='container list-container'>
+  <ul class='list'>
+    {{ range .Data.Pages.ByDate }}
+      {{ .Render "li" }}
+    {{ end }}
+  </ul>
+</div>
+
+{{ partial "footer" . }}

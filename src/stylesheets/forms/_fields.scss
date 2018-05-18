@@ -1,0 +1,15 @@
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.625em 0.875em;
+  border: 1px solid $color__border-input;
+  border-radius: 0.2em;
+  color: $color__text-input;
+  transition: 0.1s ease-in-out;
+
+  &:focus {
+    border-color: $color__border-input-focus;
+    outline-color: transparent;
+  }
+}

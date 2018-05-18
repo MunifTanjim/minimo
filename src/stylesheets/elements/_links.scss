@@ -5,6 +5,7 @@ a {
 
   &:focus {
     outline-color: $color__accent;
+    outline-color: var(--color-accent);
   }
 
   &:active,
@@ -16,5 +17,9 @@ a {
   &:focus,
   &:hover {
     color: $color__link-hover;
+  }
+
+  &.button {
+    display: inline-block;
   }
 }

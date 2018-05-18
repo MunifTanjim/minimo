@@ -1,0 +1,38 @@
+.header {
+  .sep-after {
+    &:after {
+      border-bottom-color: $color__accent;
+      border-bottom-color: var(--color-accent);
+      .has-cover & {
+        display: none;
+      }
+    }
+  }
+}
+
+.site-header {
+  display: none;
+
+  @at-root .home &,
+    .error404 & {
+    display: flex;
+  }
+}
+
+.header-info {
+  margin-top: 1.5em;
+
+  .title {
+    margin-bottom: 0;
+  }
+
+  .desc {
+    margin: 0.5em 0 0;
+  }
+
+  .taxonomy-name {
+    @include font-size(0.875);
+    margin-right: 0.25em;
+    font-style: italic;
+  }
+}

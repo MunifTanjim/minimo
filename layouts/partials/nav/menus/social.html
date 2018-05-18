@@ -1,25 +1,8 @@
-{{- if not .Site.Params.settings.hideSocialMenu -}}
-<div class='social-menu-container'>
-  <nav aria-label='{{ i18n "socialMenu" }}'>
-    <ul class='social-menu'>
-    {{- $social := ( .Site.Params.social ) -}}
-    {{- range $platform := $social.config.platforms -}}
-      {{- with $username := ( index $social $platform ) -}}
-      <li>
-        <a href='{{ print ( index $.Site.Data.theme.social.base $platform ) $username }}' target='_blank' rel='noopener'>
-          <span class='screen-reader'>
-            {{- if eq $platform "email" -}}
-              {{- i18n "contactViaEmail" -}}
-            {{- else -}}
-              {{- i18n "openAccountInNewTab" ( dict "Platform" ( $platform | title ) ) -}}
-            {{- end -}}
-          </span>
-          {{- partial "svg/icons" $platform -}}
-        </a>
-      </li>
-      {{- end -}}
-    {{- end -}}
-    </ul>
-  </nav>
-</div>
+{{- $footerWidgets := .Site.Params.widgets.footer -}}
+
+{{- $conditionOne := ( eq .Site.Params.settings.hideSocialMenu false ) -}}
+{{- $conditionTwo := ( in $footerWidgets "social_menu" ) -}}
+
+{{- if or $conditionOne $conditionTwo -}}
+  {{ partial "widgets/social_menu" . }}
 {{- end -}}

@@ -1,0 +1,59 @@
+.list {
+  margin: 0 auto;
+  list-style: none;
+
+  &-container {
+    .entry + & {
+      margin-top: 2.5em;
+    }
+  }
+
+  .item {
+    display: flex;
+    width: 100%;
+    margin-top: 1em;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    .meta {
+      flex: 0 0 6em;
+
+      span {
+        @include font-size(0.875);
+      }
+    }
+
+    &-header {
+      flex: 1;
+    }
+
+    &-title {
+      @include font-size(1);
+      font-weight: 400;
+      margin-bottom: 0;
+      line-height: inherit;
+    }
+
+    .icon {
+      margin-right: 0.25em;
+    }
+  }
+}
+
+/* Taxonomy Cloud */
+.taxonomy-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  li {
+    max-width: 100%;
+    padding: 0 1.5em 0.5em 0;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}

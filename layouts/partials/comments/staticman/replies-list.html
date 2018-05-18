@@ -1,0 +1,11 @@
+{{- .Page.Scratch.Add "comments_depth" 1 -}}
+{{- $comments := ( index .Page.Site.Data.comments .Page.UniqueID ) -}}
+{{- $parentId := .ParentId -}}
+
+<ol class='children'>
+{{- range $index, $comment := $comments -}}
+  {{- if ( eq $comment.parent_id $parentId ) -}}
+    {{ partial "comments/staticman/comment" ( dict "Comment" $comment "Page" $.Page ) }}
+  {{- end -}}
+{{- end -}}
+</ol>

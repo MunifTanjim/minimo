@@ -1,0 +1,31 @@
+{{- $defaultConfig := .Site.Data.config.default.widgets.about -}}
+{{- $configData := ( or .Site.Data.config.widgets.about $defaultConfig ) -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $config := ( ( index $configData $lang ) | default $configData ) -}}
+
+<section class='widget widget-about sep-after'>
+  <header>
+    {{ with $config.logo }}
+    <div class='logo'>
+      <a href='{{ $.Site.Home.RelPermalink }}'>
+        <img src='{{ . | relURL }}'>
+      </a>
+    </div>
+    {{ end }}
+    <h2 class='title site-title '>
+    {{ with $config.title }}
+      {{- . -}}
+    {{ else }}
+      {{- .Site.Title -}}
+    {{ end }}
+    </h2>
+    <div class='desc'>
+    {{ with $config.description }}
+      {{- . | markdownify -}}
+    {{ else }}
+      {{- .Site.Params.info.description -}}
+    {{ end }}
+    </div>
+  </header>
+
+</section>

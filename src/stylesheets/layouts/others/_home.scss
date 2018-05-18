@@ -1,0 +1,11 @@
+.home-widgets {
+  .sep-before {
+    &:before {
+      display: none;
+
+      .entry + & {
+        display: block;
+      }
+    }
+  }
+}

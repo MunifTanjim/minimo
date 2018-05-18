@@ -1,0 +1,43 @@
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  width: auto;
+  padding: 0.5em 0.75em;
+  border: 1px solid $color__border-input;
+  border-radius: 0.2em;
+
+  background: $color__button-background;
+  color: $color__button-text;
+
+  @include font-size(1);
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  text-transform: uppercase;
+
+  user-select: none;
+  cursor: pointer;
+
+  transition: 0.1s ease-in-out;
+
+  &:focus {
+    outline-color: $color__accent;
+    outline-color: var(--color-accent);
+  }
+
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: $color__button-text;
+    color: $color__button-background;
+  }
+}

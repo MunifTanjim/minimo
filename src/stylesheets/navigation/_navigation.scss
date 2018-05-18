@@ -1,9 +1,5 @@
-// Entry Navigation
-@import "entry-nav";
+@import 'menus/menus';
 
-// Menus
-@import "menus";
+@import 'entry-nav';
 
-// Pagination
-@import "pagination";
-
+@import 'pagination';

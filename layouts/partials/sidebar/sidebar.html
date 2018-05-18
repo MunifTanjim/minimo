@@ -1,0 +1,22 @@
+{{- $sidebarEnabled := .Site.Params.sidebar.enable -}}
+{{- $sidebarWidgets := .Site.Params.widgets.sidebar -}}
+
+{{- if ( and $sidebarEnabled $sidebarWidgets ) -}}
+
+<div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>{{ i18n "skipToMainMenu" }}</a>
+
+  <div class='container'>
+  {{- range $sidebarWidgets -}}
+    {{- partial ( print "widgets/" . ) $ -}}
+  {{- end -}}
+  </div>
+
+  <div class='sidebar-overlay'></div>
+</div>
+
+{{- else -}}
+
+<a class='screen-reader-text' href='#content'>{{ i18n "skipToContent" }}</a>
+
+{{- end -}}

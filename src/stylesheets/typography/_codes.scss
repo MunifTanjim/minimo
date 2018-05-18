@@ -1,39 +1,52 @@
-pre {
+pre,
+code,
+kbd,
+var,
+samp {
   font-family: $font-family__code;
-  @include font-size($font-size__pre);
-  background: $color__black;
-  color: $color__white;
 
-  text-align: initial;
-  max-width: 100%;
-  padding: 1em 1.5em;
-  margin-bottom: 1.725em;
+  background: $color__background-code;
+  color: $color__text-code;
+
+  border: 1px solid $color__border-code;
+  border-radius: 0.25em;
+  padding: 0.1em 0.25em;
+}
+
+pre {
   overflow: auto;
   word-wrap: normal;
+  text-align: initial;
 
-  .highlight & {
+  margin-bottom: 1.5em;
+  padding: 0.75em 1em;
+
+  code,
+  kbd,
+  var,
+  samp {
+    background: none;
+    color: inherit;
+
+    border: 0;
     padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    background: transparent;
-    color: initial;
   }
 }
 
 code,
 kbd,
-tt,
-var {
-  font-family: $font-family__code;
+var,
+samp {
+  @include font-size($font-size__code);
 }
 
-.entry-content {
-  .highlight {
-    margin-bottom: 1.725em;
+.highlight {
+  pre {
+    border: 0;
+    margin: 0;
+  }
 
-    & > div,
-    & > pre {
-      padding: 1em 1.5em;
-    }
+  .entry-content & {
+    margin-bottom: 1.5em;
   }
 }

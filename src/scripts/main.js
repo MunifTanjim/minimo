@@ -1,30 +1,50 @@
+import './webpack-public-path'
+
 import '../stylesheets/style'
 
 import docReady from 'es6-docready'
 
-import { detailsTagSupported, shuffle } from './helpers'
+import { shuffle } from './helpers'
 
 docReady(() => {
-  let termCloud = document.querySelector('.term-cloud:not(.no-shuffle)')
-  if (termCloud) {
-    let terms = termCloud.querySelectorAll('.term-cloud li')
-    shuffle(terms).forEach(term => term.parentElement.appendChild(term))
+  const body = document.body
+
+  const taxonomyClouds = body.querySelectorAll(
+    '.taxonomy-cloud:not(.no-shuffle)'
+  )
+  if (taxonomyClouds.length) {
+    taxonomyClouds.forEach(taxonomyCloud => {
+      let terms = taxonomyCloud.querySelectorAll('li')
+      shuffle(terms).forEach(term => term.parentElement.appendChild(term))
+    })
   }
 
-  let toc = document.querySelector('.entry-toc')
-  if (toc) {
-    if (!detailsTagSupported()) {
-      document.body.classList.add('no-details')
-      let tocToggler = document.querySelector('.toc-title')
-      tocToggler.addEventListener('click', () => {
-        if (toc.getAttribute('open')) {
-          toc.open = false
-          toc.removeAttribute('open')
-        } else {
-          toc.open = true
-          toc.setAttribute('open', 'open')
-        }
-      })
-    }
+  const detailsElements = body.querySelectorAll('details')
+  if (detailsElements.length) {
+    import(/* webpackChunkName: "details-polyfill" */ './details-polyfill').then(
+      ({ detailsPolyfill }) => detailsPolyfill(detailsElements)
+    )
+  }
+
+  let hasEmoji = body.classList.contains('has-emoji')
+  if (hasEmoji) {
+    let entry = body.querySelector('.entry')
+    import(/* webpackChunkName: "twemoji" */ 'twemoji').then(twemoji =>
+      twemoji.parse(entry)
+    )
+  }
+
+  let hasSidebar = body.classList.contains('has-sidebar')
+  if (hasSidebar) {
+    import(/* webpackChunkName: "sidebar" */ './sidebar').then(
+      ({ initSidebar }) => initSidebar()
+    )
+  }
+
+  let hasComments = body.querySelector('#comment-form')
+  if (hasComments) {
+    import(/* webpackChunkName: "comments" */ './comments').then(
+      ({ initComments }) => initComments()
+    )
   }
 })

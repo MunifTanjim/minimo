@@ -1,5 +1,6 @@
 ---
 date: 2017-09-25T02:00:00+06:00
+lastmod: 2018-02-08T15:00:00+06:00
 title: Installation Guide
 authors: ["muniftanjim"]
 categories:
@@ -53,13 +54,17 @@ For getting started with Minimo, copy the **`config.toml`** file from the **`exa
 cp themes/minimo/exampleSite/config.toml .
 ```
 
-You can take a look at the [example **`config.toml`**](/docs/example-config-toml) file.
+You can take a look at the [**`config.toml`** file]({{< relref "/docs/config-file.md" >}}) of this site.
 
 Now, you can start editing this file and change the configuration!
 
 ### Setting up Authors
 
-Follow the [Authors Setup Guide](/docs/authors) for setting up authors for you site.
+Follow the [Authors Setup Guide]({{< relref "/docs/authors.md" >}}) for setting up authors for you site.
+
+### Setting up Widgets
+
+If you want to use Widgets on your site, take a look at the [Widgets documentation]({{< relref "docs/widgets.md" >}})
 
 -------------
 

@@ -1,0 +1,105 @@
+.comments {
+  ol {
+    list-style: none;
+    margin: 0;
+  }
+
+  &-title {
+    @include font-size(1.25);
+    margin-bottom: 1.5em;
+  }
+}
+
+.comment {
+  position: relative;
+  margin: 1em 0;
+
+  &-header {
+    min-height: 3em;
+  }
+
+  .avatar {
+    float: left;
+    height: 3em;
+    width: 3em;
+    border-radius: 0.25em;
+    margin-right: 0.75em;
+  }
+
+  &-meta {
+    @include font-size(0.875);
+  }
+
+  .fn {
+    display: inline-block;
+    margin-top: 0.1em;
+  }
+
+  .says {
+    @extend .screen-reader-text;
+  }
+
+  .reply {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin-top: -2em;
+
+    a {
+      display: inline-block;
+    }
+  }
+
+  &-content {
+    margin-top: 0.75em;
+    border-radius: 0.25em;
+    border: 1px solid $color__grey;
+    padding: 1em;
+    padding-bottom: 2em;
+
+    @extend .entry-content;
+  }
+
+  &-respond {
+    margin: 1.5em 0;
+  }
+
+  &-reply-title {
+    small {
+      display: inline-block;
+      @include font-size(0.5);
+      margin-left: 1em;
+    }
+  }
+
+  &-form {
+    label {
+      display: inline-block;
+      margin-bottom: 0.25em;
+    }
+
+    & > div {
+      margin-top: 1em;
+    }
+  }
+
+  &-submission-feedback {
+    display: none;
+    position: relative;
+    border-radius: 0.25em;
+    border: 1px solid $color__grey;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+
+    a {
+      position: absolute;
+      top: 1.5em;
+      right: 1.5em;
+      @include font-size(0.875);
+    }
+
+    &:target {
+      display: block;
+    }
+  }
+}

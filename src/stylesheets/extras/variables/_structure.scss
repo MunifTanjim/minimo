@@ -1,6 +1,11 @@
-$max-width__container: 740px;
-$padding__container-side: 20px;
+$container__max-width: 740px;
+$container__gutter: 20px;
+
+$sidebar__width: 300px;
 
 $max-width__cover-wide: 1080px;
 
 $breakpoint-small: 480px;
+$breakpoint-medium: 920px;
+
+$transition-duration: 0.2s;

@@ -2,35 +2,24 @@
 
 {{ partial "header" . }}
 
-<main id='main' class='main'>
-  <header class='header-container'>
-    <div class='header'>
-      <div class='header-info'>
-        <h1 class='title'>
-          {{- .Title -}}
-        </h1>
-        {{ partial "header/subtitle" . }}
-      </div>
-    </div>
-  </header>
+{{ partial "header/header" . }}
 
-  <div class='list-container'>
-    <ul class='list'>
-    {{ range .Data.Terms.Alphabetical }}
-      {{- $author := ( index $.Site.Data.authors .Name ) -}}
-      {{- $data := ( or ( index $author $lang ) $author ) -}}
-      {{- $name := $data.name -}}
-      <li class='list-item'>
-        <h2 class='list-item-title'>
-          {{- partial "svg/icons" "author" -}}
-          <a href='{{ $.LanguagePrefix }}/authors/{{ .Name | urlize }}'>
-            {{- $name.display -}}
-          </a>
-        </h2>
-      </li>
-      {{ end }}
-    </ul>
-  </div>
-</main>
+<div class='container list-container'>
+  <ul class='list'>
+  {{ range .Data.Terms.Alphabetical }}
+    {{- $author := ( index $.Site.Data.authors .Name ) -}}
+    {{- $data := ( or ( index $author $lang ) $author ) -}}
+    {{- $name := $data.name -}}
+    <li class='item'>
+      <h2 class='item-title'>
+        {{- partial "svg/icons" "author" -}}
+        <a href='{{ ( print "authors" "/" ( .Name | urlize ) ) | relLangURL }}'>
+          {{- $name.display -}}
+        </a>
+      </h2>
+    </li>
+    {{ end }}
+  </ul>
+</div>
 
 {{ partial "footer" . }}

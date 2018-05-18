@@ -1,0 +1,81 @@
+[author]
+one = "Autor"
+other = "Autores"
+
+[by]
+other = "por"
+
+[category]
+one = "Categoría"
+other = "Categorías"
+
+[contactViaEmail]
+other = "Contacto vía correo"
+
+[currentPage]
+other = "Página actual"
+
+[gopher]
+other = "Gopher"
+
+[goHome]
+other = "Ir al inicio..."
+
+[mainMenu]
+other = "Menú principal"
+
+[next]
+other = "Siguiente"
+
+[nextPage]
+other = "Siguiente página"
+
+[nextPost]
+other = "Siguiente entrada"
+
+[noTerm]
+other = "¡Ni un sólo {{ .Term }}!"
+
+[openAccountInNewTab]
+other = "Abrir cuenta de {{ .Platform }} en una nueva pestaña"
+
+[page]
+other = "Página"
+
+[previous]
+other = "Anterior"
+
+[previousPage]
+other = "Anterior página"
+
+[previousPost]
+other = "Anterior entrada"
+
+[postedOn]
+other = "Posteado en"
+
+[readingTime]
+one = "Lectura de un minuto"
+other = "{{ .Count }} minutos de lectura"
+
+[recentPosts]
+other = "Entradas recientes"
+
+[skipToContent]
+other = "Saltar al contenido"
+
+[skipToMainMenu]
+other = "Saltar al menú principal"
+
+[socialMenu]
+other = "Menú social"
+
+[tableOfContents]
+other = "Índice"
+
+[tag]
+one = "Etiqueta"
+other = "Etiquetas"
+
+[toggleSidebar]
+other = "Alternar barra lateral"

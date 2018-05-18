@@ -1,0 +1,108 @@
+.sidebar {
+  visibility: hidden;
+
+  float: left;
+  left: -$sidebar__width;
+  position: absolute;
+
+  width: $sidebar__width;
+  max-width: 100%;
+  min-height: 100%;
+  padding: 2em 0;
+  margin-right: -100%;
+
+  outline: 0;
+  z-index: 99999;
+  transition: left $transition-duration;
+
+  text-align: right;
+  background: $color__pure-white;
+
+  &.toggled {
+    visibility: visible;
+    left: 0;
+  }
+
+  .sep-after {
+    &:after {
+      margin-left: auto;
+    }
+  }
+
+  @include screen($breakpoint-medium) {
+    visibility: visible;
+    left: 0;
+  }
+}
+
+.sidebar-toggler {
+  background: none;
+  border: 0;
+
+  .icon {
+    @include font-size(1.25);
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    background: none;
+  }
+
+  .main & {
+    padding: 0;
+    position: absolute;
+    right: $container__gutter;
+
+    .close {
+      display: none;
+    }
+  }
+
+  .main-menu & {
+    position: static;
+    margin-right: 0.75em;
+  }
+
+  .sidebar & {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+
+    z-index: 2027;
+
+    .open {
+      display: none;
+    }
+  }
+
+  @include screen($breakpoint-medium) {
+    display: none;
+  }
+}
+
+.sidebar-overlay {
+  display: none;
+
+  .sidebar.toggled & {
+    display: block;
+
+    &:after {
+      content: '';
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -2027;
+
+      background: $color__pure-white;
+      opacity: 0.75;
+    }
+
+    @include screen($breakpoint-medium) {
+      display: none;
+    }
+  }
+}

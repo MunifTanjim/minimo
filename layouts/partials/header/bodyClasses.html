@@ -1,5 +1,10 @@
-{{- if eq .Kind "404" -}}_{{- end -}}{{- .Kind -}}
+{{- $sidebarEnabled := .Site.Params.sidebar.enable -}}
+{{- $sidebarWidgets := .Site.Params.widgets.sidebar -}}
+
+{{- if eq .Kind "404" -}} error{{- end -}}{{- .Kind -}}
 {{- with .Type }} type-{{ . }}{{ end -}}
 {{- with .Layout }} layout-{{ . }}{{ end -}}
-{{- with .Data.Singular }} taxonomyTerm-{{ . }}{{ end -}}
-{{- if .Params.cover }} hasCover{{ end -}}
+{{- with .Data.Singular }} taxonomy-{{ . }}{{ end -}}
+{{- if .Params.cover }} has-cover{{ end -}}
+{{- if ( and $sidebarEnabled $sidebarWidgets ) }} has-sidebar{{ end -}}
+{{- if eq .Params.emoji true }} has-emoji{{ end -}}

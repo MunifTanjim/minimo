@@ -1,6 +1,18 @@
 {
+  "comments": {
+    "js": "comments.29dd786b.js"
+  },
+  "sidebar": {
+    "js": "sidebar.d4f843a7.js"
+  },
+  "twemoji": {
+    "js": "twemoji.2d6d7d91.js"
+  },
+  "details-polyfill": {
+    "js": "details-polyfill.a217b88c.js"
+  },
   "main": {
-    "js": "main.5871befd.js",
-    "css": "main.f0e8df71.css"
+    "css": "main.67e9c12b.css",
+    "js": "main.0d92f56c.js"
   }
 }

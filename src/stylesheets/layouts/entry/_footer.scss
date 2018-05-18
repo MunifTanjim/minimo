@@ -1,0 +1,13 @@
+.entry-footer {
+  .container > div {
+    margin-top: 0.5em;
+
+    &:first-child {
+      margin-top: 2.5em;
+    }
+  }
+
+  .taxonomy-icon {
+    margin-right: 0.375em;
+  }
+}

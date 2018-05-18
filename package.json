@@ -1,7 +1,7 @@
 {
   "name": "minimo",
   "description": "Minimalist theme for Hugo",
-  "version": "1.3.0",
+  "version": "2.3.0",
   "author": {
     "name": "Munif Tanjim",
     "url": "https://muniftanjim.com"
@@ -9,27 +9,32 @@
   "repository": "MunifTanjim/minimo",
   "license": "MIT",
   "scripts": {
-    "build": "NODE_ENV=production webpack -p",
-    "start": "hugo server --source=exampleSite --themesDir=../..",
+    "build": "NODE_ENV=production webpack",
+    "start":
+      "hugo server --source=exampleSite --themesDir=../.. --disableFastRender",
     "watch": "webpack --watch --progress --colors"
   },
   "devDependencies": {
     "assets-webpack-plugin": "^3.5.1",
-    "autoprefixer": "^7.1.1",
-    "babel-core": "^6.24.1",
-    "babel-eslint": "^7.2.3",
-    "babel-loader": "^7.0.0",
-    "babel-preset-es2015": "^6.24.1",
-    "clean-webpack-plugin": "^0.1.16",
-    "css-loader": "^0.28.1",
-    "eslint": "^3.19.0",
-    "extract-text-webpack-plugin": "^2.1.0",
-    "node-sass": "^4.5.2",
-    "postcss-loader": "^2.0.5",
-    "sass-loader": "^6.0.5",
-    "webpack": "^2.5.1"
+    "autoprefixer": "^8.4.1",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "postcss-loader": "^2.1.5",
+    "sass-loader": "^7.0.1",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.3"
   },
   "dependencies": {
-    "es6-docready": "^1.0.0"
+    "es6-docready": "^1.0.0",
+    "normalize.css": "^8.0.0",
+    "twemoji": "^2.5.1"
   }
 }

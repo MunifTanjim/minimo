@@ -1,0 +1,13 @@
+.widget-taxonomy_cloud {
+  .sidebar & {
+    .taxonomy-cloud {
+      justify-content: flex-end;
+
+      @include font-size(0.875);
+    }
+
+    li {
+      padding: 0 0 0.4em 0.8em;
+    }
+  }
+}

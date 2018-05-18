@@ -2,12 +2,40 @@
 one = "লেখক"
 other = "লেখকেরা"
 
+[authorsAvatar]
+other = "{{ .Author }}-এর ছবি"
+
 [by]
 other = "লিখেছে"
+
+[cancel]
+other = "বাদ দাও"
+
+[cancelComment]
+other = "কমেন্ট করা বাদ দাও"
 
 [category]
 one = "ক্যাটেগরি"
 other = "ক্যাটেগরিসমূহ"
+
+[comment]
+other = "কমেন্ট"
+
+[commentSubmissionErrorMessage]
+other = "সমস্যা দেখা দিয়েছে। কমেন্ট সাবমিট করা যায় নি। অনুগ্রহ করে আবার চেষ্টা করো। ধন্যবাদ!"
+
+[commentSubmissionErrorTitle]
+other = "এহহে, স্যরি!"
+
+[commentSubmissionSuccessMessage]
+other = "কমেন্ট সাবমিট করা হয়েছে। কিছুক্ষণের মধ্যেই সেটা এই পেজে দেখা যাবে!"
+
+[commentSubmissionSuccessTitle]
+other = "ধন্যবাদ!"
+
+[commentsOnEntry]
+one = "{{ .Title }}-এ কমেন্ট শুধুমাত্র {{ .Count }}টা"
+other = "{{ .Title }}-এ কমেন্ট {{ .Count }}টা"
 
 [contactViaEmail]
 other = "ইমেইলে যোগাযোগ করো"
@@ -15,14 +43,23 @@ other = "ইমেইলে যোগাযোগ করো"
 [currentPage]
 other = "এই পৃষ্ঠা"
 
+[email]
+other = "ইমেইল"
+
 [gopher]
 other = "গোফার"
 
 [goHome]
 other = "গোড়ায় ফিরে চলো..."
 
+[leaveAComment]
+other = "কমেন্ট দিয়ে যাও..."
+
 [mainMenu]
 other = "মেইন মেনু"
+
+[name]
+other = "নাম"
 
 [next]
 other = "পরেরটা"
@@ -35,6 +72,9 @@ other = "পরের পোস্ট"
 
 [noTerm]
 other = "কোন {{ .Term }} নেই!"
+
+[ok]
+other = "ঠিক আছে"
 
 [openAccountInNewTab]
 other = "{{ .Platform }} একাউন্ট নতুন ট্যাবে খোল"
@@ -61,11 +101,33 @@ other = "{{ .Count }} মিনিট লম্বা"
 [recentPosts]
 other = "সাম্প্রতিক পোষ্টগুলো"
 
+[reply]
+other = "উত্তর দাও"
+
+[replyToAuthor]
+other = "{{ .Author }}-কে উত্তর দাও"
+
+[says]
+other = "বলেছে"
+
+[series]
+one = "সিরিজ"
+other = "সিরিজসমূহ"
+
+[sidebarMenu]
+other = "সাইডবার মেনু"
+
 [skipToContent]
 other = "কন্টেন্টে যাও"
 
+[skipToMainMenu]
+other = "মেইন মেনুতে যাও"
+
 [socialMenu]
 other = "সোশ্যাল মেনু"
+
+[submitComment]
+other = "কমেন্ট!"
 
 [tableOfContents]
 other = "এক নজরে"
@@ -73,3 +135,9 @@ other = "এক নজরে"
 [tag]
 one = "ট্যাগ"
 other = "ট্যাগসমূহ"
+
+[toggleSidebar]
+other = "সাইডবার ট্যুগল কর"
+
+[website]
+other = "ওয়েবসাইট"

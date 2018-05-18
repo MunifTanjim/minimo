@@ -16,6 +16,8 @@ enableRobotsTXT = true # generate robots.txt
 # Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
 pygmentsCodefences = true
 
+enableEmoji = true
+
 # Missing translations will default to this content language
 defaultContentLanguage = "en"
 
@@ -39,12 +41,20 @@ suffix = ""
 # date & time format: https://golang.org/pkg/time/
 dateFormat = "2006, Jan 02"
 listDateFormat = "2006, Jan 02"
+archiveDateFormat = "Jan 02"
 hideEntryNavigation = ["page"] # boolean / array of sections
-recentPostsLength = 4
-hideSocialMenu = false
 showReadingTime = true
-noTermCloudShuffle = false
-homepageSections = ["recent_posts"]
+taxonomyCloudShuffle = true
+accentColor = "#ffcd00"
+hideMainMenu = false
+
+[params.sidebar]
+enable = true
+
+[params.widgets]
+homepage = ["recent_posts"]
+sidebar = ["about","taxonomy_cloud"]
+footer = ["social_menu"]
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
@@ -63,18 +73,30 @@ codepen = "MunifTanjim"
 email = "contact@example.com"
 facebook = "MunifTanjim"
 github = "MunifTanjim"
+gitlab = "MunifTanjim"
 instagram = "MunifTanjim"
 linkedin = "muniftanjim"
 twitter = "MunifTanjim"
 telegram = "MunifTanjim"
 google_scholar = "qc6CJjYAAAAJ"
 
-[params.social.config]
-platforms = ["github","facebook","twitter","instagram","email","codepen","linkedin","telegram","google_scholar"]
+[params.comments]
+enable = false
+
+[params.comments.staticman]
+enable = true
+apiEndpoint = "https://api.staticman.net/v2/entry"
+maxDepth = 2
+
+[params.comments.staticman.github]
+username = "MunifTanjim"
+repository = "minimo"
+branch = "master"
 
 [taxonomies]
 author = "authors"
 category = "categories"
+series = "series"
 tag = "tags"
 
 [permalinks]

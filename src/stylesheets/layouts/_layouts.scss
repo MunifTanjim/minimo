@@ -1,0 +1,62 @@
+.site {
+  overflow-x: hidden;
+}
+
+.main {
+  width: 100%;
+  padding-top: 2em;
+
+  transition: margin-left $transition-duration;
+
+  .sidebar.toggled ~ & {
+    margin-left: $sidebar__width;
+  }
+
+  @include screen($breakpoint-medium) {
+    width: auto;
+
+    .has-sidebar & {
+      float: left;
+      margin-left: $sidebar__width;
+      padding-left: 2em;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: $container__max-width;
+
+  padding: 0 $container__gutter;
+  margin: 0 auto;
+
+  .has-sidebar & {
+    margin-left: 0;
+  }
+}
+
+.sep {
+  &-after:after,
+  &-before:before {
+    content: '';
+    display: block;
+    width: 4em;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    border-bottom: 0.125em solid $color__grey;
+  }
+}
+
+@import 'sidebar/sidebar';
+
+@import 'header';
+
+@import 'entry/entry';
+
+@import 'lists';
+
+@import 'footer';
+
+@import 'others/others';
+
+@import 'widgets/widgets';

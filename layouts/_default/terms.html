@@ -1,26 +1,15 @@
 {{ partial "header" . }}
 
-<main id='main' class='main'>
-  <header class='header-container'>
-    <div class='header'>
-      <div class='header-info'>
-        <h1 class='title'>
-          {{- ( ( i18n .Data.Singular 2 ) | default .Title ) | title -}}
-        </h1>
-        {{ partial "header/subtitle" . }}
-      </div>
-    </div>
-  </header>
+{{ partial "header/header" . }}
 
-  {{ if .Content }}
-  <div class='entry'>
-    {{ partial "entry/content" . }}
-  </div>
-  {{ end }}
+{{ if .Content }}
+<div class='entry'>
+  {{ partial "entry/content" . }}
+</div>
+{{ end }}
 
-  <div class='term-cloud-container'>
-    {{ partial "extras/term_cloud" . }}
-  </div>
-</main>
+{{- $shuffle := .Site.Params.settings.taxonomyCloudShuffle -}}
+{{- $taxonomy := .Data.Plural -}}
+{{ partial "extras/taxonomy_cloud" ( dict "Taxonomy" $taxonomy "Shuffle" $shuffle "Scope" . ) }}
 
 {{ partial "footer" . }}

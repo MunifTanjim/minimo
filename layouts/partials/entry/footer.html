@@ -1,6 +1,6 @@
 {{ if not ( eq .Section "page" ) }}
-<footer class='entry-footer-container'>
-  <div class='entry-footer'>
+<footer class='entry-footer'>
+  <div class='container sep-before'>
   {{ range $taxonomy, $pages := .Site.Taxonomies }}
     {{- if not ( eq $taxonomy "authors" ) -}}
       {{- if ( index $.Params $taxonomy ) -}}

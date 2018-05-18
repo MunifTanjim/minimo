@@ -1,0 +1,34 @@
+.entry-cover {
+  figure {
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+  }
+
+  img {
+    display: block;
+  }
+
+  figcaption {
+    text-align: center;
+    margin: 0.25em auto 0;
+    padding: 0;
+
+    span {
+      @include font-size(0.875);
+    }
+  }
+}
+
+.cover-wide {
+  padding: 0;
+  max-width: $max-width__cover-wide;
+}
+
+.cover-full {
+  padding: 0;
+  max-width: 100%;
+
+  img {
+    width: 100%;
+  }
+}

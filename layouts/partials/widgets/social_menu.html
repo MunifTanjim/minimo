@@ -1,0 +1,41 @@
+{{- $social := .Site.Params.social -}}
+
+{{- if $social -}}
+
+{{- $defaultConfig := .Site.Data.config.default.widgets.social_menu -}}
+{{- $configData := ( or .Site.Data.config.widgets.social_menu $defaultConfig ) -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $config := ( ( index $configData $lang ) | default $configData ) -}}
+
+<section class='widget widget-social_menu sep-after'>
+  {{- with $config.title -}}
+  <header>
+    <h4 class='title widget-title'>
+      {{- . -}}
+    </h4>
+  </header>
+  {{- end -}}
+
+  <nav aria-label='{{ i18n "socialMenu" }}'>
+    <ul>
+    {{- range $platform := $config.platforms -}}
+      {{- with $username := ( index $social $platform ) -}}
+      <li>
+        <a href='{{ print ( index $.Site.Data.theme.social.base $platform ) $username }}' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>
+            {{- if eq $platform "email" -}}
+              {{- i18n "contactViaEmail" -}}
+            {{- else -}}
+              {{- i18n "openAccountInNewTab" ( dict "Platform" ( $platform | title ) ) -}}
+            {{- end -}}
+          </span>
+          {{- partial "svg/icons" $platform -}}
+        </a>
+      </li>
+      {{- end -}}
+    {{- end -}}
+    </ul>
+  </nav>
+</section>
+
+{{- end -}}

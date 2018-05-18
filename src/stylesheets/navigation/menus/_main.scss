@@ -1,26 +1,15 @@
-.main-menu-container {
-  margin-top: 2em;
-}
-
 .main-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  & > div {
+    display: flex;
+    align-items: center;
+  }
 
   li {
     display: inline-block;
-    text-transform: uppercase;
     margin-right: 0.625em;
 
-    &:last-of-type {
+    &:last-child {
       margin-right: 0;
-    }
-  }
-
-  a {
-    &.current {
-      font-weight: 700;
-      pointer-events: none;
     }
   }
 }

@@ -1,0 +1,7 @@
+{
+  "library": {
+    "path": "//unpkg.com/mathjax/MathJax.js",
+    "config": "TeX-MML-AM_CHTML"
+  },
+  "config": {}
+}

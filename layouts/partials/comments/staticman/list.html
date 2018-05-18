@@ -1,0 +1,19 @@
+{{- $entryId := .UniqueID -}}
+
+{{- if isset .Site.Data.comments $entryId -}}
+
+{{- $comments := ( index .Site.Data.comments $entryId ) -}}
+<h3 class='comments-title'>
+  {{ i18n "commentsOnEntry" ( dict "Count" ( len $comments ) "Title" .Title ) }}
+</h3>
+
+<ol class='comment-list'>
+  {{- range $index, $comment := $comments -}}
+    {{- $.Scratch.Set "comments_depth" 1 -}}
+    {{- if not $comment.parent_id -}}
+      {{ partial "comments/staticman/comment" ( dict "Comment" $comment "Page" $ ) }}
+    {{- end -}}
+  {{- end -}}
+</ol>
+
+{{- end -}}
