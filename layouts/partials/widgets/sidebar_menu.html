@@ -23,6 +23,17 @@
           <a {{ if $isCurrent -}} aria-current='page' {{ end -}} href='{{ .URL }}'>
             {{- .Name -}}
           </a>
+          {{- if .HasChildren -}}
+            <ul>
+              {{- range .Children -}}
+
+              {{- $isSubCurrent := ( or ( $.IsMenuCurrent $menu . ) ( $.HasMenuCurrent $menu . ) ) -}}
+              <li class='item {{- if $isSubCurrent }} current {{- end -}}'>
+                <a {{ if $isSubCurrent -}} aria-current='page' {{- end -}} href='{{ .URL }}'>{{- .Name -}}</a>
+              </li>
+              {{- end -}} 
+            </ul>
+            {{- end -}}
         </li>
       {{- end -}}
       </ul>

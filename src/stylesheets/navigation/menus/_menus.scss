@@ -7,10 +7,18 @@
   li {
     text-transform: uppercase;
 
+    /*apply only to direct children, otherwise any nested child-node will be "current"*/
     &.current {
-      a {
+     > a {
         font-weight: 700;
-        pointer-events: none;
+      }
+
+      /*styles for nested menu*/
+      ul li{
+        &:after{
+          content:"–";
+          font-weight: 700;
+        }
       }
     }
   }
