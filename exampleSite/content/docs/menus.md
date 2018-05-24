@@ -1,6 +1,6 @@
 ---
 date: 2017-09-27T10:00:00+06:00
-lastmod: 2018-04-12T02:30:00+06:00
+lastmod: 2018-05-24T02:10:00+06:00
 title: Menus Setup Guide
 authors: ["muniftanjim"]
 categories:
@@ -45,6 +45,14 @@ Or you can use it to mirror another menu by using the `sidebar_menu.mirror` opti
 [sidebar_menu]
 ...
 mirror = "main"
+```
+
+The sidebar menu can display nested menus. The sub-pages need to have a page as "parent" defined in the page's front matter:
+
+```yaml
+menu: 
+   main:
+      parent: myParentPage
 ```
 
 ## Social Menu

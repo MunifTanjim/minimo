@@ -57,14 +57,6 @@ Here are the configuration options available for the Widgets:
   - `mirror` [`String`]: Name of menu to mirror (e.g. `"main"`)  
     _default: `""`_
 
-The sidebar menu can display nested menus. The sub-pages need to have a page as "parent" defined in the page's front matter:
-
-```yaml
-menu: 
-   main:
-      parent: myParentPage
-```
-
 #### Widget: Social Menu
 
 - `social_menu` [`Map`]:
