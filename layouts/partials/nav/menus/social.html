@@ -1,8 +1,0 @@
-{{- $footerWidgets := .Site.Params.widgets.footer -}}
-
-{{- $conditionOne := ( eq .Site.Params.settings.hideSocialMenu false ) -}}
-{{- $conditionTwo := ( in $footerWidgets "social_menu" ) -}}
-
-{{- if or $conditionOne $conditionTwo -}}
-  {{ partial "widgets/social_menu" . }}
-{{- end -}}

@@ -2,7 +2,10 @@
 
       <footer id='footer' class='footer'>
         <div class='container sep-before'>
-          {{ partial "nav/menus/social" . }}
+          {{- $footerWidgets := .Site.Params.widgets.footer -}}
+          {{- range $footerWidgets -}}
+            {{- partial ( print "widgets/" . ) $ -}}
+          {{- end -}}
           {{ partial "footer/copyright" . }}
         </div>
       </footer>
