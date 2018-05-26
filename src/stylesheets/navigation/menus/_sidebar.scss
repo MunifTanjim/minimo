@@ -1,0 +1,61 @@
+.sidebar-menu {
+  .item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+
+  .has-current {
+    & > a {
+      font-style: italic;
+    }
+  }
+
+  .sub-menu {
+    display: none;
+    padding-left: 0;
+    flex: 100%;
+    flex-shrink: 0;
+
+    .item:not(.has-children) {
+      padding-right: 1.2em;
+    }
+  }
+}
+
+.sub-menu-toggler {
+  border: 0;
+  padding: 0;
+  margin-left: 0.2em;
+  font-weight: 400;
+  width: 1em;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: none;
+  }
+
+  & > .sign {
+    position: relative;
+    top: -2px;
+
+    &:after {
+      content: '+';
+    }
+  }
+}
+
+.toggled {
+  & > .sub-menu {
+    display: block;
+  }
+
+  & > .sub-menu-toggler {
+    & > .sign {
+      &:after {
+        content: '–';
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@
     "js": "comments.29dd786b.js"
   },
   "sidebar": {
-    "js": "sidebar.d4f843a7.js"
+    "js": "sidebar.c5cb03d8.js"
   },
   "twemoji": {
     "js": "twemoji.2d6d7d91.js"
@@ -12,7 +12,7 @@
     "js": "details-polyfill.a217b88c.js"
   },
   "main": {
-    "css": "main.67e9c12b.css",
-    "js": "main.0d92f56c.js"
+    "css": "main.cb99c271.css",
+    "js": "main.9daad1e6.js"
   }
 }
