@@ -47,10 +47,10 @@ Or you can use it to mirror another menu by using the `sidebar_menu.mirror` opti
 mirror = "main"
 ```
 
-The sidebar menu can display nested menus. The sub-pages need to have a page as "parent" defined in the page's front matter:
+The sidebar menu can display nested menus. The sub-pages need to have a page as `parent` defined in the page's front matter:
 
 ```yaml
-menu: 
+menu:
    main:
       parent: myParentPage
 ```
