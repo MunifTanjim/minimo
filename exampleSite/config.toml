@@ -53,7 +53,7 @@ enable = true
 
 [params.widgets]
 homepage = ["recent_posts"]
-sidebar = ["about","taxonomy_cloud"]
+sidebar = ["about","sidebar_menu","taxonomy_cloud"]
 footer = ["social_menu"]
 
 [params.opengraph.facebook]

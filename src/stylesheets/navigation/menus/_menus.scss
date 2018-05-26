@@ -8,7 +8,7 @@
     text-transform: uppercase;
 
     &.current {
-      a {
+      & > a {
         font-weight: 700;
         pointer-events: none;
       }
@@ -17,8 +17,10 @@
 }
 
 @import 'main';
+@import 'sidebar';
 
 .menu a,
+.sub-menu-toggler,
 .sidebar-toggler span,
 .widget-social_menu a {
   color: $color__bluegrey-700;

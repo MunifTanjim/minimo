@@ -8,6 +8,7 @@ categories:
 tags:
   - config
 slug: sidebar
+menu: sidebar
 ---
 
 ## Enabling Sidebar

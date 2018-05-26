@@ -1,7 +1,10 @@
 ---
 title: Documentation
 linkTitle: Docs
-menu: main
+menu:
+  main:
+  sidebar:
+    identifier: docs
 weight: -250
 slug: docs
 ---
