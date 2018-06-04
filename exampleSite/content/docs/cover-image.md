@@ -1,5 +1,6 @@
 ---
 date: 2017-09-30T14:00:00+06:00
+lastmod: 2018-06-04T23:00:00+06:00
 title: Cover Image
 authors: ["muniftanjim"]
 categories:
@@ -26,6 +27,7 @@ Or you can provide additional information:
 ---
 cover:
   image: /images/eden-farm-children-s-village.jpg
+  alternate: Picture of a yellow wall with a blue window in the upper-left corner
   caption: Eden Farm Children's Village by Gareth Harper on Unsplash
   style: full
 ---
@@ -33,5 +35,6 @@ cover:
 
 - `cover` [`Map`]:
   - `image`   [`String`]: path/url of the cover image
+  - `alternate` [`String`]: alternate text for the image
   - `caption` [`String`]: caption for the cover image
   - `style`   [`String`]: `full` / `wide` / `normal`

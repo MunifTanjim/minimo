@@ -2,7 +2,9 @@
 
 ## [Unreleased]
 
-- ...
+### Added
+
+- Add `.alternate` text param for cover image
 
 ## [2.4.0] - 2018-05-30
 
