@@ -5,6 +5,7 @@
 ### Added
 
 - Add `.alternate` text param for cover image
+- YouTube icon in Social Menu
 
 ## [2.4.0] - 2018-05-30
 

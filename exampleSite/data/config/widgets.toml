@@ -18,7 +18,7 @@ mirror = ""                           # default: ""
 # Social Menu Widget config
 [social_menu]
 title = ""                            # default: ""
-platforms = ["github","facebook","twitter","instagram","email","codepen","gitlab","linkedin","telegram","google_scholar"]
+platforms = ["github","facebook","twitter","instagram","email","codepen","gitlab","linkedin","telegram","google_scholar","youtube"]
 
 # Taxonomy Cloud Widget config
 [taxonomy_cloud]
