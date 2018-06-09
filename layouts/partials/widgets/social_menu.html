@@ -7,6 +7,8 @@
 {{- $lang := .Site.Language.Lang -}}
 {{- $config := ( ( index $configData $lang ) | default $configData ) -}}
 
+{{- $faClass := .Site.Data.icons.fontawesome -}}
+
 <section class='widget widget-social_menu sep-after'>
   {{- with $config.title -}}
   <header>
@@ -16,7 +18,7 @@
   </header>
   {{- end -}}
 
-  <nav aria-label='{{ i18n "socialMenu" }}'>
+  <nav id='social-menu' aria-label='{{ i18n "socialMenu" }}'>
     <ul>
     {{- range $platform := $config.platforms -}}
       {{- with $username := ( index $social $platform ) -}}
@@ -29,7 +31,7 @@
               {{- i18n "openAccountInNewTab" ( dict "Platform" ( $platform | title ) ) -}}
             {{- end -}}
           </span>
-          {{- partial "svg/icons" $platform -}}
+          <span class='{{ index $faClass $platform }}'></span>
         </a>
       </li>
       {{- end -}}

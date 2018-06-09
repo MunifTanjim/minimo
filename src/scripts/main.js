@@ -47,4 +47,9 @@ docReady(() => {
       ({ initComments }) => initComments()
     )
   }
+
+  let hasFontawesome = body.querySelector('.fas,.fab')
+  if (hasFontawesome) {
+    import(/* webpackChunkName: "fontawesome" */ './fontawesome').then(() => {})
+  }
 })

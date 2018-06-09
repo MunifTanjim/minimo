@@ -1,18 +1,24 @@
 {
+  "vendors~fontawesome": {
+    "js": "vendors~fontawesome.680bb178.js"
+  },
+  "fontawesome": {
+    "js": "fontawesome.f2c75fdf.js"
+  },
   "comments": {
-    "js": "comments.29dd786b.js"
+    "js": "comments.96913a8e.js"
   },
   "sidebar": {
-    "js": "sidebar.c5cb03d8.js"
+    "js": "sidebar.913475c0.js"
   },
   "twemoji": {
-    "js": "twemoji.2d6d7d91.js"
+    "js": "twemoji.87729736.js"
   },
   "details-polyfill": {
-    "js": "details-polyfill.a217b88c.js"
+    "js": "details-polyfill.2263e593.js"
   },
   "main": {
     "css": "main.cb99c271.css",
-    "js": "main.9daad1e6.js"
+    "js": "main.4b5ec9e2.js"
   }
 }
