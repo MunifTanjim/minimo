@@ -73,3 +73,21 @@ other = "Inhaltsverzeichnis"
 [tag]
 one = "Schlagwort"
 other = "Schlagwörter"
+
+[leaveAComment]
+other = "Einen Kommentar hinterlassen"
+
+[comment]
+other = "Kommentar"
+
+[name]
+other = "Name"
+
+[email]
+other = "E-Mail"
+
+[website]
+other = "Webseite"
+
+[submitComment]
+other = "Kommentieren"
