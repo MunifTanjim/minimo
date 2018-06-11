@@ -18,10 +18,6 @@ other = "Kategorien"
 [comment]
 other = "Kommentar"
 
-[commentsOnEntry]
-one = "Nur {{ .Count }} Kommentar bei {{ .Title }}"
-other = "{{ .Count }} Kommentare bei {{ .Title }}"
-
 [commentSubmissionErrorMessage]
 other = "Fehler aufgetreten. Ihe Kommentar konnte nicht übermittelt werden. Bitte versuchen Sie es später erneut. Danke!"
 
@@ -33,6 +29,10 @@ other = "Ihr Kommentar wurde übermittelt. Er wird in Kürze auf dieser Seite er
 
 [commentSubmissionSuccessTitle]
 other = "Vielen Dank."
+
+[commentsOnEntry]
+one = "Nur {{ .Count }} Kommentar bei {{ .Title }}"
+other = "{{ .Count }} Kommentare bei {{ .Title }}"
 
 [contactViaEmail]
 other = "Per E-Mail kontaktieren"
