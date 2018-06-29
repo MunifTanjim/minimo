@@ -94,6 +94,11 @@ username = "MunifTanjim"
 repository = "minimo"
 branch = "master"
 
+[params.comments.utterances]
+enable = false
+repo = "MunifTanjim/minimo"
+issueTerm = "pathname"
+
 [taxonomies]
 author = "authors"
 category = "categories"
