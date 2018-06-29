@@ -1,9 +1,10 @@
-{{- $issueTerm := .Page.Site.Params.comments.utterances.issueTerm -}}
-{{- $repository := .Page.Site.Params.comments.utterances.repository -}}
+{{- $scriptSrc := "https://utteranc.es/client.js" -}}
 
-<script src="https://utteranc.es/client.js"
-        repo={{ $repository }}
-        issue-term={{ $issueTerm }}
-        crossorigin="anonymous"
-        async>
+{{- $issueTerm := .Page.Site.Params.comments.utterances.issueTerm -}}
+{{- $username := .Page.Site.Params.comments.utterances.github.username -}}
+{{- $repository := .Page.Site.Params.comments.utterances.github.repository -}}
+
+<script src='{{ $scriptSrc }}'
+  repo='{{ print $username "/" $repository }}' issue-term='{{ $issueTerm }}'
+  crossorigin='anonymous' async>
 </script>
