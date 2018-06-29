@@ -96,7 +96,11 @@ branch = "master"
 
 [params.comments.utterances]
 enable = false
-repo = "MunifTanjim/minimo"
+repository = "MunifTanjim/minimo"
+# issueTerm: Determines how comments are mapped to GitHub issues
+# pathname - Use the post or page's pathname URL componenet
+# url - Use the post or page's entire URL
+# title - Use the post or page's title
 issueTerm = "pathname"
 
 [taxonomies]

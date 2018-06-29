@@ -15,7 +15,7 @@
 {{- $staticmanEnabled := $config.staticman.enable -}}
 {{- $utterancesEnabled := $config.utterances.enable -}}
 
-{{- if ( or $disqusEnabled $staticmanEnabled $utterancesEnabled ) -}}
+{{- if ( $disqusEnabled | or $staticmanEnabled | or $utterancesEnabled ) -}}
 <section id='comments' class='comments'>
   <div class='container sep-before'>
     <div class='comments-area'>

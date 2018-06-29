@@ -1,8 +1,8 @@
 {{- $issueTerm := .Page.Site.Params.comments.utterances.issueTerm -}}
-{{- $repo := .Page.Site.Params.comments.utterances.repo -}}
+{{- $repository := .Page.Site.Params.comments.utterances.repository -}}
 
 <script src="https://utteranc.es/client.js"
-        repo={{ $repo }}
+        repo={{ $repository }}
         issue-term={{ $issueTerm }}
         crossorigin="anonymous"
         async>
