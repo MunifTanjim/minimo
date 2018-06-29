@@ -6,6 +6,7 @@
 
 - Add `.alternate` text param for cover image
 - YouTube icon in Social Menu
+- Utterances comment system support
 
 ## [2.4.0] - 2018-05-30
 
