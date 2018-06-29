@@ -1,5 +1,6 @@
 ---
 date: 2018-03-29T09:00:00+06:00
+lastmod: 2018-06-29T19:30:00+06:00
 title: Comments Support
 authors: ["muniftanjim"]
 categories:
@@ -42,7 +43,7 @@ _Of course, you'll also need to setup a comment system ( [Disqus](#disqus) or [S
 
 ## Setting Up Comment System
 
-Minimo supports both **[Disqus](https://disqus.com/)** and **[Staticman](https://staticman.net/)** to be used as your site's comment system.
+Minimo currently supports **[Disqus](https://disqus.com/)**, **[Staticman](https://staticman.net/)** and **[Utterances](https://utteranc.es)** to be used as your site's comment system.
 
 ### Disqus
 
@@ -116,3 +117,30 @@ _[ Replace the `{github.username}` and `{github.repository}` with your GitHub us
 If all goes well, you should receive a message saying `OK`!
 
 And you should be good to go!
+
+### Utterances
+
+_Utterances only supports GitHub. So, if your site's repository is not hosted in GitHub, it won't work._
+
+For using Utterances, set up the following options in your `config.toml` file:
+
+```toml
+[params.comments.utterances]
+enable = true
+issueTerm = "pathname" # pathname / url / title
+
+[params.comments.utterances.github]
+username = "MunifTanjim"
+repository = "minimo"
+```
+
+- `params.comments.utterances` [`Map`]:
+  - `enable` [`Boolean`]: Enable Utterances
+  - `issueTerm` [`String`]: Entry to Issue mapping option _(`pathname` / `url` / `title`)_
+- `params.comments.utterances.github` [`Map`]:
+  - `username` [`String`]: Your GitHub Username
+  - `repository` [`String`]: Name of your Site's GitHub Repository
+
+Check _[utteranc.es](https://utteranc.es)_ for more information.
+
+That should do it!

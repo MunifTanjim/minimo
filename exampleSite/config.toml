@@ -94,6 +94,15 @@ username = "MunifTanjim"
 repository = "minimo"
 branch = "master"
 
+# Utterances: https://utteranc.es
+[params.comments.utterances]
+enable = false
+issueTerm = "pathname" # pathname / url / title
+
+[params.comments.utterances.github]
+username = "MunifTanjim"
+repository = "minimo"
+
 [taxonomies]
 author = "authors"
 category = "categories"
