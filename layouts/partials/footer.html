@@ -3,9 +3,7 @@
       <footer id='footer' class='footer'>
         <div class='container sep-before'>
           {{- $footerWidgets := .Site.Params.widgets.footer -}}
-          {{- range $footerWidgets -}}
-            {{- partial ( print "widgets/" . ) $ -}}
-          {{- end -}}
+          {{- partial "extras/widget_area" ( dict "Widgets" $footerWidgets "Scope" . ) -}}
           {{ partial "footer/copyright" . }}
         </div>
       </footer>
