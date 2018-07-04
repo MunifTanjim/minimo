@@ -1,3 +1,9 @@
 {{- range .Widgets -}}
-  {{- partial ( print "widgets/" . ) $.Scope -}}
+  {{- if eq . "search" -}}
+    {{- if not ( eq $.Scope.Layout "search" ) -}}
+      {{- partial ( print "widgets/" . ) $.Scope -}}
+    {{- end -}}
+  {{- else -}}
+    {{- partial ( print "widgets/" . ) $.Scope -}}
+  {{- end -}}
 {{- end -}}
