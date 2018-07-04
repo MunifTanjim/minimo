@@ -8,6 +8,9 @@ title = ""
 length = 5
 excludeTypes = ["page"]
 
+[search]
+title = "Search"
+
 [sidebar_menu]
 title = ""
 mirror = ""

@@ -53,7 +53,7 @@ enable = true
 
 [params.widgets]
 homepage = ["recent_posts"]
-sidebar = ["about","sidebar_menu","taxonomy_cloud"]
+sidebar = ["about","search","sidebar_menu","taxonomy_cloud"]
 footer = ["social_menu"]
 
 [params.opengraph.facebook]
@@ -102,6 +102,9 @@ issueTerm = "pathname" # pathname / url / title
 [params.comments.utterances.github]
 username = "MunifTanjim"
 repository = "minimo"
+
+[params.search]
+client = "" # lunr
 
 [taxonomies]
 author = "authors"

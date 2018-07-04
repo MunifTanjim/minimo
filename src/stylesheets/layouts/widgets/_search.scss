@@ -1,0 +1,27 @@
+.widget-search {
+  .search-form {
+    position: relative;
+  }
+
+  .search-submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 0 0.2em 0.2em 0;
+  }
+
+  .layout-search & {
+    header {
+      display: none;
+    }
+
+    .search-term {
+      height: 2.5em;
+      padding-right: 3em;
+      border-radius: 0.2em 0.2em 0 0;
+    }
+  }
+}

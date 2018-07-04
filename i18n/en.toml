@@ -110,6 +110,15 @@ other = "Reply to {{ .Author }}"
 [says]
 other = "says"
 
+[search]
+other = "Search"
+
+[searchResultEmpty]
+other = "Nothing found!"
+
+[searching]
+other = "Searching"
+
 [series]
 one = "Series"
 other = "Series"

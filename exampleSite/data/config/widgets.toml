@@ -10,6 +10,10 @@ title = ""                            # default: "Recent Posts"
 length = 4                            # default: 5
 excludeTypes = ["page"]               # default: ["page"]
 
+# Search Widget config
+[search]
+title = "Search"                      # default: "Search"
+
 # Sidebar Menu Widget config
 [sidebar_menu]
 title = ""                            # default: ""
