@@ -34,7 +34,8 @@ const config = {
   mode: node_env === 'production' ? 'production' : 'development',
   entry: {
     main: path.join(__dirname, 'src/scripts', 'main.js'),
-    lunr_search: path.join(__dirname, 'src/scripts/search', 'lunr.js')
+    lunr_search: path.join(__dirname, 'src/scripts/search', 'lunr.js'),
+    algolia_search: path.join(__dirname, 'src/scripts/search', 'algolia.js')
   },
   output: {
     filename: '[name].[chunkhash:8].js',
