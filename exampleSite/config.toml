@@ -104,7 +104,7 @@ username = "MunifTanjim"
 repository = "minimo"
 
 [params.search]
-client = "" # lunr / algolia
+client = "" # algolia / fuse / lunr
 
 [params.search.algolia]
 appId = ""

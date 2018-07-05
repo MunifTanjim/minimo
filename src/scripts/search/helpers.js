@@ -29,3 +29,24 @@ export const getUrlSearchParam = name => {
       : decodeURIComponent(results[1].replace(/\+/g, ' '))
   }
 }
+
+export const getJSON = (url, callback) => {
+  let request = new XMLHttpRequest()
+
+  request.open('GET', url, true)
+
+  request.onload = () => {
+    if (request.status >= 200 && request.status < 400) {
+      let data = JSON.parse(request.responseText)
+      callback(null, data)
+    } else {
+      callback(new Error(request.statusText))
+    }
+  }
+
+  request.onerror = () => {
+    callback(new Error(`Failed to get JSON! ${request.statusText}`))
+  }
+
+  request.send()
+}
