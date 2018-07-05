@@ -1,6 +1,6 @@
 ---
 date: 2018-07-05T20:00:00+06:00
-lastmod: 2018-07-06T01:00:00+06:00
+lastmod: 2018-07-06T01:30:00+06:00
 title: "Search Support"
 authors: ["muniftanjim"]
 categories:
@@ -59,3 +59,7 @@ The next steps are different for each search client:
 - [**Lunr.js**]({{< relref "docs/search-lunr-js.md" >}})
 
 After you complete those steps, you are good to go!
+
+## Add Search Widget
+
+You might also want to add the [`search` widget]({{< relref "docs/widgets.md#widget-search" >}}).
