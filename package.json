@@ -10,8 +10,7 @@
   "license": "MIT",
   "scripts": {
     "build": "NODE_ENV=production webpack",
-    "start":
-      "hugo server --source=exampleSite --themesDir=../.. --disableFastRender",
+    "start": "hugo server --source=exampleSite --themesDir=../.. --disableFastRender",
     "watch": "webpack --watch --progress --colors"
   },
   "devDependencies": {
@@ -35,6 +34,7 @@
   "dependencies": {
     "algoliasearch": "^3.29.0",
     "es6-docready": "^1.0.0",
+    "fuse.js": "^3.2.1",
     "lunr": "^2.3.0",
     "normalize.css": "^8.0.0",
     "twemoji": "^2.5.1"

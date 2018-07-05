@@ -6,7 +6,7 @@ import {
   setSearchingIndicator
 } from './helpers'
 
-export const doSearch = (term, idx, pageTitles, resultsBlock) => {
+const doSearch = (term, idx, pageTitles, resultsBlock) => {
   setSearchingIndicator(resultsBlock)
 
   let results = term

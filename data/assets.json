@@ -1,24 +1,27 @@
 {
   "comments": {
-    "js": "comments.b0a2b5b1.js"
+    "js": "comments.ecdd5e33.js"
   },
   "sidebar": {
-    "js": "sidebar.6c4c8f65.js"
+    "js": "sidebar.88cb8643.js"
   },
   "twemoji": {
-    "js": "twemoji.7a501675.js"
+    "js": "twemoji.c34d1cdf.js"
   },
   "details-polyfill": {
-    "js": "details-polyfill.f919551f.js"
-  },
-  "algolia_search": {
-    "js": "algolia_search.04805406.js"
+    "js": "details-polyfill.aab26f9f.js"
   },
   "lunr_search": {
-    "js": "lunr_search.d02471db.js"
+    "js": "lunr_search.15b5835f.js"
+  },
+  "fuse_search": {
+    "js": "fuse_search.cc21252e.js"
+  },
+  "algolia_search": {
+    "js": "algolia_search.499151b4.js"
   },
   "main": {
-    "css": "main.c696738b.css",
-    "js": "main.267dd47c.js"
+    "css": "main.809149b6.css",
+    "js": "main.68cb493a.js"
   }
 }
