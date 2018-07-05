@@ -104,7 +104,12 @@ username = "MunifTanjim"
 repository = "minimo"
 
 [params.search]
-client = "" # lunr
+client = "" # lunr / algolia
+
+[params.search.algolia]
+appId = ""
+indexName = ""
+searchApiKey = ""
 
 [taxonomies]
 author = "authors"

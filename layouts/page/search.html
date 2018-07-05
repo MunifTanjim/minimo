@@ -18,6 +18,12 @@
 {{- with .Site.Params.search.client -}}
   {{- if eq . "lunr" -}}
   <script src='{{ ( print "search/lunr_idx.js?build=" ( now.Format "200601021504" ) ) | relLangURL }}'></script>
+  {{- else if eq . "algolia" -}}
+  <script>window.algolia = {
+    appId: '{{ $.Site.Params.search.algolia.appId }}',
+    indexName: '{{ $.Site.Params.search.algolia.indexName | default "minimo_site" }}',
+    searchApiKey: '{{ $.Site.Params.search.algolia.searchApiKey }}'
+  }</script>
   {{- end -}}
 
   {{- $scriptKey := ( print . "_search" ) -}}
