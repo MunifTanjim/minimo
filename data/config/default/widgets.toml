@@ -1,15 +1,18 @@
 [about]
 title = ""
+showTitle = true
 description = ""
 logo = "/images/logo.png"
 
 [recent_posts]
 title = ""
+showTitle = true
 length = 5
 excludeTypes = ["page"]
 
 [search]
 title = "Search"
+showTitle = true
 
 [sidebar_menu]
 title = ""
@@ -21,5 +24,6 @@ platforms = ["github","facebook","twitter","instagram","email","codepen","gitlab
 
 [taxonomy_cloud]
 title = ""
+showTitle = true
 taxonomy = "tags"
 shuffle = true

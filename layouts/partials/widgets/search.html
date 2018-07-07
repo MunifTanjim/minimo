@@ -3,12 +3,16 @@
 {{- $lang := .Site.Language.Lang -}}
 {{- $config := ( ( index $configData $lang ) | default $configData ) -}}
 
+{{- $showTitle := ( $config.showTitle | default true ) -}}
+
 <section class='widget widget-search sep-after'>
-  <header>
-    <h4 class='title widget-title'>
-      {{- $config.title | default ( i18n "search" ) -}}
-    </h4>
-  </header>
+  {{- if eq $showTitle true -}}
+    <header>
+      <h4 class='title widget-title'>
+        {{- $config.title | default ( i18n "search" ) -}}
+      </h4>
+    </header>
+  {{- end -}}
 
   <form action='{{ "search" | relLangURL }}' id='search-form' class='search-form'>
     <label>

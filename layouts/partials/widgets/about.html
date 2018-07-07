@@ -3,6 +3,8 @@
 {{- $lang := .Site.Language.Lang -}}
 {{- $config := ( ( index $configData $lang ) | default $configData ) -}}
 
+{{- $showTitle := ( $config.showTitle | default true ) -}}
+
 <section class='widget widget-about sep-after'>
   <header>
     {{ with $config.logo }}
@@ -12,13 +14,15 @@
       </a>
     </div>
     {{ end }}
-    <h2 class='title site-title '>
-    {{ with $config.title }}
-      {{- . -}}
-    {{ else }}
-      {{- .Site.Title -}}
-    {{ end }}
-    </h2>
+    {{- if eq $showTitle true -}}
+      <h2 class='title site-title '>
+      {{ with $config.title }}
+        {{- . -}}
+      {{ else }}
+        {{- .Site.Title -}}
+      {{ end }}
+      </h2>
+    {{- end -}}
     <div class='desc'>
     {{ with $config.description }}
       {{- . | markdownify -}}

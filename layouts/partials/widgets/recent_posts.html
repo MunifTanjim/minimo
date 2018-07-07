@@ -4,13 +4,16 @@
 {{- $config := ( ( index $configData $lang ) | default $configData ) -}}
 
 {{- $length := ( $config.length | default 5 ) -}}
+{{- $showTitle := ( $config.showTitle | default true ) -}}
 
 <section class='widget widget-recent_posts sep-after'>
-  <header>
-    <h4 class='title widget-title'>
-      {{- $config.title | default ( i18n "recentPosts" ) -}}
-    </h4>
-  </header>
+  {{- if eq $showTitle true -}}
+    <header>
+      <h4 class='title widget-title'>
+        {{- $config.title | default ( i18n "recentPosts" ) -}}
+      </h4>
+    </header>
+  {{- end -}}
 
   <ul class='list'>
   {{ range ( first $length ( where .Site.RegularPages "Type" "not in" $config.excludeTypes ) ) }}
