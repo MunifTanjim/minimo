@@ -1,18 +1,21 @@
 # About Widget config
 [about]
 title = ""                            # default: .Site.Title
+showTitle = true                      # default: true
 description = ""                      # default: .Site.Params.info.description
 logo = "/images/logo.png"             # default: "/images/logo.png"
 
 # Recent Posts Widget config
 [recent_posts]
 title = ""                            # default: "Recent Posts"
+showTitle = true                      # default: true
 length = 4                            # default: 5
 excludeTypes = ["page"]               # default: ["page"]
 
 # Search Widget config
 [search]
 title = "Search"                      # default: "Search"
+showTitle = true                      # default: true
 
 # Sidebar Menu Widget config
 [sidebar_menu]
@@ -27,5 +30,6 @@ platforms = ["github","facebook","twitter","instagram","email","codepen","gitlab
 # Taxonomy Cloud Widget config
 [taxonomy_cloud]
 title = ""                            # default: Plural Name for `taxonomyCloud.taxonomy`
+showTitle = true                      # default: true
 taxonomy = "tags"                     # default: "tags"
 shuffle = true                        # default: true
