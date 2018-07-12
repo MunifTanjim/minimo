@@ -7,9 +7,7 @@
   <a class='screen-reader-text' href='#main-menu'>{{ i18n "skipToMainMenu" }}</a>
 
   <div class='container'>
-  {{- range $sidebarWidgets -}}
-    {{- partial ( print "widgets/" . ) $ -}}
-  {{- end -}}
+  {{- partial "extras/widget_area" ( dict "Widgets" $sidebarWidgets "Scope" . ) -}}
   </div>
 
   <div class='sidebar-overlay'></div>

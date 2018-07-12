@@ -1,0 +1,27 @@
+{{- $defaultConfig := .Site.Data.config.default.widgets.search -}}
+{{- $configData := ( or .Site.Data.config.widgets.search $defaultConfig ) -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $config := ( ( index $configData $lang ) | default $configData ) -}}
+
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>
+      {{- $config.title | default ( i18n "search" ) -}}
+    </h4>
+  </header>
+
+  <form action='{{ "search" | relLangURL }}' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'>{{ i18n "search" }}</span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='{{ i18n "search" }}&hellip;'>
+    </label>
+
+    {{- if eq .Layout "search" -}}
+    <button type='submit' class='search-submit'>
+      <span class='screen-reader-text'>{{ i18n "search" }}</span>
+      {{- partial "svg/icons" "search" -}}
+    </button>
+    {{- end -}}
+  </form>
+
+</section>

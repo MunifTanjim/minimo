@@ -2,18 +2,49 @@
 one = "Auteur"
 other = "Auteurs"
 
+[authorsAvatar]
+other = "Avatar de {{ .Author }}"
+
 [by]
 other = "par"
+
+[cancel]
+other = "Annuler"
+
+[cancelComment]
+other = "Annuler le commentaire"
 
 [category]
 one = "Catégorie"
 other = "Catégories"
 
+[comment]
+other = "Commentaire"
+
+[commentSubmissionErrorMessage]
+other = "Une erreur s'est produite. Le commentaire n'a pas pu être envoyé. Veuillez réessayer. Merci !"
+
+[commentSubmissionErrorTitle]
+other = "Houlà, désolé !"
+
+[commentSubmissionSuccessMessage]
+other = "Votre commentaire a été envoyé. Il s'affichera bientôt sur cette page !"
+
+[commentSubmissionSuccessTitle]
+other = "Merci !"
+
+[commentsOnEntry]
+one = "Seulement {{ .Count }} commentaire sur {{ .Title }}"
+other = "{{ .Count }} commentaires sur {{ .Title }}"
+
 [contactViaEmail]
 other = "Contacter par mail"
 
 [currentPage]
-other = "Page en cours"
+other = "Page actuelle"
+
+[email]
+other = "Mail"
 
 [gopher]
 other = "Gopher"
@@ -21,8 +52,14 @@ other = "Gopher"
 [goHome]
 other = "Retourner à l'accueil..."
 
+[leaveAComment]
+other = "Laisser un commentaire"
+
 [mainMenu]
 other = "Menu principal"
+
+[name]
+other = "Nom"
 
 [next]
 other = "Suivant"
@@ -34,10 +71,13 @@ other = "Page suivante"
 other = "Billet suivant"
 
 [noTerm]
-other = "Pas un seul {{ .Term }}!"
+other = "Aucun(e) {{ .Term }}!"
+
+[ok]
+other = "OK"
 
 [openAccountInNewTab]
-other = "Ouvrir le compte {{ .Platform }} dans un nouvel onglet"
+other = "Ouvrir {{ .Platform }} dans un nouvel onglet"
 
 [page]
 other = "Page"
@@ -61,11 +101,42 @@ other = "{{ .Count }} minutes de lecture"
 [recentPosts]
 other = "Billets récents"
 
+[reply]
+other = "Répondre"
+
+[replyToAuthor]
+other = "Répondre à {{ .Author }}"
+
+[says]
+other = "a dit"
+
+[search]
+other = "Recherche"
+
+[searchResultEmpty]
+other = "Rien n'a été trouvé !"
+
+[searching]
+other = "Recherche en cours"
+
+[series]
+one = "Série"
+other = "Séries"
+
+[sidebarMenu]
+other = "Menu de la barre latérale"
+
 [skipToContent]
 other = "Aller au contenu"
 
+[skipToMainMenu]
+other = "Aller au menu principal"
+
 [socialMenu]
 other = "Social Menu"
+
+[submitComment]
+other = "Commenter !"
 
 [tableOfContents]
 other = "Table des matières"
@@ -73,3 +144,9 @@ other = "Table des matières"
 [tag]
 one = "Étiquette"
 other = "Étiquettes"
+
+[toggleSidebar]
+other = "Déplier la barre latérale"
+
+[website]
+other = "Site web"

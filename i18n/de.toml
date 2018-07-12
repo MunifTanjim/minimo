@@ -5,9 +5,34 @@ other = "Autoren"
 [by]
 other = "von"
 
+[cancel]
+other = "Abbrechen"
+
+[cancelComment]
+other = "Kommentar abbrechen"
+
 [category]
 one = "Kategorie"
 other = "Kategorien"
+
+[comment]
+other = "Kommentar"
+
+[commentSubmissionErrorMessage]
+other = "Fehler aufgetreten. Ihe Kommentar konnte nicht übermittelt werden. Bitte versuchen Sie es später erneut. Danke!"
+
+[commentSubmissionErrorTitle]
+other = "Fehler"
+
+[commentSubmissionSuccessMessage]
+other = "Ihr Kommentar wurde übermittelt. Er wird in Kürze auf dieser Seite erscheinen!"
+
+[commentSubmissionSuccessTitle]
+other = "Vielen Dank."
+
+[commentsOnEntry]
+one = "Nur {{ .Count }} Kommentar bei {{ .Title }}"
+other = "{{ .Count }} Kommentare bei {{ .Title }}"
 
 [contactViaEmail]
 other = "Per E-Mail kontaktieren"
@@ -15,14 +40,23 @@ other = "Per E-Mail kontaktieren"
 [currentPage]
 other = "Aktuelle Seite"
 
+[email]
+other = "E-Mail"
+
 [gopher]
 other = "Gopher"
 
 [goHome]
 other = "Zur Startseite …"
 
+[leaveAComment]
+other = "Einen Kommentar hinterlassen"
+
 [mainMenu]
 other = "Hauptmenü"
+
+[name]
+other = "Name"
 
 [next]
 other = "Weiter"
@@ -35,6 +69,9 @@ other = "Nächster Beitrag"
 
 [noTerm]
 other = "Kein einzelner {{ .Term }}!"
+
+[ok]
+other = "OK"
 
 [openAccountInNewTab]
 other = "{{ .Platform }} in neuem Tab öffnen"
@@ -67,9 +104,15 @@ other = "Zum Inhalt springen"
 [socialMenu]
 other = "Social-Menü"
 
+[submitComment]
+other = "Kommentieren"
+
 [tableOfContents]
 other = "Inhaltsverzeichnis"
 
 [tag]
 one = "Schlagwort"
 other = "Schlagwörter"
+
+[website]
+other = "Webseite"

@@ -1,0 +1,6 @@
+[
+  {{- range $i, $page := .Site.Pages -}}
+    {{- dict "title" $page.Title "content" $page.Plain "href" $page.RelPermalink | jsonify | safeJS -}}
+    {{- if ne $i ( sub ( len $.Site.Pages ) 1 ) -}},{{- end -}}
+  {{- end -}}
+]

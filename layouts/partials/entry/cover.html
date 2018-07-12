@@ -10,7 +10,7 @@
   '>
     <img src='{{ if $isMap }}{{ .image }}{{ else }}{{ . }}{{ end }}'
       {{- if $isMap }}
-        {{- with .caption }} alt='{{ . | markdownify }}'{{ end -}}
+        {{- with ( .alternate | default .caption ) }} alt='{{ . | markdownify }}'{{ end -}}
       {{ end -}} />
     {{ if $isMap }}
       {{ with .caption }}

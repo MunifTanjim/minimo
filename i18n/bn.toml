@@ -114,6 +114,9 @@ other = "বলেছে"
 one = "সিরিজ"
 other = "সিরিজসমূহ"
 
+[sidebarMenu]
+other = "সাইডবার মেনু"
+
 [skipToContent]
 other = "কন্টেন্টে যাও"
 

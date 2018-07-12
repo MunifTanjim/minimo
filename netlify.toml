@@ -1,6 +1,14 @@
 [build]
 publish = "exampleSite/public"
+
+[context.production]
+command = "hugo --source=exampleSite --theme=../.. --baseURL=${URL}"
+
+[context.branch-deploy]
+command = "hugo --source=exampleSite --theme=../.. --baseURL=${DEPLOY_PRIME_URL}"
+
+[context.deploy-preview]
 command = "hugo --source=exampleSite --theme=../.. --baseURL=${DEPLOY_PRIME_URL}"
 
 [build.environment]
-HUGO_VERSION = "0.37.1"
+HUGO_VERSION = "0.40"

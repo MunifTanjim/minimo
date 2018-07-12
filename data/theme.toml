@@ -1,11 +1,12 @@
 [social.base]
-codepen = 'https://codepen.io/'
-email =  'mailto:'
-facebook = 'https://facebook.com/'
-github = 'https://github.com/'
-gitlab = 'https://gitlab.com/'
-instagram = 'https://instagram.com/'
-linkedin = 'https://linkedin.com/in/'
-twitter = 'https://twitter.com/'
-telegram = 'https://t.me/'
-google_scholar = 'https://scholar.google.com/citations?user='
+codepen = "https://codepen.io/"
+email =  "mailto:"
+facebook = "https://facebook.com/"
+github = "https://github.com/"
+gitlab = "https://gitlab.com/"
+instagram = "https://instagram.com/"
+linkedin = "https://linkedin.com/in/"
+twitter = "https://twitter.com/"
+telegram = "https://t.me/"
+google_scholar = "https://scholar.google.com/citations?user="
+youtube = "https://www.youtube.com/channel/"

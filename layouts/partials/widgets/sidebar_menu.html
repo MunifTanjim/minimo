@@ -1,0 +1,70 @@
+{{- $defaultConfig := .Site.Data.config.default.widgets.sidebar_menu -}}
+{{- $configData := ( or .Site.Data.config.widgets.sidebar_menu $defaultConfig ) -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $config := ( ( index $configData $lang ) | default $configData ) -}}
+
+{{- $menu := ( $config.mirror | default "sidebar" ) -}}
+
+{{- $.Scratch.Set "menu" $menu -}}
+
+{{- $items := ( index .Site.Menus $menu ) -}}
+
+{{- if $items -}}
+
+<section class='widget widget-sidebar_menu sep-after'>
+  {{- with $config.title -}}
+  <header>
+    <h4 class='title widget-title'>
+      {{- . -}}
+    </h4>
+  </header>
+  {{- end -}}
+
+  <nav id='sidebar-menu' class='menu sidebar-menu' aria-label='{{ i18n "sidebarMenu" }}'>
+    <div class='container'>
+      <ul>
+      {{- range $items -}}
+        {{- template "menu_item" ( dict "Item" . "Page" $ ) -}}
+      {{- end -}}
+      </ul>
+    </div>
+  </nav>
+
+</section>
+
+{{- end -}}
+
+{{- define "menu_item" -}}
+
+{{- $menu := ( .Page.Scratch.Get "menu" ) -}}
+
+{{- $isCurrent := ( .Page.IsMenuCurrent $menu .Item ) -}}
+{{- $hasCurrent := ( .Page.HasMenuCurrent $menu .Item ) -}}
+{{- $hasChildren := ( .Item.HasChildren ) -}}
+
+<li class='item
+  {{- if $hasChildren }} has-children {{- end -}}
+  {{- if $hasCurrent }} has-current {{- end -}}
+  {{- if $isCurrent }} current {{- end -}}
+'>
+  <a {{ if $isCurrent -}} aria-current='page' {{ end -}} href='{{ .Item.URL }}'>
+    {{- .Item.Name -}}
+  </a>
+
+  {{- if $hasChildren -}}
+
+  <button class='sub-menu-toggler'>
+    <span class='screen-reader-text'>expand sub menu</span>
+    <span class='sign'></span>
+  </button>
+
+  <ul class='sub-menu'>
+  {{- range .Item.Children -}}
+    {{- template "menu_item" ( dict "Item" . "Page" $.Page ) -}}
+  {{- end -}}
+  </ul>
+  {{- end -}}
+
+</li>
+
+{{- end -}}

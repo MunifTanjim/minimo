@@ -2,7 +2,8 @@
 
       <footer id='footer' class='footer'>
         <div class='container sep-before'>
-          {{ partial "nav/menus/social" . }}
+          {{- $footerWidgets := .Site.Params.widgets.footer -}}
+          {{- partial "extras/widget_area" ( dict "Widgets" $footerWidgets "Scope" . ) -}}
           {{ partial "footer/copyright" . }}
         </div>
       </footer>

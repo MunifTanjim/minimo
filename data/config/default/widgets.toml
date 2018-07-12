@@ -8,9 +8,16 @@ title = ""
 length = 5
 excludeTypes = ["page"]
 
+[search]
+title = "Search"
+
+[sidebar_menu]
+title = ""
+mirror = ""
+
 [social_menu]
 title = ""
-platforms = ["github","facebook","twitter","instagram","email","codepen","gitlab","linkedin","telegram","google_scholar"]
+platforms = ["github","facebook","twitter","instagram","email","codepen","gitlab","linkedin","telegram","google_scholar","youtube"]
 
 [taxonomy_cloud]
 title = ""

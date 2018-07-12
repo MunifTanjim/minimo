@@ -8,7 +8,7 @@
 <section class='widget widget-recent_posts sep-after'>
   <header>
     <h4 class='title widget-title'>
-      {{- ( i18n "recentPosts" ) | default $config.title -}}
+      {{- $config.title | default ( i18n "recentPosts" ) -}}
     </h4>
   </header>
 

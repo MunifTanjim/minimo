@@ -1,0 +1,23 @@
+.search-results {
+  li {
+    height: 2.5em;
+    line-height: 2em;
+
+    border: 1px solid $color__border-input;
+    border-top-width: 0;
+
+    &:last-child {
+      border-radius: 0 0 0.2em 0.2em;
+    }
+
+    &.results-empty,
+    &.searching {
+      font-style: italic;
+    }
+
+    a {
+      display: block;
+      padding: 0.25em 0.875em;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 comments:
-  allowedFields: ["author", "email", "site", "content", "permalink"]
+  allowedFields: ["author", "content", "email", "parent_id", "permalink", "site"]
   branch: "master"
   commitMessage: "add [comment]: by {fields.author} <Staticman>\n\n{fields.permalink}#comment-{@id}"
   filename: "{@id}"
@@ -12,6 +12,6 @@ comments:
   moderation: false
   name: "Minimo"
   path: "data/comments/{options.postId}"
-  requiredFields: ["author", "email", "author", "permalink"]
+  requiredFields: ["author", "content", "email", "permalink"]
   transforms:
     email: md5

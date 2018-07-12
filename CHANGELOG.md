@@ -2,15 +2,64 @@
 
 ## [Unreleased]
 
+- ...
+
+## [2.5.0] - 2018-07-06
+
+### Added
+
+- Add `.alternate` text param for cover image
+- YouTube icon in Social Menu
+- German translation improvements
+- Utterances comment system support
+- Search Support: Algolia, Fuse.js, Lunr.js
+
+### Changed
+
+- Refactor Widget Area
+
+### Fixed
+
+- Issue #150
+
+## [2.4.0] - 2018-05-30
+
+### Added
+
+- Chinese translation improvements
+- Support for any widgets in Footer widget area
+- Nested items support in Sidebar Menu
+
+### Fixed
+
+- Staticman comments `comments_depth` count
+
+## [2.3.0] - 2018-05-09
+
 ### Added
 
 - Staticman comment system support
+- Catalan translation
+- Spanish translation improvements
+- Sidebar Menu within `sidebar_menu` widget
+- Option to hide Main Menu: `hideMainMenu`
+- Footer widget area (supports only `social_menu` widget)
 
 ### Changed
 
 - Improved & Simplified Sidebar
+- Stylesheet tweaks
 
-## [2.2.0]
+### Fixed
+
+- homeURL for multilingual site in About widget
+- Recent Posts widget's title config priority
+
+### Removed
+
+- `hideSocialMenu` config option
+
+## [2.2.0] - 2018-03-28
 
 ### Added
 
@@ -185,7 +234,10 @@
 
 - Initial stable release
 
-[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v2.2.0...HEAD
+[Unreleased]: https://github.com/MunifTanjim/minimo/compare/2.5.0...HEAD
+[2.5.0]: https://github.com/MunifTanjim/minimo/compare/2.4.0...2.5.0
+[2.4.0]: https://github.com/MunifTanjim/minimo/compare/v2.3.0...2.4.0
+[2.3.0]: https://github.com/MunifTanjim/minimo/compare/v2.2.0...v2.3.0
 [2.2.0]: https://github.com/MunifTanjim/minimo/compare/v2.1.0...v2.2.0
 [2.1.0]: https://github.com/MunifTanjim/minimo/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/MunifTanjim/minimo/compare/v1.6.0...v2.0.0

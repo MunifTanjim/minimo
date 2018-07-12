@@ -4,7 +4,7 @@
 
 <ol class='children'>
 {{- range $index, $comment := $comments -}}
-  {{- if ( eq $comment._parent $parentId ) -}}
+  {{- if ( eq $comment.parent_id $parentId ) -}}
     {{ partial "comments/staticman/comment" ( dict "Comment" $comment "Page" $.Page ) }}
   {{- end -}}
 {{- end -}}

@@ -11,9 +11,7 @@
 {{- if $homepageWidgets -}}
 <div class='home-widgets'>
   <div class='container sep-before'>
-    {{- range $homepageWidgets -}}
-      {{- partial ( print "widgets/" . ) $ -}}
-    {{- end -}}
+    {{- partial "extras/widget_area" ( dict "Widgets" $homepageWidgets "Scope" . ) -}}
   </div>
 </div>
 {{- end -}}

@@ -21,10 +21,15 @@
       margin-bottom: 0.5em;
       @include font-size($font-size__h5);
     }
+
+    .container {
+      padding: 0;
+    }
   }
 }
 
 @import 'about';
 @import 'recent-posts';
+@import 'search';
 @import 'social-menu';
 @import 'taxonomy-cloud';

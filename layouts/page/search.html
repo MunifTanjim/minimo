@@ -1,0 +1,34 @@
+{{ partial "header" . }}
+
+{{ partial "header/header" . }}
+
+{{ if .Content }}
+<div class='entry'>
+  {{ partial "entry/content" . }}
+</div>
+{{ end }}
+
+<div class='container'>
+  {{ partial "widgets/search" . }}
+
+  <ul id='search-results' class='list search-results' data-results-empty='{{ i18n "searchResultEmpty" }}' data-searching='{{ i18n "searching" }}'>
+  </ul>
+</div>
+
+{{- with .Site.Params.search.client -}}
+  {{- if eq . "lunr" -}}
+  <script src='{{ ( print "search/lunr_idx.js?build=" ( now.Format "200601021504" ) ) | relLangURL }}'></script>
+  {{- else if eq . "algolia" -}}
+  <script>window.algolia = {
+    appId: '{{ $.Site.Params.search.algolia.appId }}',
+    indexName: '{{ $.Site.Params.search.algolia.indexName | default "minimo_site" }}',
+    searchApiKey: '{{ $.Site.Params.search.algolia.searchApiKey }}'
+  }</script>
+  {{- end -}}
+
+  {{- $scriptKey := ( print . "_search" ) -}}
+  {{- $scriptName := ( index $.Site.Data.assets $scriptKey ).js -}}
+  <script src='{{ print "assets/js/" $scriptName | relURL }}'></script>
+{{- end -}}
+
+{{ partial "footer" . }}
