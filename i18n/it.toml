@@ -1,0 +1,152 @@
+[author]
+one = "Autore"
+other = "Autori"
+
+[authorsAvatar]
+other = "Avatar di {{ .Author }}"
+
+[by]
+other = "di"
+
+[cancel]
+other = "Cancella"
+
+[cancelComment]
+other = "Cancella il commento"
+
+[category]
+one = "Categoria"
+other = "Categorie"
+
+[comment]
+other = "Commento"
+
+[commentSubmissionErrorMessage]
+other = "Si è verificato un errore. Impossibile inviare il commento. Perfavore riprova più tardi"
+
+[commentSubmissionErrorTitle]
+other = "Oh perbacco!"
+
+[commentSubmissionSuccessMessage]
+other = "Il tuo commmento è stato inviato con successo. Comparirà nella pagina a breve!"
+
+[commentSubmissionSuccessTitle]
+other = "Grazie!"
+
+[commentsOnEntry]
+one = "Solo {{ .Count }} commento su {{ .Title }}"
+other = "{{ .Count }} commenti su {{ .Title }}"
+
+[contactViaEmail]
+other = "Contatta via Email"
+
+[currentPage]
+other = "Pagina corrente"
+
+[email]
+other = "Email"
+
+[gopher]
+other = "Gopher"
+
+[goHome]
+other = "Vai alla Home..."
+
+[leaveAComment]
+other = "Lascia un commento"
+
+[mainMenu]
+other = "Menu Principale"
+
+[name]
+other = "Nome"
+
+[next]
+other = "Successivo"
+
+[nextPage]
+other = "Pagina successiva"
+
+[nextPost]
+other = "Post successivo"
+
+[noTerm]
+other = "Nessun {{ .Term }}!"
+
+[ok]
+other = "OK"
+
+[openAccountInNewTab]
+other = "Apri l'account {{ .Platform }} in una nuova tab"
+
+[page]
+other = "Pagina"
+
+[previous]
+other = "Precedente"
+
+[previousPage]
+other = "Pagina precedente"
+
+[previousPost]
+other = "Post prececente"
+
+[postedOn]
+other = "Pubblicato il"
+
+[readingTime]
+one = "Un minuto di lettura"
+other = "{{ .Count }} minuti di lettura"
+
+[recentPosts]
+other = "Post recenti"
+
+[reply]
+other = "Rispondi"
+
+[replyToAuthor]
+other = "Respondi a {{ .Author }}"
+
+[says]
+other = "dice"
+
+[search]
+other = "Cerca"
+
+[searchResultEmpty]
+other = "Nessun risultato"
+
+[searching]
+other = "Ricerca in corso"
+
+[series]
+one = "Serie"
+other = "Serie"
+
+[sidebarMenu]
+other = "Menu Laterale"
+
+[skipToContent]
+other = "Vai al contenuto"
+
+[skipToMainMenu]
+other = "Vai al menu principale"
+
+[socialMenu]
+other = "Menu social"
+
+[submitComment]
+other = "Commenta!"
+
+[tableOfContents]
+other = "Sommario"
+
+[tag]
+one = "Tag"
+other = "Tag"
+
+[toggleSidebar]
+other = "Mostra o nascondi barra laterale"
+
+[website]
+other = "Sito"
