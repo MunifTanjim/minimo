@@ -5,7 +5,7 @@
 
 {{- $shuffle := ( $config.shuffle | default true ) -}}
 {{- $taxonomy := ( $config.taxonomy | default "tags" ) -}}
-{{- $taxonomyData := ( .Site.GetPage "taxonomy" $taxonomy ).Data -}}
+{{- $taxonomyData := ( .Site.GetPage $taxonomy ).Data -}}
 {{- $taxonomySingular := $taxonomyData.Singular -}}
 
 <section class='widget widget-taxonomy_cloud sep-after'>

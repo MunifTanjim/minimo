@@ -25,4 +25,4 @@ enable = true
 
 ## Adding Widgets to Sidebar
 
-For adding Widgets to the Sidebar, check the [Widgets documentation]({{< relref "docs/widgets.md#available-widget-areas" >}}).
+For adding Widgets to the Sidebar, check the [Widgets documentation]({{< relref "/docs/widgets.md#available-widget-areas" >}}).

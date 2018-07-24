@@ -64,7 +64,7 @@ Follow the [Authors Setup Guide]({{< relref "/docs/authors.md" >}}) for setting 
 
 ### Setting up Widgets
 
-If you want to use Widgets on your site, take a look at the [Widgets documentation]({{< relref "docs/widgets.md" >}})
+If you want to use Widgets on your site, take a look at the [Widgets documentation]({{< relref "/docs/widgets.md" >}})
 
 -------------
 

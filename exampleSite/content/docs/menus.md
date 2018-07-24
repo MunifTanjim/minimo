@@ -39,11 +39,11 @@ hideMainMenu = true
 
 **name**: `sidebar`
 
-Social Menu is available as Widget: `sidebar_menu`. Add it to the `sidebar` [Widget Area]({{< relref "docs/widgets.md#available-widget-areas" >}}) to use it.
+Social Menu is available as Widget: `sidebar_menu`. Add it to the `sidebar` [Widget Area]({{< relref "/docs/widgets.md#available-widget-areas" >}}) to use it.
 
 You can use Sidebar Menu as normal [Hugo Menus](https://gohugo.io/content-management/menus/).
 
-Or you can use it to mirror another menu by using the `sidebar_menu.mirror` option in your [Widgets Configuration File]({{< relref "docs/widgets.md#widgets-configuration-file" >}}). For example, this will mirror the Main Menu:
+Or you can use it to mirror another menu by using the `sidebar_menu.mirror` option in your [Widgets Configuration File]({{< relref "/docs/widgets.md#widgets-configuration-file" >}}). For example, this will mirror the Main Menu:
 
 ```toml
 [sidebar_menu]
@@ -61,7 +61,7 @@ menu:
 
 ## Social Menu
 
-Social Menu is available as Widget: `social_menu`. You can add it to [Widget Areas]({{< relref "docs/widgets.md#available-widget-areas" >}}) to use it.
+Social Menu is available as Widget: `social_menu`. You can add it to [Widget Areas]({{< relref "/docs/widgets.md#available-widget-areas" >}}) to use it.
 
 Use the variables under `[params.social]` in your `config.toml` file for adding your social profiles:
 
@@ -77,6 +77,6 @@ You only have to add your usernames. Minimo will take care of the rest.
 
 #### Changing Social Menu Icons Order
 
-If you want to change the order of the social menu icons, use the `social_menu.platforms` option in your [Widgets Configuration File]({{< relref "docs/widgets.md#widgets-configuration-file" >}}).
+If you want to change the order of the social menu icons, use the `social_menu.platforms` option in your [Widgets Configuration File]({{< relref "/docs/widgets.md#widgets-configuration-file" >}}).
 
 The social menu icons will appear in the order you specify in the `platforms` array.

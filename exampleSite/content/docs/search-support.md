@@ -54,12 +54,12 @@ client = ""
 
 The next steps are different for each search client:
 
-- [**Algolia**]({{< relref "docs/search-algolia.md" >}})
-- [**Fuse.js**]({{< relref "docs/search-fuse-js.md" >}})
-- [**Lunr.js**]({{< relref "docs/search-lunr-js.md" >}})
+- [**Algolia**]({{< relref "/docs/search-algolia.md" >}})
+- [**Fuse.js**]({{< relref "/docs/search-fuse-js.md" >}})
+- [**Lunr.js**]({{< relref "/docs/search-lunr-js.md" >}})
 
 After you complete those steps, you are good to go!
 
 ## Add Search Widget
 
-You might also want to add the [`search` widget]({{< relref "docs/widgets.md#widget-search" >}}).
+You might also want to add the [`search` widget]({{< relref "/docs/widgets.md#widget-search" >}}).

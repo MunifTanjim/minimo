@@ -40,6 +40,6 @@ git commit -m "update [theme]: minimo"
 
 ## To Do After Updating Minimo
 
-After updating Minimo, always check that your site's **`config.toml`** file matches the latest [**`config.toml`** file]({{< relref "docs/config-file.md" >}}) format.
+After updating Minimo, always check that your site's **`config.toml`** file matches the latest [**`config.toml`** file]({{< relref "/docs/config-file.md" >}}) format.
 
-A good idea is to double check all the [Configuration settings]({{< relref "docs/installation.md#configuration-for-minimo" >}}) of Minimo.
+A good idea is to double check all the [Configuration settings]({{< relref "/docs/installation.md#configuration-for-minimo" >}}) of Minimo.

@@ -3,7 +3,7 @@
 {{- $Scratch := $Scope.Scratch -}}
 {{- $Shuffle := ( .Shuffle | default true ) -}}
 {{- $Taxonomy := .Taxonomy -}}
-{{- $Data := ( $Site.GetPage "taxonomy" $Taxonomy ).Data -}}
+{{- $Data := ( $Site.GetPage $Taxonomy ).Data -}}
 
 <div class='container list-container'>
   <ul class='list taxonomy-cloud {{- if not $Shuffle }} no-shuffle{{- end -}}'>
@@ -29,7 +29,7 @@
       {{- $size := ( add $minSize ( mul $sizeStep ( sub $count $minCount ) ) ) -}}
       <li>
         <a href='{{ ( print $Data.Plural "/" ( .Term | urlize ) ) | relLangURL }}' style='font-size:{{ $size }}em'>
-          {{- with $Site.GetPage "taxonomyTerm" $Data.Plural .Term -}}
+          {{- with $Site.GetPage ( print "/" $Data.Plural "/" .Term ) -}}
             {{- .Title -}}
           {{- end -}}
         </a>

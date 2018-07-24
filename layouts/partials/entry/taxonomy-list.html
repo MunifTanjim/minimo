@@ -9,7 +9,7 @@
   {{- range $i, $term := ( index $.Params $txs ) -}}
   {{- if gt $i 0 }}, {{ end -}}
   <a class='{{ $tx }}' href='{{ ( print $txs "/" ( $term | urlize ) ) | relLangURL }}'>
-    {{- with $.Site.GetPage "taxonomyTerm" $txs ( $term | urlize ) -}}
+    {{- with $.Site.GetPage ( print "/" $txs "/" ( $term | urlize ) ) -}}
       {{- .Title -}}
     {{- else -}}
       {{- $term -}}
