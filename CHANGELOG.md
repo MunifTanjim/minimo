@@ -4,6 +4,22 @@
 
 - ...
 
+## [2.6.0] - 2018-07-24
+
+### Added
+
+- French translation improvements
+- "extra" placeholder partial for `head` and `footer`
+- Italian translation
+
+### Changed
+
+- Minimum Hugo version requirement: `v0.45`
+
+### Fixed
+
+- "Search: Fuse.js" documentation
+
 ## [2.5.0] - 2018-07-06
 
 ### Added
@@ -234,7 +250,8 @@
 
 - Initial stable release
 
-[Unreleased]: https://github.com/MunifTanjim/minimo/compare/2.5.0...HEAD
+[Unreleased]: https://github.com/MunifTanjim/minimo/compare/2.6.0...HEAD
+[2.6.0]: https://github.com/MunifTanjim/minimo/compare/2.5.0...2.6.0
 [2.5.0]: https://github.com/MunifTanjim/minimo/compare/2.4.0...2.5.0
 [2.4.0]: https://github.com/MunifTanjim/minimo/compare/v2.3.0...2.4.0
 [2.3.0]: https://github.com/MunifTanjim/minimo/compare/v2.2.0...v2.3.0
