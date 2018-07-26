@@ -1,9 +1,9 @@
 baseURL = "http://www.example.com"
-title = "Minimo"
+title = "Engimo"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
-theme = "minimo"
+theme = "engimo"
 
 disqusShortname = ""
 googleAnalytics = ""
@@ -22,7 +22,7 @@ enableEmoji = true
 defaultContentLanguage = "en"
 
 [params.info]
-description = "Minimalist theme for Hugo"
+description = "Minimalist theme for Engineers"
 title404 = "Nothing's here!"
 
 [params.assets]

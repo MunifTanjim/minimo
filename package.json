@@ -1,12 +1,12 @@
 {
-  "name": "minimo",
-  "description": "Minimalist theme for Hugo",
+  "name": "engimo",
+  "description": "Minimalist theme for Hugo with Engineering support",
   "version": "2.6.0",
   "author": {
-    "name": "Munif Tanjim",
-    "url": "https://muniftanjim.com"
+    "name": "Adam Charytoniuk",
+    "url": "https://github.com/achary/engimo"
   },
-  "repository": "MunifTanjim/minimo",
+  "repository": "achary/engimo",
   "license": "MIT",
   "scripts": {
     "build": "NODE_ENV=production webpack",

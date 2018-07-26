@@ -1,8 +1,8 @@
-name = "Minimo"
+name = "Engimo"
 license = "MIT"
-licenselink = "https://github.com/MunifTanjim/minimo/blob/master/LICENSE"
-description = "Minimalist theme for Hugo"
-homepage = "https://minimo.netlify.com"
+licenselink = "https://github.com/achary/engimo/blob/master/LICENSE"
+description = "Minimalist theme for Engineers"
+homepage = "https://engimo.netlify.com"
 tags = [
   "blog",
   "minimal",
@@ -38,5 +38,5 @@ features = [
 min_version = 0.45
 
 [author]
-  name = "Munif Tanjim"
-  homepage = "https://muniftanjim.com"
+  name = "Adam Charytoniuk"
+  homepage = ""
