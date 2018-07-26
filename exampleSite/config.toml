@@ -22,7 +22,7 @@ enableEmoji = true
 defaultContentLanguage = "en"
 
 [params.info]
-description = "Minimalist theme for Engineers"
+description = "Minimalist Hugo theme for Engineers"
 title404 = "Nothing's here!"
 
 [params.assets]
@@ -34,7 +34,7 @@ gopher = "" # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]
 prefix = ""
-holder = "MunifTanjim"
+holder = "achary"
 startYear = "2017"
 suffix = ""
 
@@ -45,8 +45,8 @@ listDateFormat = "2006, Jan 02"
 archiveDateFormat = "Jan 02"
 hideEntryNavigation = ["page"] # boolean / array of sections
 showReadingTime = true
-taxonomyCloudShuffle = true
-accentColor = "#ffcd00"
+taxonomyCloudShuffle = false
+accentColor = "#44ccff"
 hideMainMenu = false
 
 [params.sidebar]
@@ -70,17 +70,8 @@ page = "" # Twitter page username
 titleSeparator = "•"
 
 [params.social]
-codepen = "MunifTanjim"
 email = "contact@example.com"
-facebook = "MunifTanjim"
-github = "MunifTanjim"
-gitlab = "MunifTanjim"
-instagram = "MunifTanjim"
-linkedin = "muniftanjim"
-twitter = "MunifTanjim"
-telegram = "MunifTanjim"
-google_scholar = "qc6CJjYAAAAJ"
-youtube = "UCT-U0rNerYxItGcuoPX-WYA"
+github = "achary"
 
 [params.comments]
 enable = false
@@ -101,8 +92,8 @@ enable = false
 issueTerm = "pathname" # pathname / url / title
 
 [params.comments.utterances.github]
-username = "MunifTanjim"
-repository = "minimo"
+username = "achary"
+repository = "engimo"
 
 [params.search]
 client = "" # algolia / fuse / lunr
