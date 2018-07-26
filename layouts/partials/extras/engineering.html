@@ -1,0 +1,52 @@
+<!-- graphviz rendering -->
+{{ if  .Params.viz}}
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/viz.js/1.8.2/viz-lite.js"> </script>
+    <script type="text/javascript">
+    (function(){
+        var vizPrefix = "language-viz-";
+        Array.prototype.forEach.call(document.querySelectorAll("[class^=" + vizPrefix + "]"), function(x){
+            x.style.display = 'none'
+            x.parentNode.style.backgroundColor = "transparent"
+
+            var engine;
+            x.getAttribute("class").split(" ").forEach(function(cls){
+                if (cls.startsWith(vizPrefix)) {
+                    engine = cls.substr(vizPrefix.length);
+                }
+            });
+            var image = new DOMParser().parseFromString(Viz(x.innerText, {format:"svg", engine:engine}), "image/svg+xml");
+            var imageElement =  image.documentElement;
+            imageElement.style.width = "100%";
+            x.parentNode.insertBefore(imageElement, x);
+        });
+    })();
+    </script>
+{{ end }}
+
+
+<!-- waveforms rendering -->
+{{ if .Params.wave }}
+    <!-- getting waveform generation scripts -->
+    <script src="http://wavedrom.com/skins/default.js" type="text/javascript"></script>
+    <script src="http://wavedrom.com/WaveDrom.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var wavePrefix = "language-wave";
+        
+        var index = 0;
+        Array.prototype.forEach.call(document.querySelectorAll("[class^=" + wavePrefix + "]"), function(x){
+            x.style.display = 'none'
+            x.parentNode.style.backgroundColor = "transparent"
+            jsonContent = x.innerText;
+
+            node0 = document.createElement('div');
+            node0.id = 'WaveDrom_Display_' + index;
+            source = JSON.parse(jsonContent);
+            x.parentNode.insertBefore(node0, x);
+
+            WaveDrom.RenderWaveForm (index,source,"WaveDrom_Display_");
+            index +=1;
+        });
+    </script>
+{{ end }}
+
