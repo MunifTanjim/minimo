@@ -26,6 +26,7 @@ description = "Minimalist theme for Engineers"
 title404 = "Nothing's here!"
 
 [params.assets]
+
 favicon = "favicon.ico"
 customCSS = ["css/custom.css"]
 customJS = ["js/custom.js"]
@@ -90,8 +91,8 @@ apiEndpoint = "https://api.staticman.net/v2/entry"
 maxDepth = 2
 
 [params.comments.staticman.github]
-username = "MunifTanjim"
-repository = "minimo"
+username = "achary"
+repository = "engimo"
 branch = "master"
 
 # Utterances: https://utteranc.es
@@ -124,7 +125,7 @@ page = "/:slug/"
 name = "Repo"
 weight = -10
 identifier = "repository"
-url = "https://github.com/MunifTanjim/minimo"
+url = "https://github.com/achary/engimo"
 
 [blackfriday]
 hrefTargetBlank = true
