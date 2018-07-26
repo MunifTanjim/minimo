@@ -21,3 +21,7 @@ Engimo extends Minimo theme with support of:
 
 - [Graphviz diagrams](/docs/graphviz)
 - [Digital waveforms diagrams](/docs/waveforms)
+
+## Summary
+
+[All features on a single page](/features-summary)
