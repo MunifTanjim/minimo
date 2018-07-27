@@ -56,9 +56,9 @@ To get chart like this one above, follow the steps:
     ```
     ````
 
-# Lines charts
+# Line charts
 
-Lines charts are also simple:
+Line charts are also simple:
 
 ```chart
     {
