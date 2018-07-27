@@ -35,7 +35,7 @@ feature | online | offline
 ---|---|---
 maths and formulas | ✓ | -
 graphviz | ✓ | -
-waveforms | ✓ | -
+waveforms | ✓ | ✓
 deprecated pages | ✓ | ✓
 charts | ✓ | -
 message sequence charts | ✓ | ✓
