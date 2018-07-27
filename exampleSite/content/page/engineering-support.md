@@ -22,6 +22,15 @@ Engimo extends Minimo theme with support of:
 - [Graphviz diagrams](/docs/graphviz)
 - [Digital waveforms diagrams](/docs/waveforms)
 
+## Online vs offline
+All these features are available when working online, since some of the work performed relies on JavaScript resources available in the Internet.
+
+feature | online | offline
+---|---|---
+maths and formulas | ✓ | -
+graphviz | ✓ | -
+waveforms | ✓ | -
+
 ## Summary
 
 [All features on a single page](/features-summary)
