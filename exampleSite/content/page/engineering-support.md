@@ -37,7 +37,7 @@ maths and formulas | ✓ | -
 graphviz | ✓ | -
 waveforms | ✓ | ✓
 deprecated pages | ✓ | ✓
-charts | ✓ | -
+charts | ✓ | ✓
 message sequence charts | ✓ | ✓
 
 ## Summary
