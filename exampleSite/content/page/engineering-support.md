@@ -15,12 +15,13 @@ tags:
 
 Minimo comes with out-of-box [support for math and formulas based on MathJax](/docs/mathjax-support/).
 
-## Diagrams
+## Diagrams and charts
 
 Engimo extends Minimo theme with support of:
 
 - [Graphviz diagrams](/docs/graphviz)
 - [Digital waveforms diagrams](/docs/waveforms)
+- [Charts](/docs/charts)
 
 ## Deprecated pages
 
@@ -35,6 +36,7 @@ maths and formulas | ✓ | -
 graphviz | ✓ | -
 waveforms | ✓ | -
 deprecated pages | ✓ | ✓
+charts | ✓ | -
 
 ## Summary
 

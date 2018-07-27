@@ -52,28 +52,41 @@
 
 <!-- chart.js rendering -->
 {{ if .Params.chart }}
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js" type="text/javascript"></script> -->
-    <!-- <script type="text/javascript">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js" type="text/javascript"></script>
+    <script type="text/javascript">
         var chartPrefix = "language-chart";
-        
+
+            Chart.defaults.global.elements.rectangle.borderWidth = 2;
+            Chart.defaults.global.elements.rectangle.borderColor = "#44ccff";
+            Chart.defaults.global.elements.rectangle.backgroundColor = "#e0f8ff";
+
+            Chart.defaults.global.elements.line.borderWidth = 2;
+            Chart.defaults.global.elements.line.borderColor = "#44ccff";
+            Chart.defaults.global.elements.line.backgroundColor = "#e0f8ff";
+
+            Chart.defaults.global.elements.point.borderWidth = 2;
+            Chart.defaults.global.elements.point.borderColor = "#44ccff";
+            Chart.defaults.global.elements.point.backgroundColor = "#e0f8ff";
+
         var index = 0;
         Array.prototype.forEach.call(document.querySelectorAll("[class^=" + chartPrefix + "]"), function(x){
             x.style.display = 'none'
-            // x.parentNode.style.backgroundColor = "transparent"
+            x.parentNode.style.backgroundColor = "transparent"
             jsonContent = x.innerText;
 
-            //<canvas id="myChart" width="400" height="400"></canvas>
-            // node0 = document.createElement('canvas');
-            // node0.id = 'myChart' + index;
-            // node.style.width="400";
-            // node.style.height="400";
-            // source = JSON.parse(jsonContent);
-            // x.parentNode.insertBefore(node0, x);
-            // var ctx = document.getElementById('myChart' + index).getContext('2d');
-            // var myChart = new Chart(ctx, source);
+            node0 = document.createElement('canvas');
+            node0.height = 200;
+            node0.style.height=200;
+            node0.id = 'myChart' + index;
+            source = JSON.parse(jsonContent);
+            x.parentNode.insertBefore(node0, x);
+            var ctx = document.getElementById('myChart' + index).getContext('2d');
+
+
+            var myChart = new Chart(ctx, source);
 
             // WaveDrom.RenderWaveForm (index,source,"WaveDrom_Display_");
             index +=1;
         });
-    </script> -->
+    </script>
 {{ end }}

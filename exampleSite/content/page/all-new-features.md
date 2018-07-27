@@ -9,7 +9,11 @@ tags:
 mathjax: true
 viz: true
 wave: true
+chart: true
 ---
+
+Summary of features
+
 ## Math
 
 $
@@ -57,3 +61,27 @@ $
 ]}
 ```
 
+## Chart
+
+```chart
+    {
+    "type": "line",
+        "data": {
+            "labels": ["One", "Two", "Three", "Four", "Five", "Six"],
+            "datasets": [
+            {
+                "label": "# of Votes",
+                "data": [12, 19, 3, 5, 2, 3],
+                "backgroundColor":"transparent",
+                "borderColor":"orange"
+            },
+            {
+                "label": "Some other set",
+                "data": [15, 8, 13, 5, 5, 9],
+                "backgroundColor":"transparent",
+                "borderColor":"#44ccff"
+            }
+            ]
+        }
+    }
+```
