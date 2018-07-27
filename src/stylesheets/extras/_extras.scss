@@ -1,3 +1,9 @@
 @import 'variables/variables';
 
 @import 'mixins/mixins';
+
+/* deprecated page message style */
+.deprecated 
+{ 
+    color:#800000; margin-top:1em; padding:1em;background-color: #FFD2D2;
+}

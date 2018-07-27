@@ -150,3 +150,6 @@ other = "Toggle Sidebar"
 
 [website]
 other = "Website"
+
+[deprecatedPage]
+other = "This page has been marked as deprecated"
