@@ -34,7 +34,7 @@ Most of these features are available when working online, since some of the work
 feature | online | offline
 ---|---|---
 maths and formulas | ✓ | -
-graphviz | ✓ | -
+graphviz | ✓ | ✓
 waveforms | ✓ | ✓
 deprecated pages | ✓ | ✓
 charts | ✓ | ✓
