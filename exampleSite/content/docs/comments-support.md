@@ -10,6 +10,7 @@ tags:
 slug: comments-support
 comments: true
 toc: true
+deprecated: true
 ---
 Minimo has support for comments baked into it.
 

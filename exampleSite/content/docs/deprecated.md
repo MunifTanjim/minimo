@@ -10,7 +10,7 @@ tags:
 comments: false
 ---
 
-Engimo addss new boolean variable to the metadata section: `deprecated`. When set to true like this:
+Engimo addss new boolean parameter to the metadata section: `deprecated`. When set to `true` like this:
 
 ```
 ---
@@ -18,4 +18,10 @@ deprecated: true
 ---
 ```
 
-then the page will have red box indicating that the page has been deprecated.
+then the page will have a red box indicating that:
+
+<div class="deprecated">This page has been marked as deprecated</div>
+
+&nbsp;
+
+In addition, when the title of the page is listed (e.g. with tags, categories lists etc.) the title is extended with *(deprecated)* phrase.

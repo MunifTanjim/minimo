@@ -153,3 +153,5 @@ other = "Website"
 
 [deprecatedPage]
 other = "This page has been marked as deprecated"
+[deprecatedHint]
+other = "deprecated"

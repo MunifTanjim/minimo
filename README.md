@@ -4,7 +4,7 @@
 
 # Engimo
 
-Minimalist theme for Hugo (forked from excellent [Minimo](https://minimo.netlify.com/)) with support for engineering content publication.
+Minimalist theme for Hugo with support for engineering content publication. Forked from an excellent [Minimo](https://minimo.netlify.com/) theme.
 
 ## Documentation
 

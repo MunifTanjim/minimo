@@ -5,7 +5,7 @@
   <header class='item-header'>
     <h4 class='item-title'>
       <a href='{{ .Permalink | relURL }}'>
-        {{- .Title -}}
+        {{- .Title -}} {{ if .Params.deprecated }} ( {{- i18n "deprecatedHint" -}} ) {{ end }}
       </a>
     </h4>
   </header>
