@@ -38,7 +38,7 @@ graphviz | ✓ | -
 waveforms | ✓ | -
 deprecated pages | ✓ | ✓
 charts | ✓ | -
-message sequence charts | ✓ | -
+message sequence charts | ✓ | ✓
 
 ## Summary
 
