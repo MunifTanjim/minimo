@@ -10,6 +10,7 @@ mathjax: true
 viz: true
 wave: true
 chart: true
+msc: true
 ---
 
 Summary of features
@@ -84,4 +85,13 @@ $
             ]
         }
     }
+```
+
+## MSC
+
+```msc
+Andrew->China: Says Hello
+Note right of China: China thinks\nabout it
+China-->Andrew: How are you?
+Andrew->>China: I am good thanks!
 ```

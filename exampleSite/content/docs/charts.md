@@ -1,7 +1,7 @@
 ---
 date: 2018-07-27T09:00:00+06:00
 lastmod: 2018-07-27T19:30:00+06:00
-title: Charts
+title: 2D Charts
 authors: ["achary"]
 categories:
   - features

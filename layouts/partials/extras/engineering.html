@@ -85,7 +85,35 @@
 
             var myChart = new Chart(ctx, source);
 
-            // WaveDrom.RenderWaveForm (index,source,"WaveDrom_Display_");
+            index +=1;
+        });
+    </script>
+{{ end }}
+
+
+<!-- MSC rendering -->
+{{ if .Params.msc }}
+<script src="https://bramp.github.io/js-sequence-diagrams/js/webfont.js"></script>
+<script src="https://bramp.github.io/js-sequence-diagrams/js/snap.svg-min.js"></script>
+<script src="https://bramp.github.io/js-sequence-diagrams/js/underscore-min.js"></script>
+<script src="https://bramp.github.io/js-sequence-diagrams/js/sequence-diagram-min.js"></script>
+
+    <script type="text/javascript">
+        var chartPrefix = "language-msc";
+
+        var index = 0;
+        Array.prototype.forEach.call(document.querySelectorAll("[class^=" + chartPrefix + "]"), function(x){
+            x.style.display = 'none'
+            x.parentNode.style.backgroundColor = "transparent"
+            jsonContent = x.innerText;
+
+            node0 = document.createElement('div');
+            node0.id = 'msc' + index;
+            x.parentNode.insertBefore(node0, x);
+
+            var diagram = Diagram.parse(jsonContent);
+            diagram.drawSVG("msc"+index, {theme: 'simple'});
+
             index +=1;
         });
     </script>

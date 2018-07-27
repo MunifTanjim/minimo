@@ -21,7 +21,8 @@ Engimo extends Minimo theme with support of:
 
 - [Graphviz diagrams](/docs/graphviz)
 - [Digital waveforms diagrams](/docs/waveforms)
-- [Charts](/docs/charts)
+- [2D Charts](/docs/charts)
+- [Message Sequence Charts](/docs/message-sequence-charts)
 
 ## Deprecated pages
 
@@ -37,6 +38,7 @@ graphviz | ✓ | -
 waveforms | ✓ | -
 deprecated pages | ✓ | ✓
 charts | ✓ | -
+message sequence charts | ✓ | -
 
 ## Summary
 
