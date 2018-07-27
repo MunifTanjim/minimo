@@ -10,7 +10,7 @@ tags:
 comments: false
 ---
 
-Engimo addss new boolean parameter to the metadata section: `deprecated`. When set to `true` like this:
+Engimo adds a new boolean parameter to the metadata section: `deprecated`. When set to `true` like this:
 
 ```
 ---
