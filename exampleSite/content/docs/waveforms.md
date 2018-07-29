@@ -27,11 +27,11 @@ then, in the content you may inline the diagram using `viz-dot` as a language:
 ```wave
 { 
   "signal": [ 
-            {"name":"clk", "wave":"p.....|..."},
-            {"name":"dat", "wave":"x.345x|=.x", "data":["A","B","C","D"]},
-            {"name":"req", "wave":"0.1..0|1.0"},
+            {"name":"CLK", "wave":"p.....|..."},
+            {"name":"DAT", "wave":"x.345x|=.x", "data":["A","B","C","D"]},
+            {"name":"REQ", "wave":"0.1..0|1.0"},
             {},
-            {"name":"ack", "wave": "1.....|01."}
+            {"name":"ACK", "wave": "1.....|01."}
 ]}
 ```
 ````
@@ -40,11 +40,11 @@ then, in the content you may inline the diagram using `viz-dot` as a language:
 
 ```wave
 { 
-  "signal": [ {"name": "clk", "wave": "p.....|..."},
-            {"name":"dat", "wave":"x.345x|=.x", "data":["A","B","C","D"]},
-            {"name": "req", "wave": "0.1..0|1.0"},
+  "signal": [ {"name": "CLK", "wave": "p.....|..."},
+            {"name":"DAT", "wave":"x.345x|=.x", "data":["A","B","C","D"]},
+            {"name": "REQ", "wave": "0.1..0|1.0"},
             {},
-            {"name": "ack", "wave": "1.....|01."}
+            {"name": "ACK", "wave": "1.....|01."}
 ]}
 ```
 
