@@ -23,6 +23,7 @@ Engimo extends Minimo theme with support of:
 - [Digital waveforms diagrams](/docs/waveforms)
 - [2D Charts](/docs/charts)
 - [Message Sequence Charts](/docs/message-sequence-charts)
+- [Flowcharts](/docs/flowcharts)
 
 ## Deprecated pages
 
@@ -39,6 +40,7 @@ waveforms | ✓ | ✓
 deprecated pages | ✓ | ✓
 charts | ✓ | ✓
 message sequence charts | ✓ | ✓
+flowcharts | ✓ | ✓
 
 ## Summary
 

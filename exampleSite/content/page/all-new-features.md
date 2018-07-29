@@ -11,6 +11,7 @@ viz: true
 wave: true
 chart: true
 msc: true
+flowchart: true
 ---
 
 Summary of features
@@ -72,15 +73,7 @@ $
             "datasets": [
             {
                 "label": "# of Votes",
-                "data": [12, 19, 3, 5, 2, 3],
-                "backgroundColor":"transparent",
-                "borderColor":"orange"
-            },
-            {
-                "label": "Some other set",
-                "data": [15, 8, 13, 5, 5, 9],
-                "backgroundColor":"transparent",
-                "borderColor":"#44ccff"
+                "data": [12, 19, 3, 5, 2, 3]
             }
             ]
         }
@@ -94,4 +87,23 @@ Andrew->China: Says Hello
 Note right of China: China thinks\nabout it
 China-->Andrew: How are you?
 Andrew->>China: I am good thanks!
+```
+
+## Flowcharts
+
+```flowchart
+  st=>start: Start:>http://www.google.com[blank]
+  e=>end:>http://www.google.com
+  op1=>operation: My Operation
+  sub1=>subroutine: My Subroutine
+  cond=>condition: Yes
+  or No?:>http://www.google.com
+  io=>inputoutput: catch something...
+  para=>parallel: parallel tasks
+
+  st->op1->cond
+  cond(yes)->io->e
+  cond(no)->para
+  para(path1, bottom)->sub1(right)->op1
+  para(path2, top)->op1
 ```

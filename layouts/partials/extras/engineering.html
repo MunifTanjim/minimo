@@ -55,18 +55,22 @@
     <script src="/assets/js/Chart.js" type="text/javascript"></script>
     <script type="text/javascript">
         var chartPrefix = "language-chart";
+            // setting defaults
+            var borderColor = "#444";
+            var bgColor = "#eee";
+            var borderWidth = 2;
 
-            Chart.defaults.global.elements.rectangle.borderWidth = 2;
-            Chart.defaults.global.elements.rectangle.borderColor = "#44ccff";
-            Chart.defaults.global.elements.rectangle.backgroundColor = "#e0f8ff";
+            Chart.defaults.global.elements.rectangle.borderWidth = borderWidth;
+            Chart.defaults.global.elements.rectangle.borderColor = borderColor;
+            Chart.defaults.global.elements.rectangle.backgroundColor = bgColor;
 
-            Chart.defaults.global.elements.line.borderWidth = 2;
-            Chart.defaults.global.elements.line.borderColor = "#44ccff";
-            Chart.defaults.global.elements.line.backgroundColor = "#e0f8ff";
+            Chart.defaults.global.elements.line.borderWidth = borderWidth;
+            Chart.defaults.global.elements.line.borderColor = borderColor;
+            Chart.defaults.global.elements.line.backgroundColor = bgColor;
 
-            Chart.defaults.global.elements.point.borderWidth = 2;
-            Chart.defaults.global.elements.point.borderColor = "#44ccff";
-            Chart.defaults.global.elements.point.backgroundColor = "#e0f8ff";
+            Chart.defaults.global.elements.point.borderWidth = borderWidth;
+            Chart.defaults.global.elements.point.borderColor = borderColor;
+            Chart.defaults.global.elements.point.backgroundColor = bgColor;
 
         var index = 0;
         Array.prototype.forEach.call(document.querySelectorAll("[class^=" + chartPrefix + "]"), function(x){
@@ -118,3 +122,30 @@
         });
     </script>
 {{ end }}
+
+
+<!-- Dlowcharts rendering -->
+{{ if .Params.flowchart }}
+<script src="/assets/js/raphael.min.js"></script>
+<script src="/assets/js/flowchart-latest.js"></script>
+
+    <script type="text/javascript">
+        var flowchartPrefix = "language-flowchart";
+        var index = 0;
+        Array.prototype.forEach.call(document.querySelectorAll("[class^=" + flowchartPrefix + "]"), function(x){
+            x.style.display = 'none'
+            x.parentNode.style.backgroundColor = "transparent"
+            jsonContent = x.innerText;
+
+            node0 = document.createElement('div');
+            node0.id = 'flowchart' + index;
+            x.parentNode.insertBefore(node0, x);
+
+            var diagram = flowchart.parse(jsonContent);
+            diagram.drawSVG("flowchart"+index, {'line-width':2});
+
+            index +=1;
+        });
+    </script>
+{{ end }}
+
