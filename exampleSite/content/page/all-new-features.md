@@ -12,9 +12,9 @@ wave: true
 chart: true
 msc: true
 flowchart: true
----
 
-Summary of features
+toc: true
+---
 
 ## Math
 
@@ -106,3 +106,6 @@ Andrew->>China: I am good thanks!
   para(path1, bottom)->sub1(right)->op1
   para(path2, top)->op1
 ```
+## Deprecated pages
+
+<div class="deprecated">This page has been marked as deprecated.</div>

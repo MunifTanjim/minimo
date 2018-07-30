@@ -3,9 +3,17 @@
 @import 'mixins/mixins';
 
 /* deprecated page message style */
+
 .deprecated 
 { 
-    color:#800000; margin-top:1em; padding:1em;background-color: #FFD2D2;
+    color:#455a64; margin-top:1em; padding:1em;
+    background-color: transparent;
+    border: 1px solid black;
+    background-image: url('/images/alert-triangle.svg');
+    background-repeat: no-repeat;
+    background-position: 8px 50%;
+    padding-left: 2em;
+    border-radius: 6px;
 }
 .deprecated_title
 {
