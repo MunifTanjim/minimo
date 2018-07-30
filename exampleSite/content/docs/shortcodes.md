@@ -1,7 +1,7 @@
 ---
 date: 2017-10-05T20:00:00+06:00
 title: Shortcodes
-authors: ["muniftanjim"]
+authors: ["muniftanjim","achary"]
 categories:
   - features
 tags:
@@ -9,7 +9,7 @@ tags:
 slug: shortcodes
 toc: true
 ---
-Minimo comes with several shortcodes built-in.
+Engimo comes with several shortcodes built-in.
 
 -------
 

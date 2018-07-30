@@ -1,7 +1,7 @@
 ---
 date: 2017-09-28T08:00:00+06:00
 title: Typography
-authors: ["muniftanjim"]
+authors: ["muniftanjim","achary"]
 slug: typography
 menu: main
 weight: -230
@@ -57,7 +57,7 @@ console.log('The meaning of life is: ', meaningOfLife);
 
 Who wants some table?
 
-  Minimo  |  Caption  | More Caption
+  Engimo  |  Caption  | More Caption
  -------- | --------- | ------------
    Cool   |   What?   |  Now, wut?!
 

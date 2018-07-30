@@ -2,7 +2,7 @@
 date: 2018-07-05T20:00:00+06:00
 lastmod: 2018-07-06T01:30:00+06:00
 title: "Search Support"
-authors: ["muniftanjim"]
+authors: ["muniftanjim","achary"]
 categories:
   - features
 tags:
@@ -11,7 +11,7 @@ slug: search-support
 toc: true
 ---
 
-Minimo supports the following clients for the search feature:
+Engimo supports the following clients for the search feature:
 
 - [Algolia](https://www.algolia.com)
 - [Fuse.js](http://fusejs.io)

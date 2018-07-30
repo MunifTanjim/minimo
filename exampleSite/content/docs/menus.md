@@ -2,7 +2,7 @@
 date: 2017-09-27T10:00:00+06:00
 lastmod: 2018-05-24T02:10:00+06:00
 title: Menus Setup Guide
-authors: ["muniftanjim"]
+authors: ["muniftanjim","achary"]
 categories:
   - features
 tags:
@@ -14,7 +14,7 @@ menu:
     name: Menus
     parent: docs
 ---
-Minimo has three menus.
+Engimo has three menus.
 
 1. Main Menu
 2. Sidebar Menu
@@ -73,7 +73,7 @@ facebook = "..."
 ...
 ```
 
-You only have to add your usernames. Minimo will take care of the rest.
+You only have to add your usernames. The theme will take care of the rest.
 
 #### Changing Social Menu Icons Order
 

@@ -10,7 +10,7 @@ comments:
       options:
         format: "timestamp"
   moderation: false
-  name: "Minimo"
+  name: "Engimo"
   path: "data/comments/{options.postId}"
   requiredFields: ["author", "content", "email", "permalink"]
   transforms:

@@ -1,7 +1,7 @@
 ---
 date: 2018-07-05T23:30:00+06:00
 title: "Search: Algolia"
-authors: ["muniftanjim"]
+authors: ["muniftanjim","achary"]
 categories:
   - features
 tags:
@@ -32,7 +32,7 @@ searchApiKey = ""
 - `params.search.algolia` [`Map`]:
   - `appId` [`String`]: Algolia Application ID
   - `indexName` [`String`]: Name for Algolia Indices  
-    _default: `minimo_site`_
+    _default: `engimo_site`_
   - `searchApiKey` [`String`]: Algolia Search-Only API Key
 
 You'll find various information related to your Algolia account in the [Algolia Dashboard](https://www.algolia.com/dashboard).
@@ -41,7 +41,7 @@ You'll find various information related to your Algolia account in the [Algolia 
 
 Algolia will need a search index for searching across your site. So, you'll need to generate that search index for Algolia before you deploy your site.
 
-Minimo comes with a script for generating the search index for Algolia: `/scripts/generate-search-index-algolia.js`.
+Engimo comes with a script for generating the search index for Algolia: `/scripts/generate-search-index-algolia.js`.
 
 ### Install Dependencies
 
@@ -65,16 +65,16 @@ The generator script uses the following environment variables:
 - `ALGOLIA_APP_ID` (`required`): Algolia Application ID
 - `ALGOLIA_ADMIN_API_KEY` (`required`): Algolia Admin API Key
 - `ALGOLIA_INDEX_NAME` (`optional`): Name for Algolia Indices  
-  _default: `minimo_site`_
+  _default: `engimo_site`_
 
 ### Run the Script
 
 After you've generated your site with Hugo, run `generate-search-index-algolia.js` with `node`.
 
-If Minimo is installed under `/themes/minimo` directory, you'll run it as:
+If Engimo is installed under `/themes/engimo` directory, you'll run it as:
 
 ```sh
-node ./themes/minimo/scripts/generate-search-index-algolia.js
+node ./themes/engimo/scripts/generate-search-index-algolia.js
 ```
 
 The `generate-search-index-algolia.js` script accepts an optional argument for Hugo's `publishDir` (_relative to your site's root directory_).
@@ -82,7 +82,7 @@ The `generate-search-index-algolia.js` script accepts an optional argument for H
 So, if you've got a different `publishDir` (say `site`), pass it as the first argument:
 
 ```sh
-node ./themes/minimo/scripts/generate-search-index-algolia.js site
+node ./themes/engimo/scripts/generate-search-index-algolia.js site
 ```
 
 If the generation was successful, you'll see output like this:

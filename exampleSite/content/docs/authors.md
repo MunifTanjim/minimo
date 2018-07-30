@@ -2,21 +2,21 @@
 date: 2017-09-26T06:00:00+06:00
 lastmod: 2017-10-11T17:30:00+06:00
 title: Authors Setup Guide
-authors: ["muniftanjim"]
+authors: ["muniftanjim","achary"]
 categories:
   - features
 tags:
   - authors
 slug: authors
 ---
-Minimo supports multiple authors for your site. Just make sure you have the following configuration in your site's **`config.toml`**:
+Engimo supports multiple authors for your site. Just make sure you have the following configuration in your site's **`config.toml`**:
 
 ```toml
 [taxonomies]
 author = "authors"
 ```
 
-Minimo treats Authors as a [Hugo Taxonomy](https://gohugo.io/content-management/taxonomies/).
+Engimo treats Authors as a [Hugo Taxonomy](https://gohugo.io/content-management/taxonomies/).
 
 ## Author's Profile
 

@@ -8,7 +8,7 @@ const client = algoliasearch(
   process.env.ALGOLIA_ADMIN_API_KEY
 )
 
-const indexName = process.env.ALGOLIA_INDEX_NAME || 'minimo_site'
+const indexName = process.env.ALGOLIA_INDEX_NAME || 'engimo_site'
 
 const publicDir = path.resolve(__dirname, '..', process.argv[2] || 'public')
 

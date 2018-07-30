@@ -2,7 +2,7 @@
 date: 2017-09-25T08:00:00+06:00
 lastmod: 2018-02-08T15:15:00+06:00
 title: "Configuration File: config.toml"
-authors: ["muniftanjim"]
+authors: ["muniftanjim","achary"]
 categories:
   - others
 tags:
@@ -10,6 +10,6 @@ tags:
 slug: config-file
 ---
 
-This is the Minimo's configuraion file ( `config.toml` ) file of this site:
+This is the Engimo's configuraion file ( `config.toml` ) file of this site:
 
 {{< file "config.toml" >}}

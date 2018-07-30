@@ -21,7 +21,7 @@
   {{- else if eq . "algolia" -}}
   <script>window.algolia = {
     appId: '{{ $.Site.Params.search.algolia.appId }}',
-    indexName: '{{ $.Site.Params.search.algolia.indexName | default "minimo_site" }}',
+    indexName: '{{ $.Site.Params.search.algolia.indexName | default "engimo_site" }}',
     searchApiKey: '{{ $.Site.Params.search.algolia.searchApiKey }}'
   }</script>
   {{- end -}}

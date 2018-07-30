@@ -2,7 +2,7 @@
 date: 2018-02-07T18:30:00+06:00
 lastmod: 2018-07-06T01:30:00+06:00
 title: Widgets
-authors: ["muniftanjim"]
+authors: ["muniftanjim","achary"]
 categories:
   - features
 tags:
@@ -14,11 +14,11 @@ menu:
   sidebar:
     parent: docs
 ---
-Minimo supports _**Widgets**_ that you can place on specific _**Widget Areas**_.
+Engimo supports _**Widgets**_ that you can place on specific _**Widget Areas**_.
 
 ## Available Widgets
 
-Minimo has the following built-in Widgets:
+Engimo has the following built-in Widgets:
 
   Name             |  Slug
  ----------------- | -----------------
@@ -109,7 +109,7 @@ widget_area_slug = [ widget_slug_1, widget_slug_2, ...]
 
 ## Widgets Configuration File
 
-Minimo picks up Widgets' configuration from the **`/data/config/widgets.toml`** file.
+Engimo picks up Widgets' configuration from the **`/data/config/widgets.toml`** file.
 
 Here's the _Widgets Config file_ for this site:
 
@@ -117,6 +117,6 @@ Here's the _Widgets Config file_ for this site:
 
 {{< file "data/config/widgets.toml" >}}
 
-If configuration for any Widgets are missing in this file, Minimo will fallback to the default configuration for those Widgets.
+If configuration for any Widgets are missing in this file, Engimo will fallback to the default configuration for those Widgets.
 
 Go wild!

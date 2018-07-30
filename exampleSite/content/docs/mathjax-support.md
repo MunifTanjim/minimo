@@ -1,7 +1,7 @@
 ---
 date: 2018-02-27T18:00:00+06:00
 title: MathJax Support
-authors: ["muniftanjim"]
+authors: ["muniftanjim","achary"]
 categories:
   - features
 tags:
@@ -50,7 +50,7 @@ and they are:
 
 You can customize the default behavior of MathJax if you want.
 
-Minimo picks up configuration for MathJax from the **`/data/config/mathjax.json`** file.
+Engimo picks up configuration for MathJax from the **`/data/config/mathjax.json`** file.
 
 The default configuration options look like this:
 

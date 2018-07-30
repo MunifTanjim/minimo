@@ -13,7 +13,7 @@ tags:
 
 ## Math and formulas
 
-Minimo comes with out-of-box [support for math and formulas based on MathJax](/docs/mathjax-support/).
+Engimo comes with out-of-box [support for math and formulas based on MathJax](/docs/mathjax-support/).
 
 ## Diagrams and charts
 

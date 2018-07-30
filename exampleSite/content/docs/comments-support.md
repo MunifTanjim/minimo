@@ -2,7 +2,7 @@
 date: 2018-03-29T09:00:00+06:00
 lastmod: 2018-06-29T19:30:00+06:00
 title: Comments Support
-authors: ["muniftanjim"]
+authors: ["muniftanjim","achary"]
 categories:
   - features
 tags:
@@ -10,9 +10,8 @@ tags:
 slug: comments-support
 comments: true
 toc: true
-deprecated: true
 ---
-Minimo has support for comments baked into it.
+Engimo has support for comments baked into it.
 
 ## Enable/Disable Comments
 
@@ -44,7 +43,7 @@ _Of course, you'll also need to setup a comment system ( [Disqus](#disqus) or [S
 
 ## Setting Up Comment System
 
-Minimo currently supports **[Disqus](https://disqus.com/)**, **[Staticman](https://staticman.net/)** and **[Utterances](https://utteranc.es)** to be used as your site's comment system.
+Engimo currently supports **[Disqus](https://disqus.com/)**, **[Staticman](https://staticman.net/)** and **[Utterances](https://utteranc.es)** to be used as your site's comment system.
 
 ### Disqus
 
@@ -62,7 +61,7 @@ And that's all!
 
 _Staticman only supports GitHub. So, if your site's repository is not hosted in GitHub, it won't work._
 
-#### Configure Minimo for Staticman
+#### Configure Engimo for Staticman
 
 First of all, set up the following options in your `config.toml` file:
 
@@ -73,8 +72,8 @@ apiEndpoint = "https://api.staticman.net/v2/entry"
 maxDepth = 2
 
 [params.comments.staticman.github]
-username = "MunifTanjim"
-repository = "minimo"
+username = "achary"
+repository = "engimo"
 branch = "master"
 ```
 
@@ -131,8 +130,8 @@ enable = true
 issueTerm = "pathname" # pathname / url / title
 
 [params.comments.utterances.github]
-username = "MunifTanjim"
-repository = "minimo"
+username = "achary"
+repository = "engimo"
 ```
 
 - `params.comments.utterances` [`Map`]:

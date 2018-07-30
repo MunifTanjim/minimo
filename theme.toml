@@ -45,3 +45,8 @@ min_version = 0.45
 [author]
   name = "Adam Charytoniuk"
   homepage = "https://github.com/achary/engimo"
+
+[original]
+  name = "Munif Tanjim"
+  homepage = "https://muniftanjim.com"
+  repo = "https://github.com/MunifTanjim/minimo"
