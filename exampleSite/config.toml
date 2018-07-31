@@ -96,7 +96,7 @@ username = "achary"
 repository = "engimo"
 
 [params.search]
-client = "" # algolia / fuse / lunr
+client = "fuse" # algolia / fuse / lunr
 
 [params.search.algolia]
 appId = ""
