@@ -1,6 +1,6 @@
-<script>window.__public_path__='{{- "assets/js/" | relURL -}}'</script>
+<script>window.__public_path__='{{- "assets/js/" | absURL -}}'</script>
 
-<script src='{{ print "/assets/js/" .Site.Data.assets.main.js | relURL }}'></script>
+<script src='{{ print "assets/js/" .Site.Data.assets.main.js | absURL }}'></script>
 
 {{- range .Site.Params.assets.customJS -}}
   <script src='{{ . | relURL }}'></script>
