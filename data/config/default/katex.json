@@ -1,0 +1,12 @@
+{
+  "library": {
+    "js": {
+      "main": "//unpkg.com/katex/dist/katex.min.js",
+      "autoRender": "//unpkg.com/katex/dist/contrib/auto-render.min.js"
+    },
+    "css": {
+      "main": "//unpkg.com/katex/dist/katex.min.css"
+    }
+  },
+  "options": {}
+}
