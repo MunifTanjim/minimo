@@ -70,7 +70,7 @@
     <meta property='article:publisher' content='{{ . }}'>
   {{- end -}}
 
-  <meta property='article:section' content='{{- .Section | title -}}'>
+  <meta property='article:section' content='{{- .Section -}}'>
   {{- range .Params.tags -}}
     <meta property='article:tag' content='{{ . }}'>
   {{- end -}}
