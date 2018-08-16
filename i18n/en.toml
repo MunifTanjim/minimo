@@ -52,6 +52,9 @@ other = "Gopher"
 [goHome]
 other = "Go Home..."
 
+[lastUpdated]
+other = "Last updated"
+
 [leaveAComment]
 other = "Leave a comment"
 

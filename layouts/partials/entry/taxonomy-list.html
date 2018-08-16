@@ -2,9 +2,7 @@
 {{- $tx := ( $txs | singularize ) -}}
 
 <div class='{{ $txs }}'>
-  <span class='taxonomy-icon'>
-    {{- partial "svg/icons" $tx -}}
-  </span>
+  {{- partial "svg/icons" $tx -}}
   <span class='screen-reader-text'>{{ ( ( i18n $tx 2 ) | default $txs ) }}: </span>
   {{- range $i, $term := ( index $.Params $txs ) -}}
     {{- with $.Site.GetPage ( print "/" $txs "/" $term ) -}}
