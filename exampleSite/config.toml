@@ -81,6 +81,7 @@ twitter = "MunifTanjim"
 telegram = "MunifTanjim"
 google_scholar = "qc6CJjYAAAAJ"
 youtube = "UCT-U0rNerYxItGcuoPX-WYA"
+mastodon = ""
 
 [params.comments]
 enable = false
