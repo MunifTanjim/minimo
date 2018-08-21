@@ -9,4 +9,9 @@
       </a>
     </h3>
   </header>
+  {{ if (isset .Params.Categories 0) }}
+  <div>
+    {{- partial "svg/icons" "category" -}} {{ range first 1 .Params.Categories }} {{ . }} {{ end }}
+  </div>
+  {{ end }}
 </li>
