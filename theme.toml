@@ -19,6 +19,7 @@ features = [
   "entry-navigation",
   "favicon",
   "fuse.js",
+  "isso",
   "lunr.js",
   "multilingual",
   "multi-author",

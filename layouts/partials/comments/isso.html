@@ -1,0 +1,3 @@
+<script{{- with .Page.Site.Params.comments.isso.dataAttrs }} {{ . | safeHTMLAttr }} {{ end -}}
+        src="{{ .Page.Site.Params.comments.isso.scriptSrc }}"></script>
+<section id="isso-thread"></section>

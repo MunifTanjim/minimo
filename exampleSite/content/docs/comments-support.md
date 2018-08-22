@@ -43,7 +43,7 @@ _Of course, you'll also need to setup a comment system ( [Disqus](#disqus) or [S
 
 ## Setting Up Comment System
 
-Minimo currently supports **[Disqus](https://disqus.com/)**, **[Staticman](https://staticman.net/)** and **[Utterances](https://utteranc.es)** to be used as your site's comment system.
+Minimo currently supports **[Disqus](https://disqus.com/)**, **[Isso](https://posativ.org/isso/)**, **[Staticman](https://staticman.net/)** and **[Utterances](https://utteranc.es)** to be used as your site's comment system.
 
 ### Disqus
 
@@ -56,6 +56,22 @@ disqusShortname = ""
 - `disqusShortname` [`String`]: Shortname for you site's Disqus account
 
 And that's all!
+
+### Isso
+
+Isso is a lightweight alternative to Disqus. You need to have a Isso server running somewhere, then set up the following options in your `config.toml` file:
+
+```toml
+[params.comments.isso]
+enable = true
+scriptSrc = "https://isso.example.com/js/embed.min.js"
+dataAttrs = "data-isso='https://isso.example.com data-isso-require-author='true'"
+```
+
+- `params.comments.isso` [`Map`]:
+  - `enable` [`Boolean`]: Enable Isso
+  - `scriptSrc` [`String`]: URL of the Isso integration script.
+  - `dataAttrs` [`String`]: Data attributes to add to the Isso `<script>` tag. Optional, but the Isso documentation recommends to at least include the `data-isso` attribute.
 
 ### Staticman
 
