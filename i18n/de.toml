@@ -68,7 +68,7 @@ other = "Nächste Seite"
 other = "Nächster Beitrag"
 
 [noTerm]
-other = "Kein einzelner {{ .Term }}!"
+other = "Kein einziges {{ .Term }}!"
 
 [ok]
 other = "OK"
