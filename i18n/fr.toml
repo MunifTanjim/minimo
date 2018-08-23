@@ -114,7 +114,7 @@ other = "a dit"
 other = "Recherche"
 
 [searchResultEmpty]
-other = "Rien n'a été trouvé !"
+other = "Aucun résultat !"
 
 [searching]
 other = "Recherche en cours"
