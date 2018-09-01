@@ -1,3 +1,6 @@
-<script{{- with .Page.Site.Params.comments.isso.dataAttrs }} {{ . | safeHTMLAttr }} {{ end -}}
-        src="{{ .Page.Site.Params.comments.isso.scriptSrc }}"></script>
-<section id="isso-thread"></section>
+{{- $scriptSrc := .Page.Site.Params.comments.isso.scriptSrc -}}
+{{- $dataAttrs := .Page.Site.Params.comments.isso.dataAttrs -}}
+
+<script src='{{ $scriptSrc }}' {{- with $dataAttrs }} {{ . | safeHTMLAttr }} {{- end -}}></script>
+
+<section id='isso-thread'></section>
