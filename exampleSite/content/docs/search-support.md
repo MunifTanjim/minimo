@@ -23,10 +23,7 @@ Follow the following steps for enabling search in your site.
 
 First of all, you'll need to create a search page.
 
-Create a markdown file under `/content/page/` directory with the filename `search`. If your site is multilingual, you can include language code in the filename. For example:
-
-- `/content/page/search.md`
-- `/content/page/search.en.md`
+Create a markdown file under `/content/search/` directory with the filename `_index.md`.
 
 Add the following options in the frontmatter:
 
