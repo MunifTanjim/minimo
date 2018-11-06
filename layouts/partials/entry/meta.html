@@ -1,4 +1,14 @@
-{{ if not ( eq .Section "page" ) }}
+{{- $defaultConfig := slice "page" -}}
+{{- $config := .Site.Params.settings.hideEntryMeta | default $defaultConfig -}}
+{{- $configType := ( printf "%T" $config ) -}}
+
+{{- if ( eq $configType "bool" ) -}}
+  {{- $.Scratch.Set "showEntryMeta" ( not $config ) -}}
+{{- else -}}
+  {{- $.Scratch.Set "showEntryMeta" ( not ( in $config .Section ) ) -}}
+{{- end -}}
+
+{{- if ( $.Scratch.Get "showEntryMeta" ) -}}
 <div class='entry-meta'>
   {{ partial "entry/meta/posted-on" . }}
   {{ partial "entry/meta/author" . }}
