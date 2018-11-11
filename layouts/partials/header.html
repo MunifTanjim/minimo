@@ -19,7 +19,11 @@
             {{- if eq .Kind "home" -}}
               <h1 class='site-title title'>{{ .Site.Title }}</h1>
             {{- else -}}
-              <p class='site-title title'><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></p>
+              {{- if not .Site.Params.settings.enableBreadcrumbs -}}
+                <p class='site-title title'><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></p>
+              {{- else -}}
+                {{ partial "breadcrumbs.html" (dict "page" . "value" .Title) }}
+              {{- end -}}
             {{- end -}}
             <p class='desc site-desc'>{{ .Site.Params.info.description }}</p>
           </div>
