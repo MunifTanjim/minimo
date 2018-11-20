@@ -1,0 +1,9 @@
+{{$parent := .page.Parent }}
+{{ if $parent }}
+  {{ $value := (printf "<a href='%s'>%s</a> / %s" $parent.URL $parent.Title .value) }}
+  {{ partial "widgets/breadcrumbs.html" (dict "page" $parent "value" $value) }}
+{{else}}
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id="breadcrumbs" class="title"> {{.value|safeHTML}} </nav>
+  </section>
+{{end}}

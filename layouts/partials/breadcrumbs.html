@@ -1,7 +1,0 @@
-{{$parent := .page.Parent }}
-{{ if $parent }}
-  {{ $value := (printf "<a href='%s'>%s</a> / %s" $parent.URL $parent.Title .value) }}
-  {{ partial "breadcrumbs.html" (dict "page" $parent "value" $value) }}
-{{else}}
-  <nav id="breadcrumbs" class="title"> {{.value|safeHTML}} </nav>
-{{end}}
