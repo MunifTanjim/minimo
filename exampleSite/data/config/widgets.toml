@@ -4,6 +4,11 @@ title = ""                            # default: .Site.Title
 description = ""                      # default: .Site.Params.info.description
 logo = "/images/logo.png"             # default: "/images/logo.png"
 
+# Breadcrumbs Widget config
+[breadcrumbs]
+separator = "/"                      # default: "/"
+excludeParents = ["page"]            # default: ["page"]
+
 # Recent Posts Widget config
 [recent_posts]
 title = ""                            # default: "Recent Posts"

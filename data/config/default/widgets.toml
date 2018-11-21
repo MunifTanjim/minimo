@@ -3,6 +3,10 @@ title = ""
 description = ""
 logo = "/images/logo.png"
 
+[breadcrumbs]
+separator = "/"
+excludeParents = ["page"]
+
 [recent_posts]
 title = ""
 length = 5
