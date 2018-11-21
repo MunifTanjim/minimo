@@ -1,0 +1,58 @@
+{{- $defaultConfig := .Site.Data.config.default.widgets.breadcrumbs -}}
+{{- $configData := ( or .Site.Data.config.widgets.breadcrumbs $defaultConfig ) -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $config := ( ( index $configData $lang ) | default $configData ) -}}
+
+{{- define "breadcrumbs_add_parents" -}}
+  {{- .Scratch.Set "parent" .Page.Parent -}}
+  {{- if eq .Page.Kind "taxonomy" -}}
+    {{- .Scratch.Set "parent" ( .Page.Site.GetPage ( print "/" .Page.Data.Plural ) ) -}}
+  {{- end -}}
+
+  {{- $parent := ( .Scratch.Get "parent" ) -}}
+
+  {{- if $parent -}}
+    {{- if and ( ne $parent.Kind "home" ) ( not ( in .Config.excludeParents $parent.Type ) ) -}}
+      {{- .Scratch.Add "crumbs" $parent -}}
+    {{- end }}
+    {{ template "breadcrumbs_add_parents" ( dict "Config" .Config "Page" $parent "Scratch" .Scratch ) }}
+  {{- end -}}
+{{- end -}}
+
+{{- define "breadcrumbs" -}}
+  {{- $crumbs := ( .Scratch.Get "crumbs" ) -}}
+  {{- $length := len $crumbs -}}
+  {{- $separator := .Config.separator -}}
+
+  <style>.widget-breadcrumbs li:after{content:'{{- $separator | default "/" -}}'}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol>
+        {{- range $i, $_ := $crumbs -}}
+          {{- $crumb := ( index $crumbs ( sub $length ( add $i 1 ) ) ) -}}
+          <li>
+          {{- if lt ( add $i 1 ) $length -}}
+            <a href='{{- $crumb.URL -}}'>
+              {{- $crumb.LinkTitle -}}
+            </a>
+          {{- else -}}
+            <span>
+              {{- $crumb.LinkTitle -}}
+            </span>
+          {{- end -}}
+          </li>
+        {{- end -}}
+      </ol>
+    </nav>
+  </section>
+{{- end -}}
+
+{{- $scratch := newScratch -}}
+
+{{- $scratch.Set "crumbs" ( slice . ) -}}
+{{- template "breadcrumbs_add_parents" ( dict "Config" $config "Page" . "Scratch" $scratch ) -}}
+{{- if ne .Kind "home" -}}
+  {{- $scratch.Add "crumbs" .Site.Home -}}
+{{- end -}}
+
+{{- template "breadcrumbs" ( dict "Config" $config "Scratch" $scratch ) -}}

@@ -28,7 +28,14 @@
   }
 }
 
+.header-widgets {
+  .main-menu + & {
+    margin-top: 1em;
+  }
+}
+
 @import 'about';
+@import 'breadcrumbs';
 @import 'recent-posts';
 @import 'search';
 @import 'social-menu';

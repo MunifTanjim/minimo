@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang='{{ .Site.Language.Lang }}'>
 
-{{ partial "head/head" . }}
+{{- partial "head/head" . -}}
 
 <body class='{{ partial "header/bodyClasses" . }}'>
 
   <div class='site'>
 
-    {{ partial "sidebar/sidebar" . }}
+    {{- partial "sidebar/sidebar" . -}}
 
     <div class='main'>
 
-      {{ partial "nav/menus/main" . }}
+      {{- partial "nav/menus/main" . -}}
+
+      {{- $headerWidgets := .Site.Params.widgets.header -}}
+      <div class='header-widgets'>
+        <div class='container'>
+          {{- partial "extras/widget_area" ( dict "Widgets" $headerWidgets "Scope" . ) -}}
+        </div>
+      </div>
 
       <header id='header' class='header site-header'>
         <div class='container sep-after'>
