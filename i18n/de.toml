@@ -89,7 +89,7 @@ other = "Vorherige Seite"
 other = "Vorheriger Beitrag"
 
 [postedOn]
-other = "Veröffentlicht unter"
+other = "Veröffentlicht am"
 
 [readingTime]
 one = "Eine Minute Lesezeit"
