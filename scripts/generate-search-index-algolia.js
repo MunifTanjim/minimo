@@ -10,7 +10,7 @@ const client = algoliasearch(
 
 const indexName = process.env.ALGOLIA_INDEX_NAME || 'minimo_site'
 
-const publicDir = path.resolve(__dirname, '..', process.argv[2] || 'public')
+const publicDir = path.resolve(process.argv[2] || 'public')
 
 const objectsPaths = glob.sync('**/search/index.json', {
   cwd: publicDir,
