@@ -1,7 +1,11 @@
-{{- $apiEndpoint := .Site.Params.comments.staticman.apiEndpoint -}}
-{{- $username := .Site.Params.comments.staticman.github.username -}}
-{{- $repo := .Site.Params.comments.staticman.github.repository -}}
-{{- $branch := .Site.Params.comments.staticman.github.branch -}}
+{{- $config := .Site.Params.comments.staticman -}}
+
+{{- $apiEndpoint := $config.apiEndpoint -}}
+
+{{- $username := $config.github.username | default $config.username -}}
+{{- $repo := $config.github.repository | default $config.repository -}}
+{{- $branch := $config.github.branch | default $config.branch -}}
+
 {{- $api := ( print $apiEndpoint "/" $username "/" $repo "/" $branch ) -}}
 
 <div id='respond' class='comment-respond'>
