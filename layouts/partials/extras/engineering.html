@@ -1,6 +1,7 @@
 <!-- graphviz rendering -->
 {{ if  .Params.viz}}
-    <script type="text/javascript" src="/assets/js/viz-lite.js"> </script>
+    <script type="text/javascript" src="/assets/js/viz.js"> </script>
+    <script type="text/javascript" src="/assets/js/viz.render.js"> </script>
     <script type="text/javascript">
     (function(){
         var vizPrefix = "language-viz-";
@@ -14,10 +15,13 @@
                     engine = cls.substr(vizPrefix.length);
                 }
             });
-            var image = new DOMParser().parseFromString(Viz(x.innerText, {format:"svg", engine:engine}), "image/svg+xml");
-            var imageElement =  image.documentElement;
-            imageElement.style.width = "100%";
-            x.parentNode.insertBefore(imageElement, x);
+
+            var viz = new Viz();
+            viz.renderSVGElement(x.innerText, {engine:engine})
+            .then(function(element) {
+                element.style.width = "100%";
+                x.parentNode.insertBefore(element, x);
+            })
         });
     })();
     </script>
@@ -32,7 +36,7 @@
 
     <script type="text/javascript">
         var wavePrefix = "language-wave";
-        
+
         var index = 0;
         Array.prototype.forEach.call(document.querySelectorAll("[class^=" + wavePrefix + "]"), function(x){
             x.style.display = 'none'
