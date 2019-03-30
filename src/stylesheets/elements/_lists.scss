@@ -1,22 +1,28 @@
 ol,
 ul {
   padding: 0;
-  margin: 0 0 1.5em 2em;
+  margin: 0 0 1.5em 1.5em;
 }
 
 ul {
-  list-style: disc;
+  &.task-list {
+    list-style: none;
+
+    label {
+      font-weight: inherit;
+    }
+
+    input {
+      width: auto;
+      margin-left: -1.5em;
+    }
+  }
 }
 
-ol {
-  list-style: decimal;
-}
-
-li > ol,
-li > ul {
-  padding-left: 1.5em;
+li ol,
+li ul {
   margin-bottom: 0;
-  margin-left: 0.5em;
+  margin-left: 1.5em;
 }
 
 dt {
