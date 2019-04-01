@@ -13,3 +13,10 @@ textarea {
     outline-color: transparent;
   }
 }
+
+input {
+  &[type='checkbox'],
+  &[type='radio'] {
+    width: auto;
+  }
+}
