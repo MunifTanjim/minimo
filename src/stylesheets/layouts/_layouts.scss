@@ -13,7 +13,7 @@
   }
 
   @include screen($breakpoint-medium) {
-    width: auto;
+    width: 100%;
 
     .has-sidebar & {
       float: left;
