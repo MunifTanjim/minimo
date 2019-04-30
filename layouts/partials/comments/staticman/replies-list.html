@@ -1,5 +1,5 @@
 {{- .Page.Scratch.Add "comments_depth" 1 -}}
-{{- $comments := ( index .Page.Site.Data.comments .Page.UniqueID ) -}}
+{{- $comments := ( index .Page.Site.Data.comments .Page.File.UniqueID ) -}}
 {{- $parentId := .ParentId -}}
 
 <ol class='children'>

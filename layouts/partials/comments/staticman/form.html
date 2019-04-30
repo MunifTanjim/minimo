@@ -18,12 +18,12 @@
     </small>
   </h4>
   <form action='{{ $api }}/comments' method='post' id='comment-form' class='comment-form'>
-    <input type='hidden' name='options[postId]' value='{{ .UniqueID }}'>
+    <input type='hidden' name='options[postId]' value='{{ .File.UniqueID }}'>
     <input type='hidden' name='options[redirect]' value='{{ .Permalink }}#submission-success'>
     <input type='hidden' name='options[redirectError]' value='{{ .Permalink }}#submission-failure'>
 
     <input type='address' name='fields[honeypot]' style='display:none'>
-    <input type='hidden' name='fields[permalink]' value='{{ .URL }}'>
+    <input type='hidden' name='fields[permalink]' value='{{ .RelPermalink }}'>
     <input type='hidden' name='fields[parent_id]' value=''>
 
     <div>

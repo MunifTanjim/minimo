@@ -32,7 +32,7 @@
           {{- $crumb := ( index $crumbs ( sub $length ( add $i 1 ) ) ) -}}
           <li>
           {{- if lt ( add $i 1 ) $length -}}
-            <a href='{{- $crumb.URL -}}'>
+            <a href='{{- $crumb.RelPermalink -}}'>
               {{- $crumb.LinkTitle -}}
             </a>
           {{- else -}}
