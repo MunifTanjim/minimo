@@ -1,5 +1,6 @@
 ---
 date: 2017-10-05T20:00:00+06:00
+lastmod: 2019-05-01T05:30:00+06:00
 title: Shortcodes
 authors: ["muniftanjim"]
 categories:
@@ -23,16 +24,16 @@ Center align you content.
 
 ### center: Usage Example
 ```golang
-{{%/* center */%}}
+{{</* center */>}}
 _Center Aligned Text_
-{{%/* /center */%}}
+{{</* /center */>}}
 ```
 
 **Output**
 
-{{% center %}}
+{{< center >}}
 _Center Aligned Text_
-{{% /center %}}
+{{< /center >}}
 
 -------
 
@@ -118,15 +119,15 @@ You can use either Named or Unnamed Parameters
 ### text: Usage Example
 
 ```golang
-{{%/* text s="1.4" color="purple" */%}}
+{{</* text s="1.4" color="purple" */>}}
 font-size: 1.4em;
 color: purple;
-{{%/* /text */%}}
+{{</* /text */>}}
 ```
 
 **Output**
 
-{{% text s="1.4" color="purple" %}}
+{{< text s="1.4" color="purple" >}}
 font-size: 1.5em;  
 color: purple;
-{{% /text %}}
+{{< /text >}}
