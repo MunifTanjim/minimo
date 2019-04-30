@@ -1,7 +1,10 @@
 .comments {
   ol {
     list-style: none;
-    margin: 0;
+
+    &.comment-list {
+      margin: 0;
+    }
   }
 
   &-title {
