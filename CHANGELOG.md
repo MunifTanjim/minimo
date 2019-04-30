@@ -2,7 +2,34 @@
 
 ## [Unreleased]
 
-- ...
+...
+
+## [2.7.0] - 2019-05-01
+
+### Added
+
+- Spanish translation improvements
+- KaTeX support
+- Lastmod in entry footer (config option: `params.settings.showLastmod`)
+- German translation improvements
+- French translation improvements
+- Isso comment system support
+- Option to hide entry meta: `hideEntryMeta`
+- Header widget area: `header`
+- Breadcrumbs widget: `breadcrumbs`
+- Vietnamese translation
+- Task list styling
+
+### Changed
+
+- Removed forced capitalization (function: `title`)
+- Tweak Staticman comment system
+
+### Fixed
+
+- Broken taxonomy term links (Issue #160)
+- Search index generation scripts
+- Checkbox & Radio input styling
 
 ## [2.6.0] - 2018-07-24
 
@@ -250,7 +277,8 @@
 
 - Initial stable release
 
-[Unreleased]: https://github.com/MunifTanjim/minimo/compare/2.6.0...HEAD
+[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v2.7.0...HEAD
+[2.7.0]: https://github.com/MunifTanjim/minimo/compare/2.6.0...v2.7.0
 [2.6.0]: https://github.com/MunifTanjim/minimo/compare/2.5.0...2.6.0
 [2.5.0]: https://github.com/MunifTanjim/minimo/compare/2.4.0...2.5.0
 [2.4.0]: https://github.com/MunifTanjim/minimo/compare/v2.3.0...2.4.0
