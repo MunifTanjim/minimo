@@ -12,4 +12,4 @@ command = "ln -s ${PWD} ../minimo && hugo --source=exampleSite --baseURL=${DEPLO
 
 [build.environment]
 HUGO_THEMESDIR = "../.."
-HUGO_VERSION = "0.45"
+HUGO_VERSION = "0.55.4"
