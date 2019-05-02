@@ -20,7 +20,7 @@
     {{- $image = .image -}}
   {{- else -}}
     {{- $image = . -}}
-  {{- end -}}'>
+  {{- end -}}
 
   {{- $image = ( replaceRE "^\\./" $.RelPermalink $image ) -}}
 
