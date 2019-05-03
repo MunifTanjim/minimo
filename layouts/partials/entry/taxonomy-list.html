@@ -5,7 +5,7 @@
   {{- partial "svg/icons" $tx -}}
   <span class='screen-reader-text'>{{ ( ( i18n $tx 2 ) | default $txs ) }}: </span>
   {{- range $i, $term := ( index $.Params $txs ) -}}
-    {{- with $.Site.GetPage ( print "/" $txs "/" $term ) -}}
+    {{- with $.Site.GetPage ( print "/" $txs "/" ( $term | urlize ) ) -}}
       {{- if gt $i 0 }}, {{ end -}}
       <a class='{{ $tx }}' href='{{ .RelPermalink }}'>
         {{- .Title -}}
