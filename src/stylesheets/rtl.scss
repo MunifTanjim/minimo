@@ -1,0 +1,363 @@
+/*
+ * RTL Stylesheet for Minimo
+ */
+
+@import 'extras/extras';
+
+/*****************
+  # Typography
+ *****************/
+
+// typography/_copy.scss
+blockquote {
+  padding-left: 0;
+  padding-right: 1em;
+
+  border-left: 0;
+  border-right: 0.2em solid $color__blockquote-border;
+}
+
+/*****************
+  # Elements
+ *****************/
+
+body {
+  direction: rtl;
+}
+
+// elements/_lists.scss
+ol,
+ul {
+  margin: 0 2em 1.5em 0;
+}
+
+li > ol,
+li > ul {
+  padding-left: 0;
+  padding-right: 1.5em;
+  margin-left: 0;
+  margin-right: 0.5em;
+}
+
+// elements/_tables.scss
+caption,
+td,
+th {
+  text-align: right;
+}
+
+/*****************
+  # Forms
+ *****************/
+
+/*****************
+  # Navigation
+ *****************/
+
+// navigation/menus/_main.scss
+.main-menu {
+  li {
+    margin-right: 0;
+    margin-left: 0.625em;
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+}
+
+// navigation/menus/_sidebar.scss
+.sidebar-menu {
+  .sub-menu {
+    padding-right: 0;
+
+    .item:not(.has-children) {
+      padding-right: 0;
+      padding-left: 1.2em;
+    }
+  }
+}
+
+.sub-menu-toggler {
+  margin-left: 0;
+  margin-right: 0.2em;
+}
+
+// navigation/_pagination.scss
+.page-link {
+  &:first-child {
+    padding-left: 0.625em;
+    padding-right: 0;
+  }
+
+  &:last-child {
+    padding-left: 0;
+    padding-right: 0.625em;
+  }
+
+  &.next,
+  &.prev {
+    .icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+/*****************
+  # Layouts
+ *****************/
+
+// layouts/_layouts.scss
+.main {
+  transition: margin-right $transition-duration;
+
+  .sidebar.toggled ~ & {
+    margin-left: 0;
+    margin-right: $sidebar__width;
+  }
+
+  @include screen($breakpoint-medium) {
+    .has-sidebar & {
+      float: right;
+      margin-left: 0;
+      margin-right: $sidebar__width;
+      padding-left: 0;
+      padding-right: 2em;
+    }
+  }
+}
+
+.container {
+  .has-sidebar & {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+// layouts/sidebar/_sidebar.scss
+.sidebar {
+  float: right;
+  left: auto;
+  right: -$sidebar__width;
+
+  margin-right: 0;
+  margin-left: -100%;
+
+  transition: right $transition-duration;
+
+  text-align: left;
+
+  &.toggled {
+    right: 0;
+  }
+
+  .sep-after {
+    &:after {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+
+  @include screen($breakpoint-medium) {
+    left: auto;
+    right: 0;
+  }
+}
+
+.sidebar-toggler {
+  .main & {
+    right: auto;
+    left: $container__gutter;
+  }
+
+  .main-menu & {
+    margin-right: 0;
+    margin-left: 0.75em;
+  }
+
+  .sidebar & {
+    left: auto;
+    right: 0.5em;
+  }
+}
+
+// layouts/_header.scss
+.header-info {
+  .taxonomy-name {
+    margin-right: 0;
+    margin-left: 0.25em;
+  }
+}
+
+// layouts/entry/_meta.scss
+.entry-meta {
+  & > span {
+    display: inline-block;
+  }
+
+  span {
+    margin-right: 0;
+    margin-left: 0.75em;
+  }
+
+  .icon {
+    margin-right: 0;
+    margin-left: 0.25em;
+  }
+}
+
+// layouts/entry/_toc.scss
+.no-details {
+  details {
+    & > summary:before {
+      margin-right: 0;
+      margin-left: 0.25em;
+    }
+  }
+}
+
+// layouts/entry/_footer.scss
+.entry-footer {
+  .icon {
+    margin-right: 0;
+    margin-left: 0.375em;
+  }
+}
+
+// layouts/entry/_comments.scss
+.comment {
+  .avatar {
+    float: right;
+    margin-right: 0;
+    margin-left: 0.75em;
+  }
+
+  .reply {
+    right: auto;
+    left: 0;
+  }
+
+  &-reply-title {
+    small {
+      margin-left: 0;
+      margin-right: 1em;
+    }
+  }
+
+  &-submission-feedback {
+    a {
+      right: auto;
+      left: 1.5em;
+    }
+  }
+}
+
+// layouts/_lists.scss
+.list {
+  .item {
+    .icon {
+      margin-right: 0;
+      margin-left: 0.25em;
+    }
+  }
+}
+
+.taxonomy-cloud {
+  li {
+    padding: 0 0 0.5em 1.5em;
+  }
+}
+
+// layouts/others/_icons.scss
+img.emoji {
+  margin: 0 0.1em 0 0.05em;
+}
+
+// layouts/others/_archive.scss
+.layout-archive {
+  .list {
+    .item {
+      padding-left: 0;
+      padding-right: 1em;
+    }
+  }
+}
+
+// layouts/widgets/_about.scss
+.widget-about {
+  .logo {
+    .sidebar & {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+}
+
+// layouts/widgets/_search.scss
+.widget-search {
+  .search-submit {
+    right: auto;
+    left: 0;
+
+    border-radius: 0.2em 0 0 0;
+  }
+
+  .layout-search & {
+    .search-term {
+      padding-right: 0.875em;
+      padding-left: 3em;
+    }
+  }
+}
+
+// layouts/widgets/_social-menu.scss
+.widget-social_menu {
+  li {
+    margin-right: 0;
+    margin-left: 0.625em;
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+
+  .sidebar & {
+    li {
+      margin-left: 0;
+      margin-right: 0.625em;
+    }
+  }
+}
+
+// layouts/widgets/_taxonomy-cloud.scss
+.widget-taxonomy_cloud {
+  .sidebar & {
+    li {
+      padding: 0 0.8em 0.4em 0;
+    }
+  }
+}
+
+/*****************
+  # Accessibility
+ *****************/
+
+// extras/_accessibility.scss
+.screen-reader-text {
+  &:focus {
+    left: auto;
+    right: 0.5em;
+  }
+}
+
+/*****************
+  # Hugo Specific
+ *****************/
+
+// hugo/shortcodes/_convo.scss
+.convo {
+  .sep {
+    padding-left: 0.5em;
+    padding-right: 0.75em;
+  }
+}
