@@ -8,7 +8,7 @@
 {{- else if eq .Kind "404" -}}
   {{ $title404 }} {{ $sep }} {{ $siteTitle }}
 {{- else if eq .Kind "taxonomy" -}}
-  {{- ( ( i18n .Data.Singular 1 ) | default .Data.Singular ) | title -}}
+  {{- ( ( i18n .Data.Singular 1 ) | default .Data.Singular ) -}}
   {{- print ": " -}}
   {{- if eq .Data.Singular "author" -}}
     {{- partial "data/author/displayName" . -}}

@@ -1,6 +1,10 @@
 <link rel='icon' href='{{ ( or .Site.Params.assets.favicon "favicon.ico" ) | relURL }}'>
 <link rel='stylesheet' href='{{ print "/assets/css/" .Site.Data.assets.main.css | relURL  }}'>
 
+{{- if .Site.Params.settings.rtl -}}
+  <link rel='stylesheet' href='{{ print "/assets/css/" .Site.Data.assets.rtl.css | relURL  }}'>
+{{- end -}}
+
 {{- range .Site.Params.assets.customCSS -}}
   <link rel='stylesheet' href='{{ . | relURL }}'>
 {{- end -}}

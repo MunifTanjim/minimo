@@ -1,0 +1,155 @@
+[author]
+one = "Tác giả"
+other = "Các tác giả"
+
+[authorsAvatar]
+other = "Hình đại diện của {{ .Author }}"
+
+[by]
+other = "bởi"
+
+[cancel]
+other = "Huỷ bỏ"
+
+[cancelComment]
+other = "Huỷ bình luận"
+
+[category]
+one = "Danh mục"
+other = "Các danh mục"
+
+[comment]
+other = "Bình luận"
+
+[commentSubmissionErrorMessage]
+other = "Đã có lỗi xảy ra. Không thể gởi bình luận của bạn. Vui lòng thử lại. Cảm ơn!"
+
+[commentSubmissionErrorTitle]
+other = "Ồ, Xin lỗi!"
+
+[commentSubmissionSuccessMessage]
+other = "Bình luận của bạn đã được gởi đi. Nó sẽ sớm xuất hiện trên trang này!"
+
+[commentSubmissionSuccessTitle]
+other = "Cảm ơn bạn!"
+
+[commentsOnEntry]
+one = "Chỉ có {{ .Count }} bình luận trên {{ .Title }}"
+other = "Có {{ .Count }} bình luận trên {{ .Title }}"
+
+[contactViaEmail]
+other = "Liên hệ qua Email"
+
+[currentPage]
+other = "Trang hiện tại"
+
+[email]
+other = "Email"
+
+[gopher]
+other = "Gopher"
+
+[goHome]
+other = "Về trang chủ..."
+
+[lastUpdated]
+other = "Cập nhật gần đây"
+
+[leaveAComment]
+other = "Bình luận"
+
+[mainMenu]
+other = "Menu Chính"
+
+[name]
+other = "Tên"
+
+[next]
+other = "Tiếp theo"
+
+[nextPage]
+other = "Trang tiếp theo"
+
+[nextPost]
+other = "Bài viết tiếp theo"
+
+[noTerm]
+other = "Không phải là một {{ .Term }}!"
+
+[ok]
+other = "Đồng ý"
+
+[openAccountInNewTab]
+other = "Mở tài khoản {{ .Platform }} trong một tab mới"
+
+[page]
+other = "Trang"
+
+[previous]
+other = "Trước đó"
+
+[previousPage]
+other = "Trang trước"
+
+[previousPost]
+other = "Bài viết trước"
+
+[postedOn]
+other = "Đăng vào"
+
+[readingTime]
+one = "Một phút đọc"
+other = "{{ .Count }} phút đọc"
+
+[recentPosts]
+other = "Những bài viết gần đây"
+
+[reply]
+other = "Trả lời"
+
+[replyToAuthor]
+other = "Trả lời {{ .Author }}"
+
+[says]
+other = "nói"
+
+[search]
+other = "Tìm kiếm"
+
+[searchResultEmpty]
+other = "Không tìm thấy!"
+
+[searching]
+other = "Đang tìm kiếm"
+
+[series]
+one = "Loạt bài"
+other = "Loạt bài"
+
+[sidebarMenu]
+other = "Menu Sidebar"
+
+[skipToContent]
+other = "Vào nội dung chính"
+
+[skipToMainMenu]
+other = "Đến Menu chính"
+
+[socialMenu]
+other = "Menu mạng xã hội"
+
+[submitComment]
+other = "Đăng bình luận!"
+
+[tableOfContents]
+other = "Mục lục"
+
+[tag]
+one = "Thẻ"
+other = "Các thẻ"
+
+[toggleSidebar]
+other = "Đóng mở Sidebar"
+
+[website]
+other = "Trang web"

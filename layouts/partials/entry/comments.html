@@ -12,15 +12,18 @@
 {{- if ( or $enableConditionOne $enableConditionTwo ) -}}
 
 {{- $disqusEnabled := .Site.DisqusShortname -}}
+{{- $issoEnabled := $config.isso.enable -}}
 {{- $staticmanEnabled := $config.staticman.enable -}}
 {{- $utterancesEnabled := $config.utterances.enable -}}
 
-{{- if ( $disqusEnabled | or $staticmanEnabled | or $utterancesEnabled ) -}}
+{{- if ( $disqusEnabled | or $issoEnabled | or $staticmanEnabled | or $utterancesEnabled ) -}}
 <section id='comments' class='comments'>
   <div class='container sep-before'>
     <div class='comments-area'>
     {{- if $disqusEnabled -}}
       {{ partial "comments/disqus" . }}
+    {{- else if $issoEnabled -}}
+      {{ partial "comments/isso" . }}
     {{- else if $staticmanEnabled -}}
       {{ partial "comments/staticman" . }}
     {{- else if $utterancesEnabled -}}

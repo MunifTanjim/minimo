@@ -68,7 +68,7 @@ other = "Nächste Seite"
 other = "Nächster Beitrag"
 
 [noTerm]
-other = "Kein einzelner {{ .Term }}!"
+other = "Kein einziges {{ .Term }}!"
 
 [ok]
 other = "OK"
@@ -89,7 +89,7 @@ other = "Vorherige Seite"
 other = "Vorheriger Beitrag"
 
 [postedOn]
-other = "Veröffentlicht unter"
+other = "Veröffentlicht am"
 
 [readingTime]
 one = "Eine Minute Lesezeit"

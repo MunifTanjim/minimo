@@ -10,6 +10,6 @@ tags:
 slug: config-file
 ---
 
-This is the Engimo's configuraion file ( `config.toml` ) file of this site:
+This is the Engimo's configuration file ( `config.toml` ) file of this site:
 
 {{< file "config.toml" >}}

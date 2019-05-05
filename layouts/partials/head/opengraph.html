@@ -13,17 +13,22 @@
 {{- with .Params.cover -}}
   {{- $type := ( printf "%T" . ) -}}
   {{- $isMap := ( not ( eq $type "string" ) ) -}}
-  <meta property='og:image' content='
-    {{- if $isMap -}}
-      {{- .image | absURL -}}
-    {{- else -}}
-      {{- . | absURL -}}
-    {{- end -}}'>
+
+  {{- $image := "" -}}
+  {{- if $isMap -}}
+    {{- $image = .image -}}
+  {{- else -}}
+    {{- $image = . -}}
+  {{- end -}}
+
+  {{- $image = ( replaceRE "^\\./" $.RelPermalink $image ) -}}
+
+  <meta property='og:image' content='{{- $image | absURL -}}'>
 {{- end -}}
 
 {{- with .Params.images -}}
   {{- range first 5 . -}}
-    <meta property='og:image' content='{{ . | absURL }}'>
+    <meta property='og:image' content='{{ ( replaceRE "^\\./" $.RelPermalink . ) | absURL }}'>
   {{- end -}}
 {{- end -}}
 
@@ -48,13 +53,13 @@
 
 {{- with .Params.audios -}}
   {{- range first 5 . -}}
-    <meta property='og:audio' content='{{ . | absURL }}'>
+    <meta property='og:audio' content='{{ ( replaceRE "^\\./" $.RelPermalink . ) | absURL }}'>
   {{- end -}}
 {{- end -}}
 
 {{- with .Params.videos -}}
   {{- range first 5 . -}}
-    <meta property='og:video' content='{{ . | absURL }}'>
+    <meta property='og:video' content='{{ ( replaceRE "^\\./" $.RelPermalink . ) | absURL }}'>
   {{- end -}}
 {{- end -}}
 
@@ -70,7 +75,7 @@
     <meta property='article:publisher' content='{{ . }}'>
   {{- end -}}
 
-  <meta property='article:section' content='{{- .Section | title -}}'>
+  <meta property='article:section' content='{{- .Section -}}'>
   {{- range .Params.tags -}}
     <meta property='article:tag' content='{{ . }}'>
   {{- end -}}

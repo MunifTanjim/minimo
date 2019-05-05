@@ -1,6 +1,6 @@
 ---
 date: 2018-03-29T09:00:00+06:00
-lastmod: 2018-06-29T19:30:00+06:00
+lastmod: 2019-01-06T23:30:00+06:00
 title: Comments Support
 authors: ["muniftanjim","achary"]
 categories:
@@ -43,7 +43,7 @@ _Of course, you'll also need to setup a comment system ( [Disqus](#disqus) or [S
 
 ## Setting Up Comment System
 
-Engimo currently supports **[Disqus](https://disqus.com/)**, **[Staticman](https://staticman.net/)** and **[Utterances](https://utteranc.es)** to be used as your site's comment system.
+Engimo currently supports **[Disqus](https://disqus.com/)**, **[Isso](https://posativ.org/isso/)**, **[Staticman](https://staticman.net/)** and **[Utterances](https://utteranc.es)** to be used as your site's comment system.
 
 ### Disqus
 
@@ -57,9 +57,25 @@ disqusShortname = ""
 
 And that's all!
 
+### Isso
+
+Isso is a lightweight alternative to Disqus. You need to have a Isso server running somewhere, then set up the following options in your `config.toml` file:
+
+```toml
+[params.comments.isso]
+enable = true
+scriptSrc = "https://isso.example.com/js/embed.min.js"
+dataAttrs = "data-isso='https://isso.example.com data-isso-require-author='true'"
+```
+
+- `params.comments.isso` [`Map`]:
+  - `enable` [`Boolean`]: Enable Isso
+  - `scriptSrc` [`String`]: URL of the Isso integration script.
+  - `dataAttrs` [`String`]: Data attributes to add to the Isso `<script>` tag. Optional, but the Isso documentation recommends to at least include the `data-isso` attribute.
+
 ### Staticman
 
-_Staticman only supports GitHub. So, if your site's repository is not hosted in GitHub, it won't work._
+For up-to-date information, check out the [Documentation Site](https://staticman.net) and the [Public Repository](https://github.com/eduardoboucas/staticman) of Staticman.
 
 #### Configure Engimo for Staticman
 
@@ -70,8 +86,6 @@ First of all, set up the following options in your `config.toml` file:
 enable = true
 apiEndpoint = "https://api.staticman.net/v2/entry"
 maxDepth = 2
-
-[params.comments.staticman.github]
 username = "achary"
 repository = "engimo"
 branch = "master"
@@ -81,10 +95,9 @@ branch = "master"
   - `enable` [`Boolean`]: Enable Staticman
   - `apiEndpoint` [`String`]: API endpoint for Staticman instance
   - `maxDepth` [`Integer`]: Maximum allowed comments depth
-- `params.comments.staticman.github` [`Map`]:
-  - `username` [`String`]: Your GitHub Username
-  - `repository` [`String`]: Name of your Site's GitHub Repository
-  - `branch` [`String`]: Branch name of Site's GitHub Repository
+  - `username` [`String`]: Your Git Username
+  - `repository` [`String`]: Name of your Site's Git Repository
+  - `branch` [`String`]: Branch name of Site's Git Repository
 
 #### Staticman Configuration File
 

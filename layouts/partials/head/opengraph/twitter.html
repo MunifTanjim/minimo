@@ -14,12 +14,17 @@
 {{- with .Params.cover -}}
   {{- $type := ( printf "%T" . ) -}}
   {{- $isMap := ( not ( eq $type "string" ) ) -}}
-  <meta property='twitter:image' content='
+
+  {{- $image := "" -}}
   {{- if $isMap -}}
-    {{- .image | absURL -}}
+    {{- $image = .image -}}
   {{- else -}}
-    {{- . | absURL -}}
-  {{- end -}}'>
+    {{- $image = . -}}
+  {{- end -}}
+
+  {{- $image = ( replaceRE "^\\./" $.RelPermalink $image ) -}}
+
+  <meta property='twitter:image' content='{{- $image | absURL -}}'>
   {{- if $isMap -}}
     {{- with .caption -}}
     <meta property='twitter:image:alt' content='{{ . | markdownify }}'>

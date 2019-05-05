@@ -1,0 +1,16 @@
+{{- $defaultKatex := .Site.Data.config.default.katex -}}
+{{- $katex := ( or .Site.Data.config.katex $defaultKatex ) -}}
+
+{{- if eq .Params.katex true -}}
+
+<link rel='stylesheet' href='{{- $katex.library.css.main -}}'>
+<script src='{{- $katex.library.js.main -}}'></script>
+<script src='{{- $katex.library.js.autoRender -}}'></script>
+
+<script type='text/javascript'>
+  renderMathInElement(document.querySelector('.entry-content'),
+    {{- $katex.options | jsonify | safeJS -}}
+  );
+</script>
+
+{{- end -}}

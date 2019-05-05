@@ -11,4 +11,5 @@ command = "ln -s repo ../engimo && hugo --source=exampleSite --themesDir=../.. -
 command = "ln -s repo ../engimo && hugo --source=exampleSite --themesDir=../..  --baseURL=${DEPLOY_PRIME_URL}"
 
 [build.environment]
-HUGO_VERSION = "0.45"
+HUGO_THEMESDIR = "../.."
+HUGO_VERSION = "0.55.4"

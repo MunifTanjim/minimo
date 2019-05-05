@@ -14,17 +14,20 @@ features = [
   "accessibility",
   "algolia",
   "analytics",
+  "breadcrumbs",
   "comments",
   "cover-image",
   "disqus",
   "entry-navigation",
   "favicon",
   "fuse.js",
+  "isso",
   "lunr.js",
   "multilingual",
   "multi-author",
   "opengraph",
   "pagination",
+  "rtl",
   "search",
   "shortcodes",
   "sidebar",
@@ -40,7 +43,7 @@ features = [
   "deprecated-pages",
   "mathjax"
 ]
-min_version = 0.45
+min_version = 0.55
 
 [author]
   name = "Adam Charytoniuk"

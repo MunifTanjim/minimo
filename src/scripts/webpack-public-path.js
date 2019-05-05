@@ -1,1 +1,1 @@
-__webpack_public_path__ = window.__public_path__
+__webpack_public_path__ = window.__assets_js_src

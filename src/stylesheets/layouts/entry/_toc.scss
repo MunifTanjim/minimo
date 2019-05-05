@@ -32,6 +32,11 @@ summary {
 
   ul {
     list-style: none;
-    margin: 0;
+  }
+
+  nav {
+    & > ul {
+      margin: 0;
+    }
   }
 }

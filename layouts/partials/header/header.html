@@ -4,13 +4,13 @@
       <h1 class='title'>
         {{- if eq .Kind "taxonomy" -}}
         <span class='taxonomy-name'>
-          {{- ( ( i18n .Data.Singular 1 ) | default .Data.Singular ) | title -}}
+          {{- ( ( i18n .Data.Singular 1 ) | default .Data.Singular ) -}}
           {{- print ": " -}}
         </span>
         {{- end -}}
 
         {{- if eq .Kind "taxonomyTerm" -}}
-          {{- ( ( i18n .Data.Singular 2 ) | default .Title ) | title -}}
+          {{- ( ( i18n .Data.Singular 2 ) | default .Title ) -}}
         {{- else if eq .Data.Singular "author" -}}
           {{- partial "data/author/displayName" . -}}
         {{- else -}}

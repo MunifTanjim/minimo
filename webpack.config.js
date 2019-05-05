@@ -36,7 +36,8 @@ const config = {
     main: path.join(__dirname, 'src/scripts', 'main.js'),
     algolia_search: path.join(__dirname, 'src/scripts/search', 'algolia.js'),
     fuse_search: path.join(__dirname, 'src/scripts/search', 'fuse.js'),
-    lunr_search: path.join(__dirname, 'src/scripts/search', 'lunr.js')
+    lunr_search: path.join(__dirname, 'src/scripts/search', 'lunr.js'),
+    rtl: path.join(__dirname, 'src/stylesheets', 'rtl.scss')
   },
   output: {
     filename: '[name].[chunkhash:8].js',

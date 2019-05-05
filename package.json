@@ -1,7 +1,7 @@
 {
   "name": "engimo",
   "description": "Minimalist theme for Hugo with Engineering support",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "author": {
     "name": "Adam Charytoniuk",
     "url": "https://github.com/achary/engimo"
@@ -10,8 +10,7 @@
   "license": "MIT",
   "scripts": {
     "build": "NODE_ENV=production webpack",
-    "start":
-      "hugo server --source=exampleSite --themesDir=../.. --disableFastRender",
+    "start": "hugo server --source=exampleSite --themesDir=../.. --disableFastRender",
     "watch": "webpack --watch --progress --colors"
   },
   "devDependencies": {
