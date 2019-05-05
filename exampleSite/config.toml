@@ -101,6 +101,9 @@ maxDepth = 2
 username = "MunifTanjim"
 repository = "minimo"
 branch = "master"
+enableReCaptcha = false
+reCaptchaSiteKey = ""
+reCaptchaSecret = ""
 
 # Utterances: https://utteranc.es
 [params.comments.utterances]

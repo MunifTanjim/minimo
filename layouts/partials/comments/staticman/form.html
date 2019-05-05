@@ -42,8 +42,22 @@
       <label for='url'>{{ i18n "website" }}</label>
       <input id='url' name='fields[site]' type='url'>
     </div>
+    {{- if $config.enableReCaptcha -}}
+      <input type='hidden' name='options[reCaptcha][siteKey]' value='{{ $config.reCaptchaSiteKey }}'>
+      <input type='hidden' name='options[reCaptcha][secret]' value='{{ $config.reCaptchaSecret }}'>
+
+      <div class='g-recaptcha' data-sitekey='{{ $config.reCaptchaSiteKey }}' data-callback="enableSubmitComment"></div>
+
+      <script type="text/javascript">
+        function enableSubmitComment(){
+          document.getElementById("submitComment").disabled = false;
+        }
+      </script>
+
+      <script async src='https://www.google.com/recaptcha/api.js'></script>
+    {{- end -}}
     <div>
-      <button type='submit'>{{ i18n "submitComment" }}</button>
+      <button type='submit' id="submitComment" {{- if $config.enableReCaptcha -}} disabled {{- end -}} >{{ i18n "submitComment" }}</button>
     </div>
   </form>
 </div>
