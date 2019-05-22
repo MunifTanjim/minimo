@@ -26,13 +26,11 @@
       {{- $sizeStep := ( $Scratch.Get "sizeStep" ) -}}
       {{- $size := ( add $minSize ( mul $sizeStep ( sub $count $minCount ) ) ) -}}
 
-      {{- with $Site.GetPage ( print "/" $Data.Plural "/" .Term ) -}}
       <li>
-        <a href='{{ .RelPermalink }}' style='font-size:{{ $size }}em'>
-          {{- .Title -}}
+        <a href='{{ .Page.RelPermalink }}' style='font-size:{{ $size }}em'>
+          {{- .Page.Title -}}
         </a>
       </li>
-      {{- end -}}
     {{- end -}}
   {{- else -}}
     <span>
