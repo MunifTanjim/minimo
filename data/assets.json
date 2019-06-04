@@ -1,31 +1,31 @@
 {
+  "algolia_search": {
+    "js": "algolia_search.d220ba26.js"
+  },
   "comments": {
-    "js": "comments.8405c426.js"
-  },
-  "sidebar": {
-    "js": "sidebar.773d11a1.js"
-  },
-  "twemoji": {
-    "js": "twemoji.a1580bcb.js"
+    "js": "comments.57223579.js"
   },
   "details-polyfill": {
-    "js": "details-polyfill.bddc4678.js"
-  },
-  "rtl": {
-    "css": "rtl.ce7add72.css",
-    "js": "rtl.5c5dbca1.js"
-  },
-  "lunr_search": {
-    "js": "lunr_search.42c64089.js"
+    "js": "details-polyfill.45606d79.js"
   },
   "fuse_search": {
-    "js": "fuse_search.8bc81519.js"
+    "js": "fuse_search.1ada4bca.js"
   },
-  "algolia_search": {
-    "js": "algolia_search.09edf849.js"
+  "lunr_search": {
+    "js": "lunr_search.d90858c3.js"
   },
   "main": {
-    "css": "main.d2e31589.css",
-    "js": "main.34164567.js"
+    "css": "main.944c94e8.css",
+    "js": "main.496cf801.js"
+  },
+  "rtl": {
+    "css": "rtl.bf9d5394.css",
+    "js": "rtl.e532543e.js"
+  },
+  "sidebar": {
+    "js": "sidebar.9ea42a6e.js"
+  },
+  "twemoji": {
+    "js": "twemoji.79bd873e.js"
   }
 }

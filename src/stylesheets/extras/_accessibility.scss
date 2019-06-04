@@ -25,7 +25,7 @@
     line-height: normal;
     text-decoration: none;
     background: $color__background-screen;
-    color: $color__text-screen;
+    color: $color__text-screen !important;
     z-index: 100000;
   }
 }
