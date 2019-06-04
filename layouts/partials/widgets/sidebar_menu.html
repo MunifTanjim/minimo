@@ -48,7 +48,9 @@
   {{- if $isCurrent }} current {{- end -}}
 '>
   <a {{ if $isCurrent -}} aria-current='page' {{ end -}} href='{{ .Item.URL }}'>
+    {{- with .Item.Pre -}}{{- . -}}{{- end -}}
     {{- .Item.Name -}}
+    {{- with .Item.Post -}}{{- . -}}{{- end -}}
   </a>
 
   {{- if $hasChildren -}}
