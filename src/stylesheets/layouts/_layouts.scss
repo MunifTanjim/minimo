@@ -1,11 +1,14 @@
+body {
+  background: $color__pure-white;
+}
+
 .site {
   overflow-x: hidden;
-  background: $color__pure-white;
 }
 
 .main {
   width: 100%;
-  padding-top: 2em;
+  padding: 2em 0;
 
   transition: margin-left $transition-duration;
 
@@ -14,11 +17,11 @@
   }
 
   @include screen($breakpoint-medium) {
-    width: auto; // TODO: remove redundant rule
-    width: calc(100% - #{$sidebar__width});
+    width: auto;
 
     .has-sidebar & {
       float: left;
+      width: calc(100% - #{$sidebar__width});
       margin-left: $sidebar__width;
       padding-left: 2em;
     }
