@@ -13,7 +13,8 @@
   }
 
   @include screen($breakpoint-medium) {
-    width: auto;
+    width: auto; // TODO: remove redundant rule
+    width: calc(100% - #{$sidebar__width});
 
     .has-sidebar & {
       float: left;
