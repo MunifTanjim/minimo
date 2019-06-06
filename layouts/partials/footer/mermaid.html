@@ -1,0 +1,15 @@
+{{- $defaultMermaid := .Site.Data.config.default.mermaid -}}
+{{- $mermaid := ( or .Site.Data.config.mermaid $defaultMermaid ) -}}
+
+{{- if eq .Params.mermaid true -}}
+
+<script src='{{- (or $mermaid.library.path $defaultMermaid.library.path) -}}' />
+
+<script>
+    mermaid.initialize({ 
+        theme: '{{- (or $mermaid.theme $defaultMermaid.theme) -}}",
+        startOnLoad: true
+    });
+</script>
+
+{{- end -}}
