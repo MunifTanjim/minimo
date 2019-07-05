@@ -13,5 +13,9 @@ comments:
   name: 'Minimo'
   path: 'data/comments/{options.postId}'
   requiredFields: ['author', 'content', 'email', 'permalink']
+  reCaptcha:
+    enabled: false
+    # siteKey: ''
+    # secret: ''
   transforms:
     email: md5
