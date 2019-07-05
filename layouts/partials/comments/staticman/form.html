@@ -8,7 +8,7 @@
 
 {{- $api := ( print $apiEndpoint "/" $username "/" $repo "/" $branch ) -}}
 
-{{- $staticman := ( ( readFile "staticman.yml" ) | transform.Unmarshal ) -}}
+{{- $staticman := ( partialCached "comments/staticman/GetStaticmanYML" . ) -}}
 {{- $reCaptcha := $staticman.comments.reCaptcha | default ( dict "enabled" false ) -}}
 
 <div id='respond' class='comment-respond'>
