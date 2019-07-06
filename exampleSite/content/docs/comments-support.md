@@ -105,7 +105,7 @@ Next, you'll need a Staticman Configuration File (`staticman.yml`) in the root o
 
 **`staticman.yml`**
 
-{{< file "content/docs/res/staticman.yml" >}}
+{{< file "staticman.yml" >}}
 
 ##### Notes
 

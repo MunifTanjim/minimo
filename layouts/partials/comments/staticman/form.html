@@ -8,6 +8,9 @@
 
 {{- $api := ( print $apiEndpoint "/" $username "/" $repo "/" $branch ) -}}
 
+{{- $staticman := ( partialCached "comments/staticman/GetStaticmanYML" . ) -}}
+{{- $reCaptcha := $staticman.comments.reCaptcha | default ( dict "enabled" false ) -}}
+
 <div id='respond' class='comment-respond'>
   <h4 class='comment-reply-title'>
     {{- i18n "leaveAComment" -}}
@@ -26,6 +29,11 @@
     <input type='hidden' name='fields[permalink]' value='{{ .RelPermalink }}'>
     <input type='hidden' name='fields[parent_id]' value=''>
 
+    {{- if $reCaptcha.enabled -}}
+      <input type='hidden' name='options[reCaptcha][siteKey]' value='{{ $reCaptcha.siteKey }}'>
+      <input type='hidden' name='options[reCaptcha][secret]' value='{{ $reCaptcha.secret }}'>
+    {{- end -}}
+
     <div>
       <label for='comment'>{{ i18n "comment" }}*</label>
       <textarea id='comment' name='fields[content]' required rows='3'></textarea>
@@ -42,8 +50,23 @@
       <label for='url'>{{ i18n "website" }}</label>
       <input id='url' name='fields[site]' type='url'>
     </div>
+
+    {{- if $reCaptcha.enabled -}}
+      <div class='g-recaptcha' data-sitekey='{{ $reCaptcha.siteKey }}' data-callback="enableSubmitComment"></div>
+
+      <script type="text/javascript">
+        function enableSubmitComment(){
+          document.getElementById("submitComment").disabled = false;
+        }
+      </script>
+
+      <script async src='https://www.google.com/recaptcha/api.js'></script>
+    {{- end -}}
+
     <div>
-      <button type='submit'>{{ i18n "submitComment" }}</button>
+      <button type='submit' id="submitComment" {{- with $reCaptcha.enabled }} disabled {{- end }}>
+        {{- i18n "submitComment" -}}
+      </button>
     </div>
   </form>
 </div>
