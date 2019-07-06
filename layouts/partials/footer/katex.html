@@ -1,7 +1,7 @@
 {{- $defaultKatex := .Site.Data.config.default.katex -}}
 {{- $katex := ( or .Site.Data.config.katex $defaultKatex ) -}}
 
-{{- if eq .Params.katex true -}}
+{{- if or ( eq .Params.katex true ) ( .HasShortcode "katex" ) -}}
 
 <link rel='stylesheet' href='{{- $katex.library.css.main -}}'>
 <script src='{{- $katex.library.js.main -}}'></script>

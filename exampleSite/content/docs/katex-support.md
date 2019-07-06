@@ -1,5 +1,6 @@
 ---
 date: 2018-08-12T12:30:00+06:00
+lastmod: 2019-07-07T02:00:00+06:00
 title: KaTeX Support
 authors: ["muniftanjim"]
 categories:
@@ -8,44 +9,37 @@ tags:
   - config
   - katex
 slug: katex-support
-katex: true
 ---
-
-For enabling [KaTeX](https://khan.github.io/KaTeX), add this to your content's frontmatter:
-
-```yaml
----
-katex: true
----
-```
 
 ## KaTeX Syntax for Markdown
 
-In your Markdown content, use `\\(`...`\\)` delimiters for in-line mathematics.
-
-For mathematics blocks you can use either `$$`...`$$` or `\\[`...`\\]` as delimiters.
+In your Markdown content, use the `katex` shortcode for inserting KaTeX. Check documentation for [Shortcode: katex]({{< relref "/docs/shortcodes.md#shortcode-katex" >}}).
 
 **Here's an example Markdown content:**
 
 ```md
-When \\( a \ne 0 \\), there are two solutions to
+When {{</* katex inline */>}} a \ne 0 {{</* /katex */>}}, there are two solutions to
 
-$$ ax^2 + bx + c = 0 $$
+{{</* katex */>}} ax^2 + bx + c = 0 {{</* /katex */>}}
 
 and they are:
 
-\\[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \\]
+{{</* katex */>}}
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+{{</* /katex */>}}
 ```
 
 **Output:**
 
-When \\( a \ne 0 \\), there are two solutions to
+When {{< katex inline >}} a \ne 0 {{< /katex >}}, there are two solutions to
 
-$$ ax^2 + bx + c = 0 $$
+{{< katex >}} ax^2 + bx + c = 0 {{< /katex >}}
 
 and they are:
 
-\\[x = {-b \pm \sqrt{b^2-4ac} \over 2a}\\]
+{{< katex >}}
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+{{< /katex >}}
 
 ## Customize KaTeX Configuration
 

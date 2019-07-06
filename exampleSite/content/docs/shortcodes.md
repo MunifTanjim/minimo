@@ -1,6 +1,6 @@
 ---
 date: 2017-10-05T20:00:00+06:00
-lastmod: 2019-05-01T05:30:00+06:00
+lastmod: 2019-07-07T02:00:00+06:00
 title: Shortcodes
 authors: ["muniftanjim"]
 categories:
@@ -23,13 +23,14 @@ Center align you content.
 - Markdown content between opening and closing tags.
 
 ### center: Usage Example
+
 ```golang
 {{</* center */>}}
 _Center Aligned Text_
 {{</* /center */>}}
 ```
 
-**Output**
+**Output**:
 
 {{< center >}}
 _Center Aligned Text_
@@ -65,7 +66,7 @@ Finch :: It's because I have only two modes, Jerry. Calm, and furious. It's a ra
 {{</* /convo */>}}
 ```
 
-**Output**
+**Output**:
 
 {{< convo sep=":" >}}
 
@@ -92,11 +93,41 @@ Include content from seperate file with syntax highlighting.
 {{</* file "content/_index.md" */>}}
 ```
 
-**Output**
+**Output**:
 
 {{< file "content/_index.md" >}}
 
----
+-------
+
+## Shortcode: katex
+
+Renders KaTeX.
+
+### katex: Parameters
+
+0 => mode [`String`] \(optional\): inline / block
+
+### katex: Usage Example
+
+```golang
+Inline: {{</* katex inline */>}} ax^2 + bx + c = 0 {{</* /katex */>}}
+
+Block:
+{{</* katex */>}}
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+{{</* /katex */>}}
+```
+
+**Output**:
+
+Inline: {{< katex inline >}} ax^2 + bx + c = 0 {{< /katex >}}
+
+Block:
+{{< katex >}}
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+{{< /katex >}}
+
+-------
 
 ## Shortcode: text
 
@@ -106,12 +137,12 @@ Text with custom size and color
 
 You can use either Named or Unnamed Parameters
 
-**Named Parameters**
+**Named Parameters**:
 
 - `s` or `size`  [`String`] \(optional\): multiplier relative to the normal size
 - `c` or `color` [`String`] \(optional\): name / hex / rgb / rgba
 
-**Unnamed Parameters**
+**Unnamed Parameters**:
 
 0 => textsize [`String`] \(required\): multiplier relative to the normal size  
 1 => textcolor [`String`] \(optional\): name / hex / rgb / rgba
@@ -125,7 +156,7 @@ color: purple;
 {{</* /text */>}}
 ```
 
-**Output**
+**Output**:
 
 {{< text s="1.4" color="purple" >}}
 font-size: 1.5em;  
