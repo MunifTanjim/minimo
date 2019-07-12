@@ -100,7 +100,6 @@ apiEndpoint = "https://api.staticman.net/v2/entry"
 maxDepth = 2
 username = "MunifTanjim"
 repository = "minimo"
-branch = "master"
 
 # Utterances: https://utteranc.es
 [params.comments.utterances]

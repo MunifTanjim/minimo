@@ -1,6 +1,6 @@
 ---
 date: 2018-03-29T09:00:00+06:00
-lastmod: 2019-01-06T23:30:00+06:00
+lastmod: 2019-07-12T23:00:00+06:00
 title: Comments Support
 authors: ["muniftanjim"]
 categories:
@@ -79,7 +79,7 @@ For up-to-date information, check out the [Documentation Site](https://staticman
 
 #### Configure Minimo for Staticman
 
-First of all, set up the following options in your `config.toml` file:
+First of all, set up the following options (with your preferred values) in your `config.toml` file:
 
 ```toml
 [params.comments.staticman]
@@ -88,7 +88,6 @@ apiEndpoint = "https://api.staticman.net/v2/entry"
 maxDepth = 2
 username = "MunifTanjim"
 repository = "minimo"
-branch = "master"
 ```
 
 - `params.comments.staticman` [`Map`]:
@@ -97,7 +96,6 @@ branch = "master"
   - `maxDepth` [`Integer`]: Maximum allowed comments depth
   - `username` [`String`]: Your Git Username
   - `repository` [`String`]: Name of your Site's Git Repository
-  - `branch` [`String`]: Branch name of Site's Git Repository
 
 #### Staticman Configuration File
 
@@ -111,25 +109,15 @@ Next, you'll need a Staticman Configuration File (`staticman.yml`) in the root o
 
 - In most cases, you'll only need to change the `name` option (Site's name)
 - If you set `moderation: true`, Staticman will send a Pull Request whenever a new comment is submitted. You'll need to Merge the Pull Request to approve it, or Close to discard.
-- Use the same `branch` name in both `config.toml` & `staticman.yml`
 
 #### Add Staticman to Your Site's Repository
 
-Staticman will need push access to your site's repository for committing comment files. In GitHub, go to your repository _**Settings**_ page, navigate to the _**Collaborators**_ tab and add the username **`staticmanapp`**.
+You'll need to go through some additional steps based on the API endpoint (`params.comments.staticman.apiEndpoint`) that you are gonna use. You'll find the relevant information on the following places:
 
-![Adding staticmanapp to the Site's GitHub Repository](https://staticman.net/assets/images/get-started/step1.png)
+- [Staticman Site](https://staticman.net)
+- [Staticman Repository](https://github.com/eduardoboucas/staticman)
 
-At this point, the invitation will be pending. In order for Staticman to accept it, you'll need to open:
-
-`https://api.staticman.net/v2/connect/{github.username}/{github.repository}`
-
-{{% center %}}
-_[ Replace the `{github.username}` and `{github.repository}` with your GitHub username and repository's name. ]_
-{{% /center %}}
-
-If all goes well, you should receive a message saying `OK`!
-
-And you should be good to go!
+_[ Contributors are welcomed to update this part of the documentation to include additional useful information. ]_
 
 ### Utterances
 

@@ -1,14 +1,17 @@
+{{- $staticman := ( partialCached "comments/staticman/GetStaticmanYML" . ) -}}
+
 {{- $config := .Site.Params.comments.staticman -}}
 
 {{- $apiEndpoint := $config.apiEndpoint -}}
 
 {{- $username := $config.github.username | default $config.username -}}
 {{- $repo := $config.github.repository | default $config.repository -}}
-{{- $branch := $config.github.branch | default $config.branch -}}
+
+{{- $_branch := $config.github.branch | default $config.branch -}}
+{{- $branch := $_branch | default $staticman.comments.branch -}}
 
 {{- $api := ( print $apiEndpoint "/" $username "/" $repo "/" $branch ) -}}
 
-{{- $staticman := ( partialCached "comments/staticman/GetStaticmanYML" . ) -}}
 {{- $reCaptcha := $staticman.comments.reCaptcha | default ( dict "enabled" false ) -}}
 
 <div id='respond' class='comment-respond'>
