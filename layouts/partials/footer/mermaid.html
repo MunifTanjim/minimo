@@ -3,13 +3,12 @@
 
 {{- if eq .Params.mermaid true -}}
 
-<script src='{{- (or $mermaid.library.path $defaultMermaid.library.path) -}}' />
+<script src='{{- $mermaid.library.path -}}' />
 
-<script>
-    mermaid.initialize({ 
-        theme: '{{- (or $mermaid.theme $defaultMermaid.theme) -}}',
-        startOnLoad: true
-    });
+<script type='text/javascript'>
+  mermaid.initialize(
+    {{- $mermaid.config | jsonify | safeJS -}}
+  );
 </script>
 
 {{- end -}}

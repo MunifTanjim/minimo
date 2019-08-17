@@ -1,6 +1,6 @@
 {
   "library": {
-    "path": "https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"
+    "path": "https://unpkg.com/mermaid/dist/mermaid.min.js"
   },
-  "theme": "default"
+  "config": {}
 }
