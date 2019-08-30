@@ -1,0 +1,14 @@
+{{- $defaultMermaid := .Site.Data.config.default.mermaid -}}
+{{- $mermaid := ( or .Site.Data.config.mermaid $defaultMermaid ) -}}
+
+{{- if eq .Params.mermaid true -}}
+
+<script src='{{- $mermaid.library.path -}}' />
+
+<script type='text/javascript'>
+  mermaid.initialize(
+    {{- $mermaid.config | jsonify | safeJS -}}
+  );
+</script>
+
+{{- end -}}

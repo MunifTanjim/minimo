@@ -1,0 +1,7 @@
+{{- if eq .Page.Params.mermaid true -}}
+
+<div class="mermaid">
+    {{ safeHTML .Inner }}
+</div>
+
+{{- end -}}

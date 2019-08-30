@@ -1,0 +1,6 @@
+{
+  "library": {
+    "path": "https://unpkg.com/mermaid/dist/mermaid.min.js"
+  },
+  "config": {}
+}
