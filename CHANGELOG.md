@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-...
+- ...
+
+## [2.8.0] - 2019-09-08
+
+## Added
+
+- RTL support
+- Staticman comments reCAPTCHA support
+- Shortcode: `katex`
+- Mermaid.js support
+
+### Changed
+
+- Minimum Hugo version requirement: `v0.55`
+
+### Fixed
+
+- Deprecation warnings
+- Problem related to Hugo canonifyurls for demo site
+- Some styles for colors and layouts
+- Issues #218, #219, #222, #223, #228, #229, #230, #234, #237
 
 ## [2.7.0] - 2019-05-01
 
@@ -277,7 +297,8 @@
 
 - Initial stable release
 
-[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v2.7.0...HEAD
+[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v2.8.0...HEAD
+[2.8.0]: https://github.com/MunifTanjim/minimo/compare/v2.7.0...v2.8.0
 [2.7.0]: https://github.com/MunifTanjim/minimo/compare/2.6.0...v2.7.0
 [2.6.0]: https://github.com/MunifTanjim/minimo/compare/2.5.0...2.6.0
 [2.5.0]: https://github.com/MunifTanjim/minimo/compare/2.4.0...2.5.0
