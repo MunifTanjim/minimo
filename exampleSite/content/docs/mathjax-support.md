@@ -1,5 +1,6 @@
 ---
 date: 2018-02-27T18:00:00+06:00
+lastmod: 2019-09-28T21:00:00+06:00
 title: MathJax Support
 authors: ["muniftanjim"]
 categories:
@@ -57,7 +58,7 @@ The default configuration options look like this:
 ```json
 {
   "library": {
-    "path": "//unpkg.com/mathjax/MathJax.js",
+    "path": "//unpkg.com/mathjax@2.7.5/MathJax.js",
     "config": "TeX-MML-AM_CHTML"
   },
   "config": {}
@@ -81,7 +82,7 @@ For exmaple, if you want to enable `$`...`$` delimiters for in-line mathematics,
 ```json
 {
   "library": {
-    "path": "//unpkg.com/mathjax/MathJax.js",
+    "path": "//unpkg.com/mathjax@2.7.5/MathJax.js",
     "config": "TeX-MML-AM_CHTML"
   },
   "config": {
@@ -92,6 +93,10 @@ For exmaple, if you want to enable `$`...`$` delimiters for in-line mathematics,
   }
 }
 ```
+
+### Notice
+
+MathJax version above `2.7.5` is not guaranted to work.
 
 #### Related Guides
 
