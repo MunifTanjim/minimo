@@ -12,7 +12,7 @@ wave: true
 chart: true
 msc: true
 flowchart: true
-
+asciinema: true
 toc: true
 ---
 
@@ -106,6 +106,31 @@ Andrew->>China: I am good thanks!
   para(path1, bottom)->sub1(right)->op1
   para(path2, top)->op1
 ```
+
+
+## Asciinema casts
+
+It is possible to embed [recorded asciinema casts](https://asciinema.org/docs/usage) on the pages.
+The recorded casts files (*.cast ) should be located in `/static/casts` directory. Then,
+the support for it should be enabled in the page frontmatter:
+
+```
+---
+asciinema: true
+---
+```
+
+and they can be embedded using a dedicated shortcode. 
+For instance, to embed `/static/casts/my-fantastic-cast.cast` file, use:
+
+```
+{{</* asciinema key="my-fantastic-cast" rows="20" preload="1" */>}}
+```
+
+
+{{< asciinema key="demo-cast" rows="20" preload="0" >}}
+
+
 ## Deprecated pages
 
 <div class="deprecated">This page has been marked as deprecated.</div>
