@@ -96,7 +96,7 @@ one = "Eine Minute Lesezeit"
 other = "{{ .Count }} Minuten Lesezeit"
 
 [recentPosts]
-other = "Vorherige Beiträge"
+other = "Aktuelle Beiträge"
 
 [skipToContent]
 other = "Zum Inhalt springen"
