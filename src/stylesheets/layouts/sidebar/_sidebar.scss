@@ -54,6 +54,10 @@
     position: absolute;
     right: $container__gutter;
 
+    &[aria-expanded='true'] {
+      display: none;
+    }
+
     .close {
       display: none;
     }
@@ -62,6 +66,10 @@
   .main-menu & {
     position: static;
     margin-right: 0.75em;
+
+    &[aria-expanded='true'] {
+      display: inline-block;
+    }
   }
 
   .sidebar & {
