@@ -104,6 +104,8 @@ repository = "minimo"
 [params.comments.utterances]
 enable = false
 issueTerm = "pathname" # pathname / url / title
+label = "Comment"
+theme = "github-light"
 
 [params.comments.utterances.github]
 username = "MunifTanjim"

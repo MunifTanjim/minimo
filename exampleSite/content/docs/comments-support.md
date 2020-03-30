@@ -129,6 +129,8 @@ For using Utterances, set up the following options in your `config.toml` file:
 [params.comments.utterances]
 enable = true
 issueTerm = "pathname" # pathname / url / title
+label = "Comment"
+theme = "github-light"
 
 [params.comments.utterances.github]
 username = "MunifTanjim"
@@ -138,6 +140,8 @@ repository = "minimo"
 - `params.comments.utterances` [`Map`]:
   - `enable` [`Boolean`]: Enable Utterances
   - `issueTerm` [`String`]: Entry to Issue mapping option _(`pathname` / `url` / `title`)_
+  - `label` [`String`]: comment will be assigned to issues created by Utterances
+  - `theme` [`String`]: Choose an Utterances theme that matches your blog
 - `params.comments.utterances.github` [`Map`]:
   - `username` [`String`]: Your GitHub Username
   - `repository` [`String`]: Name of your Site's GitHub Repository
