@@ -39,7 +39,7 @@ features = [
   "utterances",
   "widgets"
 ]
-min_version = 0.55
+min_version = 0.65
 
 [author]
   name = "Munif Tanjim"

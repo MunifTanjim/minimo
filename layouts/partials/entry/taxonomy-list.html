@@ -6,12 +6,10 @@
 <div class='{{ $txs }}'>
   {{- partial "svg/icons" $tx -}}
   <span class='screen-reader-text'>{{ ( ( i18n $tx 2 ) | default $txs ) }}: </span>
-  {{- range $i, $term := ( index $.Params $txs ) -}}
+  {{- range $i, $item := ( $.GetTerms $txs ) -}}
     {{- if gt $i 0 }}, {{ end -}}
-    {{- with ( index $taxonomies ( $term | anchorize ) ) -}}
-    <a class='{{ $tx }}' href='{{ .Page.RelPermalink }}'>
-      {{- .Page.Title -}}
+    <a class='{{ $tx }}' href='{{ $item.RelPermalink }}'>
+      {{- $item.Title -}}
     </a>
-    {{- end -}}
   {{- end -}}
 </div>
