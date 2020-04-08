@@ -10,7 +10,7 @@
     </h4>
   </header>
 
-  <form action='{{ "search" | relLangURL }}' id='search-form' class='search-form'>
+  <form action='{{ ( or .Site.Permalinks.search "search" ) | relLangURL }}' id='search-form' class='search-form'>
     <label>
       <span class='screen-reader-text'>{{ i18n "search" }}</span>
       <input id='search-term' class='search-term' type='search' name='q' placeholder='{{ i18n "search" }}&hellip;'>
