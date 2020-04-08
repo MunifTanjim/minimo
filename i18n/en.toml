@@ -22,7 +22,7 @@ other = "Categories"
 other = "Comment"
 
 [commentSubmissionErrorMessage]
-other = "Error occured. Couldn't submit your comment. Please try again. Thank You!"
+other = "Error occurred. Couldn't submit your comment. Please try again. Thank You!"
 
 [commentSubmissionErrorTitle]
 other = "Yikes, Sorry!"
