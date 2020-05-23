@@ -1,0 +1,155 @@
+[author]
+one = "Author"
+other = "Authors"
+
+[authorsAvatar]
+other = "{{ .Author }}'s avatar"
+
+[by]
+other = "by"
+
+[cancel]
+other = "Cancel"
+
+[cancelComment]
+other = "Cancel comment"
+
+[category]
+one = "Category"
+other = "Categories"
+
+[comment]
+other = "Comment"
+
+[commentSubmissionErrorMessage]
+other = "Error occured. Couldn't submit your comment. Please try again. Thank You!"
+
+[commentSubmissionErrorTitle]
+other = "Yikes, Sorry!"
+
+[commentSubmissionSuccessMessage]
+other = "Your comment has been submitted. It will appear on this page shortly!"
+
+[commentSubmissionSuccessTitle]
+other = "Thank You!"
+
+[commentsOnEntry]
+one = "Only {{ .Count }} comment on {{ .Title }}"
+other = "{{ .Count }} comments on {{ .Title }}"
+
+[contactViaEmail]
+other = "Contact via Email"
+
+[currentPage]
+other = "Current page"
+
+[email]
+other = "Email"
+
+[gopher]
+other = "Gopher"
+
+[goHome]
+other = "Go Home..."
+
+[lastUpdated]
+other = "Last updated"
+
+[leaveAComment]
+other = "Leave a comment"
+
+[mainMenu]
+other = "Main Menu"
+
+[name]
+other = "Name"
+
+[next]
+other = "Next"
+
+[nextPage]
+other = "Next page"
+
+[nextPost]
+other = "Next post"
+
+[noTerm]
+other = "Not a single {{ .Term }}!"
+
+[ok]
+other = "OK"
+
+[openAccountInNewTab]
+other = "Open {{ .Platform }} account in new tab"
+
+[page]
+other = "Page"
+
+[previous]
+other = "Previous"
+
+[previousPage]
+other = "Previous page"
+
+[previousPost]
+other = "Previous post"
+
+[postedOn]
+other = "Posted on"
+
+[readingTime]
+one = "One min read"
+other = "{{ .Count }} mins read"
+
+[recentPosts]
+other = "Recent Posts"
+
+[reply]
+other = "Reply"
+
+[replyToAuthor]
+other = "Reply to {{ .Author }}"
+
+[says]
+other = "says"
+
+[search]
+other = "Search"
+
+[searchResultEmpty]
+other = "Nothing found!"
+
+[searching]
+other = "Searching"
+
+[series]
+one = "Series"
+other = "Series"
+
+[sidebarMenu]
+other = "Sidebar Menu"
+
+[skipToContent]
+other = "Skip to Content"
+
+[skipToMainMenu]
+other = "Skip to Main Menu"
+
+[socialMenu]
+other = "Social Menu"
+
+[submitComment]
+other = "Comment!"
+
+[tableOfContents]
+other = "Table of Contents"
+
+[tag]
+one = "Tag"
+other = "Tags"
+
+[toggleSidebar]
+other = "Toggle Sidebar"
+
+[website]
+other = "Website"
