@@ -1,0 +1,155 @@
+[author]
+one = "Автор"
+other = "Автори"
+
+[authorsAvatar]
+other = "Аватар {{ .Author }}"
+
+[by]
+other = ""
+
+[cancel]
+other = "Відміна"
+
+[cancelComment]
+other = "Відмінити коментар"
+
+[category]
+one = "Категорія"
+other = "Категорії"
+
+[comment]
+other = "Коментар"
+
+[commentSubmissionErrorMessage]
+other = "Виникла помилка. Не можу надіслати коментар. Будь ласка, спробуйте ще раз. Дякую!"
+
+[commentSubmissionErrorTitle]
+other = "Упс, перепрошую!"
+
+[commentSubmissionSuccessMessage]
+other = "Ваш коментар надіслано. Скоро він з'явиться на сторінці!"
+
+[commentSubmissionSuccessTitle]
+other = "Дякую!"
+
+[commentsOnEntry]
+one = "Лише {{ .Count }} коментар на {{ .Title }}"
+other = "{{ .Count }} коментарів на {{ .Title }}"
+
+[contactViaEmail]
+other = "Написати на пошту"
+
+[currentPage]
+other = "Поточна сторінка"
+
+[email]
+other = "Ел.пошта"
+
+[gopher]
+other = "Gopher"
+
+[goHome]
+other = "Додому..."
+
+[lastUpdated]
+other = "Востаннє оновлено..."
+
+[leaveAComment]
+other = "Залишити коментар"
+
+[mainMenu]
+other = "Головне меню"
+
+[name]
+other = "Ім'я"
+
+[next]
+other = "Наступний"
+
+[nextPage]
+other = "Наступна сторінка"
+
+[nextPost]
+other = "Наступний пост"
+
+[noTerm]
+other = "Немає жодного {{ .Term }}!"
+
+[ok]
+other = "OK"
+
+[openAccountInNewTab]
+other = "Відкрити {{ .Platform }} акаунт у новій вкладці"
+
+[page]
+other = "Сторінка"
+
+[previous]
+other = "Попередня"
+
+[previousPage]
+other = "Попередня сторінка"
+
+[previousPost]
+other = "Попередній пост"
+
+[postedOn]
+other = "Опубліковано"
+
+[readingTime]
+one = "Одна хвилина читання"
+other = "{{ .Count }} хвилин читатання"
+
+[recentPosts]
+other = "Останні пости"
+
+[reply]
+other = "Відповісти"
+
+[replyToAuthor]
+other = "Відповісти {{ .Author }}"
+
+[says]
+other = "каже"
+
+[search]
+other = "Пошук"
+
+[searchResultEmpty]
+other = "Нічого не знайдено!"
+
+[searching]
+other = "Пошук"
+
+[series]
+one = "Ряд"
+other = "Ряд"
+
+[sidebarMenu]
+other = "Бічне меню"
+
+[skipToContent]
+other = "Перескочити до змісту"
+
+[skipToMainMenu]
+other = "Перескочити до головного меню"
+
+[socialMenu]
+other = "Меню соц.мереж"
+
+[submitComment]
+other = "Коментувати!"
+
+[tableOfContents]
+other = "Зміст"
+
+[tag]
+one = "Tag"
+other = "Теги"
+
+[toggleSidebar]
+other = "Вкл/Викл бічне меню"
+
+[website]
+other = "Вебсайт"
