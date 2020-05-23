@@ -1,155 +1,155 @@
 [author]
-one = "Author"
-other = "Authors"
+one = "Автор"
+other = "Автори"
 
 [authorsAvatar]
-other = "{{ .Author }}'s avatar"
+other = "Аватар {{ .Author }}"
 
 [by]
-other = "by"
+other = ""
 
 [cancel]
-other = "Cancel"
+other = "Відміна"
 
 [cancelComment]
-other = "Cancel comment"
+other = "Відмінити коментар"
 
 [category]
-one = "Category"
-other = "Categories"
+one = "Категорія"
+other = "Категорії"
 
 [comment]
-other = "Comment"
+other = "Коментар"
 
 [commentSubmissionErrorMessage]
-other = "Error occured. Couldn't submit your comment. Please try again. Thank You!"
+other = "Виникла помилка. Не можу надіслати коментар. Будь ласка, спробуйте ще раз. Дякую!"
 
 [commentSubmissionErrorTitle]
-other = "Yikes, Sorry!"
+other = "Упс, перепрошую!"
 
 [commentSubmissionSuccessMessage]
-other = "Your comment has been submitted. It will appear on this page shortly!"
+other = "Ваш коментар надіслано. Скоро він з'явиться на сторінці!"
 
 [commentSubmissionSuccessTitle]
-other = "Thank You!"
+other = "Дякую!"
 
 [commentsOnEntry]
-one = "Only {{ .Count }} comment on {{ .Title }}"
-other = "{{ .Count }} comments on {{ .Title }}"
+one = "Лише {{ .Count }} коментар на {{ .Title }}"
+other = "{{ .Count }} коментарів на {{ .Title }}"
 
 [contactViaEmail]
-other = "Contact via Email"
+other = "Написати на пошту"
 
 [currentPage]
-other = "Current page"
+other = "Поточна сторінка"
 
 [email]
-other = "Email"
+other = "Ел.пошта"
 
 [gopher]
 other = "Gopher"
 
 [goHome]
-other = "Go Home..."
+other = "Додому..."
 
 [lastUpdated]
-other = "Last updated"
+other = "Востаннє оновлено..."
 
 [leaveAComment]
-other = "Leave a comment"
+other = "Залишити коментар"
 
 [mainMenu]
-other = "Main Menu"
+other = "Головне меню"
 
 [name]
-other = "Name"
+other = "Ім'я"
 
 [next]
-other = "Next"
+other = "Наступний"
 
 [nextPage]
-other = "Next page"
+other = "Наступна сторінка"
 
 [nextPost]
-other = "Next post"
+other = "Наступний пост"
 
 [noTerm]
-other = "Not a single {{ .Term }}!"
+other = "Немає жодного {{ .Term }}!"
 
 [ok]
 other = "OK"
 
 [openAccountInNewTab]
-other = "Open {{ .Platform }} account in new tab"
+other = "Відкрити {{ .Platform }} акаунт у новій вкладці"
 
 [page]
-other = "Page"
+other = "Сторінка"
 
 [previous]
-other = "Previous"
+other = "Попередня"
 
 [previousPage]
-other = "Previous page"
+other = "Попередня сторінка"
 
 [previousPost]
-other = "Previous post"
+other = "Попередній пост"
 
 [postedOn]
-other = "Posted on"
+other = "Опубліковано"
 
 [readingTime]
-one = "One min read"
-other = "{{ .Count }} mins read"
+one = "Одна хвилина читання"
+other = "{{ .Count }} хвилин читатання"
 
 [recentPosts]
-other = "Recent Posts"
+other = "Останні пости"
 
 [reply]
-other = "Reply"
+other = "Відповісти"
 
 [replyToAuthor]
-other = "Reply to {{ .Author }}"
+other = "Відповісти {{ .Author }}"
 
 [says]
-other = "says"
+other = "каже"
 
 [search]
-other = "Search"
+other = "Пошук"
 
 [searchResultEmpty]
-other = "Nothing found!"
+other = "Нічого не знайдено!"
 
 [searching]
-other = "Searching"
+other = "Пошук"
 
 [series]
-one = "Series"
-other = "Series"
+one = "Ряд"
+other = "Ряд"
 
 [sidebarMenu]
-other = "Sidebar Menu"
+other = "Бічне меню"
 
 [skipToContent]
-other = "Skip to Content"
+other = "Перескочити до змісту"
 
 [skipToMainMenu]
-other = "Skip to Main Menu"
+other = "Перескочити до головного меню"
 
 [socialMenu]
-other = "Social Menu"
+other = "Меню соц.мереж"
 
 [submitComment]
-other = "Comment!"
+other = "Коментувати!"
 
 [tableOfContents]
-other = "Table of Contents"
+other = "Зміст"
 
 [tag]
 one = "Tag"
-other = "Tags"
+other = "Теги"
 
 [toggleSidebar]
-other = "Toggle Sidebar"
+other = "Вкл/Викл бічне меню"
 
 [website]
-other = "Website"
+other = "Вебсайт"
