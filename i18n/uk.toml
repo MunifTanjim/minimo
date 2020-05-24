@@ -1,5 +1,6 @@
 [author]
 one = "Автор"
+few = "Автори"
 other = "Автори"
 
 [authorsAvatar]
@@ -16,6 +17,7 @@ other = "Відмінити коментар"
 
 [category]
 one = "Категорія"
+few = "Категорії"
 other = "Категорії"
 
 [comment]
@@ -35,6 +37,7 @@ other = "Дякую!"
 
 [commentsOnEntry]
 one = "Лише {{ .Count }} коментар на {{ .Title }}"
+few = "{{ .Count }} коментарі на {{ .Title }}"
 other = "{{ .Count }} коментарів на {{ .Title }}"
 
 [contactViaEmail]
@@ -99,7 +102,8 @@ other = "Опубліковано"
 
 [readingTime]
 one = "Одна хвилина читання"
-other = "{{ .Count }} хвилин читатання"
+few = "{{ .Count }} хвилини читання"
+other = "{{ .Count }} хвилин читання"
 
 [recentPosts]
 other = "Останні пости"
@@ -123,8 +127,9 @@ other = "Нічого не знайдено!"
 other = "Пошук"
 
 [series]
-one = "Ряд"
-other = "Ряд"
+one = "Серія"
+few = "Серії"
+other = "Серії"
 
 [sidebarMenu]
 other = "Бічне меню"
@@ -145,7 +150,8 @@ other = "Коментувати!"
 other = "Зміст"
 
 [tag]
-one = "Tag"
+one = "Тег"
+few = "Теги"
 other = "Теги"
 
 [toggleSidebar]
