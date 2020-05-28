@@ -49,7 +49,6 @@ showLastmod = true
 taxonomyCloudShuffle = true
 accentColor = "#ffcd00"
 hideMainMenu = false
-rtl = false
 
 [params.sidebar]
 enable = true
