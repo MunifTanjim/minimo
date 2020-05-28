@@ -1,7 +1,7 @@
 <link rel='icon' href='{{ ( or .Site.Params.assets.favicon "favicon.ico" ) | relURL }}'>
 <link rel='stylesheet' href='{{ print "/assets/css/" .Site.Data.assets.main.css | relURL  }}'>
 
-{{- if .Site.Params.settings.rtl -}}
+{{- if or ( .Site.Params.settings.rtl ) ( eq .Site.Language.LanguageDirection "rtl" ) -}}
   <link rel='stylesheet' href='{{ print "/assets/css/" .Site.Data.assets.rtl.css | relURL  }}'>
 {{- end -}}
 
