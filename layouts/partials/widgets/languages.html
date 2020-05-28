@@ -1,0 +1,12 @@
+<section class='widget widget-languages sep-after'>
+  <header>
+    <h4 class='title widget-title'>
+        {{ i18n "languages" }}
+    </h4>
+  </header>
+
+{{ range $.Site.Home.AllTranslations }}
+<a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+{{ end }}
+
+</section>
