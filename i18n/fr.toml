@@ -52,6 +52,9 @@ other = "Gopher"
 [goHome]
 other = "Retourner à l'accueil..."
 
+[languages]
+other = "Langues"
+
 [leaveAComment]
 other = "Laisser un commentaire"
 
