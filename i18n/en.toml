@@ -55,6 +55,9 @@ other = "Go Home..."
 [lastUpdated]
 other = "Last updated"
 
+[languages]
+other = "Languages"
+
 [leaveAComment]
 other = "Leave a comment"
 
