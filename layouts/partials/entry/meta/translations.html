@@ -1,0 +1,7 @@
+{{- partial "svg/icons" "translations" -}}
+{{ if .IsTranslated }}
+<span class='screen-reader-text'> {{ i18n "translations" }} </span>
+    {{ range .Translations }}
+        <a href="{{ .Permalink }}">{{ .Lang }}</a>
+    {{ end }}
+{{ end }}

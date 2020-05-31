@@ -154,5 +154,8 @@ other = "Tags"
 [toggleSidebar]
 other = "Toggle Sidebar"
 
+[translations]
+other = "Translations"
+
 [website]
 other = "Website"
