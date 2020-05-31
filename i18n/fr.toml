@@ -151,5 +151,8 @@ other = "Étiquettes"
 [toggleSidebar]
 other = "Déplier la barre latérale"
 
+[translations]
+other = "Traductions"
+
 [website]
 other = "Site web"
