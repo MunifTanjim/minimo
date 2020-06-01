@@ -1,0 +1,155 @@
+[author]
+one = "Autor"
+other = "Autors"
+
+[authorsAvatar]
+other = "avatar de {{ .Author }}"
+
+[by]
+other = "per"
+
+[cancel]
+other = "Anullar"
+
+[cancelComment]
+other = "Anullar comentari"
+
+[category]
+one = "Categoria"
+other = "Categorias"
+
+[comment]
+other = "Comentari"
+
+[commentSubmissionErrorMessage]
+other = "Una error s’es producha. Mandadís del comentari impossible. Tornatz ensajar. Mercés !"
+
+[commentSubmissionErrorTitle]
+other = "Ops, o planhèm !"
+
+[commentSubmissionSuccessMessage]
+other = "Comentari enviat. Aparaissarà lèu sus aquesta pagina !"
+
+[commentSubmissionSuccessTitle]
+other = "Mercés !"
+
+[commentsOnEntry]
+one = "Sonque {{ .Count }} comentari sus {{ .Title }}"
+other = "{{ .Count }} comentaris sus {{ .Title }}"
+
+[contactViaEmail]
+other = "Contacte via Email"
+
+[currentPage]
+other = "Pagina acuala"
+
+[email]
+other = "Email"
+
+[gopher]
+other = "Gopher"
+
+[goHome]
+other = "Tornar a l’acuèlh..."
+
+[lastUpdated]
+other = "Darrièra mesa a jorn"
+
+[leaveAComment]
+other = "Daissar un comentari"
+
+[mainMenu]
+other = "Menú principal"
+
+[name]
+other = "Nom"
+
+[next]
+other = "Seguent"
+
+[nextPage]
+other = "Pagina seguenta"
+
+[nextPost]
+other = "Publicacion seguenta"
+
+[noTerm]
+other = "Cap de {{ .Term }}!"
+
+[ok]
+other = "D’acòrdi"
+
+[openAccountInNewTab]
+other = "dobrir lo compte {{ .Platform }} dins un onglet novèl"
+
+[page]
+other = "Pagina"
+
+[previous]
+other = "Precedent"
+
+[previousPage]
+other = "Pagina precedenta"
+
+[previousPost]
+other = "Publicacion precedenta"
+
+[postedOn]
+other = "Publicat sus"
+
+[readingTime]
+one = "Una minuta de lectura"
+other = "{{ .Count }} minutas de lectura"
+
+[recentPosts]
+other = "Publicacions recentas"
+
+[reply]
+other = "Respondre"
+
+[replyToAuthor]
+other = "Respondre a {{ .Author }}"
+
+[says]
+other = "ditz"
+
+[search]
+other = "Recercar"
+
+[searchResultEmpty]
+other = "Res pas trobat !"
+
+[searching]
+other = "Recèrca"
+
+[series]
+one = "Seria"
+other = "Serias"
+
+[sidebarMenu]
+other = "Menú lateral"
+
+[skipToContent]
+other = "Anar al contengut"
+
+[skipToMainMenu]
+other = "Anar al menú principal"
+
+[socialMenu]
+other = "Menú social"
+
+[submitComment]
+other = "Comentar!"
+
+[tableOfContents]
+other = "Ensenhador"
+
+[tag]
+one = "Etiqueta"
+other = "Etiquetas"
+
+[toggleSidebar]
+other = "Bascular barra laterala"
+
+[website]
+other = "Site web"
