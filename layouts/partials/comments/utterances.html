@@ -4,12 +4,16 @@
 {{- $issueLabel := .Page.Site.Params.comments.utterances.issueLabel -}}
 {{- $username := .Page.Site.Params.comments.utterances.github.username -}}
 {{- $repository := .Page.Site.Params.comments.utterances.github.repository -}}
+{{- $theme := .Page.Site.Params.comments.utterances.theme -}}
 
 <script src='{{ $scriptSrc }}'
   repo='{{ print $username "/" $repository }}'
   issue-term='{{ $issueTerm }}'
   {{- if $issueLabel -}}
     label='{{ $issueLabel }}'
+  {{- end -}}
+  {{- if $theme -}}
+    theme="{{ $theme }}"
   {{- end -}}
   crossorigin='anonymous' async>
 </script>
