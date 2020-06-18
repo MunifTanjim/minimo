@@ -58,6 +58,9 @@ other = "Langues"
 [leaveAComment]
 other = "Laisser un commentaire"
 
+[license]
+other = "Licence :"
+
 [mainMenu]
 other = "Menu principal"
 
