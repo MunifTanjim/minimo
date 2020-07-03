@@ -5,7 +5,6 @@
         {{- if eq .Kind "taxonomy" -}}
         <span class='taxonomy-name'>
           {{- ( ( i18n .Data.Singular 1 ) | default .Data.Singular ) -}}
-          {{- print ": " -}}
         </span>
         {{- end -}}
 

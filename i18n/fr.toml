@@ -1,6 +1,6 @@
 [author]
-one = "Auteur"
-other = "Auteurs"
+one = "Auteur :"
+other = "Auteurs :"
 
 [authorsAvatar]
 other = "Avatar de {{ .Author }}"
@@ -15,8 +15,8 @@ other = "Annuler"
 other = "Annuler le commentaire"
 
 [category]
-one = "Catégorie"
-other = "Catégories"
+one = "Catégorie :"
+other = "Catégories :"
 
 [comment]
 other = "Commentaire"
@@ -148,8 +148,8 @@ other = "Commenter !"
 other = "Table des matières"
 
 [tag]
-one = "Étiquette"
-other = "Étiquettes"
+one = "Étiquette :"
+other = "Étiquettes :"
 
 [toggleSidebar]
 other = "Déplier la barre latérale"
