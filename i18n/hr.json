@@ -1,0 +1,102 @@
+[{
+  "id": "author",
+  "translation": {
+    "one": "Autor",
+    "other": "Autori"
+  },
+  "id": "by",
+  "translation": {
+    "other": "od"
+  },
+  "id": "category",
+  "translation": {
+    "one": "Kategorija",
+    "other": "Kategorije"
+  },
+  "id": "contactViaEmail",
+  "translation": {
+    "other": "Kontakt putem emaila"
+  },
+  "id": "currentPage",
+  "translation": {
+    "other": "Trenutačna stranica"
+  },
+  "id": "gopher",
+  "translation": {
+    "other": "Gopher"
+  },
+  "id": "goHome",
+  "translation": {
+    "other": "Na početnu"
+  },
+  "id": "mainMenu",
+  "translation": {
+    "other": "Glavni izbornik"
+  },
+  "id": "next",
+  "translation": {
+    "other": "Iduće"
+  },
+  "id": "nextPage",
+  "translation": {
+    "other": "Iduća stranica"
+  },
+  "id": "nextPost",
+  "translation": {
+    "other": "Iduća objava"
+  },
+  "id": "noTerm",
+  "translation": {
+    "other": "Ne postoji niti jedan {{ .Term }}!"
+  },
+  "id": "openAccountInNewTab",
+  "translation": {
+    "other": "Otvori {{ .Platform }} u novoj kartici"
+  },
+  "id": "page",
+  "translation": {
+    "other": "Stranica"
+  },
+  "id": "previous",
+  "translation": {
+    "other": "Prethodno"
+  },
+  "id": "previousPage",
+  "translation": {
+    "other": "Prethodna stranica"
+  },
+  "id": "previousPost",
+  "translation": {
+    "other": "Prethodna objava"
+  },
+  "id": "postedOn",
+  "translation": {
+    "other": "Objavljeno"
+  },
+  "id": "readingTime",
+  "translation": {
+    "one": "Vrijeme čitanja: 1 min",
+    "other": "Vrijeme čitanja: {{ .Count }} min"
+  },
+  "id": "recentPosts",
+  "translation": {
+    "other": "Nedavne objave"
+  },
+  "id": "skipToContent",
+  "translation": {
+    "other": "Idi na sadržaj"
+  },
+  "id": "socialMenu",
+  "translation": {
+    "other": "Izbornik socijalnih mreža"
+  },
+  "id": "tableOfContents",
+  "translation": {
+    "other": "Sadržaj"
+  },
+  "id": "tag",
+  "translation": {
+    "one": "Oznaka",
+    "other": "Oznake"
+  }
+}]

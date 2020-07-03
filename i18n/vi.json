@@ -1,0 +1,208 @@
+[{
+  "id": "author",
+  "translation": {
+    "one": "Tác giả",
+    "other": "Các tác giả"
+  },
+  "id": "authorsAvatar",
+  "translation": {
+    "other": "Hình đại diện của {{ .Author }}"
+  },
+  "id": "by",
+  "translation": {
+    "other": "bởi"
+  },
+  "id": "cancel",
+  "translation": {
+    "other": "Huỷ bỏ"
+  },
+  "id": "cancelComment",
+  "translation": {
+    "other": "Huỷ bình luận"
+  },
+  "id": "category",
+  "translation": {
+    "one": "Danh mục",
+    "other": "Các danh mục"
+  },
+  "id": "comment",
+  "translation": {
+    "other": "Bình luận"
+  },
+  "id": "commentSubmissionErrorMessage",
+  "translation": {
+    "other": "Đã có lỗi xảy ra. Không thể gởi bình luận của bạn. Vui lòng thử lại. Cảm ơn!"
+  },
+  "id": "commentSubmissionErrorTitle",
+  "translation": {
+    "other": "Ồ, Xin lỗi!"
+  },
+  "id": "commentSubmissionSuccessMessage",
+  "translation": {
+    "other": "Bình luận của bạn đã được gởi đi. Nó sẽ sớm xuất hiện trên trang này!"
+  },
+  "id": "commentSubmissionSuccessTitle",
+  "translation": {
+    "other": "Cảm ơn bạn!"
+  },
+  "id": "commentsOnEntry",
+  "translation": {
+    "one": "Chỉ có {{ .Count }} bình luận trên {{ .Title }}",
+    "other": "Có {{ .Count }} bình luận trên {{ .Title }}"
+  },
+  "id": "contactViaEmail",
+  "translation": {
+    "other": "Liên hệ qua Email"
+  },
+  "id": "currentPage",
+  "translation": {
+    "other": "Trang hiện tại"
+  },
+  "id": "email",
+  "translation": {
+    "other": "Email"
+  },
+  "id": "gopher",
+  "translation": {
+    "other": "Gopher"
+  },
+  "id": "goHome",
+  "translation": {
+    "other": "Về trang chủ..."
+  },
+  "id": "lastUpdated",
+  "translation": {
+    "other": "Cập nhật gần đây"
+  },
+  "id": "leaveAComment",
+  "translation": {
+    "other": "Bình luận"
+  },
+  "id": "mainMenu",
+  "translation": {
+    "other": "Menu Chính"
+  },
+  "id": "name",
+  "translation": {
+    "other": "Tên"
+  },
+  "id": "next",
+  "translation": {
+    "other": "Tiếp theo"
+  },
+  "id": "nextPage",
+  "translation": {
+    "other": "Trang tiếp theo"
+  },
+  "id": "nextPost",
+  "translation": {
+    "other": "Bài viết tiếp theo"
+  },
+  "id": "noTerm",
+  "translation": {
+    "other": "Không phải là một {{ .Term }}!"
+  },
+  "id": "ok",
+  "translation": {
+    "other": "Đồng ý"
+  },
+  "id": "openAccountInNewTab",
+  "translation": {
+    "other": "Mở tài khoản {{ .Platform }} trong một tab mới"
+  },
+  "id": "page",
+  "translation": {
+    "other": "Trang"
+  },
+  "id": "previous",
+  "translation": {
+    "other": "Trước đó"
+  },
+  "id": "previousPage",
+  "translation": {
+    "other": "Trang trước"
+  },
+  "id": "previousPost",
+  "translation": {
+    "other": "Bài viết trước"
+  },
+  "id": "postedOn",
+  "translation": {
+    "other": "Đăng vào"
+  },
+  "id": "readingTime",
+  "translation": {
+    "one": "Một phút đọc",
+    "other": "{{ .Count }} phút đọc"
+  },
+  "id": "recentPosts",
+  "translation": {
+    "other": "Những bài viết gần đây"
+  },
+  "id": "reply",
+  "translation": {
+    "other": "Trả lời"
+  },
+  "id": "replyToAuthor",
+  "translation": {
+    "other": "Trả lời {{ .Author }}"
+  },
+  "id": "says",
+  "translation": {
+    "other": "nói"
+  },
+  "id": "search",
+  "translation": {
+    "other": "Tìm kiếm"
+  },
+  "id": "searchResultEmpty",
+  "translation": {
+    "other": "Không tìm thấy!"
+  },
+  "id": "searching",
+  "translation": {
+    "other": "Đang tìm kiếm"
+  },
+  "id": "series",
+  "translation": {
+    "one": "Loạt bài",
+    "other": "Loạt bài"
+  },
+  "id": "sidebarMenu",
+  "translation": {
+    "other": "Menu Sidebar"
+  },
+  "id": "skipToContent",
+  "translation": {
+    "other": "Vào nội dung chính"
+  },
+  "id": "skipToMainMenu",
+  "translation": {
+    "other": "Đến Menu chính"
+  },
+  "id": "socialMenu",
+  "translation": {
+    "other": "Menu mạng xã hội"
+  },
+  "id": "submitComment",
+  "translation": {
+    "other": "Đăng bình luận!"
+  },
+  "id": "tableOfContents",
+  "translation": {
+    "other": "Mục lục"
+  },
+  "id": "tag",
+  "translation": {
+    "one": "Thẻ",
+    "other": "Các thẻ"
+  },
+  "id": "toggleSidebar",
+  "translation": {
+    "other": "Đóng mở Sidebar"
+  },
+  "id": "website",
+  "translation": {
+    "other": "Trang web"
+  }
+}]

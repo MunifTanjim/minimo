@@ -1,0 +1,204 @@
+[{
+  "id": "author",
+  "translation": {
+    "one": "Autor",
+    "other": "Autores"
+  },
+  "id": "authorsAvatar",
+  "translation": {
+    "other": "Avatar del {{ .Author }}"
+  },
+  "id": "by",
+  "translation": {
+    "other": "por"
+  },
+  "id": "cancel",
+  "translation": {
+    "other": "Cancelar"
+  },
+  "id": "cancelComment",
+  "translation": {
+    "other": "Cancelar el comentario"
+  },
+  "id": "category",
+  "translation": {
+    "one": "Categoría",
+    "other": "Categorías"
+  },
+  "id": "comment",
+  "translation": {
+    "other": "Comentario"
+  },
+  "id": "commentSubmissionErrorMessage",
+  "translation": {
+    "other": "Un error se produjo. Su comentario no se pudo enviar. Por favor volver a intentar. ¡Gracias!"
+  },
+  "id": "commentSubmissionErrorTitle",
+  "translation": {
+    "other": "¿Ups, perdón!"
+  },
+  "id": "commentSubmissionSuccessMessage",
+  "translation": {
+    "other": "Su comentario fue enviado. ¡Pronto aparecerá en esta página!"
+  },
+  "id": "commentSubmissionSuccessTitle",
+  "translation": {
+    "other": "¡Gracias!"
+  },
+  "id": "commentsOnEntry",
+  "translation": {
+    "one": "{{ .Count }} solo comentario para {{ .Title }}",
+    "other": "{{ .Count }} comentarios para {{ .Title }}"
+  },
+  "id": "contactViaEmail",
+  "translation": {
+    "other": "Contacto vía correo"
+  },
+  "id": "currentPage",
+  "translation": {
+    "other": "Página actual"
+  },
+  "id": "email",
+  "translation": {
+    "other": "Correo electrónico"
+  },
+  "id": "gopher",
+  "translation": {
+    "other": "Gopher"
+  },
+  "id": "goHome",
+  "translation": {
+    "other": "Ir al inicio..."
+  },
+  "id": "leaveAComment",
+  "translation": {
+    "other": "Dejar un comentario"
+  },
+  "id": "mainMenu",
+  "translation": {
+    "other": "Menú principal"
+  },
+  "id": "name",
+  "translation": {
+    "other": "Nombre"
+  },
+  "id": "next",
+  "translation": {
+    "other": "Siguiente"
+  },
+  "id": "nextPage",
+  "translation": {
+    "other": "Siguiente página"
+  },
+  "id": "nextPost",
+  "translation": {
+    "other": "Siguiente entrada"
+  },
+  "id": "noTerm",
+  "translation": {
+    "other": "¡Ni un sólo {{ .Term }}!"
+  },
+  "id": "ok",
+  "translation": {
+    "other": "OK"
+  },
+  "id": "openAccountInNewTab",
+  "translation": {
+    "other": "Abrir cuenta de {{ .Platform }} en una nueva pestaña"
+  },
+  "id": "page",
+  "translation": {
+    "other": "Página"
+  },
+  "id": "previous",
+  "translation": {
+    "other": "Anterior"
+  },
+  "id": "previousPage",
+  "translation": {
+    "other": "Anterior página"
+  },
+  "id": "previousPost",
+  "translation": {
+    "other": "Anterior entrada"
+  },
+  "id": "postedOn",
+  "translation": {
+    "other": "Posteado en"
+  },
+  "id": "readingTime",
+  "translation": {
+    "one": "Lectura de un minuto",
+    "other": "{{ .Count }} minutos de lectura"
+  },
+  "id": "recentPosts",
+  "translation": {
+    "other": "Entradas recientes"
+  },
+  "id": "reply",
+  "translation": {
+    "other": "Responder"
+  },
+  "id": "replyToAuthor",
+  "translation": {
+    "other": "Responder a {{ .Author }}"
+  },
+  "id": "says",
+  "translation": {
+    "other": "dice"
+  },
+  "id": "search",
+  "translation": {
+    "other": "Buscar"
+  },
+  "id": "searchResultEmpty",
+  "translation": {
+    "other": "¡No se encontraron resultados!"
+  },
+  "id": "searching",
+  "translation": {
+    "other": "Buscando"
+  },
+  "id": "series",
+  "translation": {
+    "one": "Serie",
+    "other": "Series"
+  },
+  "id": "sidebarMenu",
+  "translation": {
+    "other": "Menú lateral"
+  },
+  "id": "skipToContent",
+  "translation": {
+    "other": "Saltar al contenido"
+  },
+  "id": "skipToMainMenu",
+  "translation": {
+    "other": "Saltar al menú principal"
+  },
+  "id": "socialMenu",
+  "translation": {
+    "other": "Menú social"
+  },
+  "id": "submitComment",
+  "translation": {
+    "other": "¡Comentar!"
+  },
+  "id": "tableOfContents",
+  "translation": {
+    "other": "Índice"
+  },
+  "id": "tag",
+  "translation": {
+    "one": "Etiqueta",
+    "other": "Etiquetas"
+  },
+  "id": "toggleSidebar",
+  "translation": {
+    "other": "Alternar barra lateral"
+  },
+  "id": "website",
+  "translation": {
+    "other": "Sitio web"
+  }
+}]

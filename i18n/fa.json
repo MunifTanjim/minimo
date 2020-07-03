@@ -1,0 +1,102 @@
+[{
+  "id": "author",
+  "translation": {
+    "one": "نویسنده",
+    "other": "نویسندگان"
+  },
+  "id": "by",
+  "translation": {
+    "other": "از"
+  },
+  "id": "category",
+  "translation": {
+    "one": "دسته",
+    "other": "دسته‌ها"
+  },
+  "id": "contactViaEmail",
+  "translation": {
+    "other": "تماس با ایمیل"
+  },
+  "id": "currentPage",
+  "translation": {
+    "other": "صفحه کنونی"
+  },
+  "id": "gopher",
+  "translation": {
+    "other": "گوفر"
+  },
+  "id": "goHome",
+  "translation": {
+    "other": "برگشت به خانه"
+  },
+  "id": "mainMenu",
+  "translation": {
+    "other": "منو اصلی"
+  },
+  "id": "next",
+  "translation": {
+    "other": "بعدی"
+  },
+  "id": "nextPage",
+  "translation": {
+    "other": "صفحه بعدی"
+  },
+  "id": "nextPost",
+  "translation": {
+    "other": "نوشته بعدی"
+  },
+  "id": "noTerm",
+  "translation": {
+    "other": "بدون یک {{ .Term }}!"
+  },
+  "id": "openAccountInNewTab",
+  "translation": {
+    "other": "بازکردن حساب {{ .Platform }} در تب جدید"
+  },
+  "id": "page",
+  "translation": {
+    "other": "صفحه"
+  },
+  "id": "previous",
+  "translation": {
+    "other": "قبلی"
+  },
+  "id": "previousPage",
+  "translation": {
+    "other": "صفحه قبلی"
+  },
+  "id": "previousPost",
+  "translation": {
+    "other": "نوشته قبلی"
+  },
+  "id": "postedOn",
+  "translation": {
+    "other": "ارسال شده در"
+  },
+  "id": "readingTime",
+  "translation": {
+    "one": "یک دقیقه مطالعه",
+    "other": "{{ .Count }} دقیقه مطالعه"
+  },
+  "id": "recentPosts",
+  "translation": {
+    "other": "آخرین نوشته ها"
+  },
+  "id": "skipToContent",
+  "translation": {
+    "other": "رفتن به محتوا"
+  },
+  "id": "socialMenu",
+  "translation": {
+    "other": "منوی شبکه‌های اجتماعی"
+  },
+  "id": "tableOfContents",
+  "translation": {
+    "other": "فهرست مطالب"
+  },
+  "id": "tag",
+  "translation": {
+    "one": "تگ",
+    "other": "تگ‌ها"
+  }
+}]

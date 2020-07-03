@@ -1,0 +1,110 @@
+[{
+  "id": "author",
+  "translation": {
+    "one": "Avtor",
+    "two": "Avtorja",
+    "few": "Avtorji",
+    "other": "Avtorji"
+  },
+  "id": "by",
+  "translation": {
+    "other": "napisal"
+  },
+  "id": "category",
+  "translation": {
+    "one": "Kategorija",
+    "two": "Kategoriji",
+    "few": "Kategorije",
+    "other": "Kategorije"
+  },
+  "id": "contactViaEmail",
+  "translation": {
+    "other": "Stik po elektronski pošti"
+  },
+  "id": "currentPage",
+  "translation": {
+    "other": "Trenutna stran"
+  },
+  "id": "gopher",
+  "translation": {
+    "other": "Gopher"
+  },
+  "id": "goHome",
+  "translation": {
+    "other": "Na začetek..."
+  },
+  "id": "mainMenu",
+  "translation": {
+    "other": "Glavni meni"
+  },
+  "id": "next",
+  "translation": {
+    "other": "Naslednji"
+  },
+  "id": "nextPage",
+  "translation": {
+    "other": "Naslednja stran"
+  },
+  "id": "nextPost",
+  "translation": {
+    "other": "Naslednja objava"
+  },
+  "id": "noTerm",
+  "translation": {
+    "other": "Niti enega {{ .Term }}!"
+  },
+  "id": "openAccountInNewTab",
+  "translation": {
+    "other": "Odpri {{ .Platform }} v novem zavihku"
+  },
+  "id": "page",
+  "translation": {
+    "other": "Stran"
+  },
+  "id": "previous",
+  "translation": {
+    "other": "Prejšnji"
+  },
+  "id": "previousPage",
+  "translation": {
+    "other": "Prejšnja stran"
+  },
+  "id": "previousPost",
+  "translation": {
+    "other": "Prejšnja objava"
+  },
+  "id": "postedOn",
+  "translation": {
+    "other": "Objavljeno"
+  },
+  "id": "readingTime",
+  "translation": {
+    "one": "ena minuta branja",
+    "two": "dve minuti branja",
+    "few": "{{ .Count }} minute branja",
+    "other": "{{ .Count }} minut branja"
+  },
+  "id": "recentPosts",
+  "translation": {
+    "other": "Zadnji zapisi"
+  },
+  "id": "skipToContent",
+  "translation": {
+    "other": "Skoči na vsebino"
+  },
+  "id": "socialMenu",
+  "translation": {
+    "other": "Povezave na družabna omrežja"
+  },
+  "id": "tableOfContents",
+  "translation": {
+    "other": "Kazalo"
+  },
+  "id": "tag",
+  "translation": {
+    "one": "Značka",
+    "two": "Znački",
+    "few": "Značke",
+    "other": "Značke"
+  }
+}]

@@ -1,0 +1,192 @@
+[{
+  "id": "author",
+  "translation": {
+    "one": "লেখক",
+    "other": "লেখকেরা"
+  },
+  "id": "authorsAvatar",
+  "translation": {
+    "other": "{{ .Author }}-এর ছবি"
+  },
+  "id": "by",
+  "translation": {
+    "other": "লিখেছে"
+  },
+  "id": "cancel",
+  "translation": {
+    "other": "বাদ দাও"
+  },
+  "id": "cancelComment",
+  "translation": {
+    "other": "কমেন্ট করা বাদ দাও"
+  },
+  "id": "category",
+  "translation": {
+    "one": "ক্যাটেগরি",
+    "other": "ক্যাটেগরিসমূহ"
+  },
+  "id": "comment",
+  "translation": {
+    "other": "কমেন্ট"
+  },
+  "id": "commentSubmissionErrorMessage",
+  "translation": {
+    "other": "সমস্যা দেখা দিয়েছে। কমেন্ট সাবমিট করা যায় নি। অনুগ্রহ করে আবার চেষ্টা করো। ধন্যবাদ!"
+  },
+  "id": "commentSubmissionErrorTitle",
+  "translation": {
+    "other": "এহহে, স্যরি!"
+  },
+  "id": "commentSubmissionSuccessMessage",
+  "translation": {
+    "other": "কমেন্ট সাবমিট করা হয়েছে। কিছুক্ষণের মধ্যেই সেটা এই পেজে দেখা যাবে!"
+  },
+  "id": "commentSubmissionSuccessTitle",
+  "translation": {
+    "other": "ধন্যবাদ!"
+  },
+  "id": "commentsOnEntry",
+  "translation": {
+    "one": "{{ .Title }}-এ কমেন্ট শুধুমাত্র {{ .Count }}টা",
+    "other": "{{ .Title }}-এ কমেন্ট {{ .Count }}টা"
+  },
+  "id": "contactViaEmail",
+  "translation": {
+    "other": "ইমেইলে যোগাযোগ করো"
+  },
+  "id": "currentPage",
+  "translation": {
+    "other": "এই পৃষ্ঠা"
+  },
+  "id": "email",
+  "translation": {
+    "other": "ইমেইল"
+  },
+  "id": "gopher",
+  "translation": {
+    "other": "গোফার"
+  },
+  "id": "goHome",
+  "translation": {
+    "other": "গোড়ায় ফিরে চলো..."
+  },
+  "id": "leaveAComment",
+  "translation": {
+    "other": "কমেন্ট দিয়ে যাও..."
+  },
+  "id": "mainMenu",
+  "translation": {
+    "other": "মেইন মেনু"
+  },
+  "id": "name",
+  "translation": {
+    "other": "নাম"
+  },
+  "id": "next",
+  "translation": {
+    "other": "পরেরটা"
+  },
+  "id": "nextPage",
+  "translation": {
+    "other": "পরের পৃষ্ঠা"
+  },
+  "id": "nextPost",
+  "translation": {
+    "other": "পরের পোস্ট"
+  },
+  "id": "noTerm",
+  "translation": {
+    "other": "কোন {{ .Term }} নেই!"
+  },
+  "id": "ok",
+  "translation": {
+    "other": "ঠিক আছে"
+  },
+  "id": "openAccountInNewTab",
+  "translation": {
+    "other": "{{ .Platform }} একাউন্ট নতুন ট্যাবে খোল"
+  },
+  "id": "page",
+  "translation": {
+    "other": "পৃষ্ঠা"
+  },
+  "id": "previous",
+  "translation": {
+    "other": "আগেরটা"
+  },
+  "id": "previousPage",
+  "translation": {
+    "other": "আগের পৃষ্ঠা"
+  },
+  "id": "previousPost",
+  "translation": {
+    "other": "আগের পোস্ট"
+  },
+  "id": "postedOn",
+  "translation": {
+    "other": "তারিখ"
+  },
+  "id": "readingTime",
+  "translation": {
+    "one": "এক মিনিট লম্বা",
+    "other": "{{ .Count }} মিনিট লম্বা"
+  },
+  "id": "recentPosts",
+  "translation": {
+    "other": "সাম্প্রতিক পোষ্টগুলো"
+  },
+  "id": "reply",
+  "translation": {
+    "other": "উত্তর দাও"
+  },
+  "id": "replyToAuthor",
+  "translation": {
+    "other": "{{ .Author }}-কে উত্তর দাও"
+  },
+  "id": "says",
+  "translation": {
+    "other": "বলেছে"
+  },
+  "id": "series",
+  "translation": {
+    "one": "সিরিজ",
+    "other": "সিরিজসমূহ"
+  },
+  "id": "sidebarMenu",
+  "translation": {
+    "other": "সাইডবার মেনু"
+  },
+  "id": "skipToContent",
+  "translation": {
+    "other": "কন্টেন্টে যাও"
+  },
+  "id": "skipToMainMenu",
+  "translation": {
+    "other": "মেইন মেনুতে যাও"
+  },
+  "id": "socialMenu",
+  "translation": {
+    "other": "সোশ্যাল মেনু"
+  },
+  "id": "submitComment",
+  "translation": {
+    "other": "কমেন্ট!"
+  },
+  "id": "tableOfContents",
+  "translation": {
+    "other": "এক নজরে"
+  },
+  "id": "tag",
+  "translation": {
+    "one": "ট্যাগ",
+    "other": "ট্যাগসমূহ"
+  },
+  "id": "toggleSidebar",
+  "translation": {
+    "other": "সাইডবার ট্যুগল কর"
+  },
+  "id": "website",
+  "translation": {
+    "other": "ওয়েবসাইট"
+  }
+}]
