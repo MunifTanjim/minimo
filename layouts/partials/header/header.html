@@ -2,14 +2,14 @@
   <div class='container sep-after'>
     <div class='header-info'>
       <h1 class='title'>
-        {{- if eq .Kind "taxonomy" -}}
+        {{- if eq .Kind "term" -}}
         <span class='taxonomy-name'>
           {{- ( ( i18n .Data.Singular 1 ) | default .Data.Singular ) -}}
           {{- print ": " -}}
         </span>
         {{- end -}}
 
-        {{- if eq .Kind "taxonomyTerm" -}}
+        {{- if eq .Kind "taxonomy" -}}
           {{- ( ( i18n .Data.Singular 2 ) | default .Title ) -}}
         {{- else if eq .Data.Singular "author" -}}
           {{- partial "data/author/displayName" . -}}
