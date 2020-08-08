@@ -55,6 +55,9 @@ other = "Go Home..."
 [lastUpdated]
 other = "Last updated"
 
+[languages]
+other = "Languages"
+
 [leaveAComment]
 other = "Leave a comment"
 
@@ -150,6 +153,9 @@ other = "Tags"
 
 [toggleSidebar]
 other = "Toggle Sidebar"
+
+[translations]
+other = "Translations"
 
 [website]
 other = "Website"

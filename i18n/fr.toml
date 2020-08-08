@@ -52,6 +52,9 @@ other = "Gopher"
 [goHome]
 other = "Retourner à l'accueil..."
 
+[languages]
+other = "Langues"
+
 [leaveAComment]
 other = "Laisser un commentaire"
 
@@ -147,6 +150,9 @@ other = "Étiquettes"
 
 [toggleSidebar]
 other = "Déplier la barre latérale"
+
+[translations]
+other = "Traductions"
 
 [website]
 other = "Site web"
