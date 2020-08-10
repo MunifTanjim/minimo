@@ -1,19 +1,19 @@
 {{- $scriptSrc := "https://utteranc.es/client.js" -}}
 
 {{- $issueTerm := .Page.Site.Params.comments.utterances.issueTerm -}}
-{{- $issueLabel := .Page.Site.Params.comments.utterances.issueLabel -}}
+{{- $label := .Page.Site.Params.comments.utterances.label -}}
+{{- $theme := .Page.Site.Params.comments.utterances.theme -}}
 {{- $username := .Page.Site.Params.comments.utterances.github.username -}}
 {{- $repository := .Page.Site.Params.comments.utterances.github.repository -}}
-{{- $theme := .Page.Site.Params.comments.utterances.theme -}}
 
 <script src='{{ $scriptSrc }}'
   repo='{{ print $username "/" $repository }}'
   issue-term='{{ $issueTerm }}'
-  {{- if $issueLabel -}}
-    label='{{ $issueLabel }}'
-  {{- end -}}
-  {{- if $theme -}}
+  {{ if $label -}}
+    label='{{ $label }}'
+  {{- end }}
+  {{ if $theme -}}
     theme="{{ $theme }}"
-  {{- end -}}
+  {{- end }}
   crossorigin='anonymous' async>
 </script>
