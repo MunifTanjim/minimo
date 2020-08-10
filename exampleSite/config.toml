@@ -103,7 +103,9 @@ repository = "minimo"
 # Utterances: https://utteranc.es
 [params.comments.utterances]
 enable = false
-issueTerm = "pathname" # pathname / url / title
+issueTerm = "pathname" # pathname / url / title / og:title / <string>
+label = ""
+theme = "github-light"
 
 [params.comments.utterances.github]
 username = "MunifTanjim"
