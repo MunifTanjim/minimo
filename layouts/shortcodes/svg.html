@@ -1,0 +1,5 @@
+{{ $svg := .Get 0 }}
+<svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    {{ $icon := print "svg/" $svg ".svg" | resources.Get }}
+    {{ $icon.Content | replaceRE `(?s)^.*<svg.*?>(.*)<\/svg>.*$` "$1" | safeHTML }}
+</svg>

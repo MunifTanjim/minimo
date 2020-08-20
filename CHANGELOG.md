@@ -4,9 +4,23 @@
 
 - ...
 
+## [2.9.0] - 2020-07-18
+
+### Added
+
+- Indonesian translation
+- Ukrainian translation
+- Arabic translation
+- Support `.Site.Language.LanguageDirection`
+
+### Fixed
+
+- MathJax integration
+- Issues #256, #260, #264, #285
+
 ## [2.8.0] - 2019-09-08
 
-## Added
+### Added
 
 - RTL support
 - Staticman comments reCAPTCHA support
@@ -133,7 +147,7 @@
 ### Changed
 
 - Forms & Buttons stylesheets
-- Minor changes to Main Menu 
+- Minor changes to Main Menu
 - Refactor Social Menu template
 - Refactor Homepage & Sidebar templates
 
@@ -297,7 +311,8 @@
 
 - Initial stable release
 
-[Unreleased]: https://github.com/MunifTanjim/minimo/compare/v2.8.0...HEAD
+[unreleased]: https://github.com/MunifTanjim/minimo/compare/v2.9.0...HEAD
+[2.9.0]: https://github.com/MunifTanjim/minimo/compare/v2.8.0...v2.9.0
 [2.8.0]: https://github.com/MunifTanjim/minimo/compare/v2.7.0...v2.8.0
 [2.7.0]: https://github.com/MunifTanjim/minimo/compare/2.6.0...v2.7.0
 [2.6.0]: https://github.com/MunifTanjim/minimo/compare/2.5.0...2.6.0
