@@ -1,8 +1,8 @@
 ---
 date: 2018-03-29T09:00:00+06:00
-lastmod: 2019-07-12T23:00:00+06:00
+lastmod: 2020-08-10T22:00:00+06:00
 title: Comments Support
-authors: ["muniftanjim"]
+authors: ['muniftanjim']
 categories:
   - features
 tags:
@@ -11,6 +11,7 @@ slug: comments-support
 comments: true
 toc: true
 ---
+
 Minimo has support for comments baked into it.
 
 ## Enable/Disable Comments
@@ -35,6 +36,7 @@ The global `.Site.Params.comments.enable` setting can be overridden for specific
 ---
 comments: true
 ---
+
 ```
 
 - `comments` [`Boolean`]: Enable/Disable comments for specific posts
@@ -128,7 +130,9 @@ For using Utterances, set up the following options in your `config.toml` file:
 ```toml
 [params.comments.utterances]
 enable = true
-issueTerm = "pathname" # pathname / url / title
+issueTerm = "pathname" # pathname / url / title / og:title / <string>
+label = ""
+theme = "github-light"
 
 [params.comments.utterances.github]
 username = "MunifTanjim"
@@ -137,7 +141,9 @@ repository = "minimo"
 
 - `params.comments.utterances` [`Map`]:
   - `enable` [`Boolean`]: Enable Utterances
-  - `issueTerm` [`String`]: Entry to Issue mapping option _(`pathname` / `url` / `title`)_
+  - `issueTerm` [`String`]: Entry to Issue mapping option _(`pathname` / `url` / `title` / `og:title` / <string>)_
+  - `label` [`String`]: Label will be assigned to issues created by Utterances
+  - `theme` [`String`]: Utterances theme that matches your blog
 - `params.comments.utterances.github` [`Map`]:
   - `username` [`String`]: Your GitHub Username
   - `repository` [`String`]: Name of your Site's GitHub Repository

@@ -1,8 +1,8 @@
 {{- $.Scratch.Set "authorID" "" -}}
 
-{{- if eq .Kind "taxonomy" -}}
+{{- if eq .Kind "term" -}}
   {{- $.Scratch.Set "authorID" .Data.Term -}}
-{{- else if eq .Kind "taxonomyTerm" -}}
+{{- else if eq .Kind "taxonomy" -}}
   {{- $.Scratch.Set "authorID" .Name -}}
 {{- else if eq .Kind "page" -}}
   {{- $.Scratch.Set "authorID" ( index .Params.authors 0 ) -}}
