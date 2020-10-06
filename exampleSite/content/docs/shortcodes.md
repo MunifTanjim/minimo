@@ -170,15 +170,17 @@ As default Hugo's shortcodes for Twitter, Instagram, Vimeo, Youtube you can embe
 
 ### slideshare: Parameters
 
-0 => id [`String`] \(required\): `id` of SlideShare you want to embed. You can find it in
+**Named Parameters**:
+
+- `id` [`String`] \(required\): `id` of SlideShare you want to embed. You can find it in
 SlideShare URL or click "Share" -> See `id` field in "WordPress Shortcode" section.
 
 ### slideshare: Usage Example
 
 ```golang
-{{< slideshare 237760779 >}}
+{{</* slideshare 237760779 */>}}
 ```
 
 **Output**:
 
-{{< slideshare 237760779 >}}
+{{< slideshare id="237760779" >}}
