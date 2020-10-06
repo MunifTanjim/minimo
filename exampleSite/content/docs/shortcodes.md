@@ -1,6 +1,6 @@
 ---
 date: 2017-10-05T20:00:00+06:00
-lastmod: 2019-07-07T02:00:00+06:00
+lastmod: 2020-10-06T02:00:00+06:00
 title: Shortcodes
 authors: ["muniftanjim"]
 categories:
@@ -162,3 +162,25 @@ color: purple;
 font-size: 1.5em;  
 color: purple;
 {{< /text >}}
+
+
+## Shortcode: slideshare
+
+As default Hugo's shortcodes for Twitter, Instagram, Vimeo, Youtube you can embed [SlideShare](https://www.slideshare.net/) presentation/document into your page.
+
+### slideshare: Parameters
+
+**Named Parameters**:
+
+- `id` [`String`] \(required\): `id` of SlideShare you want to embed. You can find it in
+SlideShare URL or click "Share" -> See `id` field in "WordPress Shortcode" section.
+
+### slideshare: Usage Example
+
+```golang
+{{</* slideshare 237760779 */>}}
+```
+
+**Output**:
+
+{{< slideshare id="237760779" >}}
