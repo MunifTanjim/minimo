@@ -1,6 +1,6 @@
 ---
 date: 2017-10-05T20:00:00+06:00
-lastmod: 2019-07-07T02:00:00+06:00
+lastmod: 2020-10-06T02:00:00+06:00
 title: Shortcodes
 authors: ["muniftanjim"]
 categories:
@@ -84,7 +84,7 @@ Include content from seperate file with syntax highlighting.
 
 ### file: Parameters
 
-0 => filename [`String`] \(required\)  
+0 => filename [`String`] \(required\)
 1 => filetype [`String`] \(optional\)
 
 ### file: Usage Example
@@ -144,7 +144,7 @@ You can use either Named or Unnamed Parameters
 
 **Unnamed Parameters**:
 
-0 => textsize [`String`] \(required\): multiplier relative to the normal size  
+0 => textsize [`String`] \(required\): multiplier relative to the normal size
 1 => textcolor [`String`] \(optional\): name / hex / rgb / rgba
 
 ### text: Usage Example
@@ -159,6 +159,26 @@ color: purple;
 **Output**:
 
 {{< text s="1.4" color="purple" >}}
-font-size: 1.5em;  
+font-size: 1.5em;
 color: purple;
 {{< /text >}}
+
+
+## Shortcode: slideshare
+
+As default Hugo's shortcodes for Twitter, Instagram, Vimeo, Youtube you can embed [SlideShare](https://www.slideshare.net/) presentation/document into your page.
+
+### slideshare: Parameters
+
+0 => id [`String`] \(required\): `id` of SlideShare you want to embed. You can find it in
+SlideShare URL or click "Share" -> See `id` field in "WordPress Shortcode" section.
+
+### slideshare: Usage Example
+
+```golang
+{{< slideshare 237760779 >}}
+```
+
+**Output**:
+
+{{< slideshare 237760779 >}}
