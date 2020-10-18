@@ -56,7 +56,7 @@ enable = true
 [params.widgets]
 header = ["breadcrumbs"]
 homepage = ["recent_posts"]
-sidebar = ["about","search","sidebar_menu","taxonomy_cloud", "translations"]
+sidebar = ["about","search","sidebar_menu","taxonomy_cloud"]
 footer = ["social_menu"]
 
 [params.opengraph.facebook]
@@ -143,8 +143,3 @@ hrefTargetBlank = true
 lang = "en"
 languageName = "English"
 weight = 1
-
-[languages.uk]
-lang = "uk"
-languageName = "Українська"
-weight = 2
