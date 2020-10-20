@@ -13,7 +13,7 @@ length = 5
 excludeTypes = ["page"]
 
 [search]
-title = "Search"
+title = ""
 
 [sidebar_menu]
 title = ""
