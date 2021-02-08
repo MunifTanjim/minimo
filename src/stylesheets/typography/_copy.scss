@@ -13,11 +13,17 @@ i {
   font-style: italic;
 }
 
+.quoteblock {
+  .attribution {
+    margin: 0 0 1.5em;
+  }
+}
+
 blockquote {
   @include font-size($font-size__blockquote);
   font-style: italic;
 
-  margin: 0 0 1.5em;
+  margin: 0 0 1em;
   padding-left: 1em;
   border-left: 0.2em solid $color__blockquote-border;
 }
