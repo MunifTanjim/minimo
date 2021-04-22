@@ -1,5 +1,12 @@
 {{- if not .Site.Params.settings.hideMainMenu -}}
 
+
+{{- $defaultConfig := .Site.Data.config.default.widgets.about -}}
+{{- $configData := ( or .Site.Data.config.widgets.about $defaultConfig ) -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $config := ( ( index $configData $lang ) | default $configData ) -}}
+
+
 <nav id='main-menu' class='menu main-menu' aria-label='{{ i18n "mainMenu" }}'>
   <div class='container'>
     {{ partial "sidebar/toggler" . }}
@@ -13,9 +20,19 @@
           {{- with .Post -}}{{- . -}}{{- end -}}
         </a>
       </li>
-    {{- end -}}
-    </ul>
-  </div>
+   {{- end -}}
+   </ul>
+
+
+    {{ with $config.logo }}
+    <div class='logo_mainmenu' style='max-width:2.9em;margin-left:auto;'>
+        <a href="/">
+	<img src='{{ . | relURL }}'>
+	</a>
+    </div>
+    {{ end }}
+
+
 </nav>
 
 {{- else -}}

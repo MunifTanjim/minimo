@@ -1,6 +1,6 @@
 [about]
-title = ""
-description = ""
+title = "Norma"
+description = "Norma photography collective"
 logo = "/images/logo.png"
 
 [breadcrumbs]
@@ -27,3 +27,7 @@ platforms = ["github","facebook","twitter","instagram","email","codepen","gitlab
 title = ""
 taxonomy = "tags"
 shuffle = true
+
+[author]
+  name = "Munif Tanjim"
+  homepage = "https://muniftanjim.com"

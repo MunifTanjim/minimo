@@ -10,3 +10,6 @@ twitter = "https://twitter.com/"
 telegram = "https://t.me/"
 google_scholar = "https://scholar.google.com/citations?user="
 youtube = "https://www.youtube.com/channel/"
+[author]
+  name = "Munif Tanjim"
+  homepage = "https://muniftanjim.com"
