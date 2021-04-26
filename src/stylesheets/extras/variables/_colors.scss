@@ -16,7 +16,7 @@ $color__light-grey: $color__grey-200;
 $color__white: $color__grey-50;
 $color__pure-white: #ffffff;
 
-$color__background-hr: $color__grey;
+$color__background-hr: $color__pure-white;
 $color__background-screen: $color__black;
 $color__background-code: $color__light-grey;
 
@@ -29,11 +29,11 @@ $color__text-code: $color__black;
 $color__button-background: $color__pure-white;
 $color__button-text: $color__text-main;
 
-$color__blockquote-border: $color__grey;
+$color__blockquote-border: $color__pure-white;
 
-$color__link: $color__black;
-$color__link-hover: $color__text-main;
+$color__link: #131b86;
+$color__link-hover: #5866ff;
 
-$color__border-input: $color__grey;
-$color__border-table: $color__grey;
+$color__border-input: $color__pure-white;
+$color__border-table: $color__pure-white;
 $color__border-code: darken($color__background-code, 7);
