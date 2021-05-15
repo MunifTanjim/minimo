@@ -4,7 +4,7 @@
 
     {{ with .Paginator.Prev }}
     <a class='page-link prev' href='{{ .URL }}'>
-      {{- partial "svg/icons" "prev" -}}
+      {{- partial "svg/icon" "prev" -}}
       <span class='screen-reader-text'>{{ i18n "previousPage" }}</span>
     </a>
     {{ end }}
@@ -37,7 +37,7 @@
     {{ with .Paginator.Next }}
     <a class='page-link next' href='{{ .URL }}'>
       <span class='screen-reader-text'>{{ i18n "nextPage" }}</span>
-      {{- partial "svg/icons" "next" -}}
+      {{- partial "svg/icon" "next" -}}
     </a>
     {{ end }}
 

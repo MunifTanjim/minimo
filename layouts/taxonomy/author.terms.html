@@ -12,7 +12,7 @@
     {{- $name := $data.name -}}
     <li class='item'>
       <h2 class='item-title'>
-        {{- partial "svg/icons" "author" -}}
+        {{- partial "svg/icon" "author" -}}
         <a href='{{ ( print "authors" "/" ( .Name | urlize ) ) | relLangURL }}'>
           {{- $name.display -}}
         </a>
