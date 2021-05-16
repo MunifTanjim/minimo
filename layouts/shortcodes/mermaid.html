@@ -1,7 +1,7 @@
 {{- if eq .Page.Params.mermaid true -}}
 
-<div class="mermaid">
-    {{ safeHTML .Inner }}
-</div>
+<script defer src="https://unpkg.com/mermaid@8.8.2/dist/mermaid.min.js">mermaid.initialize({startOnLoad:true});</script>
+<div class="mermaid" align="{{ if .Get "align" }}{{ .Get "align" }}{{ else }}center{{ end }}" >{{ safeHTML .Inner  }}</div>
+
 
 {{- end -}}
