@@ -3,8 +3,8 @@
 
 {{- partial "head/head" . -}}
 
-<body class='{{ partial "header/bodyClasses" . }}'>
-
+<body class='{{ partial "header/bodyClasses" . }}' {{- if eq .Page.Params.wavedrom true -}} onload="WaveDrom.ProcessAll()" {{- end -}}>
+  
   <div class='site'>
 
     {{- partial "sidebar/sidebar" . -}}
