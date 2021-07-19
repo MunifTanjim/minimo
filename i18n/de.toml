@@ -98,6 +98,9 @@ other = "{{ .Count }} Minuten Lesezeit"
 [recentPosts]
 other = "Vorherige Beiträge"
 
+[search]
+other = "Suchen"
+
 [skipToContent]
 other = "Zum Inhalt springen"
 
