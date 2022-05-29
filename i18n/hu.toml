@@ -1,0 +1,155 @@
+[author]
+one = "Szerző"
+other = "Szerzők"
+
+[authorsAvatar]
+other = "{{ .Author }} avatarja"
+
+[by]
+other = "írta"
+
+[cancel]
+other = "Mégse"
+
+[cancelComment]
+other = "Megjegyzés visszavonása"
+
+[category]
+one = "Kategória"
+other = "Kategóriák"
+
+[comment]
+other = "Megjegyzések"
+
+[commentSubmissionErrorMessage]
+other = "Hiba! Nem tudtam a megjegyzést beküldeni. Kérlek, próbáld újra!"
+
+[commentSubmissionErrorTitle]
+other = "Ooopsz! Bocsi!"
+
+[commentSubmissionSuccessMessage]
+other = "A megjegyzést beküldtem. Hamarosan meg fog jelenni."
+
+[commentSubmissionSuccessTitle]
+other = "Köszi!"
+
+[commentsOnEntry]
+one = "Csak {{ .Count }} megjegyzés van a {{ .Title }} cikkhez"
+other = "{{ .Count }} megjegyzés van a {{ .Title }} cikkhez"
+
+[contactViaEmail]
+other = "Írj e-mailt"
+
+[currentPage]
+other = "Aktuális oldal"
+
+[email]
+other = "E-mail"
+
+[gopher]
+other = "Gopher"
+
+[goHome]
+other = "Nyitólap..."
+
+[lastUpdated]
+other = "Utoljára frissítve"
+
+[leaveAComment]
+other = "Írj megjegyzést"
+
+[mainMenu]
+other = "Főmenü"
+
+[name]
+other = "Név"
+
+[next]
+other = "Következő"
+
+[nextPage]
+other = "Következő oldal"
+
+[nextPost]
+other = "Következő cikk"
+
+[noTerm]
+other = "Ez nem egyszerű {{ .Term }}!"
+
+[ok]
+other = "OK"
+
+[openAccountInNewTab]
+other = "A(z) {{ .Platform }} új lapon nyílik meg"
+
+[page]
+other = "Oldal"
+
+[previous]
+other = "Előző"
+
+[previousPage]
+other = "Előző oldal"
+
+[previousPost]
+other = "Előző cikk"
+
+[postedOn]
+other = "Megosztva"
+
+[readingTime]
+one = "Egyperces olvasnivaló"
+other = "{{ .Count }} percnyi olvasnivaló"
+
+[recentPosts]
+other = "Legújabb cikkek"
+
+[reply]
+other = "Válasz"
+
+[replyToAuthor]
+other = "Válaszolj a szerzőnek"
+
+[says]
+other = "írja"
+
+[search]
+other = "Keresés"
+
+[searchResultEmpty]
+other = "Nincs találat."
+
+[searching]
+other = "Keresés..."
+
+[series]
+one = "Sorozat"
+other = "Sorozatok"
+
+[sidebarMenu]
+other = "Oldalsó menü"
+
+[skipToContent]
+other = "Ugrás a tartalomhoz"
+
+[skipToMainMenu]
+other = "Ugrás a főmenühöz"
+
+[socialMenu]
+other = "Társasági menü"
+
+[submitComment]
+other = "Beküld"
+
+[tableOfContents]
+other = "Tartalom"
+
+[tag]
+one = "Címke"
+other = "Címkék"
+
+[toggleSidebar]
+other = "Oldalsáv kapcsolása"
+
+[website]
+other = "Honlap"
