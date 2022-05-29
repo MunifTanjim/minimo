@@ -1,0 +1,155 @@
+[author]
+one = "Yazar"
+other = "Yazarlar"
+
+[authorsAvatar]
+other = "{{ .Author }}'ın avatarı"
+
+[by]
+other = "tarafından"
+
+[cancel]
+other = "İptal et"
+
+[cancelComment]
+other = "Yorumu iptal et"
+
+[category]
+one = "Kategori"
+other = "Kategoriler"
+
+[comment]
+other = "Yorum"
+
+[commentSubmissionErrorMessage]
+other = "Hata oluştu. Yorumunuz gönderilemedi. Lütfen tekrar deneyin. Teşekkürler!"
+
+[commentSubmissionErrorTitle]
+other = "Ooops, üzgünüm!"
+
+[commentSubmissionSuccessMessage]
+other = "Yorumunuz gönderildi. Kısa zaman içerisinde bu sayfada görüntülenecek!"
+
+[commentSubmissionSuccessTitle]
+other = "Teşekkürler!"
+
+[commentsOnEntry]
+one = "{{ .Title }} için yalnızca {{ .Count }} yorum yapın"
+other = "{{ .Title }} hakkında {{ .Count }} yorum"
+
+[contactViaEmail]
+other = "E-posta yoluyla iletişim"
+
+[currentPage]
+other = "Şu anki sayfa"
+
+[email]
+other = "E-posta"
+
+[gopher]
+other = "Sincap"
+
+[goHome]
+other = "Ana sayfaya gidin..."
+
+[lastUpdated]
+other = "Son güncelleme"
+
+[leaveAComment]
+other = "Yorum yap"
+
+[mainMenu]
+other = "Ana Menü"
+
+[name]
+other = "İsim"
+
+[next]
+other = "Sonraki"
+
+[nextPage]
+other = "Sonraki sayfa"
+
+[nextPost]
+other = "Sonraki gönderi"
+
+[noTerm]
+other = "Tek bir {{ .Term }} değil!"
+
+[ok]
+other = "Tamam"
+
+[openAccountInNewTab]
+other = "{{ .Platform }} hesabını yeni sekmede açın"
+
+[page]
+other = "Sayfa"
+
+[previous]
+other = "Önceki"
+
+[previousPage]
+other = "Önceki sayfa"
+
+[previousPost]
+other = "Önceki gönderi"
+
+[postedOn]
+other = "Gönderilme tarihi"
+
+[readingTime]
+one = "1 dk okuma süresi"
+other = "{{ .Count }} dakika okuma süresi"
+
+[recentPosts]
+other = "Yeni Gönderiler"
+
+[reply]
+other = "Yanıtla"
+
+[replyToAuthor]
+other = "{{ .Author }}'a yanıt verin"
+
+[says]
+other = "der"
+
+[search]
+other = "Ara"
+
+[searchResultEmpty]
+other = "Herhangi bir şey bulunamadı!"
+
+[searching]
+other = "Arıyor"
+
+[series]
+one = "Dizi"
+other = "Diziler"
+
+[sidebarMenu]
+other = "Yan Menü"
+
+[skipToContent]
+other = "İçeriğe geç"
+
+[skipToMainMenu]
+other = "Ana menüye geç"
+
+[socialMenu]
+other = "Sosyal Menü"
+
+[submitComment]
+other = "Yorumu gönder!"
+
+[tableOfContents]
+other = "İçindekiler"
+
+[tag]
+one = "Etiket"
+other = "Etiketler"
+
+[toggleSidebar]
+other = "Kenar çubuğunu kapat"
+
+[website]
+other = "Web site"
