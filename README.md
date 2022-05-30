@@ -32,6 +32,19 @@ A good idea is to double check all the [Configuration settings](https://minimo.n
 
 If you find a bug or want to request a new feature, feel free to open an issue.
 
+
+
+## [Add hugo contact form](https://fabform.io/a/hugo-contact-form)
+
+```
+<form action="https://fabform.io/f/{form-id}" method="post">
+ <label for="email">Your Email</label>
+ <input name="email" type="email">
+ <button type="submit">Submit</button> 
+</form>
+```
+
+
 ## Changelog
 
 [Changelog for Minimo](https://github.com/MunifTanjim/minimo/blob/master/CHANGELOG.md)
