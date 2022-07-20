@@ -2,12 +2,40 @@
 one = "Autor"
 other = "Autores"
 
+[authorsAvatar]
+other = "Avatar de {{ .Author }}"
+
 [by]
 other = "por"
+
+[cancel]
+other = "Cancelar"
+
+[cancelComment]
+other = "Cancelar comentário"
 
 [category]
 one = "Categoria"
 other = "Categorias"
+
+[comment]
+other = "Comentar"
+
+[commentSubmissionErrorMessage]
+other = "Ocorreu um erro. Seu comentário não pôde ser enviado. Por favor, tente novamente. Obrigado!"
+
+[commentSubmissionErrorTitle]
+other = "Eita, desculpa!"
+
+[commentSubmissionSuccessMessage]
+other = "Seu comentário foi enviado. Aparecerá em breve nesta página!"
+
+[commentSubmissionSuccessTitle]
+other = "Obrigado!"
+
+[commentsOnEntry]
+one = "Apenas {{ .Count }} comentário em {{ .Title }}"
+other = "{{ .Count }} comentários em {{ .Title }}"
 
 [contactViaEmail]
 other = "Entre em contato por email"
@@ -15,14 +43,26 @@ other = "Entre em contato por email"
 [currentPage]
 other = "Página atual"
 
+[email]
+other = "Email"
+
 [gopher]
 other = "Gopher"
 
 [goHome]
-other = "Página principal..."
+other = "Ir para o início..."
+
+[lastUpdated]
+other = "Ultima atualização"
+
+[leaveAComment]
+other = "Deixe um comentário"
 
 [mainMenu]
-other = "Página principal"
+other = "Menu principal"
+
+[name]
+other = "Nome"
 
 [next]
 other = "Próximo"
@@ -31,13 +71,16 @@ other = "Próximo"
 other = "Próxima página"
 
 [nextPost]
-other = "Próximo post"
+other = "Próxima publicação"
 
 [noTerm]
 other = "{{ .Term }} não foi encontrado!"
 
+[ok]
+other = "OK"
+
 [openAccountInNewTab]
-other = "Abra a {{ .Platform }} em uma nova aba"
+other = "Abra {{ .Platform }} em uma nova aba"
 
 [page]
 other = "Página"
@@ -49,23 +92,54 @@ other = "Anterior"
 other = "Página anterior"
 
 [previousPost]
-other = "Post anterior"
+other = "Publicação anterior"
 
 [postedOn]
-other = "Postado em"
+other = "Publicado em"
 
 [readingTime]
 one = "Um minuto de leitura"
 other = "{{ .Count }} minutos de leitura"
 
 [recentPosts]
-other = "Posts recentes"
+other = "Publicações recentes"
+
+[reply]
+other = "Responder"
+
+[replyToAuthor]
+other = "Responder a {{ .Author }}"
+
+[says]
+other = "diz"
+
+[search]
+other = "Buscar"
+
+[searchResultEmpty]
+other = "Nada encontrado!"
+
+[searching]
+other = "Buscando"
+
+[series]
+one = "Série"
+other = "Séries"
+
+[sidebarMenu]
+other = "Sidebar Menu"
 
 [skipToContent]
-other = "Pular para o conteúdo"
+other = "Pular para Índice"
+
+[skipToMainMenu]
+other = "Pular para Menu Principal"
 
 [socialMenu]
 other = "Menu Social"
+
+[submitComment]
+other = "Comente!"
 
 [tableOfContents]
 other = "Índice"
@@ -73,3 +147,9 @@ other = "Índice"
 [tag]
 one = "Tag"
 other = "Tags"
+
+[toggleSidebar]
+other = "Habilitar barra lateral"
+
+[website]
+other = "Website"
