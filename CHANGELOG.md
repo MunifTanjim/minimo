@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+- ...
+
+## [2.10.0] - 2022-09-17
+
 ### Added
 
 - Occitan translation
@@ -332,7 +336,8 @@
 
 - Initial stable release
 
-[unreleased]: https://github.com/MunifTanjim/minimo/compare/v2.9.0...HEAD
+[unreleased]: https://github.com/MunifTanjim/minimo/compare/v2.10.0...HEAD
+[2.10.0]: https://github.com/MunifTanjim/minimo/compare/v2.9.0...v2.10.0
 [2.9.0]: https://github.com/MunifTanjim/minimo/compare/v2.8.0...v2.9.0
 [2.8.0]: https://github.com/MunifTanjim/minimo/compare/v2.7.0...v2.8.0
 [2.7.0]: https://github.com/MunifTanjim/minimo/compare/2.6.0...v2.7.0
