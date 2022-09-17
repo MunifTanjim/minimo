@@ -1,6 +1,6 @@
 ---
 date: 2018-02-07T18:30:00+06:00
-lastmod: 2018-11-21T19:00:00+06:00
+lastmod: 2022-09-22T18:00:00+06:00
 title: Widgets
 authors: ["muniftanjim"]
 categories:
@@ -42,7 +42,7 @@ Here are the configuration options available for the Widgets:
   - `description` [`String`]: Description  
     _default: `.Site.Params.info.description`_
   - `logo` [`String`]: path/url of Logo  
-    _default: `"/images/logo.png"`_
+    _default: `"images/logo.png"`_
 
 #### Widget: Breadcrumbs
 

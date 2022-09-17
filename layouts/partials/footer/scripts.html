@@ -1,6 +1,6 @@
 <script>window.__assets_js_src={{- "assets/js/" | relURL -}}</script>
 
-<script src='{{ print "/assets/js/" .Site.Data.assets.main.js | relURL }}'></script>
+<script src='{{ print "assets/js/" .Site.Data.assets.main.js | relURL }}'></script>
 
 {{- range .Site.Params.assets.customJS -}}
   <script src='{{ . | relURL }}'></script>
