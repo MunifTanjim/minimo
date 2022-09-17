@@ -2,7 +2,28 @@
 
 ## [Unreleased]
 
-- ...
+### Added
+
+- Occitan translation
+- Ukrainian translation improvements
+- `rel="me"` in Social Menu
+- Shortcode: `slideshare`
+- German translation improvements
+- Hungarian translation
+- Turkish translation
+- Brazilian Portuguese translation improvements
+- Documentation for Archive layout
+
+### Changed
+
+- Refactor SVG icons
+- Utterances comment system improvements
+
+### Fixed
+
+- Shortcode: `katex`
+- i18n support for `search` widget
+- Issues: #337
 
 ## [2.9.0] - 2020-07-18
 
