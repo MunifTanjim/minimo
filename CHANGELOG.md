@@ -4,6 +4,12 @@
 
 - ...
 
+## [2.10.1] - 2022-09-21
+
+### Changed
+
+- Update theme config
+
 ## [2.10.0] - 2022-09-17
 
 ### Added
@@ -336,7 +342,8 @@
 
 - Initial stable release
 
-[unreleased]: https://github.com/MunifTanjim/minimo/compare/v2.10.0...HEAD
+[unreleased]: https://github.com/MunifTanjim/minimo/compare/v2.10.1...HEAD
+[2.10.1]: https://github.com/MunifTanjim/minimo/compare/v2.10.0...v2.10.1
 [2.10.0]: https://github.com/MunifTanjim/minimo/compare/v2.9.0...v2.10.0
 [2.9.0]: https://github.com/MunifTanjim/minimo/compare/v2.8.0...v2.9.0
 [2.8.0]: https://github.com/MunifTanjim/minimo/compare/v2.7.0...v2.8.0
