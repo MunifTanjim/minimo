@@ -1,0 +1,192 @@
+[{
+  "id": "author",
+  "translation": {
+    "one": "作者",
+    "other": "作者们"
+  },
+  "id": "authorsAvatar",
+  "translation": {
+    "other": "{{ .Author }}的头像"
+  },
+  "id": "by",
+  "translation": {
+    "other": "by"
+  },
+  "id": "cancel",
+  "translation": {
+    "other": "取消"
+  },
+  "id": "cancelComment",
+  "translation": {
+    "other": "取消评论"
+  },
+  "id": "category",
+  "translation": {
+    "one": "分类",
+    "other": "分类"
+  },
+  "id": "comment",
+  "translation": {
+    "other": "评论"
+  },
+  "id": "commentSubmissionErrorMessage",
+  "translation": {
+    "other": "发生错误。无法提交您的评论。请再试一次。谢谢你！"
+  },
+  "id": "commentSubmissionErrorTitle",
+  "translation": {
+    "other": "啊，抱歉！"
+  },
+  "id": "commentSubmissionSuccessMessage",
+  "translation": {
+    "other": "您的评论已提交。它不久后将会出现在该页面！"
+  },
+  "id": "commentSubmissionSuccessTitle",
+  "translation": {
+    "other": "谢谢你！"
+  },
+  "id": "commentsOnEntry",
+  "translation": {
+    "one": "只有{{ .Count }}评论了{{ .Title }}",
+    "other": "{{ .Count }}评论了{{ .Title }}"
+  },
+  "id": "contactViaEmail",
+  "translation": {
+    "other": "通过邮件联系"
+  },
+  "id": "currentPage",
+  "translation": {
+    "other": "当前页"
+  },
+  "id": "email",
+  "translation": {
+    "other": "邮件"
+  },
+  "id": "gopher",
+  "translation": {
+    "other": "Gopher"
+  },
+  "id": "goHome",
+  "translation": {
+    "other": "去主页..."
+  },
+  "id": "leaveAComment",
+  "translation": {
+    "other": "发表评论"
+  },
+  "id": "mainMenu",
+  "translation": {
+    "other": "主菜单"
+  },
+  "id": "name",
+  "translation": {
+    "other": "名字"
+  },
+  "id": "next",
+  "translation": {
+    "other": "下一个"
+  },
+  "id": "nextPage",
+  "translation": {
+    "other": "下一页"
+  },
+  "id": "nextPost",
+  "translation": {
+    "other": "下一篇文章"
+  },
+  "id": "noTerm",
+  "translation": {
+    "other": "一个{{ .Term }}也没有!"
+  },
+  "id": "ok",
+  "translation": {
+    "other": "OK"
+  },
+  "id": "openAccountInNewTab",
+  "translation": {
+    "other": "在新标签打开{{ .Platform }}的账户"
+  },
+  "id": "page",
+  "translation": {
+    "other": "页面"
+  },
+  "id": "previous",
+  "translation": {
+    "other": "上一个"
+  },
+  "id": "previousPage",
+  "translation": {
+    "other": "上一页"
+  },
+  "id": "previousPost",
+  "translation": {
+    "other": "上一篇文章"
+  },
+  "id": "postedOn",
+  "translation": {
+    "other": "发布"
+  },
+  "id": "readingTime",
+  "translation": {
+    "one": "需要一分钟读完",
+    "other": "需要{{ .Count }}分钟读完"
+  },
+  "id": "recentPosts",
+  "translation": {
+    "other": "最近文章"
+  },
+  "id": "reply",
+  "translation": {
+    "other": "回复"
+  },
+  "id": "replyToAuthor",
+  "translation": {
+    "other": "回复{{ .Author }}"
+  },
+  "id": "says",
+  "translation": {
+    "other": "言论"
+  },
+  "id": "series",
+  "translation": {
+    "one": "系列",
+    "other": "系列"
+  },
+  "id": "sidebarMenu",
+  "translation": {
+    "other": "侧边菜单"
+  },
+  "id": "skipToContent",
+  "translation": {
+    "other": "跳到文章"
+  },
+  "id": "skipToMainMenu",
+  "translation": {
+    "other": "跳到主页"
+  },
+  "id": "socialMenu",
+  "translation": {
+    "other": "社交菜单"
+  },
+  "id": "submitComment",
+  "translation": {
+    "other": "评论"
+  },
+  "id": "tableOfContents",
+  "translation": {
+    "other": "内容目录"
+  },
+  "id": "tag",
+  "translation": {
+    "one": "标签",
+    "other": "标签"
+  },
+  "id": "toggleSidebar",
+  "translation": {
+    "other": "切换侧边栏"
+  },
+  "id": "website",
+  "translation": {
+    "other": "网站"
+  }
+}]

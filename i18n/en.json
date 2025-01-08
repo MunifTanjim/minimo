@@ -1,0 +1,216 @@
+[{
+  "id": "author",
+  "translation": {
+    "one": "Author",
+    "other": "Authors"
+  },
+  "id": "authorsAvatar",
+  "translation": {
+    "other": "{{ .Author }}'s avatar"
+  },
+  "id": "by",
+  "translation": {
+    "other": "by"
+  },
+  "id": "cancel",
+  "translation": {
+    "other": "Cancel"
+  },
+  "id": "cancelComment",
+  "translation": {
+    "other": "Cancel comment"
+  },
+  "id": "category",
+  "translation": {
+    "one": "Category",
+    "other": "Categories"
+  },
+  "id": "comment",
+  "translation": {
+    "other": "Comment"
+  },
+  "id": "commentSubmissionErrorMessage",
+  "translation": {
+    "other": "Error occured. Couldn't submit your comment. Please try again. Thank You!"
+  },
+  "id": "commentSubmissionErrorTitle",
+  "translation": {
+    "other": "Yikes, Sorry!"
+  },
+  "id": "commentSubmissionSuccessMessage",
+  "translation": {
+    "other": "Your comment has been submitted. It will appear on this page shortly!"
+  },
+  "id": "commentSubmissionSuccessTitle",
+  "translation": {
+    "other": "Thank You!"
+  },
+  "id": "commentsOnEntry",
+  "translation": {
+    "one": "Only {{ .Count }} comment on {{ .Title }}",
+    "other": "{{ .Count }} comments on {{ .Title }}"
+  },
+  "id": "contactViaEmail",
+  "translation": {
+    "other": "Contact via Email"
+  },
+  "id": "currentPage",
+  "translation": {
+    "other": "Current page"
+  },
+  "id": "email",
+  "translation": {
+    "other": "Email"
+  },
+  "id": "gopher",
+  "translation": {
+    "other": "Gopher"
+  },
+  "id": "goHome",
+  "translation": {
+    "other": "Go Home..."
+  },
+  "id": "lastUpdated",
+  "translation": {
+    "other": "Last updated"
+  },
+  "id": "languages",
+  "translation": {
+    "other": "Languages"
+  },
+  "id": "leaveAComment",
+  "translation": {
+    "other": "Leave a comment"
+  },
+  "id": "mainMenu",
+  "translation": {
+    "other": "Main Menu"
+  },
+  "id": "name",
+  "translation": {
+    "other": "Name"
+  },
+  "id": "next",
+  "translation": {
+    "other": "Next"
+  },
+  "id": "nextPage",
+  "translation": {
+    "other": "Next page"
+  },
+  "id": "nextPost",
+  "translation": {
+    "other": "Next post"
+  },
+  "id": "noTerm",
+  "translation": {
+    "other": "Not a single {{ .Term }}!"
+  },
+  "id": "ok",
+  "translation": {
+    "other": "OK"
+  },
+  "id": "openAccountInNewTab",
+  "translation": {
+    "other": "Open {{ .Platform }} account in new tab"
+  },
+  "id": "page",
+  "translation": {
+    "other": "Page"
+  },
+  "id": "previous",
+  "translation": {
+    "other": "Previous"
+  },
+  "id": "previousPage",
+  "translation": {
+    "other": "Previous page"
+  },
+  "id": "previousPost",
+  "translation": {
+    "other": "Previous post"
+  },
+  "id": "postedOn",
+  "translation": {
+    "other": "Posted on"
+  },
+  "id": "readingTime",
+  "translation": {
+    "one": "One min read",
+    "other": "{{ .Count }} mins read"
+  },
+  "id": "recentPosts",
+  "translation": {
+    "other": "Recent Posts"
+  },
+  "id": "reply",
+  "translation": {
+    "other": "Reply"
+  },
+  "id": "replyToAuthor",
+  "translation": {
+    "other": "Reply to {{ .Author }}"
+  },
+  "id": "says",
+  "translation": {
+    "other": "says"
+  },
+  "id": "search",
+  "translation": {
+    "other": "Search"
+  },
+  "id": "searchResultEmpty",
+  "translation": {
+    "other": "Nothing found!"
+  },
+  "id": "searching",
+  "translation": {
+    "other": "Searching"
+  },
+  "id": "series",
+  "translation": {
+    "one": "Series",
+    "other": "Series"
+  },
+  "id": "sidebarMenu",
+  "translation": {
+    "other": "Sidebar Menu"
+  },
+  "id": "skipToContent",
+  "translation": {
+    "other": "Skip to Content"
+  },
+  "id": "skipToMainMenu",
+  "translation": {
+    "other": "Skip to Main Menu"
+  },
+  "id": "socialMenu",
+  "translation": {
+    "other": "Social Menu"
+  },
+  "id": "submitComment",
+  "translation": {
+    "other": "Comment!"
+  },
+  "id": "tableOfContents",
+  "translation": {
+    "other": "Table of Contents"
+  },
+  "id": "tag",
+  "translation": {
+    "one": "Tag",
+    "other": "Tags"
+  },
+  "id": "toggleSidebar",
+  "translation": {
+    "other": "Toggle Sidebar"
+  },
+  "id": "translations",
+  "translation": {
+    "other": "Translations"
+  },
+  "id": "website",
+  "translation": {
+    "other": "Website"
+  }
+}]

@@ -1,0 +1,102 @@
+[{
+  "id": "author",
+  "translation": {
+    "one": "Autor",
+    "other": "Autores"
+  },
+  "id": "by",
+  "translation": {
+    "other": "por"
+  },
+  "id": "category",
+  "translation": {
+    "one": "Categoria",
+    "other": "Categorias"
+  },
+  "id": "contactViaEmail",
+  "translation": {
+    "other": "Entre em contato por email"
+  },
+  "id": "currentPage",
+  "translation": {
+    "other": "Página atual"
+  },
+  "id": "gopher",
+  "translation": {
+    "other": "Gopher"
+  },
+  "id": "goHome",
+  "translation": {
+    "other": "Página principal..."
+  },
+  "id": "mainMenu",
+  "translation": {
+    "other": "Página principal"
+  },
+  "id": "next",
+  "translation": {
+    "other": "Próximo"
+  },
+  "id": "nextPage",
+  "translation": {
+    "other": "Próxima página"
+  },
+  "id": "nextPost",
+  "translation": {
+    "other": "Próximo post"
+  },
+  "id": "noTerm",
+  "translation": {
+    "other": "{{ .Term }} não foi encontrado!"
+  },
+  "id": "openAccountInNewTab",
+  "translation": {
+    "other": "Abra a {{ .Platform }} em uma nova aba"
+  },
+  "id": "page",
+  "translation": {
+    "other": "Página"
+  },
+  "id": "previous",
+  "translation": {
+    "other": "Anterior"
+  },
+  "id": "previousPage",
+  "translation": {
+    "other": "Página anterior"
+  },
+  "id": "previousPost",
+  "translation": {
+    "other": "Post anterior"
+  },
+  "id": "postedOn",
+  "translation": {
+    "other": "Postado em"
+  },
+  "id": "readingTime",
+  "translation": {
+    "one": "Um minuto de leitura",
+    "other": "{{ .Count }} minutos de leitura"
+  },
+  "id": "recentPosts",
+  "translation": {
+    "other": "Posts recentes"
+  },
+  "id": "skipToContent",
+  "translation": {
+    "other": "Pular para o conteúdo"
+  },
+  "id": "socialMenu",
+  "translation": {
+    "other": "Menu Social"
+  },
+  "id": "tableOfContents",
+  "translation": {
+    "other": "Índice"
+  },
+  "id": "tag",
+  "translation": {
+    "one": "Tag",
+    "other": "Tags"
+  }
+}]

@@ -1,0 +1,208 @@
+[{
+  "id": "author",
+  "translation": {
+    "one": "Pengarang",
+    "other": "Pengarang"
+  },
+  "id": "authorsAvatar",
+  "translation": {
+    "other": "Avatar {{ .Author }}"
+  },
+  "id": "by",
+  "translation": {
+    "other": "oleh"
+  },
+  "id": "cancel",
+  "translation": {
+    "other": "Batal"
+  },
+  "id": "cancelComment",
+  "translation": {
+    "other": "Batal menanggapi"
+  },
+  "id": "category",
+  "translation": {
+    "one": "Kategori",
+    "other": "Kategori"
+  },
+  "id": "comment",
+  "translation": {
+    "other": "Tanggapan"
+  },
+  "id": "commentSubmissionErrorMessage",
+  "translation": {
+    "other": "Terdapat galat. Tidak dapat mengirim tanggapanmu. Silakan coba lagi. Terima kasih."
+  },
+  "id": "commentSubmissionErrorTitle",
+  "translation": {
+    "other": "Oops, maaf."
+  },
+  "id": "commentSubmissionSuccessMessage",
+  "translation": {
+    "other": "Tanggapanmu telah dikirim dan akan segera muncul di laman ini."
+  },
+  "id": "commentSubmissionSuccessTitle",
+  "translation": {
+    "other": "Terima kasih."
+  },
+  "id": "commentsOnEntry",
+  "translation": {
+    "one": "Hanya terdapat {{ .Count }} tanggapan di {{ .Title }}",
+    "other": "Terdapat {{ .Count }} tanggapan di {{ .Title }}"
+  },
+  "id": "contactViaEmail",
+  "translation": {
+    "other": "Hubungi melalui Surel"
+  },
+  "id": "currentPage",
+  "translation": {
+    "other": "Laman saat ini"
+  },
+  "id": "email",
+  "translation": {
+    "other": "Surel"
+  },
+  "id": "gopher",
+  "translation": {
+    "other": "Gopher"
+  },
+  "id": "goHome",
+  "translation": {
+    "other": "Ke Beranda..."
+  },
+  "id": "lastUpdated",
+  "translation": {
+    "other": "Pembaruan terakhir"
+  },
+  "id": "leaveAComment",
+  "translation": {
+    "other": "Tinggalkan tanggapan"
+  },
+  "id": "mainMenu",
+  "translation": {
+    "other": "Menu Utama"
+  },
+  "id": "name",
+  "translation": {
+    "other": "Nama"
+  },
+  "id": "next",
+  "translation": {
+    "other": "Selanjutnya"
+  },
+  "id": "nextPage",
+  "translation": {
+    "other": "Laman selanjutnya"
+  },
+  "id": "nextPost",
+  "translation": {
+    "other": "Pos Selanjutnya"
+  },
+  "id": "noTerm",
+  "translation": {
+    "other": "Tidak ada satu pun {{ .Term }}!"
+  },
+  "id": "ok",
+  "translation": {
+    "other": "Oke"
+  },
+  "id": "openAccountInNewTab",
+  "translation": {
+    "other": "Buka akun {{ .Platform }} di tab baru"
+  },
+  "id": "page",
+  "translation": {
+    "other": "Laman"
+  },
+  "id": "previous",
+  "translation": {
+    "other": "Sebelumnya"
+  },
+  "id": "previousPage",
+  "translation": {
+    "other": "Laman sebelumnya"
+  },
+  "id": "previousPost",
+  "translation": {
+    "other": "Pos sebelumnya"
+  },
+  "id": "postedOn",
+  "translation": {
+    "other": "Diposkan pada"
+  },
+  "id": "readingTime",
+  "translation": {
+    "one": "1 menit membaca",
+    "other": "{{ .Count }} menit membaca"
+  },
+  "id": "recentPosts",
+  "translation": {
+    "other": "Pos Terakhir"
+  },
+  "id": "reply",
+  "translation": {
+    "other": "Balas"
+  },
+  "id": "replyToAuthor",
+  "translation": {
+    "other": "Balas kepada {{ .Author }}"
+  },
+  "id": "says",
+  "translation": {
+    "other": "mengatakan"
+  },
+  "id": "search",
+  "translation": {
+    "other": "Cari"
+  },
+  "id": "searchResultEmpty",
+  "translation": {
+    "other": "Tidak ditemukan"
+  },
+  "id": "searching",
+  "translation": {
+    "other": "Mencari"
+  },
+  "id": "series",
+  "translation": {
+    "one": "Seri",
+    "other": "Seri"
+  },
+  "id": "sidebarMenu",
+  "translation": {
+    "other": "Menu Sisi"
+  },
+  "id": "skipToContent",
+  "translation": {
+    "other": "Lompat ke konten"
+  },
+  "id": "skipToMainMenu",
+  "translation": {
+    "other": "Lompat ke Menu Utama"
+  },
+  "id": "socialMenu",
+  "translation": {
+    "other": "Menu Sosial"
+  },
+  "id": "submitComment",
+  "translation": {
+    "other": "Taggapi"
+  },
+  "id": "tableOfContents",
+  "translation": {
+    "other": "Daftar Isi"
+  },
+  "id": "tag",
+  "translation": {
+    "one": "Label",
+    "other": "Label"
+  },
+  "id": "toggleSidebar",
+  "translation": {
+    "other": "Buka/Tutup Bilah Sisi"
+  },
+  "id": "website",
+  "translation": {
+    "other": "Situs web"
+  }
+}]

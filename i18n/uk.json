@@ -1,0 +1,208 @@
+[{
+  "id": "author",
+  "translation": {
+    "one": "Автор",
+    "other": "Автори"
+  },
+  "id": "authorsAvatar",
+  "translation": {
+    "other": "Аватар {{ .Author }}"
+  },
+  "id": "by",
+  "translation": {
+    "other": ""
+  },
+  "id": "cancel",
+  "translation": {
+    "other": "Відміна"
+  },
+  "id": "cancelComment",
+  "translation": {
+    "other": "Відмінити коментар"
+  },
+  "id": "category",
+  "translation": {
+    "one": "Категорія",
+    "other": "Категорії"
+  },
+  "id": "comment",
+  "translation": {
+    "other": "Коментар"
+  },
+  "id": "commentSubmissionErrorMessage",
+  "translation": {
+    "other": "Виникла помилка. Не можу надіслати коментар. Будь ласка, спробуйте ще раз. Дякую!"
+  },
+  "id": "commentSubmissionErrorTitle",
+  "translation": {
+    "other": "Упс, перепрошую!"
+  },
+  "id": "commentSubmissionSuccessMessage",
+  "translation": {
+    "other": "Ваш коментар надіслано. Скоро він з'явиться на сторінці!"
+  },
+  "id": "commentSubmissionSuccessTitle",
+  "translation": {
+    "other": "Дякую!"
+  },
+  "id": "commentsOnEntry",
+  "translation": {
+    "one": "Лише {{ .Count }} коментар на {{ .Title }}",
+    "other": "{{ .Count }} коментарів на {{ .Title }}"
+  },
+  "id": "contactViaEmail",
+  "translation": {
+    "other": "Написати на пошту"
+  },
+  "id": "currentPage",
+  "translation": {
+    "other": "Поточна сторінка"
+  },
+  "id": "email",
+  "translation": {
+    "other": "Ел.пошта"
+  },
+  "id": "gopher",
+  "translation": {
+    "other": "Gopher"
+  },
+  "id": "goHome",
+  "translation": {
+    "other": "Додому..."
+  },
+  "id": "lastUpdated",
+  "translation": {
+    "other": "Востаннє оновлено..."
+  },
+  "id": "leaveAComment",
+  "translation": {
+    "other": "Залишити коментар"
+  },
+  "id": "mainMenu",
+  "translation": {
+    "other": "Головне меню"
+  },
+  "id": "name",
+  "translation": {
+    "other": "Ім'я"
+  },
+  "id": "next",
+  "translation": {
+    "other": "Наступний"
+  },
+  "id": "nextPage",
+  "translation": {
+    "other": "Наступна сторінка"
+  },
+  "id": "nextPost",
+  "translation": {
+    "other": "Наступний пост"
+  },
+  "id": "noTerm",
+  "translation": {
+    "other": "Немає жодного {{ .Term }}!"
+  },
+  "id": "ok",
+  "translation": {
+    "other": "OK"
+  },
+  "id": "openAccountInNewTab",
+  "translation": {
+    "other": "Відкрити {{ .Platform }} акаунт у новій вкладці"
+  },
+  "id": "page",
+  "translation": {
+    "other": "Сторінка"
+  },
+  "id": "previous",
+  "translation": {
+    "other": "Попередня"
+  },
+  "id": "previousPage",
+  "translation": {
+    "other": "Попередня сторінка"
+  },
+  "id": "previousPost",
+  "translation": {
+    "other": "Попередній пост"
+  },
+  "id": "postedOn",
+  "translation": {
+    "other": "Опубліковано"
+  },
+  "id": "readingTime",
+  "translation": {
+    "one": "Одна хвилина читання",
+    "other": "{{ .Count }} хвилин читатання"
+  },
+  "id": "recentPosts",
+  "translation": {
+    "other": "Останні пости"
+  },
+  "id": "reply",
+  "translation": {
+    "other": "Відповісти"
+  },
+  "id": "replyToAuthor",
+  "translation": {
+    "other": "Відповісти {{ .Author }}"
+  },
+  "id": "says",
+  "translation": {
+    "other": "каже"
+  },
+  "id": "search",
+  "translation": {
+    "other": "Пошук"
+  },
+  "id": "searchResultEmpty",
+  "translation": {
+    "other": "Нічого не знайдено!"
+  },
+  "id": "searching",
+  "translation": {
+    "other": "Пошук"
+  },
+  "id": "series",
+  "translation": {
+    "one": "Ряд",
+    "other": "Ряд"
+  },
+  "id": "sidebarMenu",
+  "translation": {
+    "other": "Бічне меню"
+  },
+  "id": "skipToContent",
+  "translation": {
+    "other": "Перескочити до змісту"
+  },
+  "id": "skipToMainMenu",
+  "translation": {
+    "other": "Перескочити до головного меню"
+  },
+  "id": "socialMenu",
+  "translation": {
+    "other": "Меню соц.мереж"
+  },
+  "id": "submitComment",
+  "translation": {
+    "other": "Коментувати!"
+  },
+  "id": "tableOfContents",
+  "translation": {
+    "other": "Зміст"
+  },
+  "id": "tag",
+  "translation": {
+    "one": "Tag",
+    "other": "Теги"
+  },
+  "id": "toggleSidebar",
+  "translation": {
+    "other": "Вкл/Викл бічне меню"
+  },
+  "id": "website",
+  "translation": {
+    "other": "Вебсайт"
+  }
+}]

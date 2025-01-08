@@ -1,0 +1,110 @@
+[{
+  "id": "author",
+  "translation": {
+    "one": "Autor",
+    "few": "Autorów",
+    "many": "Autorów",
+    "other": "Autora"
+  },
+  "id": "by",
+  "translation": {
+    "other": "przez"
+  },
+  "id": "category",
+  "translation": {
+    "one": "Kategoria",
+    "few": "Kategorie",
+    "many": "Kategorii",
+    "other": "Kategorii"
+  },
+  "id": "contactViaEmail",
+  "translation": {
+    "other": "Kontakt przez e-mail"
+  },
+  "id": "currentPage",
+  "translation": {
+    "other": "Aktualna strona"
+  },
+  "id": "gopher",
+  "translation": {
+    "other": "Gopher"
+  },
+  "id": "goHome",
+  "translation": {
+    "other": "Idź na start..."
+  },
+  "id": "mainMenu",
+  "translation": {
+    "other": "Menu Główne"
+  },
+  "id": "next",
+  "translation": {
+    "other": "Następny"
+  },
+  "id": "nextPage",
+  "translation": {
+    "other": "Następna strona"
+  },
+  "id": "nextPost",
+  "translation": {
+    "other": "Następny post"
+  },
+  "id": "noTerm",
+  "translation": {
+    "other": "Brakuje: {{ .Term }}!"
+  },
+  "id": "openAccountInNewTab",
+  "translation": {
+    "other": "Otwórz {{ .Platform }} w nowej karcie"
+  },
+  "id": "page",
+  "translation": {
+    "other": "Strona"
+  },
+  "id": "previous",
+  "translation": {
+    "other": "Poprzedni"
+  },
+  "id": "previousPage",
+  "translation": {
+    "other": "Poprzednia strona"
+  },
+  "id": "previousPost",
+  "translation": {
+    "other": "Poprzedni post"
+  },
+  "id": "postedOn",
+  "translation": {
+    "other": "Wysłane dnia"
+  },
+  "id": "readingTime",
+  "translation": {
+    "one": "Jedna minuta czytania",
+    "few": "{{ .Count }} minuty czytania",
+    "many": "{{ .Count }} minut czytania",
+    "other": "{{ .Count }} minut czytania"
+  },
+  "id": "recentPosts",
+  "translation": {
+    "other": "Ostatnie Posty"
+  },
+  "id": "skipToContent",
+  "translation": {
+    "other": "Przejdź do Treści"
+  },
+  "id": "socialMenu",
+  "translation": {
+    "other": "Menu Społecznościowe"
+  },
+  "id": "tableOfContents",
+  "translation": {
+    "other": "Spis Treści"
+  },
+  "id": "tag",
+  "translation": {
+    "one": "Tag",
+    "few": "Tagi",
+    "many": "Tagów",
+    "other": "Taga"
+  }
+}]

@@ -5,7 +5,7 @@
 
 {{- define "breadcrumbs_add_parents" -}}
   {{- .Scratch.Set "parent" .Page.Parent -}}
-  {{- if eq .Page.Kind "taxonomy" -}}
+  {{- if eq .Page.Kind "term" -}}
     {{- .Scratch.Set "parent" ( .Page.Site.GetPage ( print "/" .Page.Data.Plural ) ) -}}
   {{- end -}}
 

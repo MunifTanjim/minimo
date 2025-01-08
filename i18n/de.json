@@ -1,0 +1,159 @@
+[{
+  "id": "author",
+  "translation": {
+    "one": "Autor",
+    "other": "Autoren"
+  },
+  "id": "by",
+  "translation": {
+    "other": "von"
+  },
+  "id": "cancel",
+  "translation": {
+    "other": "Abbrechen"
+  },
+  "id": "cancelComment",
+  "translation": {
+    "other": "Kommentar abbrechen"
+  },
+  "id": "category",
+  "translation": {
+    "one": "Kategorie",
+    "other": "Kategorien"
+  },
+  "id": "comment",
+  "translation": {
+    "other": "Kommentar"
+  },
+  "id": "commentSubmissionErrorMessage",
+  "translation": {
+    "other": "Fehler aufgetreten. Ihe Kommentar konnte nicht übermittelt werden. Bitte versuchen Sie es später erneut. Danke!"
+  },
+  "id": "commentSubmissionErrorTitle",
+  "translation": {
+    "other": "Fehler"
+  },
+  "id": "commentSubmissionSuccessMessage",
+  "translation": {
+    "other": "Ihr Kommentar wurde übermittelt. Er wird in Kürze auf dieser Seite erscheinen!"
+  },
+  "id": "commentSubmissionSuccessTitle",
+  "translation": {
+    "other": "Vielen Dank."
+  },
+  "id": "commentsOnEntry",
+  "translation": {
+    "one": "Nur {{ .Count }} Kommentar bei {{ .Title }}",
+    "other": "{{ .Count }} Kommentare bei {{ .Title }}"
+  },
+  "id": "contactViaEmail",
+  "translation": {
+    "other": "Per E-Mail kontaktieren"
+  },
+  "id": "currentPage",
+  "translation": {
+    "other": "Aktuelle Seite"
+  },
+  "id": "email",
+  "translation": {
+    "other": "E-Mail"
+  },
+  "id": "gopher",
+  "translation": {
+    "other": "Gopher"
+  },
+  "id": "goHome",
+  "translation": {
+    "other": "Zur Startseite …"
+  },
+  "id": "leaveAComment",
+  "translation": {
+    "other": "Einen Kommentar hinterlassen"
+  },
+  "id": "mainMenu",
+  "translation": {
+    "other": "Hauptmenü"
+  },
+  "id": "name",
+  "translation": {
+    "other": "Name"
+  },
+  "id": "next",
+  "translation": {
+    "other": "Weiter"
+  },
+  "id": "nextPage",
+  "translation": {
+    "other": "Nächste Seite"
+  },
+  "id": "nextPost",
+  "translation": {
+    "other": "Nächster Beitrag"
+  },
+  "id": "noTerm",
+  "translation": {
+    "other": "Kein einziges {{ .Term }}!"
+  },
+  "id": "ok",
+  "translation": {
+    "other": "OK"
+  },
+  "id": "openAccountInNewTab",
+  "translation": {
+    "other": "{{ .Platform }} in neuem Tab öffnen"
+  },
+  "id": "page",
+  "translation": {
+    "other": "Seite"
+  },
+  "id": "previous",
+  "translation": {
+    "other": "Vorherige"
+  },
+  "id": "previousPage",
+  "translation": {
+    "other": "Vorherige Seite"
+  },
+  "id": "previousPost",
+  "translation": {
+    "other": "Vorheriger Beitrag"
+  },
+  "id": "postedOn",
+  "translation": {
+    "other": "Veröffentlicht am"
+  },
+  "id": "readingTime",
+  "translation": {
+    "one": "Eine Minute Lesezeit",
+    "other": "{{ .Count }} Minuten Lesezeit"
+  },
+  "id": "recentPosts",
+  "translation": {
+    "other": "Vorherige Beiträge"
+  },
+  "id": "skipToContent",
+  "translation": {
+    "other": "Zum Inhalt springen"
+  },
+  "id": "socialMenu",
+  "translation": {
+    "other": "Social-Menü"
+  },
+  "id": "submitComment",
+  "translation": {
+    "other": "Kommentieren"
+  },
+  "id": "tableOfContents",
+  "translation": {
+    "other": "Inhaltsverzeichnis"
+  },
+  "id": "tag",
+  "translation": {
+    "one": "Schlagwort",
+    "other": "Schlagwörter"
+  },
+  "id": "website",
+  "translation": {
+    "other": "Webseite"
+  }
+}]

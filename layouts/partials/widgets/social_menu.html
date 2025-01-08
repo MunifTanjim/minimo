@@ -21,7 +21,11 @@
     {{- range $platform := $config.platforms -}}
       {{- with $username := ( index $social $platform ) -}}
       <li>
+        {{- if eq $platform "mastodon" -}}
+        <a href='{{ print ( index $.Site.Data.theme.social.base $platform ) $username }}' rel="me">
+        {{- else -}}
         <a href='{{ print ( index $.Site.Data.theme.social.base $platform ) $username }}' target='_blank' rel='noopener'>
+        {{- end -}}
           <span class='screen-reader-text'>
             {{- if eq $platform "email" -}}
               {{- i18n "contactViaEmail" -}}

@@ -1,0 +1,210 @@
+[
+  {
+    "id":"author",
+    "translation": {
+      "one":"مؤلف",
+      "other":"مؤلفين"
+    },
+    "id":"authorsAvatar",
+    "translation": {
+      "other":"الصورة الرمزية لِـ{{ .Author }}"
+    },
+    "id":"by",
+    "translation": {
+      "other":"مِن قِبَل"
+    },
+    "id":"cancel",
+    "translation": {
+      "other":"إلغاء"
+    },
+    "id":"cancelComment",
+    "translation": {
+      "other":"إلغاء التعليق"
+    },
+    "id":"category",
+    "translation": {
+      "one":"فئة",
+      "other":"فئات"
+    },
+    "id":"comment",
+    "translation": {
+      "other":"تعليق"
+    },
+    "id":"commentSubmissionErrorMessage",
+    "translation": {
+      "other":"حدث خطأ. تعذر إرسال تعليقك. أعد المحاولة مجددًا. شكرًا لك!"
+    },
+    "id":"commentSubmissionErrorTitle",
+    "translation": {
+      "other":"عذرًا!"
+    },
+    "id":"commentSubmissionSuccessMessage",
+    "translation": {
+      "other":"تم إرسال تعليقك. سيظهر هنا بعد حين!"
+    },
+    "id":"commentSubmissionSuccessTitle",
+    "translation": {
+      "other":"شكرًا لك!"
+    },
+    "id":"commentsOnEntry",
+    "translation": {
+      "one":"إلّا {{ .Count }} تعليق على {{ .Title }}",
+      "other":"{{ .Count }} تعليقات على {{ .Title }}"
+    },
+    "id":"contactViaEmail",
+    "translation": {
+      "other":"الإتصال عبر البريد الإلكتروني"
+    },
+    "id":"currentPage",
+    "translation": {
+      "other":"الصفحة الحالية"
+    },
+    "id":"email",
+    "translation": {
+      "other":"البريد الإلكتروني"
+    },
+    "id":"gopher",
+    "translation": {
+      "other":"Gopher"
+    },
+    "id":"goHome",
+    "translation": {
+      "other":"انتقل إلى الرئيسية..."
+    },
+    "id":"lastUpdated",
+    "translation": {
+      "other":"آخر تعديل"
+    },
+    "id":"leaveAComment",
+    "translation": {
+      "other":"اترك تعليقًا"
+    },
+    "id":"mainMenu",
+    "translation": {
+      "other":"القئمة الرئيسية"
+    },
+    "id":"name",
+    "translation": {
+      "other":"الإسم"
+    },
+    "id":"next",
+    "translation": {
+      "other":"التالي"
+    },
+    "id":"nextPage",
+    "translation": {
+      "other":"الصفحة التالية"
+    },
+    "id":"nextPost",
+    "translation": {
+      "other":"المنشور التالي"
+    },
+    "id":"noTerm",
+    "translation": {
+      "other":"ليس هناك أية {{ .Term }}!"
+    },
+    "id":"ok",
+    "translation": {
+      "other":"حسنًا"
+    },
+    "id":"openAccountInNewTab",
+    "translation": {
+      "other":"افتح حساب {{ .Platform }} في لسان جديد"
+    },
+    "id":"page",
+    "translation": {
+      "other":"صفحة"
+    },
+    "id":"previous",
+    "translation": {
+      "other":"السابقة"
+    },
+    "id":"previousPage",
+    "translation": {
+      "other":"الصفحة السابقة"
+    },
+    "id":"previousPost",
+    "translation": {
+      "other":"المنشور السابق"
+    },
+    "id":"postedOn",
+    "translation": {
+      "other":"نُشِر في"
+    },
+    "id":"readingTime",
+    "translation": {
+      "one":"قراءة تستغرق دقيقة",
+      "other":"قراءة تستغرق {{ .Count }} دقائق"
+    },
+    "id":"recentPosts",
+    "translation": {
+      "other":"أحدث المنشورات"
+    },
+    "id":"reply",
+    "translation": {
+      "other":"رد"
+    },
+    "id":"replyToAuthor",
+    "translation": {
+      "other":"رد على {{ .Author }}"
+    },
+    "id":"says",
+    "translation": {
+      "other":"قال"
+    },
+    "id":"search",
+    "translation": {
+      "other":"البحث"
+    },
+    "id":"searchResultEmpty",
+    "translation": {
+      "other":"لا شيء موجود!"
+    },
+    "id":"searching",
+    "translation": {
+      "other":"البحث جارٍ"
+    },
+    "id":"series",
+    "translation": {
+      "one":"سلاسل",
+      "other":"سلاسل"
+    },
+    "id":"sidebarMenu",
+    "translation": {
+      "other":"القائمة الجانبية"
+    },
+    "id":"skipToContent",
+    "translation": {
+      "other":"تجاهل إلى المحتوى"
+    },
+    "id":"skipToMainMenu",
+    "translation": {
+      "other":"تجاهل إلى القائمة الرئيسية"
+    },
+    "id":"socialMenu",
+    "translation": {
+      "other":"القائمة الإجتماعية"
+    },
+    "id":"submitComment",
+    "translation": {
+      "other":"علّق!"
+    },
+    "id":"tableOfContents",
+    "translation": {
+      "other":"فهرس المحتويات"
+    },
+    "id":"tag",
+    "translation": {
+      "one":"وسم",
+      "other":"وسوم"
+    },
+    "id":"toggleSidebar",
+    "translation": {
+      "other":"إخفاء أو إظهار القائمة الجانبية"
+    },
+    "id":"website",
+    "translation": {
+      "other":"موقع الويب"
+    }
+  }
+]

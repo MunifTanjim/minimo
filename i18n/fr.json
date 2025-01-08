@@ -1,0 +1,216 @@
+[{
+  "id": "author",
+  "translation": {
+    "one": "Auteur :",
+    "other": "Auteurs :"
+  },
+  "id": "authorsAvatar",
+  "translation": {
+    "other": "Avatar de {{ .Author }}"
+  },
+  "id": "by",
+  "translation": {
+    "other": "par"
+  },
+  "id": "cancel",
+  "translation": {
+    "other": "Annuler"
+  },
+  "id": "cancelComment",
+  "translation": {
+    "other": "Annuler le commentaire"
+  },
+  "id": "category",
+  "translation": {
+    "one": "Catégorie :",
+    "other": "Catégories :"
+  },
+  "id": "comment",
+  "translation": {
+    "other": "Commentaire"
+  },
+  "id": "commentSubmissionErrorMessage",
+  "translation": {
+    "other": "Une erreur s'est produite. Le commentaire n'a pas pu être envoyé. Veuillez réessayer. Merci !"
+  },
+  "id": "commentSubmissionErrorTitle",
+  "translation": {
+    "other": "Houlà, désolé !"
+  },
+  "id": "commentSubmissionSuccessMessage",
+  "translation": {
+    "other": "Votre commentaire a été envoyé. Il s'affichera bientôt sur cette page !"
+  },
+  "id": "commentSubmissionSuccessTitle",
+  "translation": {
+    "other": "Merci !"
+  },
+  "id": "commentsOnEntry",
+  "translation": {
+    "one": "Seulement {{ .Count }} commentaire sur {{ .Title }}",
+    "other": "{{ .Count }} commentaires sur {{ .Title }}"
+  },
+  "id": "contactViaEmail",
+  "translation": {
+    "other": "Contacter par mail"
+  },
+  "id": "currentPage",
+  "translation": {
+    "other": "Page actuelle"
+  },
+  "id": "email",
+  "translation": {
+    "other": "Mail"
+  },
+  "id": "gopher",
+  "translation": {
+    "other": "Gopher"
+  },
+  "id": "goHome",
+  "translation": {
+    "other": "Retourner à l'accueil..."
+  },
+  "id": "languages",
+  "translation": {
+    "other": "Langues"
+  },
+  "id": "leaveAComment",
+  "translation": {
+    "other": "Laisser un commentaire"
+  },
+  "id": "license",
+  "translation": {
+    "other": "Licence :"
+  },
+  "id": "mainMenu",
+  "translation": {
+    "other": "Menu principal"
+  },
+  "id": "name",
+  "translation": {
+    "other": "Nom"
+  },
+  "id": "next",
+  "translation": {
+    "other": "Suivant"
+  },
+  "id": "nextPage",
+  "translation": {
+    "other": "Page suivante"
+  },
+  "id": "nextPost",
+  "translation": {
+    "other": "Billet suivant"
+  },
+  "id": "noTerm",
+  "translation": {
+    "other": "Aucun(e) {{ .Term }}!"
+  },
+  "id": "ok",
+  "translation": {
+    "other": "OK"
+  },
+  "id": "openAccountInNewTab",
+  "translation": {
+    "other": "Ouvrir {{ .Platform }} dans un nouvel onglet"
+  },
+  "id": "page",
+  "translation": {
+    "other": "Page"
+  },
+  "id": "previous",
+  "translation": {
+    "other": "Précédent"
+  },
+  "id": "previousPage",
+  "translation": {
+    "other": "Page précédente"
+  },
+  "id": "previousPost",
+  "translation": {
+    "other": "Billet précédent"
+  },
+  "id": "postedOn",
+  "translation": {
+    "other": "Publié le"
+  },
+  "id": "readingTime",
+  "translation": {
+    "one": "Une minute de lecture",
+    "other": "{{ .Count }} minutes de lecture"
+  },
+  "id": "recentPosts",
+  "translation": {
+    "other": "Billets récents"
+  },
+  "id": "reply",
+  "translation": {
+    "other": "Répondre"
+  },
+  "id": "replyToAuthor",
+  "translation": {
+    "other": "Répondre à {{ .Author }}"
+  },
+  "id": "says",
+  "translation": {
+    "other": "a dit"
+  },
+  "id": "search",
+  "translation": {
+    "other": "Recherche"
+  },
+  "id": "searchResultEmpty",
+  "translation": {
+    "other": "Aucun résultat !"
+  },
+  "id": "searching",
+  "translation": {
+    "other": "Recherche en cours"
+  },
+  "id": "series",
+  "translation": {
+    "one": "Série",
+    "other": "Séries"
+  },
+  "id": "sidebarMenu",
+  "translation": {
+    "other": "Menu de la barre latérale"
+  },
+  "id": "skipToContent",
+  "translation": {
+    "other": "Aller au contenu"
+  },
+  "id": "skipToMainMenu",
+  "translation": {
+    "other": "Aller au menu principal"
+  },
+  "id": "socialMenu",
+  "translation": {
+    "other": "Social Menu"
+  },
+  "id": "submitComment",
+  "translation": {
+    "other": "Commenter !"
+  },
+  "id": "tableOfContents",
+  "translation": {
+    "other": "Table des matières"
+  },
+  "id": "tag",
+  "translation": {
+    "one": "Étiquette :",
+    "other": "Étiquettes :"
+  },
+  "id": "toggleSidebar",
+  "translation": {
+    "other": "Déplier la barre latérale"
+  },
+  "id": "translations",
+  "translation": {
+    "other": "Traductions"
+  },
+  "id": "website",
+  "translation": {
+    "other": "Site web"
+  }
+}]
