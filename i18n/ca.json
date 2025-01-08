@@ -1,110 +1,14 @@
-[{
-  "id": "author",
-  "translation": {
-    "one": "Autor",
-    "other": "Autors"
-  },
-  "id": "by",
-  "translation": {
-    "other": "per"
-  },
-  "id": "category",
-  "translation": {
-    "one": "Categoria",
-    "other": "Categories"
-  },
-  "id": "contactViaEmail",
-  "translation": {
-    "other": "Contacte per correu"
-  },
-  "id": "currentPage",
-  "translation": {
-    "other": "Pàgina actual"
-  },
-  "id": "gopher",
-  "translation": {
-    "other": "Gopher"
-  },
-  "id": "goHome",
-  "translation": {
-    "other": "Anar a l'inici..."
-  },
-  "id": "mainMenu",
-  "translation": {
-    "other": "Menú principal"
-  },
-  "id": "next",
-  "translation": {
-    "other": "Següent"
-  },
-  "id": "nextPage",
-  "translation": {
-    "other": "Següent pàgina"
-  },
-  "id": "nextPost",
-  "translation": {
-    "other": "Següent entrada"
-  },
-  "id": "noTerm",
-  "translation": {
-    "other": "Ni un sol {{ .Term }}!"
-  },
-  "id": "openAccountInNewTab",
-  "translation": {
-    "other": "Obrir compte de {{ .Platform }} en una nova pestanya"
-  },
-  "id": "page",
-  "translation": {
-    "other": "Pàgina"
-  },
-  "id": "previous",
-  "translation": {
-    "other": "Anterior"
-  },
-  "id": "previousPage",
-  "translation": {
-    "other": "Anterior pàgina"
-  },
-  "id": "previousPost",
-  "translation": {
-    "other": "Anterior article"
-  },
-  "id": "postedOn",
-  "translation": {
-    "other": "Publicat a"
-  },
-  "id": "readingTime",
-  "translation": {
-    "one": "Lectura d'un minut",
-    "other": "{{ .Count }} minuts de lectura"
-  },
-  "id": "recentPosts",
-  "translation": {
-    "other": "Entrades recents"
-  },
-  "id": "skipToContent",
-  "translation": {
-    "other": "Anar al contingut"
-  },
-  "id": "skipToMainMenu",
-  "translation": {
-    "other": "Anar al menú principal"
-  },
-  "id": "socialMenu",
-  "translation": {
-    "other": "Menú social"
-  },
-  "id": "tableOfContents",
-  "translation": {
-    "other": "Sumari"
-  },
-  "id": "tag",
-  "translation": {
-    "one": "Etiqueta",
-    "other": "Etiquetes"
-  },
-  "id": "toggleSidebar",
-  "translation": {
-    "other": "Alternar barra lateral"
-  }
-}]
+[
+    {
+        "id": "toggleSidebar",
+        "translation": {
+            "one": "Alternar barra lateral",
+            "many": "",
+            "other": ""
+        }
+    },
+    {
+        "id": "website",
+        "translation": "Lloc web"
+    }
+]
