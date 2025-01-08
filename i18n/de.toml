@@ -19,7 +19,7 @@ other = "Kategorien"
 other = "Kommentar"
 
 [commentSubmissionErrorMessage]
-other = "Fehler aufgetreten. Ihe Kommentar konnte nicht übermittelt werden. Bitte versuchen Sie es später erneut. Danke!"
+other = "Ihr Kommentar konnte nicht übermittelt werden. Bitte versuchen Sie es später erneut. Danke!"
 
 [commentSubmissionErrorTitle]
 other = "Fehler"
@@ -96,7 +96,7 @@ one = "Eine Minute Lesezeit"
 other = "{{ .Count }} Minuten Lesezeit"
 
 [recentPosts]
-other = "Vorherige Beiträge"
+other = "Aktuelle Beiträge"
 
 [search]
 other = "Suchen"
